@@ -1,0 +1,402 @@
+<!DOCTYPE html>									
+<html lang="es-MX">									
+<head>								
+    <title> Xiiber Travel, pase de abordar </title>								
+    <meta charset="UTF-8">	
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="google-site-verification" content="#"/>
+
+    <meta name="description" content="Pase de abordar, para el viaje en grupo para hombres gay de la CDMX a Tepoztlan, Morelos, Tepozspa" />
+    <meta name="robots" content="index,follow,nosnippet">							
+    <meta name="googlebot" content="max-snippet:[0],max-image-preview:[standard]" />
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">								
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">								
+
+
+<style>
+html, body, p
+{
+    margin: 0;
+    padding: 0;
+}
+
+html { min-height: 100%; }
+body
+{
+    background-image: linear-gradient(to bottom, #355C7D, #6C5b7B, #C06C84);
+    padding: 0;
+    font-family: Roboto, Arial, Helvetica, sans-serif;
+    font-size: 9px;
+    color: #333;
+    width: 100%;
+}
+
+p
+{
+    font-family: Roboto, Montserrat, sans-serif;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 1.5em;
+    text-align: left;
+    color: #6A6A6A;
+}
+p.title
+{
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    cursor: default;
+    color: #D24D57;
+}
+p.info
+{
+    font-family: Roboto, Comfortaa, cursive;
+    font-size: 20px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #000;
+}
+
+div.boardingInfo
+{
+    -webkit-column-count: 3;
+       -moz-column-count: 3;
+            column-count: 3;
+}
+
+/* WRAPPER
+----------------------------------------------*/
+#wrapper { padding: 60px 0 0 0; }
+#content
+{
+    position: relative;
+    width: auto;
+    margin: 0 auto;
+    padding: 20px 30px 20px 30px;
+    background-color: #FAFAFA;
+}
+
+/* FONT AWESOME CUSTOMIZATION
+----------------------------------------------*/
+.fa-arrow-right { color: #FFF; }
+.fa-qrcode      { color: #FFF; }
+
+/* MAIN STRUCTURE
+----------------------------------------------*/
+.boarding-box
+{
+    border-radius: 4px;
+    margin: 0 auto;
+    padding: 0;
+    text-align: center;
+    width: 400px;
+    overflow-y: auto;
+
+    -webkit-box-shadow: 0 0.75em 3em rgba(0, 0, 0, 0.2);
+       -moz-box-shadow: 0 0.75em 3em rgba(0, 0, 0, 0.2);
+            box-shadow: 0 0.75em 3em rgba(0, 0, 0, 0.2);
+}
+
+.titleBar
+{
+    height: 50px;
+    line-height: 52px;
+    letter-spacing: 1px;
+    font-family: Roboto, Montserrat, sans-serif;
+    font-size: 13px;
+    font-weight: 400;
+    text-align: center;
+    text-transform: uppercase;
+    color: #FFF;
+    cursor: default;
+    background-color: #D24D57;
+
+    -webkit-transition: background-color .2s ease;
+            transition: background-color .2s ease;
+}
+.titleBar-active { background-color: #333; }
+
+.airport
+{
+    display: inline-block;
+    margin: 10px 0 0 0;
+    padding: 5px 0 0 0;
+    line-height: 100px;
+    font-family: Roboto, Comfortaa, cursive;
+    font-size: 5.3em;
+    font-weight: 700;
+    text-align: center;
+    text-transform: uppercase;
+    color: #FFF;
+}
+.airport.from { padding-right: 13px; }
+.airport.to   { padding-left: 13px;  }
+
+.city
+{
+    line-height: 1px;
+    word-spacing: 0.3em;
+    font-family: Montserrat, sans-serif;
+    font-size: 13px;
+    font-weight: 400;
+    text-align: center;
+    text-transform: uppercase;
+    color: #FFF;
+}
+.city.from { float: left;  padding-left: 28px;  }
+.city.to   { float: right; padding-right: 33px; }
+
+.no-user-select
+{
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+}
+
+/* AIR CANADA BUTTON
+----------------------------------------------*/
+.btn-logo
+{
+    position: absolute;
+    margin: auto;
+    top: -25em;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background-color: #FAFAFA; 
+    cursor: pointer;
+    transition: all 0.2s linear;
+    z-index: 999;
+    
+    -webkit-box-shadow: 0 1px 5px rgba(0, 0, 0, .1);
+       -moz-box-shadow: 0 1px 5px rgba(0, 0, 0, .1);
+            box-shadow: 0 1px 5px rgba(0, 0, 0, .1);
+}
+.btn-logo:hover
+{
+    -webkit-box-shadow: 0 2px 8px rgba(0, 0, 0, .2);
+       -moz-box-shadow: 0 2px 8px rgba(0, 0, 0, .2);
+            box-shadow: 0 2px 8px rgba(0, 0, 0, .2);
+}
+.btn-logo.click { background-color: #333; }
+
+/* QR CODE FOR FONT AWESOME ICON - NOT USED
+----------------------------------------------*/
+.qrCode
+{
+    display: inline-block;
+    margin: 10px 0 0 0;
+    padding: 5px 10px;
+    font-size: 7.3em;
+}
+
+/* BAR CODE
+----------------------------------------------*/
+table
+{
+    width: 100%;
+    margin: 0 auto;
+    border-collapse: collapse;
+}
+table, th, td { border: 0; }
+td
+{
+    display: inline-block;
+    margin: 37px 0 0 0;
+    padding: 0;
+    width: 0.3em;
+    height: 4.7em;
+}
+
+/* SLIDABLE DESTINATION BOX
+----------------------------------------------*/
+.box-slide              { cursor: default; }
+.box-slide.click .slide { transform: translateY(170px); }
+
+.box-slide,
+.front,
+.back
+{
+    width: 100%;
+    height: 170px;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+.slide
+{
+    position: relative;
+    transition: 0.5s;
+}
+
+.front,
+.back
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.front
+{
+    background-color: #D24D57;
+    z-index: 2;
+    transform: translateY(0px);
+}
+
+.back
+{
+    background-color: #333;
+    transform: translateY(-170px);
+}
+
+/* FOOTER
+----------------------------------------------*/
+footer
+{
+    margin-top: 0;
+    padding: 25px 0 0 0;
+}
+
+.footer-content p
+{
+    margin: 0 auto;
+    font-size: 18px;
+    line-height: 32px;
+    color: #EEE;
+    text-align: center;
+}
+
+.footer-content a
+{
+    color: #FFF; 
+    text-decoration: none;
+    padding-bottom: 2px;
+}
+.footer-content a:hover { border-bottom: 1px dotted #EEE; }
+</style>
+</head>
+
+<body>	
+
+    <div id="wrapper">
+      <div class="boarding-box">
+        <div class="titleBar no-user-select">
+          <span>Xiiber México Boarding Pass</span>
+        </div>
+        
+        <!-- BEGIN BOARDING BOX -->
+        <div class="box-slide no-user-select">
+          <div class="slide">
+            <div class="front">
+              <div class="card">
+                <span class="airport from">CDMX</span>
+                <i class="fa fa-arrow-right fa-2x" aria-hidden="true"></i>
+                <span class="airport to">MOR</span>
+                <span class="city from">General Anaya</span>
+                <span class="city to">Tepoztlan</span>
+              </div>
+            </div>
+            <div class="back">
+              <div class="card">
+                <!-- <span class="qrCode"><i class="fa fa-qrcode" aria-hidden="true"></i></span> -->
+                <table class="barcode">
+                  <tr></tr>
+                </table>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- END BOARDING BOX -->
+        
+        <div id="content">
+          
+          <div>
+            <p class="title no-user-select">Nombre</p>
+            <p class="info">Luis Maciel</p>
+          </div>
+          <br/><br/>
+          <div class="boardingInfo">
+            <p class="title no-user-select">Viaje </p>
+            <p class="title no-user-select">Pasajero</p>
+            <p class="title no-user-select">Servicio</p>
+          </div>
+          <div class="boardingInfo">
+            <p class="info">112</p>
+            <p class="info">33</p>
+            <p class="info">Locker</p>
+          </div>
+          <br/><br/>
+          <div>
+            <p class="title no-user-select">Hora de salida</p>
+            <p class="info">09:00 horas</p>
+          </div>
+          <br/>
+          <div>
+            <p class="title no-user-select">Fecha</p>
+            <p id="departure-date" class="info">Sábado 30 de febrero, 2021</p>
+          </div>
+        </div>
+      </div>
+      <!-- Begin FOOTER -->
+      <footer>
+        <div class="footer-content">
+            <p class="footer">
+              <a target="_blank" href="http://travel.xiiber.com">Travel</a> | 
+              <a target="_blank" href="http://xiiber.com">Xiiber</a>
+            </p>
+        </div>
+      </footer>
+      <!-- End FOOTER -->
+    </div>
+
+
+<script>
+$(document).ready(function()
+{
+    $(".btn-logo").click(function()
+    {
+        $(".box-slide").toggleClass("click");
+        $(".btn-logo").toggleClass("click"); 
+        $(".titleBar").toggleClass("titleBar-active");
+    });
+  
+    var depDate = document.getElementById("departure-date");
+    depDate.innerText = addDayToDate() + " @ 21:15";
+    
+    drawBarcode();
+});
+
+function addDayToDate()
+{
+    Date.prototype.monthNames = [ "January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December" ];
+    Date.prototype.getMonthName      = function() { return this.monthNames[this.getMonth()]; };
+    Date.prototype.getShortMonthName = function() { return this.getMonthName().substr(0, 3); };
+
+    var now  = new Date();
+    var next = new Date(now.getTime() + 86400000);
+    return next.getShortMonthName() + " " + next.getDate() + " " + next.getFullYear();
+}
+
+function drawBarcode()
+{
+    var bars = "01001100101010110110010001001010101101010011001011001001001101010";
+    
+    table = $('tr');
+    for (var i = 0; i < bars.length; i++)
+    {
+        if (bars[i] == 1)
+          table.append('<td bgcolor="#333"/>');
+        else
+          table.append('<td bgcolor="#FFF"/>');
+    }
+}
+</script>
+</body>
+</html>									
