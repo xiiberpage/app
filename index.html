@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Xiiber.page</title>
+  <link rel="stylesheet" href="./style.css">
+
+<style>
+/* VARIABLES -  START */
+/* COLORS  */
+/* VARIABLES - END */
+/* COMMONS - START */
+.flex-center, .wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+/* COMMONS - END */
+/* STYLES -  START */
+.wrapper {
+  background-color: #191b25;
+}
+
+#dot1,
+#dot2,
+#dot3 {
+  opacity: 0;
+}
+
+#motionPath1,
+#motionPath2 {
+  display: none;
+}
+
+svg {
+  width: 270px;
+  height: 270px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+svg circle {
+  fill: white;
+}
+
+svg #path {
+  fill: none;
+  stroke: white;
+  stroke-width: 10px;
+  stroke-dasharray: 1000;
+  stroke-dashoffset: 1000;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+svg #motionPath1 {
+  stroke: white;
+  fill: none;
+  stroke-width: 10px;
+}
+
+/* STYLES - END */
+h1 {
+  font-family: 'Montserrat';
+  font-size: 22px;
+  color: white;
+}
+</style>
+
+</head>
+<body>
+<div class="wrapper">
+<a href="/tepozspa.html"><h1> Xiiber</h1></a>
+  <svg>
+    <path id="motionPath1" d="M 160 40 Q 200 175 90 230" />
+    <path id="motionPath2" d="M 20 250 Q 200 200 150 40 Q 100 0 2 62 " />
+    <path id="path" d="M80,20 L80,20 L90,40 L130,10" />
+    <circle id="dot0" cx="80" cy="60" r="5" />
+    <circle id="dot1" cx="120" cy="60" r="5" />
+    <circle id="dot2" cx="140" cy="60" r="5" />
+    <circle id="dot3" cx="160" cy="60" r="5" />
+  </svg>
+
+</div>
+
+
+
+</div>
+<!-- partial -->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.0/gsap.min.js'></script>
+<script src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/DrawSVGPlugin3.min.js'></script>
+<script src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/MotionPathPlugin.min.js'></script><script  src="./script.js"></script>
+
+<script>
+gsap.registerPlugin(MotionPathPlugin, DrawSVGPlugin);
+var tl = gsap.timeline({ repeat: -1, repeatDelay: 2 });
+
+tl.set("#dot0", { x: 36, y: 189 })
+  .to("#dot0", {
+    duration: 0.8,
+    ease: Power1.easeOut,
+    motionPath: {
+      path: "#motionPath2",
+      align: "self",
+      alignOrigin: [0.5, 0.5]
+    }
+  })
+  .to("#dot1", { duration: 0.3, y: 10, opacity: 1 })
+  .to("#dot1", { duration: 0.3, y: 0 })
+  .to("#dot2", { duration: 0.3, y: 20, opacity: 1 }, "-=0.5")
+  .to("#dot2", { duration: 0.3, y: 0 }, "-=0.2")
+  .to("#dot3", { duration: 0.3, y: 30, opacity: 1 }, "-=0.4")
+  .to("#dot3", { duration: 0.3, y: 0 }, "-=0.1")
+  .to("#dot1", { duration: 0.3, y: 10 })
+  .to("#dot1", { duration: 0.3, y: 0 })
+  .to("#dot2", { duration: 0.3, y: 20 }, "-=0.5")
+  .to("#dot2", { duration: 0.3, y: 0 }, "-=0.2")
+  .to("#dot3", { duration: 0.3, y: 30 }, "-=0.4")
+  .to("#dot3", { duration: 0.3, y: 0 }, "-=0.1")
+  .set("#dot0, #dot1, #dot2, #dot3", { display: "none" })
+  .set("#path", { opacity: 0, x: 15, y: 25 })
+  .to("#path", { duration: 0.3, x: 30, y: 65, drawSVG: "1%", opacity: 1 })
+  .to("#path", { duration: 0.6, drawSVG: "100%" })
+  .to("#path", { duration: 0.6, drawSVG: "98% 100%" }, "+=0.5")
+  .to(
+    "#path",
+    { duration: 0.3, x: 55, y: 45, ease: Back.easeOut.config(1.4) },
+    "-=0.2"
+  )
+  .to(
+    "#path",
+    {
+      duration: 0.6,
+      ease: Power4.easeIn,
+      motionPath: {
+        path: "#motionPath1",
+        align: "self",
+        alignOrigin: [0.5, 0.5]
+      }
+    },
+    "-=0.1"
+  ); 
+</script>
+
+</body>
+</html>
