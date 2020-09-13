@@ -83,8 +83,8 @@ define('EMAIL_TEMPLATE_IN_TEXT', 'contact-form.email-in.txt');
 // *************
 // EMAIL MESSAGE
 // *************
-define('EMAIL_TO', '{EmailTo}');
-define('EMAIL_TO_NAME', '{EmailTo}');
+define('EMAIL_TO', 'helloxiiber@gmail.com');
+define('EMAIL_TO_NAME', 'helloxiiber@gmail.com');
 
 define('EMAIL_TO_CC', '');
 define('EMAIL_TO_CC_NAME', '');
@@ -92,14 +92,14 @@ define('EMAIL_TO_CC_NAME', '');
 define('EMAIL_TO_BCC', '');
 define('EMAIL_TO_BCC_NAME', '');
 
-define('EMAIL_FROM', '{EmailFrom}');
-define('EMAIL_FROM_NAME', '{EmailFrom}');
+define('EMAIL_FROM', 'helloxiiber@gmail.com');
+define('EMAIL_FROM_NAME', 'helloxiiber@gmail.com');
 
 define('EMAIL_REPLY_TO', 'FIELD:Email');
 define('EMAIL_REPLY_TO_NAME', 'FIELD:Name');
 
 define('EMAIL_SUBJECT_BEFORE', '');
-define('EMAIL_SUBJECT', '{EmailSubject}');
+define('EMAIL_SUBJECT', 'BD2009');
 define('EMAIL_SUBJECT_AFTER', '');
 
 
