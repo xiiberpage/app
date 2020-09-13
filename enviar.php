@@ -22,4 +22,4 @@ mail($para, $asunto, utf8_decode($message), $header);
 
 header("Location:index.html");
 ?>
-© 2020 GitHub, Inc.
+
