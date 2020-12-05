@@ -101,7 +101,7 @@
 <body>
 
 
-    <br><br><br>
+    <br>
 
     <a href="https://www.xiiber.com" class="logo" target="_blank">
         <img src="https://pbs.twimg.com/media/EobsTbtXUAEFPs5?format=jpg&name=4096x4096" alt="Xiiber Travel con destino a Tepozspa">
@@ -111,9 +111,8 @@
         <form id="formulario" class="formulario">
             <div class="container">
                 <h3>RESERVACION</h3>
-                <h4></h4>
                 <p><b>Tepozspa </b></p>
-                <p>Sábado 24 de febrero / locker </p>
+                <p>Sábado 30 de febrero 2021 / locker </p>
             </div>
 
             <div class="container" style="background-color:white">
@@ -168,7 +167,7 @@
             let nombre = document.querySelector('#nombre').value
             let apellidos = document.querySelector('#apellidos').value
             let email = document.querySelector('#email').value
-            let mensaje = 'send?phone=' + telefono + '&text=*_Vestidor_*%0A*¿Cual es tu nombre?*%0A' + nombre + '%0A*¿Cuáles son tus apellidos?*%0A' + apellidos + '%0A*¿Cuál es tu correo electrónico?*%0A' + email + ''
+            let mensaje = 'send?phone=' + telefono + '&text=*_Hola, confirmo por medio de este mensaje, mi asistencia para el sábado 30 de febrero al Tepozspa con vestidor_*%0A*Me llamo*%0A' + nombre +  apellidos + '%0A*Mi email*%0A' + email + ''
             if(isMobile()) {
                 window.open(urlMobile + mensaje, '_blank')
             }else{
