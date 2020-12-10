@@ -1,8 +1,0 @@
-{Message}
-
-
-{Name} - {Email}
-Users IP: {IP}
-
-
-{CREDIT}
