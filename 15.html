@@ -53,21 +53,26 @@
 
 
         <hr>
-        <a class="w3-bar-item w3-button " onclick="myFunctioncalendario()">
+        <!-- <a class="w3-bar-item w3-button " onclick="myFunctioncalendario()">
             <div><i class="far fa-credit-card fa-fw"></i> Formas de pago </div>
         </a>
         <script>
             function myFunctioncalendario() {
-                location.replace("http://.xiiber.com")
+                location.replace("#opcionesdepago")
             }
         </script>
-        <!-- 
+
         <a class="w3-bar-item w3-button " href="#">
             <div><i class="	fas fa-concierge-bell fa-fw "></i> Ayuda </div>
         </a>
         -->
-        <a class="w3-bar-item w3-button " href="#">
+        <a class="w3-bar-item w3-button " href="#opcionesdepago">
+            <div><i class="far fa-credit-card fa-fw"></i> Formas de pago</div>
+        </a>
+        <a class="w3-bar-item w3-button " href="https://www.xiiber.com/socialxiiber.html ">
+
             <div><i class="far fa-comments fa-fw "></i> Contacto </div>
+
         </a>
 
         <a class="w3-bar-item w3-button " href="#">
@@ -103,8 +108,9 @@
         <p>
             <i class="fa fa-bars w3-button w3-safety-blue w3-hide-large w3-xlarge" onclick="w3_open()"></i>
             <a href="#buscar"></a><i class="fa fa-search w3-button w3-safety-blue w3-hide-large w3-xlarge w3-right " id="Contacto"></i>
-            <!-- Incorrecto <a href="#"></a><i class="fa fa-adjust w3-button w3-safety-blue w3-hide-large w3-xlarge w3-right " onclick="myFunctiondark()"></i> arreglar -->
+            <!-- Incorrecto <a href=" # "></a><i class="fa fa-adjust w3-button w3-safety-blue w3-hide-large w3-xlarge w3-right " onclick="myFunctiondark() "></i> arreglar -->
             <a href="#alertas"><i class="fas fa-bell w3-button w3-safety-blue w3-hide-large w3-xlarge w3-right "  onclick="document.getElementById('alertas').style.display='block'"></i></a>
+            <a href="https://www.xiiber.com/calendario.html"><i class="far fa-calendar-alt w3-button w3-safety-blue w3-hide-large w3-xlarge w3-right "></i></a>
         </p>
     </div>
     <div id="alertas" class="w3-modal w3-animate-opacity w3-center">
@@ -140,20 +146,23 @@
 
 
 
+
     <br>
     <br>
     <br>
     <!-- Covid -->
-    <div class="container">
-        <div class="alert alert-danger alert-dismissible fade in">
-            <a href="#coronavirus" class="close" data-dismiss="alert" aria-label="close">&times;</a>
-            <strong><i class="fa fa-exclamation-circle style="font-size:40px"></i> </strong> Conoce las recomendaciones para <b>viajar con tranquilidad y cómo protegerse </b>y proteger a los demás.
+    <div class="container ">
+        <div class="alert alert-danger alert-dismissible fade in ">
+            <a href="#covid19 " class="close " data-dismiss="alert " aria-label="close ">&times;</a>
+            <strong><i class="fa fa-exclamation-circle style="font-size:40px"></i>
+            </strong>
+            <b>Covid-19. </b> Conoce las recomendaciones para <b>viajar con tranquilidad y cómo protegerse </b>y proteger a los demás.
         </div>
     </div>
 
 
 
-    <div class="w3-display-container w3-wide" id="Contacto">
+    <div class="w3-display-container w3-wide" id="news">
         <div id="myCarousel" class="carousel slide" data-ride="carousel">
             <!-- Indicators -->
             <ol class="carousel-indicators">
@@ -434,7 +443,7 @@
     <div class="w3-container w3-center ">
 
         <div class=" w3-white w3-display-container w3-text-white">
-            <img src="https://www.w3schools.com/w3images/woods.jpg" alt="Lights" style="width:100%">
+            <img src="https://pbs.twimg.com/media/EpfpiUhXUAE7gPq?format=jpg&name=4096x4096" alt="Lights" style="width:100%">
             <div class="w3-padding w3-display-topleft w3-container">
                 <p>Top Left</p>
             </div>
@@ -445,7 +454,8 @@
                 <p>Bottom Left</p>
             </div>
             <div class="w3-padding w3-display-bottomright w3-container">
-                <p>Bottom Right</p>
+
+                <button type="button" class="w3-button w3-padding-large w3-white w3-border w3-round-large" id="myBtnone"><b>Ver tips</b></button>
             </div>
             <div class="w3-padding w3-display-left w3-container">
                 <p>Left</p>
@@ -461,6 +471,16 @@
                 <p>Bottom Middle</p>
             </div>
         </div><br>
+
+        <div class=" w3-white w3-display-container w3-text-white">
+            <img src="https://pbs.twimg.com/media/EpfpiUhXUAE7gPq?format=jpg&name=4096x4096" alt="Lights" style="width:100%">
+
+            <div class="w3-padding w3-display-bottomright w3-container">
+                <button type="button" class="w3-button w3-padding-large w3-white w3-border w3-round-large" id="myBtnone"><b>Ver tips</b></button>
+            </div>
+
+        </div><br>
+
 
         <!-- Blog entry -->
         <div class="w3-container w3-center ">
@@ -479,7 +499,8 @@
                         <p>Bottom Left</p>
                     </div>
                     <div class="w3-padding w3-display-bottomright w3-container">
-                        <p>Bottom Right</p>
+
+                        <button type="button" class="w3-button w3-padding-large w3-white w3-border w3-round-large" id="myBtnone"><b>Open Modal</b></button>
                     </div>
                     <div class="w3-padding w3-display-left w3-container">
                         <p>Left</p>
@@ -651,8 +672,8 @@
             <ul class="w3-ul w3-hoverable w3-white ">
                 <li class="w3-padding-16 ">
                     <img src="https://www.w3schools.com/w3images/workshop.jpg " alt="Image " class="w3-left w3-margin-right " style="width:50px ">
-                    <span class="w3-large ">Lorem</span><br>
-                    <span>Sed mattis nunc</span>
+                    <span class="w3-large ">Juego de memoria</span><br>
+                    <span><a href="https://www.xiiber.com/memoria.html ">¿Jugamos?</a></span>
                 </li>
                 <li class="w3-padding-16 ">
                     <img src="https://www.w3schools.com/w3images/workshop.jpg " alt="Image " class="w3-left w3-margin-right " style="width:50px ">
@@ -664,11 +685,7 @@
                     <span class="w3-large ">Dorum</span><br>
                     <span>Ultricies congue</span>
                 </li>
-                <li class="w3-padding-16 w3-hide-medium w3-hide-small ">
-                    <img src="https://www.w3schools.com/w3images/workshop.jpg " alt="Image " class="w3-left w3-margin-right " style="width:50px ">
-                    <span class="w3-large ">Mingsum</span><br>
-                    <span>Lorem ipsum dipsum</span>
-                </li>
+
             </ul>
         </div>
 
@@ -750,90 +767,86 @@
 
 
 
+        <br><br><br>
+
+        <div id="opcionesdepago" class="light-wrapper">
+            <br><br><br>
+
+            <div class="container inner ">
+                <h2 class="section-title text-center">Formas de pago</h2>
+                <p class="lead main text-center"></p>
+
+                <button class="collapsible">BBVA Bancomer</button>
+                <div class="content">
+                    <p><br>
+                        <b style="color:#000066;">Datos Generales</b><br>
+                        <b>Tarjeta de débito:</b> 4152 3135 6922 0804 <br>
+                        <b>Número de cuenta:</b> 156 348 1115<br> Tarjeta de débito a nombre de <i>Luis Maciel </i><br>
+                        <hr>
+                        <b style="color:#000066;">Practicaja</b><br> Acude a tu practicaja más cercana, escoge la opción “abono a tarjeta de débito” e ingresa manualmente el número de cuenta: <b>156 348 1115</b><br><br>
+                        <b style="color:#000066;">App BBVA</b><br> Número de cuenta: <b>156 348 1115</b> Tarjeta de débito a nombre de <i>Luis Maciel </i><br><br>
+                        <i class="fa fa-exclamation-circle" style="font-size:6x;color:#800000"> En referencia anota tu numero de celular y nombre </i><br><br>
+                </div>
+                <button class="collapsible">Banca por internet</button>
+                <div class="content">
+                    <br>
+                    <p><b>CLABE Interbancaria:</b> 646 18014 25742 30807<br> Tarjeta de débito a nombre de <i>Luis Maciel </i></p> <br>
+                    <p><b>Banco receptor</b> STP (Sistemae Transferencia y Pagos)<br>
+                </div>
+                <button class="collapsible">Comercios afiliados</button>
+                <div class="content">
+                    <br>
+                    <p><b> Visita: Acude al establecimiento que te quede más cercano de:</b> Oxxo, 7 Eleven, Farmacias Guadalajara, Súper Sánchez, Willys, Súper 7/24, Súper Kiosko, Farmacias del Ahorro y Farmacias Unión, Telecomm Telégrafos <br><br>
+
+                        <b>Menciona.</b> En la caja del comercio, solicita el servicio que requieres realizar el Pago de tarjeta y dictar los 16 dígitos siguientes: <b>4152 3135 6922 0804</b><br><br>
+
+                        <b>Recibe.</b> El cajero confirmará si la transacción fue exitosa y te entregará un comprobante, que deberás enviar por whatsapp para confirmar tu lugar.<br><br>
 
 
-
-
-
-        <div class="w3-container w3-center">
-            <div id="food-menu" class="light-wrapper">
-                <section class="ss-style-top"></section>
-                <div class="container inner">
-                    <h2 class="section-title text-center">Formas de pago</h2>
-                    <p class="lead main text-center"></p>
-
-                    <button class="collapsible">BBVA Bancomer</button>
-                    <div class="content">
-                        <p><br>
-                            <b style="color:#000066;">Datos Generales</b><br>
-                            <b>Tarjeta de débito:</b> 4152 3135 6922 0804 <br>
-                            <b>Número de cuenta:</b> 156 348 1115<br> Tarjeta de débito a nombre de <i>Luis Maciel </i><br>
-                            <hr>
-                            <b style="color:#000066;">Practicaja</b><br> Acude a tu practicaja más cercana, escoge la opción “abono a tarjeta de débito” e ingresa manualmente el número de cuenta: <b>156 348 1115</b><br><br>
-                            <b style="color:#000066;">App BBVA</b><br> Número de cuenta: <b>156 348 1115</b> Tarjeta de débito a nombre de <i>Luis Maciel </i><br><br>
-                            <i class="fa fa-exclamation-circle" style="font-size:6x;color:#800000"> En referencia anota tu numero de celular y nombre </i><br><br>
-                    </div>
-                    <button class="collapsible">Banca por internet</button>
-                    <div class="content">
-                        <br>
-                        <p><b>CLABE Interbancaria:</b> 646 18014 25742 30807<br> Tarjeta de débito a nombre de <i>Luis Maciel </i></p> <br>
-                        <p><b>Banco receptor</b> STP (Sistemae Transferencia y Pagos)<br>
-                    </div>
-                    <button class="collapsible">Comercios afiliados</button>
-                    <div class="content">
-                        <br>
-                        <p><b> Visita: Acude al establecimiento que te quede más cercano de:</b> Oxxo, 7 Eleven, Farmacias Guadalajara, Súper Sánchez, Willys, Súper 7/24, Súper Kiosko, Farmacias del Ahorro y Farmacias Unión, Telecomm Telégrafos <br><br>
-
-                            <b>Menciona.</b> En la caja del comercio, solicita el servicio que requieres realizar el Pago de tarjeta y dictar los 16 dígitos siguientes: <b>4152 3135 6922 0804</b><br><br>
-
-                            <b>Recibe.</b> El cajero confirmará si la transacción fue exitosa y te entregará un comprobante, que deberás enviar por whatsapp para confirmar tu lugar.<br><br>
-
-
-                            <i class="fa fa-exclamation-circle" style="font-size:6x;color:red;"> Costos y comisiones. Algunos negocios han establecido un cobro de comisión por transacción:</i><br><br>
-                            <p style="font-size:6;">$7 incluyendo IVA: Farmacias Guadalajara, Súper Sánchez, Willys, Súper 7/24 y Súper Kiosko<br> $8 incluyendo IVA: Farmacias del Ahorro y Farmacias Unión<br> $10 incluyendo IVA: Oxxo y 7 Eleven<br> $10.50 incluyendo IVA: Telecomm
-                                Telégrafos
-                            </p><br>
-                        </p> <br>
-
-                    </div>
-                    <button class="collapsible">PayPal</button>
-                    <div class="content">
-                        <br>
-                        <p>www.paypal.me/luisangelmaciel </p> <br>
-
-                    </div>
-                    <button class="collapsible">Clip</button>
-                    <div class="content">
-                        <p><br>
-                            <b style="color:#000066;">Datos Generales</b><br>
-                            <p>Solicita tu número de referencia personalizado por whatsapp, solo indicanos cual será la tarjeta que utilizaras para poder generar el enlace y completes el pago, solo tienes 72 horas o de lo contrario tendrás que generar otro.
-                                <br>
-
-                    </div>
-
-                    <script>
-                        var coll = document.getElementsByClassName("collapsible");
-                        var i;
-
-                        for (i = 0; i < coll.length; i++) {
-                            coll[i].addEventListener("click", function() {
-                                this.classList.toggle("active");
-                                var content = this.nextElementSibling;
-                                if (content.style.maxHeight) {
-                                    content.style.maxHeight = null;
-                                } else {
-                                    content.style.maxHeight = content.scrollHeight + "px";
-                                }
-                            });
-                        }
-                    </script>
-
+                        <i class="fa fa-exclamation-circle" style="font-size:6x;color:red;"> Costos y comisiones. Algunos negocios han establecido un cobro de comisión por transacción:</i><br><br>
+                        <p style="font-size:6;">$7 incluyendo IVA: Farmacias Guadalajara, Súper Sánchez, Willys, Súper 7/24 y Súper Kiosko<br> $8 incluyendo IVA: Farmacias del Ahorro y Farmacias Unión<br> $10 incluyendo IVA: Oxxo y 7 Eleven<br> $10.50 incluyendo IVA: Telecomm
+                            Telégrafos
+                        </p><br>
+                    </p> <br>
 
                 </div>
-                <!-- /.container -->
-                <section class="ss-style-bottom"></section>
+                <button class="collapsible">PayPal</button>
+                <div class="content">
+                    <br>
+                    <p>www.paypal.me/luisangelmaciel </p> <br>
+
+                </div>
+                <button class="collapsible">Clip</button>
+                <div class="content">
+                    <p><br>
+                        <b style="color:#000066;">Datos Generales</b><br>
+                        <p>Solicita tu número de referencia personalizado por whatsapp, solo indicanos cual será la tarjeta que utilizaras para poder generar el enlace y completes el pago, solo tienes 72 horas o de lo contrario tendrás que generar otro.
+                            <br>
+
+                </div>
+
+                <script>
+                    var coll = document.getElementsByClassName("collapsible");
+                    var i;
+
+                    for (i = 0; i < coll.length; i++) {
+                        coll[i].addEventListener("click", function() {
+                            this.classList.toggle("active");
+                            var content = this.nextElementSibling;
+                            if (content.style.maxHeight) {
+                                content.style.maxHeight = null;
+                            } else {
+                                content.style.maxHeight = content.scrollHeight + "px";
+                            }
+                        });
+                    }
+                </script>
+
+
             </div>
+
         </div>
+
         <!--/#food-menu-->
         <br>
 
@@ -938,139 +951,138 @@
 
         <!-- The Tour Section -->
 
-        <div class="w3-container w3-content w3-padding-32 " style="max-width:800px">
-            <div class="w3-row-padding w3-padding-32 " style="margin:0 -16px">
-                <div class="w3-third  w3-border ">
-                    <br>
-                    <div class=" w3-white w3-display-container w3-text-white">
-                        <img src="https://www.w3schools.com/w3images/newyork.jpg" alt="Lights" style="width:100%">
-                        <div class="w3-padding w3-display-topleft w3-container">
-                            <p>Top Left</p>
-                        </div>
-                        <div class="w3-padding w3-display-topright w3-container">
-                            <p>Top Right</p>
-                        </div>
-                        <div class="w3-padding w3-display-bottomleft w3-container">
-                            <p>Bottom Left</p>
-                        </div>
-                        <div class="w3-padding w3-display-bottomright w3-container">
-                            <p>Bottom Right</p>
-                        </div>
-                        <div class="w3-padding w3-display-left w3-container">
-                            <p>Left</p>
-                        </div>
-                        <div class="w3-padding w3-display-right w3-container">
-                            <p>Right</p>
-                        </div>
-                        <div class="w3-padding w3-display-middle w3-large">Middle</div>
-                        <div class="w3-padding w3-display-topmiddle w3-container">
-                            <p>Top Middle</p>
-                        </div>
-                        <div class="w3-padding w3-display-bottommiddle w3-container">
-                            <p>Bottom Middle</p>
-                        </div>
-                    </div>
+        <div class="w3-container w3-content  ">
+            <div class="w3-third  w3-border ">
 
-                    <div class="w3-container w3-white">
-                        <br>
-                        <p><b>Tepozspa</b></p>
-                        <p class="w3-opacity">Sábado 27 de febrero</p>
-                        <p>Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
-                        <button class="w3-button w3-black w3-margin-bottom" onclick="document.getElementById('ticketModallocker').style.display='block'">Locker</button>
+                <div class=" w3-white w3-display-container w3-text-white">
+                    <img src="https://www.w3schools.com/w3images/newyork.jpg" alt="Lights" style="width:100%">
+                    <div class="w3-padding w3-display-topleft w3-container">
+                        <p>Top Left</p>
+                    </div>
+                    <div class="w3-padding w3-display-topright w3-container">
+                        <p>Top Right</p>
+                    </div>
+                    <div class="w3-padding w3-display-bottomleft w3-container">
+                        <p>Bottom Left</p>
+                    </div>
+                    <div class="w3-padding w3-display-bottomright w3-container">
+                        <p>Bottom Right</p>
+                    </div>
+                    <div class="w3-padding w3-display-left w3-container">
+                        <p>Left</p>
+                    </div>
+                    <div class="w3-padding w3-display-right w3-container">
+                        <p>Right</p>
+                    </div>
+                    <div class="w3-padding w3-display-middle w3-large">Middle</div>
+                    <div class="w3-padding w3-display-topmiddle w3-container">
+                        <p>Top Middle</p>
+                    </div>
+                    <div class="w3-padding w3-display-bottommiddle w3-container">
+                        <p>Bottom Middle</p>
                     </div>
                 </div>
 
-
-                <div class="w3-third  w3-border ">
+                <div class="w3-container w3-white">
                     <br>
-                    <div class=" w3-white w3-display-container w3-text-white">
-                        <img src="https://www.w3schools.com/w3images/newyork.jpg" alt="Lights" style="width:100%">
-                        <div class="w3-padding w3-display-topleft w3-container">
-                            <p>Top Left</p>
-                        </div>
-                        <div class="w3-padding w3-display-topright w3-container">
-                            <p>Top Right</p>
-                        </div>
-                        <div class="w3-padding w3-display-bottomleft w3-container">
-                            <p>Bottom Left</p>
-                        </div>
-                        <div class="w3-padding w3-display-bottomright w3-container">
-                            <p>Bottom Right</p>
-                        </div>
-                        <div class="w3-padding w3-display-left w3-container">
-                            <p>Left</p>
-                        </div>
-                        <div class="w3-padding w3-display-right w3-container">
-                            <p>Right</p>
-                        </div>
-                        <div class="w3-padding w3-display-middle w3-large">Middle</div>
-                        <div class="w3-padding w3-display-topmiddle w3-container">
-                            <p>Top Middle</p>
-                        </div>
-                        <div class="w3-padding w3-display-bottommiddle w3-container">
-                            <p>Bottom Middle</p>
-                        </div>
-                    </div>
-
-
-
-                    <div class="w3-container w3-white">
-                        <br>
-                        <p><b>New York</b></p>
-                        <p class="w3-opacity">Fri 27 Nov 2016</p>
-                        <p>Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
-                        <button class="w3-button w3-black w3-margin-bottom" onclick="document.getElementById('ticketModal').style.display='block'">Buy Tickets</button>
-                    </div>
-                </div>
-
-
-                <div class="w3-third  w3-border ">
-                    <br>
-                    <div class=" w3-white w3-display-container w3-text-white">
-                        <img src="https://www.w3schools.com/w3images/newyork.jpg" alt="Lights" style="width:100%">
-                        <div class="w3-padding w3-display-topleft w3-container">
-                            <p>Top Left</p>
-                        </div>
-                        <div class="w3-padding w3-display-topright w3-container">
-                            <p>Top Right</p>
-                        </div>
-                        <div class="w3-padding w3-display-bottomleft w3-container">
-                            <p>Bottom Left</p>
-                        </div>
-                        <div class="w3-padding w3-display-bottomright w3-container">
-                            <p>Bottom Right</p>
-                        </div>
-                        <div class="w3-padding w3-display-left w3-container">
-                            <p>Left</p>
-                        </div>
-                        <div class="w3-padding w3-display-right w3-container">
-                            <p>Right</p>
-                        </div>
-                        <div class="w3-padding w3-display-middle w3-large">Middle</div>
-                        <div class="w3-padding w3-display-topmiddle w3-container">
-                            <p>Top Middle</p>
-                        </div>
-                        <div class="w3-padding w3-display-bottommiddle w3-container">
-                            <p>Bottom Middle</p>
-                        </div>
-                    </div>
-
-
-
-                    <div class="w3-container w3-white">
-                        <br>
-                        <p><b>Tepozspa</b></p>
-                        <p class="w3-opacity">Sábado 27 de febrero</p>
-                        <p>Viaje en tangas</p>
-                        <button type="button" class="w3-button w3-padding-large w3-white w3-border w3-round-large" onclick="document.getElementById('ticketModallocker').style.display='block'"><b>Locker</b></button>
-                        <button type="button" class="w3-button w3-padding-large w3-white w3-border w3-round-large" onclick="onagotado()"><b>Vestidor</b></button>
-                        <br>
-                        <div id="overlayagotado" onclick="offagotado()">
-                            <div id="textagotado">AGOTADO</div>
-                        </div> <br>
-                    </div>
+                    <p><b>Tepozspa</b></p>
+                    <p class="w3-opacity">Sábado 27 de febrero</p>
+                    <p>Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
+                    <button class="w3-button w3-black w3-margin-bottom" onclick="document.getElementById('ticketModallocker').style.display='block'">Locker</button>
                 </div>
             </div>
+
+            <br>
+            <div class="w3-third  w3-border ">
+
+                <div class=" w3-white w3-display-container w3-text-white">
+                    <img src="https://www.w3schools.com/w3images/newyork.jpg" alt="Lights" style="width:100%">
+                    <div class="w3-padding w3-display-topleft w3-container">
+                        <p>Top Left</p>
+                    </div>
+                    <div class="w3-padding w3-display-topright w3-container">
+                        <p>Top Right</p>
+                    </div>
+                    <div class="w3-padding w3-display-bottomleft w3-container">
+                        <p>Bottom Left</p>
+                    </div>
+                    <div class="w3-padding w3-display-bottomright w3-container">
+                        <p>Bottom Right</p>
+                    </div>
+                    <div class="w3-padding w3-display-left w3-container">
+                        <p>Left</p>
+                    </div>
+                    <div class="w3-padding w3-display-right w3-container">
+                        <p>Right</p>
+                    </div>
+                    <div class="w3-padding w3-display-middle w3-large">Middle</div>
+                    <div class="w3-padding w3-display-topmiddle w3-container">
+                        <p>Top Middle</p>
+                    </div>
+                    <div class="w3-padding w3-display-bottommiddle w3-container">
+                        <p>Bottom Middle</p>
+                    </div>
+                </div>
+
+                <br>
+
+                <div class="w3-container w3-white">
+                    <br>
+                    <p><b>New York</b></p>
+                    <p class="w3-opacity">Fri 27 Nov 2016</p>
+                    <p>Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
+                    <button class="w3-button w3-black w3-margin-bottom" onclick="document.getElementById('ticketModal').style.display='block'">Buy Tickets</button>
+                </div>
+            </div>
+
+
+            <div class="w3-third  w3-border ">
+
+                <div class=" w3-white w3-display-container w3-text-white">
+                    <img src="https://www.w3schools.com/w3images/newyork.jpg" alt="Lights" style="width:100%">
+                    <div class="w3-padding w3-display-topleft w3-container">
+                        <p>Top Left</p>
+                    </div>
+                    <div class="w3-padding w3-display-topright w3-container">
+                        <p>Top Right</p>
+                    </div>
+                    <div class="w3-padding w3-display-bottomleft w3-container">
+                        <p>Bottom Left</p>
+                    </div>
+                    <div class="w3-padding w3-display-bottomright w3-container">
+                        <p>Bottom Right</p>
+                    </div>
+                    <div class="w3-padding w3-display-left w3-container">
+                        <p>Left</p>
+                    </div>
+                    <div class="w3-padding w3-display-right w3-container">
+                        <p>Right</p>
+                    </div>
+                    <div class="w3-padding w3-display-middle w3-large">Middle</div>
+                    <div class="w3-padding w3-display-topmiddle w3-container">
+                        <p>Top Middle</p>
+                    </div>
+                    <div class="w3-padding w3-display-bottommiddle w3-container">
+                        <p>Bottom Middle</p>
+                    </div>
+                </div>
+
+
+
+                <div class="w3-container w3-white">
+                    <br>
+                    <p><b>Tepozspa</b></p>
+                    <p class="w3-opacity">Sábado 27 de febrero</p>
+                    <p>Viaje en tangas</p>
+                    <button type="button" class="w3-button w3-padding-large w3-white w3-border w3-round-large" onclick="document.getElementById('ticketModallocker').style.display='block'"><b>Locker</b></button>
+                    <button type="button" class="w3-button w3-padding-large w3-white w3-border w3-round-large" onclick="onagotado()"><b>Vestidor</b></button>
+                    <br>
+                    <div id="overlayagotado" onclick="offagotado()">
+                        <div id="textagotado">AGOTADO</div>
+                    </div> <br>
+                </div>
+            </div>
+
         </div>
     </div>
 
@@ -1154,57 +1166,137 @@
         </div>
     </div>
 
-    <!-- The Contact Section -->
-    <div class="w3-container w3-content w3-padding-64 " style="max-width:800px " id="contacto ">
-        <h2 class="w3-wide w3-center ">CONTACT0</h2>
-        <p class="w3-opacity w3-center "><i>Lo que pasa en el viaje, se queda en el viaje</i></p>
-        <div class="w3-row w3-padding-32 ">
-            <div class="w3-col m6 w3-large w3-margin-bottom ">
-                <i class="fa fa-map-marker " style="width:30px "></i> Punto de abordaje <br>
-                <i class="fa fa-phone " style="width:30px "></i> 55 3979 3727<br>
-                <i class="fa fa-envelope " style="width:30px "> </i> helloxiiber@gmail.com <br>
-            </div>
-            <div class="w3-col m6 ">
-                <form action="/action_page.php " target="_blank ">
-                    <div class="w3-row-padding " style="margin:0 -16px 8px -16px ">
-                        <div class="w3-half ">
-                            <input class="w3-input w3-border " type="text " placeholder="Nombre " required name="Name ">
-                        </div>
+</div>
 
-                        <div class="w3-half ">
-                            <input class="w3-input w3-border " type="text " placeholder="Email " required name="Email ">
-                        </div>
+<div class="w3-container w3-center">
+    <a href="https://twitter.com/xiibertravel" class="w3-button w3-padding-large w3-white w3-border w3-round-large" data-show-count="false" data-size="large" data-dnt="false"> <i class="fab fa-twitter "></i>
+        <b>@XiiberTravel</b></a>
+    <script>
+        ! function(d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (!d.getElementById(id)) {
+                js = d.createElement(s);
+                js.id = id;
+                js.src = "https://platform.twitter.com/widgets.js";
+                fjs.parentNode.insertBefore(js, fjs);
+            }
+        }(document, "script", "twitter-wjs");
+    </script>
+</div>
+<br>
+<div class="w3-container w3-center">
+    <a href="https://twitter.com/xiibertravel" class="twitter-follow-button data-show-count" data-show-count="false" data-size="large" data-dnt="false"> @XiiberTravel</a>
+    <script>
+        ! function(d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (!d.getElementById(id)) {
+                js = d.createElement(s);
+                js.id = id;
+                js.src = "https://platform.twitter.com/widgets.js";
+                fjs.parentNode.insertBefore(js, fjs);
+            }
+        }(document, "script", "twitter-wjs");
+    </script>
+</div>
+
+
+<!-- The Contact Section -->
+<div class="w3-container w3-content w3-padding-64 " style="max-width:800px " id="contacto ">
+    <h2 class="w3-wide w3-center ">CONTACT0</h2>
+    <p class="w3-opacity w3-center "><i>Lo que pasa en el viaje, se queda en el viaje</i></p>
+    <div class="w3-row w3-padding-32 ">
+        <div class="w3-col m6 w3-large w3-margin-bottom ">
+            <i class="fa fa-map-marker " style="width:30px "></i> Punto de abordaje <br>
+            <i class="fa fa-phone " style="width:30px "></i> 55 3979 3727<br>
+            <i class="fa fa-envelope " style="width:30px "> </i> helloxiiber@gmail.com <br>
+        </div>
+        <div class="w3-col m6 ">
+            <form action="/action_page.php " target="_blank ">
+                <div class="w3-row-padding " style="margin:0 -16px 8px -16px ">
+                    <div class="w3-half ">
+                        <input class="w3-input w3-border " type="text " placeholder="Nombre " required name="Name ">
                     </div>
-                    <input class="w3-input w3-border " type="text " placeholder="Mensaje " required name="Message ">
-                    <button class="w3-button w3-safety-blue w3-section w3-right " type="submit ">ENVIAR </button>
-                </form>
-            </div>
+
+                    <div class="w3-half ">
+                        <input class="w3-input w3-border " type="text " placeholder="Email " required name="Email ">
+                    </div>
+                </div>
+                <input class="w3-input w3-border " type="text " placeholder="Mensaje " required name="Message ">
+                <button class="w3-button w3-safety-blue w3-section w3-right " type="submit ">ENVIAR </button>
+            </form>
         </div>
     </div>
+</div>
 
 
 
+<div class="w3-container">
+    <h2>Mobile First Responsiveness</h2>
+    <p class="w3-large">Try to resize the window!</p>
+</div>
 
-
-    <div class="footerx ">
-        <div class="icon-bar ">
-            <a href="#regalate "><i class="fas fa-gift "></i></a>
-            <a href="#xiib "><i class="fas fa-mars-double "></i></a>
-            <a href="https://www.xiiber.com/ " target="_blank "><img src="https://pbs.twimg.com/media/EoaxehFWEAIKLgE?format=jpg&name=4096x4096 " alt="Xiiber Travel " width="39 " height="39 "></i>
-            </a>
-            <a href="#viajes "><i class=" fas fa-suitcase-rolling "></i></a>
-            <a href="#experiencias " title=" "><i class=" fas fa-ticket-alt "></i></a>
-        </div>
+<div class="w3-row w3-border">
+    <div class="w3-twothird w3-container w3-red">
+        <h2>w3-twothird</h2>
+        <p>The w3-twothird class uses 66% of the parent container.</p>
+        <p>On screens smaller than 601 pixels it resizes to full screen.</p>
     </div>
-    <!--  fab fa-youtube fab fa-google fab fa-twitter fab fa-facebook -->
+    <div class="w3-third w3-container">
+        <h2>w3-third</h2>
+        <p>The w3-twothird class uses 33% of parent container.</p>
+        <p>On screens smaller than 601 pixels it resizes to full screen.</p>
+    </div>
+</div>
+<br>
+
+<div class="w3-row w3-border">
+    <div class="w3-third w3-container">
+        <h2>w3-third</h2>
+        <p>The w3-twothird class uses 33% of parent container.</p>
+        <p>On screens smaller than 601 pixels it resizes to full screen.</p>
+    </div>
+    <div class="w3-twothird w3-container w3-red">
+        <h2>w3-twothird</h2>
+        <p>The w3-twothird class uses 66% of the parent container.</p>
+        <p>On screens smaller than 601 pixels it resizes to full screen.</p>
+    </div>
+</div>
+
+<h2>Responsive "Side-by-Side" Images</h2>
+<p>How to create side-by-side images with the CSS float property. On screens that are 500px wide or less, the images will stack on top of each other instead of next to each other:</p>
+<p>Resize the browser window to see the effect.</p>
+
+<div class="row">
+    <div class="column">
+        <img src="img_snow.jpg" alt="Snow" style="width:100%" class="responsive" width="600" height="100">
+    </div>
+    <div class="column">
+        <img src="img_forest.jpg" alt="Forest" style="width:100%  class=" responsive " width="600 " height="100 "">
+    </div>
+    <div class="column">
+        <img src="img_mountains.jpg" alt="Mountains" style="width:100%" class="responsive" width="600" height="100">
+    </div>
+</div>
 
 
 
-    <script src="./script.js "></script>
+<div class="footerx ">
+    <div class="icon-bar ">
+        <a href="#regalate "><i class="fas fa-gift "></i></a>
+        <a href="#xiib "><i class="fas fa-mars-double "></i></a>
+        <a href="https://www.xiiber.com/ "><img src="https://pbs.twimg.com/media/EoaxehFWEAIKLgE?format=jpg&name=4096x4096 " alt="Xiiber Travel " width="39 " height="39 "></i>
+        </a>
+        <a href="#viajes "><i class=" fas fa-suitcase-rolling "></i></a>
+        <a href="#experiencias " title=" "><i class=" fas fa-ticket-alt "></i></a>
+    </div>
+</div>
+<!--  fab fa-youtube fab fa-google fab fa-twitter fab fa-facebook -->
 
 
-    </body>
 
-</html>ody>
+<script src="./script.js "></script>
+
+
+</body>
 
 </html>
