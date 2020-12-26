@@ -1,0 +1,440 @@
+<!-- Diseño de @luisangelmaciel -->
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <title>Dragvesti La carrera drag online</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./dragvesti.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+
+    <style>
+        /* Make the image fully responsive */
+        
+        .carousel-inner img {
+            width: 100%;
+            height: 100%;
+        }
+        /* Borders */
+        
+        span {
+            display: inline-block;
+            width: 70px;
+            height: 70px;
+            margin: 6px;
+            background-color: #555;
+        }
+    </style>
+
+</head>
+
+<body>
+    <!-- Menu -->
+    <nav class="navbar navbar-expand-md bg-dark navbar-dark">
+        <a class="navbar-brand" href="#">
+            <b>Dragvesti</b></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+            <ul class="navbar-nav">
+
+                <!-- Dropdown -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+                        1ra temporada. <i>Edición Internacional</i> </a>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="#t1e1">Papel 1 de 2</a>
+                        <a class="dropdown-item" href="#">Papel 2 de 2</a>
+                        <a class="dropdown-item" href="#">Link 3</a>
+                    </div>
+                </li>
+
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+        2da temporada. <i>Edición México</i>
+      </a>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="#">Papel 1 de 2</a>
+                        <a class="dropdown-item" href="#">Papel 2 de 2</a>
+                        <a class="dropdown-item" href="#">Link 3</a>
+                    </div>
+                </li>
+
+
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+        3ra temporada. <i>Edición Internacional</i>
+      </a>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="#">Papel 1 de 2</a>
+                        <a class="dropdown-item" href="#">Papel 2 de 2</a>
+                        <a class="dropdown-item" href="#">Link 3</a>
+                    </div>
+                </li>
+
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+        All Star
+      </a>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="#">1ra temporada</a>
+                        <a class="dropdown-item" href="#">2da temporada</a>
+                    </div>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Participantes</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#"> Jurado</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#"> <i class="fas fa-heart"></i> </i>
+                    </a>
+                </li>
+
+            </ul>
+        </div>
+    </nav>
+    <br>
+    <!-- Dragvesti -->
+    <div class="container mt-3 ">
+        <div class="alert alert-success alert-dismissible">
+            <button type="button" class="close" data-dismiss="alert">&times;</button>
+            <strong>Success!</strong> Indicates a successful or positive action.
+        </div>
+    </div>
+
+
+    <div class="container mt-3">
+        <h2>Participantes</h2>
+        <div id="accordion">
+            <div class="card">
+                <div class="card-header">
+                    <a class="card-link" data-toggle="collapse" href="#collapseOne">
+            1ra Temporada. Edición Internacional <i class="fa fa-sort-down" style="font-size:16px;color:blue"></i>
+          </a>
+                </div>
+                <div id="collapseOne" class="collapse " data-parent="#accordion">
+                    <div class="card-body">
+                        <table class="table">
+                            <thead class="thead-dark ">
+                                <tr>
+                                    <th>Lugar</th>
+                                    <th>Pais</th>
+                                    <th>Nombre drag</th>
+                                    <th>Nombre real</th>
+                                    <th>Edad</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>1er</td>
+                                    <td>México</td>
+                                    <td>Iris XC Queen </td>
+                                    <td>Xavier Carreto</td>
+                                    <td>23 años</td>
+                                </tr>
+                                <tr>
+                                    <td>1er</td>
+                                    <td>México</td>
+                                    <td>Iris XC Queen</td>
+                                    <td>Xavier Carreto</td>
+                                    <td>23 años</td>
+                                </tr>
+                                <tr>
+                                    <td>1er</td>
+                                    <td>México</td>
+                                    <td>Iris XC Queen</td>
+                                    <td>Xavier Carreto</td>
+                                    <td>23 años</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header">
+                    <a class="collapsed card-link" data-toggle="collapse" href="#collapseTwo">
+                         2da Temporada. Edición México <i class="fa fa-sort-down" style="font-size:16px;color:blue"></i>
+                    </a>
+                </div>
+                <div id="collapseTwo" class="collapse" data-parent="#accordion">
+                    <div class="card-body">
+
+                        <div class="container mt-3 ">
+                            <h2>2da. Temporada.</h2>
+                            <h4><i>Edición México</i></h4>
+                            <p>The .thead-dark class adds a black background to table headers, and the .thead-light class adds a grey background to table headers:</p>
+
+                            <table class="table">
+                                <thead class="thead-light ">
+                                    <tr>
+                                        <th>Lugar</th>
+                                        <th>Pais</th>
+                                        <th>Nombre drag</th>
+                                        <th>Nombre real</th>
+                                        <th>Edad</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>1er</td>
+                                        <td>México</td>
+                                        <td>Iris XC Queen </td>
+                                        <td>Xavier Carreto</td>
+                                        <td>23 años</td>
+                                    </tr>
+                                    <tr>
+                                        <td>1er</td>
+                                        <td>México</td>
+                                        <td>Iris XC Queen</td>
+                                        <td>Xavier Carreto</td>
+                                        <td>23 años</td>
+                                    </tr>
+                                    <tr>
+                                        <td>1er</td>
+                                        <td>México</td>
+                                        <td>Iris XC Queen</td>
+                                        <td>Xavier Carreto</td>
+                                        <td>23 años</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header">
+                    <a class="collapsed card-link" data-toggle="collapse" href="#collapseThree">
+                        3ra Temporada. Edición Internacional<i class="fa fa-sort-down" style="font-size:16px;color:blue"></i>
+          </a>
+                </div>
+                <div id="collapseThree" class="collapse" data-parent="#accordion">
+                    <div class="card-body">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+    <div class="container mt-3" id="t1e1">
+        <h2>T1E1. Papel</h2>
+        <br>
+
+        <!-- Nav tabs -->
+        <ul class="nav nav-tabs">
+            <li class="nav-item">
+                <a class="nav-link active" data-toggle="tab" href="#home">
+                    <i class="fa fa-comment" style="font-size:20p;color:blue"></i>Resumen</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" data-toggle="tab" href="#t1e1iris"> <i class="fa fa-camera" style="font-size:20p;color:blue"></i>Sesión de fotos</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" data-toggle="tab" href="#t1e1dalila"> <i class="fa fa-film" style="font-size:20p;color:blue"></i>Lipsync</a>
+            </li>
+
+        </ul>
+
+        <!-- Tab panes -->
+        <div class="tab-content">
+
+            <div id="home" class="container tab-pane active"><br>
+                <h3>HOME</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            </div>
+
+
+
+            <div id="t1e1iris" class="container tab-pane fade"><br>
+                <h3>Menu 1</h3>
+                <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModalt1e1iris">
+    Iris
+  </button>
+                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModalextra">
+    Extra
+  </button>
+
+                <!-- The Modal iris -->
+                <div class="modal" id="myModalt1e1iris">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+
+                            <!-- Modal Header -->
+                            <div class="modal-header">
+                                <h5 class="modal-title">Iris</h5>
+                                <button type="button" class="close" data-dismiss="modal">×</button>
+                            </div>
+
+                            <!-- Modal body -->
+                            <div class="modal-body">
+
+                                <!-- inicio del div img carrusel -->
+                                <div id="demo" class="carousel slide" data-ride="carousel">
+                                    <ul class="carousel-indicators">
+                                        <li data-target="#demo" data-slide-to="0" class="active"></li>
+                                        <li data-target="#demo" data-slide-to="1"></li>
+                                        <li data-target="#demo" data-slide-to="2"></li>
+                                    </ul>
+                                    <div class="carousel-inner">
+                                        <div class="carousel-item active">
+                                            <img src="https://www.w3schools.com/bootstrap4/img_chania.jpg" alt="Los Angeles" width="230" height="172">
+                                            <div class="carousel-caption">
+                                                <h3>Los Angeles</h3>
+                                                <p>We had such a great time in LA!</p>
+                                            </div>
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img src="https://www.w3schools.com/bootstrap4/img_chania.jpg" alt="Chicago" width="230" height="172">
+                                            <div class="carousel-caption">
+                                                <h3>Chicago</h3>
+                                                <p>Thank you, Chicago!</p>
+                                            </div>
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img src="https://www.w3schools.com/bootstrap4/img_chania.jpg" alt="New York" width="1100" height="500">
+                                            <div class="carousel-caption">
+                                                <h3>New York</h3>
+                                                <p>We love the Big Apple!</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <a class="carousel-control-prev" href="#demo" data-slide="prev">
+                                        <span class="carousel-control-prev-icon"></span>
+                                    </a>
+                                    <a class="carousel-control-next" href="#demo" data-slide="next">
+                                        <span class="carousel-control-next-icon"></span>
+                                    </a>
+                                </div>
+                                <!-- fin del div img carrusel -->
+                                <br>
+                                <button type="button" class="btn btn-light"><i class="fa fa-star"></i></button>
+                                <button type="button" class="btn btn-light"><i class="fa fa-comment"></i></button>
+                                <button type="button" class="btn btn-light"><i class="fa fa-film"></i></button>
+                                <button type="button" class="btn btn-light"><i class="fa fa-user"></i></button>
+                                <button type="button" class="btn btn-light"><i class="fa fa-share-alt"></i></button>
+                                <button type="button" class="btn btn-light"><i class="fa fa-gift"></i></button>
+                                <button type="button" class="btn btn-light"><i class="fa fa-sort-down"></i></button>
+
+
+
+
+                                <br>
+
+                                <div class="container mt-3">
+                                    <div class="media shadow-lg  p-3">
+                                        <!-- shadow-sm -->
+                                        <img src="https://www.w3schools.com/bootstrap4/img_avatar3.png" alt="John Doe" class="mr-3 mt-3 rounded-circle" style="width:60px;">
+                                        <div class="media-body">
+                                            <h5>Iris XC Queen <small><i>Ganadora 1ra Dragvesti 1</i></small></h5>
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                                            <button type="button" class="btn btn-light"><i class="fa fa-star"></i></button>
+                                            <button type="button" class="btn btn-light"><i class="fa fa-comment"></i></button>
+                                            <button type="button" class="btn btn-light"><i class="fa fa-film"></i></button>
+                                            <button type="button" class="btn btn-light"><i class="fa fa-user"></i></button>
+                                            <button type="button" class="btn btn-light"><i class="fa fa-share-alt"></i></button>
+                                            <button type="button" class="btn btn-light"><i class="fa fa-gift"></i></button>
+                                            <button type="button" class="btn btn-light"><i class="fa fa-sort-down"></i></button>
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <br>
+                                <h6>Lipsync</h6>
+                                <div class="embed-responsive embed-responsive-21by9">
+                                    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/tgbNymZ7vqY"></iframe>
+                                </div>
+                                <br>
+
+                                <button type="button" class="btn btn-primary" data-toggle="collapse" data-target="#demoiris">Comentario Iris</button>
+                                <button type="button" class="btn btn-primary" data-toggle="collapse" data-target="#demodalila">Comentario Dalila</button>
+
+                                <div id="demoiris" class="collapse">
+                                    <blockquote class="blockquote"><br>
+                                        <p>For 50 years, WWF has been protecting the future of nature. The world's leading conservation organization, WWF works in 100 countries and is supported by 1.2 million members in the United States and close to 5 million
+                                            globally.
+                                        </p>
+                                        <footer class="blockquote-footer">Iris</footer>
+                                    </blockquote>
+                                </div>
+                                <div id="demodalila" class="collapse">
+                                    <blockquote class="blockquote"><br>
+                                        <p>For 50 years, WWF has been protecting the future of nature. The world's leading conservation organization, WWF works in 100 countries and is supported by 1.2 million members in the United States and close to 5 million
+                                            globally.
+                                        </p>
+                                        <footer class="blockquote-footer">Dalila Velvet</footer>
+                                    </blockquote>
+                                </div>
+
+                            </div>
+                            <!-- Modal footer -->
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- fin t1e1 -->
+
+
+
+            </div>
+
+
+            <div id="t1e1dalila" class="container tab-pane fade"><br>
+                <h3>Menu 2</h3>
+                <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p>
+            </div>
+
+            <div id="menu3" class="container tab-pane fade"><br>
+                <h3>Menu 3</h3>
+                <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p>
+            </div>
+
+        </div>
+
+        <br>
+        <!-- Tab panes -->
+        <div class="container">
+            <ul class="pagination justify-content-center">
+                <li class="page-item"><a class="page-link" href="javascript:void(0);">1ra Temporada</a></li>
+                <li class="page-item"><a class="page-link" href="javascript:void(0);">T1E1</a></li>
+                <li class="page-item"><a class="page-link" href="javascript:void(0);">T1E2</a></li>
+                <li class="page-item"><a class="page-link" href="javascript:void(0);">T1E3</a></li>
+            </ul>
+        </div>
+        <br>
+        <div class="progress">
+            <div class="progress-bar" style="width:10%"></div>
+        </div>
+        <br>
+
+
+</body>
+
+<script src="./dragvesti.js "></script>
+
+</html>
