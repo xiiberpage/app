@@ -5,6 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3pro.css">
 <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-safety-blue.css">
 
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
@@ -31,7 +32,7 @@
 
 <body>
     <!-- Nav -->
-    <nav class="w3-sidebar w3-bar-block w3-collapse w3-animate-left w3-card " style="z-index:3;width:250px;" id="mySidebar">
+    <nav class="w3-sidebar w3-bar-block w3-collapse w3-animate-left w3-card w3-padding-16" style="z-index:3;width:250px;" id="mySidebar">
 
         <a class="w3-bar-item w3-button w3-border-bottom w3-large w3-center" href="#"><img src="https://pbs.twimg.com/media/Emr2XxBXYAEhOS0?format=jpg&name=medium" style="width:80%;"></a>
         <a class="w3-bar-item w3-button w3-hide-large w3-large w3-center " href="javascript:void(0)" onclick="w3_close()"> <i class="fa fa-remove"></i> Cerrar <i class="fa fa-remove"></i></a>
@@ -95,7 +96,7 @@
     <!-- Contenedor principal -->
     <div class="w3-main" style="margin-left:250px;">
         <!-- Nav Top -->
-        <div id="myTop" class="w3-container w3-top w3-safety-blue w3-large">
+        <div id="myTop" class="w3-container w3-top w3-safety-blue  ">
             <p>
                 <i class="fa fa-bars w3-button w3-safety-blue w3-hide-large w3-large" onclick="w3_open()"></i>
                 <a href="#buscar"></a><i class="fa fa-search w3-button w3-safety-blue w3-hide-large w3-xlarge w3-right " id="Contacto"></i>
@@ -143,7 +144,10 @@
             </div>
         </div>
 
-
+        <div class="w3-container w3-card">
+            <h1>Phone App</h1>
+        </div>
+        <br>
 
         <!-- regalate de 4 -->
         <div class="w3-row-padding ">
@@ -888,6 +892,58 @@
         </div>
 
         <br>
+        <!--el de pruebas -->
+        <div class="w3-row w3-container">
+            <p>Inside a container:</p>
+            <div class="w3-col s4 w3-green w3-center">
+                <div class="w3-panel w3-border w3-round-large">
+                    <p>I have large rounded borders.</p>
+                </div>
+            </div>
+
+            <div class="w3-col s4 w3-dark-grey w3-center">
+                <div class="box-containercardflip2020 ">
+
+                    <div class="box-itemcardflip2020 ">
+                        <div class="flip-boxcardflip2020 ">
+                            <div class="flip-box-frontcardflip2020 text-centercardflip2020 " style="background-image: url( 'https://pbs.twimg.com/media/EjjzPLNXsAINz6A?format=jpg&name=large'); ">
+                                <div class="innercardflip2020 color-whitecardflip2020 ">
+                                    <br>
+                                    <br>
+                                    <h3 class="flip-box-headercardflip2020 ">Xiiber</h3>
+                                    <p>CG Travel ahora es Xiiber</p>
+                                    <img src="https://s25.postimg.cc/65hsttv9b/cta-arrow.png " alt=" " class="flip-box-imgcardflip2020 ">
+                                </div>
+                            </div>
+                            <div class="flip-box-backcardflip2020 text-centercardflip2020 " style="background-image: url( 'https://pbs.twimg.com/media/EjjzPL9XYAAa5a3?format=jpg&name=large'); ">
+                                <div class="innercardflip2020 color-whitecardflip2020 ">
+                                    <br>
+                                    <br>
+                                    <h3 class="flip-box-headercardflip2020 ">Xiiber</h3>
+                                    <p>CG Travel ahora es Xiiber</p>
+                                    <button class="flip-box-buttoncardflip2020 " onclick="document.getElementById('pib1').style.display='block'">Learn More</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="w3-col s4 w3-red w3-center">
+                <p>W3.CSS is a modern CSS framework with built-in responsiveness:</p>
+
+                <ul class="w3-leftbar w3-theme-border" style="list-style:none">
+                    <li>Smaller and faster than other CSS frameworks.</li>
+                    <li>Easier to learn, and easier to use than other CSS frameworks.</li>
+                    <li>Uses standard CSS only (No jQuery or JavaScript library).</li>
+                    <li>Speeds up mobile HTML apps.</li>
+                    <li>Provides CSS equality for all devices. PC, laptop, tablet, and mobile:</li>
+                </ul>
+                <br>
+                <img src="https://www.w3schools.com/w3css/img_responsive.png" style="width:100%" alt="Responsive">
+
+            </div>
+        </div>
+
         <!--producto opening-->
         <div class=" w3-white w3-display-container w3-text-white">
             <img src="https://pbs.twimg.com/media/EpiFbdpW4AM1dBF?format=jpg&name=4096x4096" style="width:100%">
@@ -1556,8 +1612,11 @@
                         Sábado 27 febrero</b></p>
                     </div>
                     <div class="w3-padding w3-display-bottomright w3-container ">
-                        <button type="button" class="w3-button w3-padding-large w3-white w3-border w3-round-large" onclick="document.getElementById('ticketModallockerx').style.display='block'"><b>Locker</b></button>
+                        <button type="button" class="w3-button w3-small w3-white w3-border w3-round-large" onclick="document.getElementById('ticketModallockerx').style.display='block'"><b>Locker</b></button>
                         <button type="button" class="w3-button w3-padding-large w3-white w3-border w3-round-large" onclick="onagotado()"><b>Vestidor</b></button>
+
+                        <button class="button w3-border w3-small w3-round-large" style="vertical-align:middle"><span><b>Quizz</b> </span></button><br>
+
                         <br>
                         <div id="overlayagotado" onclick="offagotado()">
                             <div id="textagotado">AGOTADO</div>
@@ -1573,7 +1632,29 @@
             </div>
 
             <div class="w3-quarter w3-container ">
-                <p></p>
+                <div class="w3-card-4 " style="width:60%">
+
+                    <div class="w3-container w3-padding-16 ">
+
+                        <img src="https://pbs.twimg.com/media/EpiFbdpW4AM1dBF?format=jpg&name=4096x4096" alt="Avatar" class="w3-left " style="width:140px">
+
+
+                        <ul class="w3-ul  w3-white">
+                            <li class="w3-padding-14">
+
+                                <span class="w3-large"><b>Poppers </b></span><br>
+                                <span class="w3-medium">$50.00</span><br>
+                                <span class="w3-small" style="color:#4d4d4d" ;>6 MSI con tarjetas participantes</span><br>
+
+                            </li>
+                        </ul>
+
+                        <button class="w3-button w3-circle w3-black">+</button>
+                        <button class="w3-button  w3-red">+</button>
+                        <button class="w3-button w3-green">Lo quiero</button>
+                    </div>
+
+                </div>
             </div>
 
             <div class="w3-quarter w3-container ">
@@ -1663,10 +1744,158 @@
 
 
 
+        <div class="w3-container">
+            <h2>Two Equal Columns</h2>
+            <p>Two equal-width columns (50%/50%) on all screen sizes:</p>
+        </div>
 
 
 
+        <div class="w3-row w3-container">
+            <p>Inside a container:</p>
+            <div class="w3-col s6 ">
+                <div class="w3-card-4 " style="width:100%">
 
+                    <div class="w3-container w3-padding-16 ">
+
+                        <img src="https://pbs.twimg.com/media/EpiFbdpW4AM1dBF?format=jpg&name=4096x4096" alt="Avatar" class="w3-left " style="width:140px">
+
+
+                        <ul class="w3-ul  w3-white">
+                            <li class="w3-padding-14">
+
+                                <span class="w3-large"><b>Poppers </b></span><br>
+                                <span class="w3-medium">$50.00</span><br>
+                                <span class="w3-small" style="color:#4d4d4d" ;>6 MSI con tarjetas participantes</span><br>
+
+                            </li>
+                        </ul>
+
+                        <button class="w3-button w3-circle w3-black">+</button>
+                        <button class="w3-button  w3-red">+</button>
+                        <button class="w3-button w3-green">Lo quiero</button>
+                    </div>
+
+                </div>
+            </div>
+            <div class="w3-col s6 ">
+                <div class="w3-card-4 " style="width:100%">
+
+                    <div class="w3-container w3-padding-16 ">
+
+                        <img src="https://pbs.twimg.com/media/EpiFbdpW4AM1dBF?format=jpg&name=4096x4096" alt="Avatar" class="w3-left " style="width:140px">
+
+
+                        <ul class="w3-ul  w3-white">
+                            <li class="w3-padding-14">
+
+                                <span class="w3-large"><b>Poppers </b></span><br>
+                                <span class="w3-medium">$50.00</span><br>
+                                <span class="w3-small" style="color:#4d4d4d" ;>6 MSI con tarjetas participantes</span><br>
+
+                            </li>
+                        </ul>
+
+                        <button class="w3-button w3-circle w3-black">+</button>
+                        <button class="w3-button  w3-red">+</button>
+                        <button class="w3-button w3-green">Lo quiero</button>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+
+
+        <div class="w3-container">
+            <h2>Card Example</h2>
+
+            <div class="w3-card-4 w3-round-large  " style="width:40%">
+
+                <div class="w3-container w3-center w3-border w3-hover-border-red ">
+                    <h3>Friend Request</h3>
+                    <img src="https://www.w3schools.com/w3css/img_avatar3.png" alt="Avatar" style="width:90%">
+                    <p class="w3-small w3-padding-small">w3-small</p>
+                    <h5>John Doe</h5>
+
+                    <p class="w3-medium ">w3-medium (Default)</p>
+                    <p class="w3-large">w3-large</p>
+
+                    <div class="w3-section">
+                        <button class="w3-button w3-green">Accept</button>
+                        <button class="w3-button w3-red">Decline</button>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="w3-container w3-card">
+            <h1>Movies</h1>
+        </div>
+
+        <div class="w3-container">
+            <hr>
+            <div class="w3-card-4 " style="width:100%">
+
+                <div class="w3-container w3-padding-16 ">
+
+                    <img src="https://pbs.twimg.com/media/EpiFbdpW4AM1dBF?format=jpg&name=4096x4096" alt="Avatar" class="w3-left " style="width:140px">
+
+
+                    <ul class="w3-ul  w3-white">
+                        <li class="w3-padding-14">
+
+                            <span class="w3-large"><b>Poppers </b></span><br>
+                            <span class="w3-medium">$50.00</span><br>
+                            <span class="w3-small" style="color:#4d4d4d" ;>6 MSI con tarjetas participantes</span><br>
+
+                        </li>
+                    </ul>
+
+                    <button class="w3-button w3-circle w3-black">+</button>
+                    <button class="w3-button  w3-red">+</button>
+                    <button class="w3-button w3-green">Lo quiero</button>
+                </div>
+
+            </div>
+            <hr>
+            <div class="w3-cell-row">
+                <div class="w3-cell" style="width:30%">
+                    <img src="img_avatar.jpg" style="width:100%">
+                </div>
+                <div class="w3-cell w3-container">
+                    <h3>Frozen</h3>
+                    <p>The response to the animations was ridiculous.</p>
+                </div>
+            </div>
+            <hr>
+            <div class="w3-cell-row">
+                <div class="w3-cell" style="width:30%">
+                    <img src="img_avatar.jpg" style="width:100%">
+                </div>
+                <div class="w3-cell w3-container">
+                    <h3>The Fault in Our Stars</h3>
+                    <p>Touching, gripping and genuinely well made.</p>
+                </div>
+            </div>
+            <hr>
+            <div class="w3-cell-row">
+                <div class="w3-cell" style="width:30%">
+                    <img src="img_avatar.jpg" style="width:100%">
+                </div>
+                <div class="w3-cell w3-container">
+                    <h3>The Avengers</h3>
+                    <p>A huge success for Marvel and Disney.</p>
+                </div>
+            </div>
+            <hr>
+        </div>
+
+        <div class="w3-container">
+            <h3>Footer</h3>
+        </div>
 
 
         <!-- inicio -->
@@ -1741,5 +1970,7 @@
 </body>
 <script src="./script.js "></script>
 
+
+</html>
 
 </html>
