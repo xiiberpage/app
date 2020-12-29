@@ -1,0 +1,856 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Ejem</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+
+
+    <link rel="stylesheet" type="text/css" href="Semantic-UI-CSS-master/semantic.min.css">
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+    <script src="Semantic-UI-CSS-master/semantic.min.js"></script>
+
+
+
+    <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-safety-blue.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Paytone+One">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+
+
+
+
+    <style>
+        /* Make the image fully responsive */
+        
+        .carousel-inner img {
+            width: 100%;
+            height: 100%;
+        }
+        
+        .footerx {
+            position: fixed;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            background-color: white;
+            color: white;
+            text-align: center;
+        }
+        
+        .icon-bar a {
+            float: left;
+            width: 20%;
+            text-align: center;
+            padding: 10px 10px;
+            transition: all 0.3s ease;
+            color: #bfbfbf;
+            font-size: 30px;
+            background-color: #ffffff;
+        }
+        /* Darker background on mouse-over */
+        
+        .btnslc:hover {
+            background-color: #f2f2f2
+        }
+        
+        h1pride {
+            margin-top: 0%;
+            line-height: 100px;
+            font-size: 100px;
+            font-family: 'Paytone One', sans-serif;
+            text-align: center;
+            background: linear-gradient( to right, #ff1616, #ff7716, #ffdc16, #36c945, #10a5ce, #0f0096, #a51eff, #ff1616);
+            background-clip: text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-size: 300px;
+            background-position: center 0%;
+            animation: background-slide 25s infinite linear;
+        }
+        
+        @keyframes background-slide {
+            100% {
+                background-position: -8160px;
+            }
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-md bg-dark navbar-dark">
+        <a class="navbar-brand" href="#">Navbar</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Link</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Link</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Link</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+
+    <br>
+
+    <div class="container-fluid">
+        <div class="row">
+            <!-- 1 de 3 vacio -->
+            <div class="col-sm ">a</div>
+            <!-- 2 de 3 principal -->
+            <div class="col-sm ">
+                <!-- Alerta amarilla --><br>
+                <div class="alert alert-warning alert-dismissible">
+                    <button type="button" class="close" data-dismiss="alert">&times;</button>
+                    <strong><i class="fas fa-heart"></i> Se acaban!</strong> Ultimos lugares. Recuerda Sana distancia.
+                </div>
+                <!-- Alerta roja --><br>
+                <div class="alert alert-danger alert-dismissible">
+                    <button type="button" class="close" data-dismiss="alert">&times;</button>
+                    <strong><i class="fas fa-heart"></i> Se acabaron! </strong> Se acabaron los boletos
+                </div>
+                <!-- Xiib --><br>
+                <div class="ui comments" wfd-id="183">
+                    <div class="comment" wfd-id="184">
+                        <a class="avatar">
+                            <img src="https://semantic-ui.com/images/avatar/small/stevie.jpg">
+                        </a>
+                        <div class="content" wfd-id="185">
+                            <a class="author">Stevie Feliciano</a>
+                            <div class="metadata" wfd-id="187">
+                                <div class="date" wfd-id="189">2 days ago</div>
+                                <div class="rating" wfd-id="188">
+                                    <i class="star icon"></i> 5 Faves
+                                </div>
+                            </div>
+                            <div class="text" wfd-id="186">
+                                Hey guys, I hope this example comment is helping you read this documentation.
+                            </div>
+                            <div class="actions" wfd-id="180">
+                                <a class="reply">Reply</a>
+                                <a class="save">Save</a>
+                                <a class="hide">Hide</a>
+                                <a>
+                                    <i class="expand icon"></i> Full-screen
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Float --><br>
+                <div class="container-fluid pt-3" style="margin-top:80px">
+                    <div class="clearfix">
+                        <span class="float-left">  <div class="ui heart rating" data-rating="1" data-max-rating="3"></div></span>
+                        <span class="float-right">Float right</span>
+                    </div>
+                </div>
+                <h3 class="text-center">
+                    <h1pride>PRIDE</h1pride>
+                </h3>
+
+                <h2 class="ui center aligned icon header">
+                    <i class="circular users icon"></i> Friends
+                </h2>
+
+                <h6>Example heading <span class="badge badge-success">New</span></h6>
+                <p>A fixed navigation bar stays visible in a fixed position (top or bottom) independent of the page scroll. </p>
+
+                <h4 class="ui horizontal divider header">
+                    <i class="tag icon"></i> Description
+                </h4>
+                <p>Doggie treats are good for all times of the year. Proven to be eaten by 99.9% of all dogs worldwide.</p>
+                <h4 class="ui horizontal divider header">
+                    <i class="bar chart icon"></i> Specifications
+                </h4>
+                <table class="ui definition table">
+                    <tbody>
+                        <tr>
+                            <td class="two wide column">Size</td>
+                            <td>1" x 2"</td>
+                        </tr>
+                        <tr>
+                            <td>Weight</td>
+                            <td>6 ounces</td>
+                        </tr>
+                        <tr>
+                            <td>Color</td>
+                            <td>Yellowish</td>
+                        </tr>
+                        <tr>
+                            <td>Odor</td>
+                            <td>Not Much Usually</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+
+                <h2 class="ui header">
+                    <i class="settings icon"></i>
+                    <div class="content" wfd-id="43">
+                        Account Settings
+                        <div class="sub header" wfd-id="44">Manage your preferences</div>
+                    </div>
+                </h2>
+
+                <div class="spinner-grow text-muted"></div>
+                <div class="spinner-grow text-primary"></div>
+                <div class="spinner-grow text-success"></div>
+                <div class="spinner-grow text-info"></div>
+                <div class="spinner-grow text-warning"></div>
+                <div class="spinner-grow text-danger"></div>
+                <div class="spinner-grow text-secondary"></div>
+                <div class="spinner-grow text-dark"></div>
+                <div class="spinner-grow text-light"></div>
+
+                <br>
+
+
+
+                <br>
+
+                <div class="column " wfd-id="100 ">
+                    <div class="ui raised segment " wfd-id="101 ">
+                        <button class="ui icon button" wfd-id="352">
+                            <i class="info circle icon"></i>
+                          </button>
+                        <div class="ui animated button" tabindex="0" wfd-id="115">
+                            <div class="visible content" wfd-id="117"><i class="info circle icon"></i></div>
+                            <div class="hidden content" wfd-id="116">
+                                <i class="right arrow icon"></i>
+                            </div>
+                        </div>
+
+                        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">Locker</button>
+                        <button type="button" class="btn btn-primary">Vestidor</button>
+                        <button type="button" class="btn btn-light"><i class="fas fa-heart"></i></h1></button>
+                        <div class="ui rating" data-max-rating="1"></div><br>
+                    </div>
+                </div>
+                <br>
+
+                <div class="media  p-3">
+                    <div class="ui two column grid" wfd-id="89">
+                        <div class="column" wfd-id="93">
+                            <div class="ui fluid image" wfd-id="94">
+                                <div class="ui black ribbon label" wfd-id="95">
+                                    <i class="hotel icon"></i> Hotel
+                                </div>
+                                <img src="https://semantic-ui.com/images/wireframe/image.png">
+                            </div>
+                        </div>
+                        <div class="column" wfd-id="90">
+                            <div class="ui fluid image" wfd-id="91">
+                                <div class="ui blue ribbon label" wfd-id="92">
+                                    <i class="spoon icon"></i> Experiencia
+                                </div>
+                                <img src="https://semantic-ui.com/images/wireframe/image.png">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <br>
+                <div class="media  p-3">
+                    <div class="ui two column grid" wfd-id="89">
+                        <div class="column" wfd-id="93">
+                            <div class="ui fluid image" wfd-id="94">
+                                <div class="ui black ribbon label" wfd-id="95">
+                                    <i class="hotel icon"></i> Hotel
+                                </div>
+                                <img src="https://semantic-ui.com/images/wireframe/image.png">
+                            </div>
+                        </div>
+                        <div class="column" wfd-id="90">
+                            <div class="ui fluid image" wfd-id="91">
+                                <div class="ui blue ribbon label" wfd-id="92">
+                                    <i class="spoon icon"></i> Experiencia
+                                </div>
+                                <img src="https://semantic-ui.com/images/wireframe/image.png">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="column " wfd-id="100 ">
+                    <div class="ui raised segment " wfd-id="101 ">
+                        <div class="ui unstackable items " wfd-id="126 ">
+
+                            <div class="item " wfd-id="127 ">
+                                <div class="image " wfd-id="133 ">
+
+                                    <img src="https://semantic-ui.com/images/wireframe/image.png "> <br>
+                                    <div class="ui star rating"></div>
+                                    <span class="badge badge-danger">Ultimos lugares</span>
+
+
+                                </div>
+                                <div class="content " wfd-id="128 ">
+                                    <i class="right floated like icon"></i>
+
+
+                                    <div class="meta " wfd-id="131 ">
+                                        <h4><b>Tepozspa</b> <small><i class="text-muted">Viaje en tangas</i></small></h4>
+                                        <h5 class="blue"><b>Sábado 27 de febrero</b></h5>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.<a href="#" class="text-decoration-none">A link without underline.</a> </p><br>
+                                        <div class="ui buttons " wfd-id="76 ">
+                                            <button class="ui blue button " wfd-id="287 " data-toggle="modal " data-target="#myModal ">Locker</button>
+                                            <div class="or " data-text="o " wfd-id="77 "> </div>
+                                            <button class="ui violet button " wfd-id="286 ">vestidor</button>
+                                        </div>
+
+
+
+
+                                    </div>
+
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+
+
+                <br>
+
+                <br>
+                <div class="ui card" wfd-id="183">
+                    <div class="content" wfd-id="187">
+                        <i class="right floated like icon"></i>
+
+                        <div class="header" wfd-id="189">Tepozspa</div>
+                        <div class="description" wfd-id="188">
+                            <p>Viaje en tangas</p>
+                            <div class="center">
+                                <div class=" ui fluid image " wfd-id="94 ">
+                                    <div class="ui black ribbon label " wfd-id="95 ">
+                                        <i class="hotel icon "></i> 27 de febrero
+                                    </div>
+                                    <img src="https://semantic-ui.com/images/wireframe/image.png ">
+                                </div>
+                            </div>
+                            <br>
+                            <h6 class="text-secondary ">Viaje en tangas <span class="badge badge-danger ">Ultimos lugares</span></h6>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.<a href="# " class="text-decoration-none ">A link without underline.</a></p>
+
+                            <br>
+
+
+                            <div class="ui buttons " wfd-id="76 ">
+                                <button class="ui button " wfd-id="287 " data-toggle="modal " data-target="#myModal ">Locker</button>
+                                <div class="or " data-text="o " wfd-id="77 "></div>
+                                <button class="ui positive button " wfd-id="286 ">vestidor</button>
+                            </div>
+                            <br>
+
+
+
+                        </div>
+                    </div>
+                    <div class="extra content " wfd-id="184 ">
+                        <span class="left floated like " wfd-id="186 ">
+                            <div class="ui heart rating " data-rating="1 " data-max-rating="3 "></div>
+                        Like
+                      </span>
+                        <span class="right floated star " wfd-id="185 ">
+                            <div class="ui star rating "></div>
+                        Favorite
+                      </span>
+                    </div>
+                </div>
+                <br>
+
+                <br>
+                <button class="ui facebook button" wfd-id="280">
+                    <i class="facebook icon"></i>
+                    Facebook
+                  </button>
+                <button class="ui twitter button" wfd-id="279">
+                    <i class="twitter icon"></i>
+                    Twitter
+                  </button>
+                <button class="ui google plus button" wfd-id="278">
+                    <i class="google plus icon"></i>
+                    Google Plus
+                  </button>
+
+
+                <button class="ui instagram button" wfd-id="275">
+                    <i class="instagram icon"></i>
+                    Instagram
+                  </button>
+                <button class="ui youtube button" wfd-id="274">
+                    <i class="youtube icon"></i>
+                    YouTube
+                  </button>
+                <br>
+
+
+                <br>
+
+                <br>
+
+                <br>
+
+
+                <br>
+                <div class="ui icon message " wfd-id="108 ">
+                    <i class="inbox icon "></i>
+                    <div class="content " wfd-id="109 ">
+                        <div class="header " wfd-id="110 ">
+                            Have you heard about our mailing list?
+                        </div>
+                        <p>Get the best news in your e-mail every day.</p>
+                    </div>
+                </div>
+                <br>
+                <table class="ui celled padded table ">
+                    <thead>
+                        <tr>
+                            <th class="single line ">Evidence Rating</th>
+                            <th>Effect</th>
+                            <th>Efficacy</th>
+                            <th>Consensus</th>
+                            <th>Comments</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>
+                                <h2 class="ui center aligned header ">A</h2>
+                            </td>
+
+                            <td class="single line ">
+                                Power Output
+                            </td>
+                            <td>
+                                <div class="ui star rating " data-rating="3 " data-max-rating="3 "></div>
+                            </td>
+                            <td class="right aligned ">
+                                80% <br>
+                                <a href="# ">18 studies</a>
+                            </td>
+                            <td>Creatine supplementation is the reference compound for increasing muscular creatine levels; there is variability in this increase, however, with some nonresponders.</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <h2 class="ui center aligned header ">A</h2>
+                            </td>
+                            <td class="single line ">
+                                Weight
+                            </td>
+                            <td>
+                                <div class="ui star rating " data-rating="3 " data-max-rating="3 "></div>
+                            </td>
+                            <td class="right aligned ">
+                                100% <br>
+                                <a href="# ">65 studies</a>
+                            </td>
+                            <td>Creatine is the reference compound for power improvement, with numbers from one meta-analysis to assess potency</td>
+                        </tr>
+                    </tbody>
+                    <tfoot>
+                        <tr>
+                            <th colspan="5 ">
+                                <div class="ui right floated pagination menu ">
+                                    <a class="icon item ">
+                                        <i class="left chevron icon "></i>
+                                    </a>
+                                    <a class="item ">1</a>
+                                    <a class="item ">2</a>
+                                    <a class="item ">3</a>
+                                    <a class="item ">4</a>
+                                    <a class="icon item ">
+                                        <i class="right chevron icon "></i>
+                                    </a>
+                                </div>
+                            </th>
+                        </tr>
+                    </tfoot>
+                </table>
+                <br>
+                <div class="ui six doubling cards " wfd-id="19 ">
+                    <div class="card " wfd-id="30 ">
+                        <div class="image " wfd-id="31 ">
+                            <img src="https://semantic-ui.com/images/avatar/large/elliot.jpg ">
+                        </div>
+                    </div>
+                    <div class="card " wfd-id="28 ">
+                        <div class="image " wfd-id="29 ">
+                            <img src="https://semantic-ui.com/images/avatar/large/elliot.jpg ">
+                        </div>
+                    </div>
+                    <div class="card " wfd-id="26 ">
+                        <div class="image " wfd-id="27 ">
+                            <img src="https://semantic-ui.com/images/avatar/large/elliot.jpg ">
+                        </div>
+                    </div>
+                    <div class="card " wfd-id="24 ">
+                        <div class="image " wfd-id="25 ">
+                            <img src="https://semantic-ui.com/images/avatar/large/elliot.jpg ">
+                        </div>
+                    </div>
+                    <div class="card " wfd-id="22 ">
+                        <div class="image " wfd-id="23 ">
+                            <img src="https://semantic-ui.com/images/avatar/large/elliot.jpg ">
+                        </div>
+                    </div>
+                    <div class="card " wfd-id="20 ">
+                        <div class="image " wfd-id="21 ">
+                            <img src="https://semantic-ui.com/images/avatar/large/elliot.jpg ">
+                        </div>
+                    </div>
+                </div><br>
+                <div class="ui circular segment " wfd-id="34 ">
+                    <h2 class="ui header ">
+                        Buy Now
+                        <div class="sub header " wfd-id="35 ">$10.99</div>
+                    </h2>
+                </div>
+                <div class="ui inverted circular segment " wfd-id="32 ">
+                    <h2 class="ui inverted header ">
+                        Buy Now
+                        <div class="sub header " wfd-id="33 ">$10.99</div>
+                    </h2>
+                </div>
+                <br>
+                <div class="ui small circular rotate reveal image " wfd-id="39 ">
+                    <img src="https://semantic-ui.com/images/avatar/large/stevie.jpg " class="visible content ">
+                    <img src="https://semantic-ui.com/images/wireframe/square-image.png " class="hidden content ">
+                </div>
+                <br>
+                <div class="ui icon message " wfd-id="108 ">
+                    <i class="inbox icon "></i>
+                    <div class="content " wfd-id="109 ">
+                        <div class="header " wfd-id="110 ">
+
+                            Have you heard about our mailing list?
+                        </div>
+                        <p>Get the best news in your e-mail every day.</p>
+                    </div>
+                </div>
+                <br>
+                <div class="column " wfd-id="100 ">
+                    <div class="ui raised segment " wfd-id="101 ">
+                        <a class="ui red ribbon label ">Overview</a>
+                        <span wfd-id="102 ">Account Details</span>
+                        <p>fsda </p>
+                        <a class="ui blue ribbon label ">Community</a> User Reviews
+                        <p>fafa</p>
+                        <div class="ui tag labels " wfd-id="21 ">
+                            <a class="ui label ">
+                              $10.00
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <br>
+                <div class="ui unstackable items " wfd-id="126 ">
+                    <div class="item " wfd-id="134 ">
+                        <div class="image " wfd-id="140 ">
+                            <img src="https://semantic-ui.com/images/wireframe/image.png ">
+                        </div>
+                        <div class="content " wfd-id="135 ">
+                            <a class="header ">Header</a>
+                            <div class="meta " wfd-id="138 ">
+                                <span wfd-id="139 ">Description</span>
+                            </div>
+                            <div class="description " wfd-id="137 ">
+                                <p></p>
+                                <button class="circular ui icon button " wfd-id="243 ">
+                                    <i class="icon settings "></i>
+                                  </button>
+                            </div>
+                            <div class="extra " wfd-id="136 ">
+                                Additional Details
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item " wfd-id="127 ">
+                        <div class="image " wfd-id="133 ">
+                            <img src="https://semantic-ui.com/images/wireframe/image.png ">
+                        </div>
+                        <div class="content " wfd-id="128 ">
+                            <a class="header ">Header</a>
+                            <div class="meta " wfd-id="131 ">
+                                <span wfd-id="132 ">Description</span>
+                            </div>
+                            <div class="description " wfd-id="130 ">
+                                <p></p>
+                            </div>
+                            <div class="extra " wfd-id="129 ">
+                                Additional Details
+                            </div>
+                            <div class="extra " wfd-id="117 ">
+                                <div class="ui label " wfd-id="119 ">IMAX</div>
+                                <div class="ui label " wfd-id="118 "><i class="globe icon "></i> Additional Languages</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <br>
+
+
+                <br>
+
+
+
+                <!-- The Modal lockwer -->
+                <div class="modal fade " id="myModal ">
+                    <div class="modal-dialog modal-dialog-centered ">
+                        <div class="modal-content ">
+
+                            <!-- Modal Header -->
+                            <div class="modal-header ">
+                                <h4 class="modal-title ">Modal Heading</h4>
+                                <button type="button " class="close " data-dismiss="modal ">&times;</button>
+                            </div>
+
+                            <!-- Modal body -->
+                            <div class="modal-body ">
+                                <div class="ui card " data-html="<div class='header'>User Rating</div>
+                <div class='content'>
+                    <div class='ui star rating'><i class='active icon'></i><i class='active icon'></i><i class='active icon'></i><i class='active icon'></i><i class='active icon'></i></div>
+                </div>" wfd-id="72">
+                                    <div class="image" wfd-id="79">
+                                        <img src="https://semantic-ui.com/images/movies/totoro-horizontal.jpg">
+                                    </div>
+                                    <div class="content" wfd-id="76">
+                                        <div class="header" wfd-id="78">My Neighbor Totoro</div>
+                                        <div class="description" wfd-id="77">
+                                            Two sisters move to the country with their father in order to be closer to their hospitalized mother, and discover the surrounding trees are inhabited by magical spirits.
+                                        </div>
+                                    </div>
+                                    <div class="ui two bottom attached buttons" wfd-id="73">
+                                        <div class="ui button" wfd-id="75">
+                                            <i class="add icon"></i> Queue
+                                        </div>
+                                        <div class="ui primary button" wfd-id="74">
+                                            <i class="play icon"></i> Watch
+                                        </div>
+                                    </div>
+                                </div>
+                                <br>
+                                <form>
+                                    <label for="customRange">Qué tanto te gusta</label>
+                                    <input type="range" class="custom-range" id="customRange" name="points1">
+                                </form>
+                                <br>
+                                <div id="demo" class="carousel slide" data-ride="carousel">
+                                    <ul class="carousel-indicators">
+                                        <li data-target="#demo" data-slide-to="0" class="active"></li>
+                                        <li data-target="#demo" data-slide-to="1"></li>
+                                        <li data-target="#demo" data-slide-to="2"></li>
+                                    </ul>
+                                    <div class="carousel-inner">
+                                        <div class="carousel-item active">
+                                            <img src="https://pbs.twimg.com/media/EpiFbdpW4AM1dBF?format=jpg&name=4096x4096" alt="Los Angeles" width="1100" height="500">
+                                            <div class="carousel-caption">
+                                                <h3>Los Angeles</h3>
+                                                <p>We had such a great time in LA!</p>
+                                            </div>
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img src="https://pbs.twimg.com/media/EpiFbdpW4AM1dBF?format=jpg&name=4096x4096" alt="Chicago" width="1100" height="500">
+                                            <div class="carousel-caption">
+                                                <h3>Chicago</h3>
+                                                <p>Thank you, Chicago!</p>
+                                            </div>
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img src="https://pbs.twimg.com/media/EpiFbdpW4AM1dBF?format=jpg&name=4096x4096" alt="New York" width="1100" height="500">
+                                            <div class="carousel-caption">
+                                                <h3>New York</h3>
+                                                <p>We love the Big Apple!</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <a class="carousel-control-prev" href="#demo" data-slide="prev">
+                                        <span class="carousel-control-prev-icon"></span>
+                                    </a>
+                                    <a class="carousel-control-next" href="#demo" data-slide="next">
+                                        <span class="carousel-control-next-icon"></span>
+                                    </a>
+                                </div><br>
+                                < <!-- Collapse --><br>
+                                    <a href="#demo" class="btn btn-primary" data-toggle="collapse">Más información</a>
+                                    <div id="demo" class="collapse">
+                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                                        <br>
+                                        <div class="container">
+                                            <a href="#" data-toggle="tooltip" title="Hooray!">Toca aqui</a>
+                                        </div>
+                                        <ul class="list-group">
+                                            <li class="list-group-item d-flex justify-content-between align-items-center">
+                                                Acapulco
+                                                <span class="badge badge-primary badge-pill">12</span>
+                                            </li>
+                                            <li class="list-group-item d-flex justify-content-between align-items-center">
+                                                Tepozspa
+                                                <span class="badge badge-primary badge-pill">50</span>
+                                            </li>
+                                            <li class="list-group-item d-flex justify-content-between align-items-center">
+                                                Zipolite
+                                                <span class="badge badge-primary badge-pill">99</span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <!-- Progress --><br>
+                                    <div class="progress">
+                                        <div class="progress-bar" style="width:70%"></div>
+                                    </div>
+                                    <!-- 3 imagenes --><br>
+                                    <div class="container mt-3">
+                                        <h2>List Group With Badges</h2>
+
+                                        <div class="row">
+                                            <div class="col">
+                                                <img class="img-fluid mx-auto d-block" "  src="https://pbs.twimg.com/media/EpiFbdpW4AM1dBF?format=jpg&name=4096x4096 " alt="Chania " width="300 " height="300 "> 
+                                                    </div>
+                                      
+                                          
+                                      <div class="col " >
+                                      <img class="img-fluid mx-auto d-block rounded "  src="https://pbs.twimg.com/media/EpiFbdpW4AM1dBF?format=jpg&name=4096x4096 " alt="Chania " width="300 " height="300 "> </div>
+                                      
+                                      <div class="col " >
+                                      <img class="img-fluid mx-auto d-block "" src="https://pbs.twimg.com/media/EpiFbdpW4AM1dBF?format=jpg&name=4096x4096" alt="Chania" width="300" height="300"> </div>
+
+                                        </div>
+
+                                    </div>
+                                    <!--formulario --><br>
+                                    <div class="container">
+                                        <h2>Stacked form</h2>
+                                        <form action="/action_page.php">
+                                            <div class="form-group">
+                                                <label for="name">Nombre</label>
+                                                <input type="text" class="form-control" id="name" placeholder="Nombre" name="uname" required>
+                                                <div class="valid-feedback">Valid.</div>
+                                                <div class="invalid-feedback">Please fill out this field.</div>
+                                            </div>
+
+                                            <div class="form-group">
+                                                <label for="email">Email:</label>
+                                                <input type="email" class="form-control" id="email" placeholder="Email" name="email">
+                                            </div>
+
+                                            <div class="form-group form-check">
+                                                <label class="form-check-label">
+                                                <input class="form-check-input" type="checkbox" name="remember" required> Acepto
+                                                <div class="valid-feedback">Valid.</div>
+                                                <div class="invalid-feedback">Check this checkbox to continue.</div>
+                                              </label>
+                                            </div>
+                                            <button type="submit" class="btn btn-primary">Submit</button>
+                                        </form>
+                                    </div>
+                            </div>
+
+
+
+                            <!-- Modal footer -->
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+                <br>
+
+
+
+                <br>
+
+                <!-- Lins footers -->
+                <div class="ui horizontal bulleted link list" wfd-id="232">
+                    <a class="item">
+                      Terms and Conditions
+                    </a>
+                    <a class="item">
+                      Privacy Policy
+                    </a>
+                    <a class="item">
+                      Contact Us
+                    </a>
+                </div>
+                <br>
+                <br>
+                <br>
+                <br>
+
+
+
+            </div>
+            <!-- 3 de 3 vacio -->
+            <div class="col-sm ">a</div>
+        </div>
+    </div>
+
+    <div class="footerx ">
+        <div class="icon-bar ">
+            <a href="#regalate "><i class="fas fa-gift "></i></a>
+            <a href="#xiib "><i class="fas fa-mars-double "></i></a>
+            <a href="https://www.xiiber.com/ "><img src="https://pbs.twimg.com/media/EoaxehFWEAIKLgE?format=jpg&name=4096x4096 " alt="Xiiber Travel " width="39 " height="39 "></i>
+            </a>
+            <a href="#viajes "><i class=" fas fa-suitcase-rolling "></i></a>
+            <a href="#experiencias " title=" "><i class=" fas fa-ticket-alt "></i></a>
+        </div>
+    </div>
+
+</body>
+
+<script>
+    $(document).ready(function() {
+        $('[data-toggle="tooltip "]').tooltip();
+    });
+
+    $(document).ready(function() {
+        $('.toast').toast('show');
+    });
+
+    $(document).ready(function() {
+        $('[data-toggle="popover "]').popover();
+    });
+
+
+    $('.ui.rating').rating({
+        initialRating: 3,
+        maxRating: 5
+    });
+
+    $(document).ready(function() {
+        $('.toast').toast('show');
+    });
+
+    $(document).ready(function() {
+        $('.toast').toast({
+            autohide: false
+        });
+        $('.toast').toast('show');
+    });
+</script>
+
+</html>
