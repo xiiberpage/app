@@ -163,9 +163,12 @@
                                         <h5 class="blue"><b>Sábado 27 de febrero</b></h5>
                                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.<a href="#" class="text-decoration-none">A link without underline.</a> </p><br>
                                         <div class="ui buttons " wfd-id="76 ">
-                                            <button class="ui blue button " wfd-id="287 " data-toggle="modal " data-target="#myModal ">Locker</button>
-                                            <div class="or " data-text="o " wfd-id="77 "> </div>
-                                            <button class="ui violet button " wfd-id="286 ">vestidor</button>
+                                            <button class="ui primary button" wfd-id="322">
+                                                Save
+                                              </button>
+                                            <button class="ui button" wfd-id="321">
+                                                Discard
+                                              </button>
                                         </div>
 
 
@@ -496,6 +499,48 @@
         </div>
     </div>
 
+    <div class="ui text shape" wfd-id="32">
+        <div class="sides" wfd-id="33">
+            <div class="ui header side" wfd-id="36">Did you know? This side starts visible.</div>
+            <div class="ui header side" wfd-id="35">Help, its another side!</div>
+            <div class="ui header side active" wfd-id="34">This is the last side</div>
+        </div>
+    </div>
+
+    <div class="ui shape">
+        <div class="sides">
+            <div class="active side">This side starts visible.</div>
+            <div class="side">This is yet another side</div>
+            <div class="side">This is the last side</div>
+        </div>
+    </div>
+
+
+    <button onclick="document.getElementById('id01nav2').style.display='block'"> <a class="w3-button w3-xlarge w3-circle w3-theme-action" style="position:fixed;top:60px;right:40px;"><i class='fas fa-bell'></i></a> </button>
+    <div class="spinner-grow spinner-grow-sm"></div>
+
+    <div id="id01nav2" class="w3-modal w3-animate-opacity w3-center">
+        <div class="w3-modal-content w3-card-4">
+            <header class="w3-container w3-safety-blue">
+                <span onclick="document.getElementById('id01nav2').style.display='none'" class="w3-button w3-large w3-display-topright">&times;</span>
+            </header>
+            <div class="w3-container">
+                <br>
+                <br><br><br>
+                <iframe src="https://www.xiiber.page/previa.html " width="100% " height="450 " style="border:none; " text-align="center " title="Google My Business "> </iframe>
+            </div>
+        </div>
+    </div>
+
+    <div class="ui inverted section divider"></div>
+    <img src="assets/images/logo.png" class="ui centered mini image">
+    <div class="ui horizontal inverted small divided link list">
+        <a class="item" href="#">Site Map</a>
+        <a class="item" href="#">Contact Us</a>
+        <a class="item" href="#">Terms and Conditions</a>
+        <a class="item" href="#">Privacy Policy</a>
+    </div>
+
     <div class="footerx ">
         <div class="icon-bar ">
             <a href="#regalate "><i class="fas fa-gift "></i></a>
@@ -538,6 +583,14 @@
         });
         $('.toast').toast('show');
     });
+    $('.shape').shape();
+    $('.shape').shape('flip up');
+    $('.shape')
+        .shape('set next side', '.second.side')
+        .shape('flip up');
+    $('.shape').shape('repaint');
+    $('.your.element')
+        .shape('behavior name', argumentOne, argumentTwo);
 </script>
 
 </html>
