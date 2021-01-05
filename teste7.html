@@ -286,16 +286,108 @@
                 <div class="row mb-3">
                     <div class="col-md-3 "></div>
                     <div class="col-md-6 shadow-lg rounded mx-auto">
-                        <div class=" p-2 d-flex justify-content-end text-center">
-                            <ul class="list-inline mb-0">
-                                <li class="list-inline-item">
-                                    <h5 class="font-weight-bold mb-0 d-block">215</h5><small class="text-muted"><i class="fa fa-camera mr-1"></i>Photos</small></li>
-                                <li class="list-inline-item">
-                                    <h5 class="font-weight-bold mb-0 d-block">745</h5><small class="text-muted"><i class="fas fa-user mr-1"></i>Followers</small></li>
-                                <li class="list-inline-item">
-                                    <h5 class="font-weight-bold mb-0 d-block">340</h5><small class="text-muted"><i class="fas fa-user mr-1"></i>Following</small></li>
-                            </ul>
+                        <br>
+                        <div id="myBtnContainer">
+                            <button type="button" class="btn btn-dark active" onclick="filterSelection('all')"> Mostrar todas</button>
+
+                            <button class="btn btn-sm btn-danger" onclick="filterSelection('online')"> Online</button>
+                            <button class="btn btn-sm w3-pink" onclick="filterSelection('allstars')"> All Stars</button>
+                            <button class="btn btn-sm w3-purple" onclick="filterSelection('envivo')"> En Vivo</button>
+                            <button class="btn btn-sm w3-indigo" onclick="filterSelection('cuu')"> Chihuahua</button>
+                            <button class="btn btn-sm w3-orange" onclick="filterSelection('cdmx')"> CDMX</button>
                         </div>
+
+                        <!-- Portfolio Gallery Grid -->
+                        <div class="row">
+                            <div class="column online">
+                                <div class="content">
+                                    <img src="https://www.w3schools.com/w3images/mountains.jpg" alt="Dragvesti 1" style="width:100%">
+                                    <h4>Primera Temporada</h4>
+                                    <p>Edición Internacional</p>
+                                </div>
+                            </div>
+                            <div class="column online">
+                                <div class="content">
+                                    <img src="https://www.w3schools.com/w3images/lights.jpg" alt="Dragvesti 2" style="width:100%">
+                                    <h4>Segunda Temporada</h4>
+                                    <p>Edición México</p>
+                                </div>
+                            </div>
+                            <div class="column online">
+                                <div class="content">
+                                    <img src="https://www.w3schools.com/w3images/nature.jpg" alt="Dragvesti 3" style="width:100%">
+                                    <h4>Tercera Temporada</h4>
+                                    <p>Edición Internacional</p>
+                                </div>
+                            </div>
+
+                            <div class="column allstars online">
+                                <div class="content">
+                                    <img src="https://www.w3schools.com/w3images/cars1.jpg" alt="Dragvesti All Stars 1" style="width:100%">
+                                    <h4>All Stars</h4>
+                                    <p>Primera Temporada</p>
+                                </div>
+                            </div>
+                            <div class="column allstars online">
+                                <div class="content">
+                                    <img src="https://www.w3schools.com/w3images/cars2.jpg" alt="Dragvesti All Stars 2" style="width:100%">
+                                    <h4>All Stars</h4>
+                                    <p>Segunda Temporada Temporada</p>
+                                </div>
+                            </div>
+                            <div class="column envivo cuu">
+                                <div class="content">
+                                    <img src="https://www.w3schools.com/w3images/cars3.jpg" alt="Car" style="width:100%">
+                                    <h4>Dragvesti En Vivo: Chihuahua</h4>
+                                    <p>Temporada 1</p>
+                                </div>
+                            </div>
+
+                            <div class="column envivo cuu">
+                                <div class="content">
+                                    <img src="https://www.w3schools.com/w3images/people1.jpg" alt="Car" style="width:100%">
+                                    <h4>Dragvesti En Vivo: Chihuahua</h4>
+                                    <p>Temporada 2</p>
+                                </div>
+                            </div>
+                            <div class="column envivo cuu ">
+                                <div class="content">
+                                    <img src="https://www.w3schools.com/w3images/people2.jpg" alt="Car" style="width:100%">
+                                    <h4>Dragvesti En Vivo: Chihuahua</h4>
+                                    <p>Temporada 3</p>
+                                </div>
+                            </div>
+                            <div class="column envivo cuu allstars">
+                                <div class="content">
+                                    <img src="https://www.w3schools.com/w3images/people3.jpg" alt="Car" style="width:100%">
+                                    <h4>Dragvesti En Vivo: Chihuahua</h4>
+                                    <p>All Stars 1</p>
+                                </div>
+                            </div>
+                            <div class="column envivo cdmx ">
+                                <div class="content">
+                                    <img src="https://www.w3schools.com/w3images/people2.jpg" alt="Car" style="width:100%">
+                                    <h4>Long live the Queens</h4>
+                                    <p>Coronación</p>
+                                </div>
+                            </div>
+                            <div class="column envivo cdmx ">
+                                <div class="content">
+                                    <img src="https://www.w3schools.com/w3images/people2.jpg" alt="Car" style="width:100%">
+                                    <h4>Cucu Confessions</h4>
+                                    <p>Coronación</p>
+                                </div>
+                            </div>
+                            <div class="column envivo cdmx ">
+                                <div class="content">
+                                    <img src="https://www.w3schools.com/w3images/people2.jpg" alt="Car" style="width:100%">
+                                    <h4>Dragvesti En Vivo: CDMX</h4>
+                                    <p>Temporada 1</p>
+                                </div>
+                            </div>
+                            <!-- END GRID -->
+                        </div>
+
                         <div class="p-4 rounded">
                             <div class="ui progress">
                                 <div class="bar"></div>
@@ -2285,11 +2377,11 @@
                                                 <div id="myBtnContainer">
                                                     <button type="button" class="btn btn-dark active" onclick="filterSelection('all')"> Mostrar todas</button>
 
-                                                    <button class="btn btn-danger" onclick="filterSelection('online')"> Online</button>
-                                                    <button class="btn w3-pink" onclick="filterSelection('allstars')"> All Stars</button>
-                                                    <button class="btn w3-purple" onclick="filterSelection('envivo')"> En Vivo</button>
-                                                    <button class="btn w3-indigo" onclick="filterSelection('cuu')"> Chihuahua</button>
-                                                    <button class="btn w3-orange" onclick="filterSelection('cdmx')"> CDMX</button>
+                                                    <button class="btn btn-danger btn-sm" onclick="filterSelection('online')"> Online</button>
+                                                    <button class="btn w3-pink btn-sm" onclick="filterSelection('allstars')"> All Stars</button>
+                                                    <button class="btn w3-purple btn-sm" onclick="filterSelection('envivo')"> En Vivo</button>
+                                                    <button class="btn w3-indigo btn-sm" onclick="filterSelection('cuu')"> Chihuahua</button>
+                                                    <button class="btn w3-orange btn-sm" onclick="filterSelection('cdmx')"> CDMX</button>
                                                 </div>
 
                                                 <!-- Portfolio Gallery Grid -->
@@ -2640,5 +2732,7 @@
     }
 </script>
 
+
+</html>
 
 </html>
