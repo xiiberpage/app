@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Bootstrap Example</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-inverse">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="#">WebSiteName</a>
+            </div>
+            <ul class="nav navbar-nav">
+                <li class="active"><a href="#">Home</a></li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+                <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container">
+        <h3>Right Aligned Navbar</h3>
+        <p>The .navbar-right class is used to right-align navigation bar buttons.</p>
+    </div>
+
+    <div class="container">
+        <h2>Pager</h2>
+        <p>The .previous and .next classes align each link to the sides of the page:</p>
+        <ul class="pager">
+            <li class="previous"><a href="#">Previous</a></li>
+            <li class="next"><a href="#">Next</a></li>
+        </ul>
+    </div>
+
+    <div class="container">
+        <h2>Pager</h2>
+        <p>The .pager class provides previous and next buttons (links):</p>
+        <ul class="pager">
+            <li><a href="#">Previous</a></li>
+            <li><a href="#">Next</a></li>
+        </ul>
+    </div>
+
+    <div class="container">
+        <h2>Basic Progress Bar</h2>
+        <div class="progress">
+            <div class="progress-bar w3-pink" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width:70%">
+                <span class="sr-only">70% Complete</span>
+            </div>
+        </div>
+
+        <div class="progress">
+            <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width:70%">
+                <span class="sr-only">70% Complete</span>
+            </div>
+        </div>
+
+    </div>
+
+
+
+
+
+    <div class="container">
+        <h2>Large Modal</h2>
+        <!-- Trigger the modal with a button -->
+        <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Open Large Modal</button>
+
+        <!-- Modal -->
+        <div class="modal-dialog modal-fullscreen">
+            <div class="modal fade" id="myModal" role="dialog">
+
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        <h4 class="modal-title">Modal Header</h4>
+                    </div>
+                    <div class="modal-body">
+                        <p>This is a large modal.</p>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="container">
+        <div class="row row-cols-4">
+            <div class="col">Column</div>
+            <div class="col">Column</div>
+            <div class="col">Column</div>
+            <div class="col">Column</div>
+        </div>
+    </div>
+
+
+    <div class="container">
+        <h1>Shadows</h1>
+        <p>Use the shadow- classes to to add shadows to an element:</p>
+        <div class="shadow-none p-4 mb-4 bg-light">No shadow</div>
+        <div class="shadow-sm p-4 mb-4 bg-white">Small shadow</div>
+        <div class="shadow p-4 mb-4 bg-white">Default shadow</div>
+        <div class="shadow-lg p-4 mb-4 bg-white">Large shadow</div>
+    </div>
+
+
+</body>
+
+</html>
