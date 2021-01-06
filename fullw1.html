@@ -1,0 +1,599 @@
+<!doctype html>
+<html lang="es" class="h-100">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Geus, productos artesanales gourmet ">
+    <meta name="author" content="Geus and Bootstrap contributors">
+    <meta name="generator" content="Geus 0.79.0">
+    <title>Geus</title>
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.0/examples/cover/">
+
+    <!-- Bootstrap CSS JS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js" integrity="sha384-q2kxQ16AaE6UbzuKqyBE9/u/KzioAlnx2maXQHiDX9d4/zp8Ok3f+M7DPm+Ib6IU" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-pQQkAEnwaBkjpqZ8RU1fF1AKtTcHJwFl3pblpTlHXybJjHpMYo79HY3hIi4NKxyj" crossorigin="anonymous"></script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="css/grid.css" rel="stylesheet">
+    <link rel="stylesheet" href="./dragvesti.css">
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+    <!-- Bootstrap core CSS -->
+    <link href="/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+        .bd-placeholder-img {
+            font-size: 1.125rem;
+            text-anchor: middle;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            user-select: none;
+        }
+        
+        @media (min-width: 768px) {
+            .bd-placeholder-img-lg {
+                font-size: 3.5rem;
+            }
+        }
+        
+        * {
+            box-sizing: border-box;
+        }
+        
+        .rowe {
+            flex-wrap: wrap;
+            grid-gap: 5px;
+            padding: 5px;
+            grid-template-columns: auto auto auto;
+            vertical-align: middle;
+            justify-content: center;
+            align-items: center;
+        }
+        /* Create two equal columns that sits next to each other */
+        
+        .columne {
+            -ms-flex: 50%;
+            /* IE 10 */
+            flex: 50%;
+            padding: 4px 4px;
+            align-items: center;
+        }
+        
+        .columne img {
+            margin-top: 8px;
+            align-items: center;
+        }
+        /* Style the buttons */
+        
+        .btne {
+            border: none;
+            outline: none;
+            padding: 10px 16px;
+            background-color: #f1f1f1;
+            cursor: pointer;
+            font-size: 18px;
+        }
+        
+        .btne:hover {
+            background-color: #ddd;
+        }
+        
+        .btne.activee {
+            background-color: #666;
+            color: white;
+        }
+        /* Make the image fully responsive */
+        
+        .carousel-inner img {
+            width: 100%;
+            height: 100%;
+        }
+        /* Borders */
+        
+        span {
+            display: inline-block;
+            width: 70px;
+            height: 70px;
+            margin: 6px;
+            background-color: #555;
+        }
+        /* Avatar */
+        
+        .avatar {
+            vertical-align: middle;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+        }
+        
+        body {
+            background-color: #FFFFFF;
+        }
+        
+        .ui.menu .item img.logo {
+            margin-right: 1.5em;
+        }
+        
+        .main.container {
+            margin-top: 7em;
+        }
+        
+        .wireframe {
+            margin-top: 2em;
+        }
+        
+        .ui.footer.segment {
+            margin: 5em 0em 0em;
+            padding: 5em 0em;
+        }
+        
+        .checked {
+            color: orange;
+        }
+        
+        * {
+            box-sizing: border-box;
+        }
+        /* Add padding BETWEEN each column */
+        /* Create three equal columns that floats next to each other */
+        
+        .column {
+            float: center;
+            width: 33.33%;
+            display: none;
+            /* Hide all elements by default */
+        }
+        /* Clear floats after rows */
+        
+        .row:after {
+            content: "";
+            display: table;
+            clear: both;
+            grid-gap: 10px;
+            padding: 10px;
+        }
+        /* Content */
+        /* The "show" class is added to the filtered elements */
+        
+        .show {
+            display: block;
+        }
+        /* Style the buttons */
+        
+        .container43 {
+            position: relative;
+            width: 100%;
+            overflow: hidden;
+            padding-top: 75%;
+            /* 4:3 Aspect Ratio */
+        }
+        
+        .responsive-iframe43 {
+            position: absolute;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            right: 0;
+            width: 100%;
+            height: 400%;
+            border: none;
+        }
+        
+        .bd-placeholder-img {
+            font-size: 1.125rem;
+            text-anchor: middle;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            user-select: none;
+        }
+        
+        @media (min-width: 768px) {
+            .bd-placeholder-img-lg {
+                font-size: 3.5rem;
+            }
+        }
+        
+        * {
+            box-sizing: border-box;
+        }
+        
+        .rowe {
+            flex-wrap: wrap;
+            grid-gap: 5px;
+            padding: 5px;
+            grid-template-columns: auto auto auto;
+            vertical-align: middle;
+            justify-content: center;
+            align-items: center;
+        }
+        /* Create two equal columns that sits next to each other */
+        
+        .columne {
+            -ms-flex: 50%;
+            /* IE 10 */
+            flex: 50%;
+            padding: 4px 4px;
+            align-items: center;
+        }
+        
+        .columne img {
+            margin-top: 8px;
+            align-items: center;
+        }
+        
+        dragvesti.a {
+            visibility: visible;
+        }
+    </style>
+
+
+    <!-- Custom styles for this template -->
+    <link href="css/coverw.css" rel="stylesheet">
+</head>
+
+<body class="d-flex h-100 text-center text-black ">
+
+    <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
+        <header class="mb-auto">
+            <div>
+                <h4 class="float-md-start mb-0 " onclick="filterSelection('all')">Dragvesti</h4>
+                <nav class="nav nav-masthead justify-content-center float-md-end">
+                    <a class="nav-link " aria-current="page" onclick="filterSelection('online')">Online</a>
+                    <a class="nav-link" onclick="filterSelection('allstars')">All Stars</a>
+                    <a class="nav-link" onclick="filterSelection('envivo')">En Vivo</a>
+                    <a class="nav-link" onclick="filterSelection('cuu')"> Chihuahua</a>
+                    <a class="nav-link" onclick="filterSelection('cdmx')"> CDMX</a>
+                </nav>
+            </div>
+        </header>
+        <dragvesti class="a">
+            <main>
+
+                <img src="img/dragvesti.jpg" class="mx-auto d-block" onclick="filterSelection('all')" style="width:40%"><br>
+
+
+                <div class=" rowe row active">
+                    <img src="https://i.pinimg.com/originals/02/2d/86/022d864507390e7dae17be8490167ecd.jpg " class="column img-responsive online all " alt="Dragvesti 1 " style="width:29% ">
+                    <img src="https://i.pinimg.com/originals/02/2d/86/022d864507390e7dae17be8490167ecd.jpg " class="column img-responsive online all " alt="Dragvesti 2 " style="width:29% ">
+                    <img src="https://i.pinimg.com/originals/02/2d/86/022d864507390e7dae17be8490167ecd.jpg " class="column img-responsive online all " alt="Dragvesti 3 " style="width:29% ">
+                    <img src="https://i.pinimg.com/originals/02/2d/86/022d864507390e7dae17be8490167ecd.jpg " class="column img-responsive online all allstars " alt="Dragvesti AS1 " style="width:29% ">
+                    <img src="https://i.pinimg.com/originals/02/2d/86/022d864507390e7dae17be8490167ecd.jpg " class="column img-responsive online all allstars " alt="Dragvesti AS2 " style="width:29% ">
+                    <img src="https://i.pinimg.com/originals/02/2d/86/022d864507390e7dae17be8490167ecd.jpg " class="img-responsive column envivo all cuu " alt="Dragvesti CUU1 " style="width:29% ">
+                    <img src="https://i.pinimg.com/originals/02/2d/86/022d864507390e7dae17be8490167ecd.jpg " class="img-responsive column envivo all cuu " alt="Dragvesti CUU2 " style="width:29% ">
+                    <img src="https://i.pinimg.com/originals/02/2d/86/022d864507390e7dae17be8490167ecd.jpg " class="img-responsive column envivo all cuu " alt="Dragvesti CUU3 " style="width:29% ">
+                    <img src="https://i.pinimg.com/originals/02/2d/86/022d864507390e7dae17be8490167ecd.jpg " class="img-responsive column envivo all cuu allstars " alt="Dragvesti ASCUU1 " style="width:29% ">
+                    <img src="https://i.pinimg.com/originals/02/2d/86/022d864507390e7dae17be8490167ecd.jpg " class="img-responsive column envivo all cdmx " alt="Dragvesti ASCUU1 " style="width:29% ">
+                    <img src="https://i.pinimg.com/originals/02/2d/86/022d864507390e7dae17be8490167ecd.jpg " class="img-responsive column envivo all cdmx " alt="Dragvesti ASCUU1 " style="width:29% ">
+                    <img src="https://i.pinimg.com/originals/02/2d/86/022d864507390e7dae17be8490167ecd.jpg " class="img-responsive column envivo all cdmx " alt="Dragvesti ASCUU1 " style="width:29% ">
+                </div>
+
+
+
+            </main>
+        </dragvesti>
+
+
+
+
+
+        <div class="container">
+
+            <!-- Trigger the modal with a button -->
+
+
+            <!-- Modal -->
+            <div class="modal-fullscreen">
+                <div class="modal-dialog ">
+                    <div class="modal fade" id="myModal" role="dialog">
+
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                <h4 class="modal-title">Modal Header</h4>
+                            </div>
+                            <div class="modal-body">
+                                <iframe src="scroll1.html" name="iframe_a" height="500px" width="100%" title="Iframe Example"></iframe>
+
+
+
+
+
+
+
+
+                                <a href="fullw1.html"> <img src="img/dragvesti.jpg" class="mx-auto d-block" style="width:15%"><br> </a>
+
+                                <p style="text-align:center;color:#1a1a1a; w3-medium " onclick="typeWriter()"> <strong> © 2015-2020 Dragvesti.</strong> </p>
+                                <p style="text-align:center;color:#1a1a1a;  w3-medium "> <strong> La carrera Drag Online y En Vivo: Chihuahua y CDMX </p>
+                                <p style="text-align:center;color:#4d4d4d; " onclick="typeWriter()">Hecho con ❤️ para ti </p>
+                                        <p style="text-align:center; font-family:Allan; color: #800000; font-size:150%" id="hihello"></p>
+                                    
+<!-- 
+                                        <button onclick="typeWriter()">Click me</button>-->
+
+                                        <p id="hihello"></p>
+                                        
+                                        <script>
+                                        var i = 0;
+                                        var txt = 'Hi Hello';
+                                        var speed = 50;
+                                        
+                                        function typeWriter() {
+                                          if (i < txt.length) {
+                                            document.getElementById("hihello").innerHTML += txt.charAt(i);
+                                            i++;
+                                            setTimeout(typeWriter, speed);
+                                          }
+                                        }
+                                        </script>
+
+
+                                  
+                                       
+                                  
+                                   
+                                    
+                                    <br><br>
+
+        
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+        <footer class="mt-auto text-black-50 ">
+                    <p style="text-align:center;color:#1a1a1a; w3-medium " data-toggle="modal" data-target="#myModal"> <strong> © 2015-2020 Dragvesti.</strong> </p>
+                                </footer>
+
+                                <script>
+                                    var myModal = new bootstrap.Modal(document.getElementById('myModal'), options)
+
+
+                                    $('.ui.accordion ')
+                                        .accordion();
+
+                                    $('.ui.rating')
+                                        .rating({
+                                            initialRating: 3,
+                                            maxRating: 5
+                                        });
+                                    $('.ui.menu .item')
+                                        .tab({
+                                            history: true,
+                                            historyType: 'state',
+                                            path: '/modules/tab.html'
+                                        });
+                                    $('.menu .item')
+                                        .tab();
+                                    $('.activating.element')
+                                        .popup();
+                                    $('.button')
+                                        .popup({
+                                            inline: true
+                                        });
+                                    $('.special.cards .image').dimmer({
+                                        on: 'hover'
+                                    });
+
+                                    filterSelection("all ")
+
+                                    function filterSelection(c) {
+                                        var x, i;
+                                        x = document.getElementsByClassName("column ");
+                                        if (c == "all ") c = " ";
+                                        for (i = 0; i < x.length; i++) {
+                                            w3RemoveClass(x[i], "show ");
+                                            if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show ");
+                                        }
+                                    }
+
+                                    function w3AddClass(element, name) {
+                                        var i, arr1, arr2;
+                                        arr1 = element.className.split(" ");
+                                        arr2 = name.split(" ");
+                                        for (i = 0; i < arr2.length; i++) {
+                                            if (arr1.indexOf(arr2[i]) == -1) {
+                                                element.className += " " + arr2[i];
+                                            }
+                                        }
+                                    }
+
+                                    function w3RemoveClass(element, name) {
+                                        var i, arr1, arr2;
+                                        arr1 = element.className.split(" ");
+                                        arr2 = name.split(" ");
+                                        for (i = 0; i < arr2.length; i++) {
+                                            while (arr1.indexOf(arr2[i]) > -1) {
+                                                arr1.splice(arr1.indexOf(arr2[i]), 1);
+                                            }
+                                        }
+                                        element.className = arr1.join(" ");
+                                    }
+
+
+                                    // Add active class to the current button (highlight it)
+                                    var btnContainer = document.getElementById("myBtnContainer ");
+                                    var btns = btnContainer.getElementsByClassName("btn ");
+                                    for (var i = 0; i < btns.length; i++) {
+                                        btns[i].addEventListener("click ", function() {
+                                            var current = document.getElementsByClassName("active ");
+                                            current[0].className = current[0].className.replace(" active ", " ");
+                                            this.className += " active ";
+                                        });
+                                    }
+                                    // Get the elements with class="column "
+                                    var elements = document.getElementsByClassName("columne ");
+                                    // Declare a loop variable
+                                    var i;
+                                    // Full-width images
+                                    function one() {
+                                        for (i = 0; i < elements.length; i++) {
+                                            elements[i].style.msFlex = "100% "; // IE10
+                                            elements[i].style.flex = "100% ";
+                                        }
+                                    }
+
+                                    // Two images side by side
+                                    function two() {
+                                        for (i = 0; i < elements.length; i++) {
+                                            elements[i].style.msFlex = "50% "; // IE10
+                                            elements[i].style.flex = "50% ";
+                                        }
+                                    }
+
+                                    // Four images side by side
+                                    function four() {
+                                        for (i = 0; i < elements.length; i++) {
+                                            elements[i].style.msFlex = "25% "; // IE10
+                                            elements[i].style.flex = "25% ";
+                                        }
+                                    }
+
+                                    // Add active class to the current button (highlight it)
+                                    var header = document.getElementById("myHeader ");
+                                    var btns = header.getElementsByClassName("btne ");
+                                    for (var i = 0; i < btns.length; i++) {
+                                        btns[i].addEventListener("click ", function() {
+                                            var current = document.getElementsByClassName("activee ");
+                                            current[0].className = current[0].className.replace(" activee ", " ");
+                                            this.className += " activee ";
+                                        });
+                                    }
+
+
+
+                                    $('.ui.accordion ')
+                                        .accordion();
+
+                                    $('.ui.rating')
+                                        .rating({
+                                            initialRating: 3,
+                                            maxRating: 5
+                                        });
+                                    $('.ui.menu .item')
+                                        .tab({
+                                            history: true,
+                                            historyType: 'state',
+                                            path: '/modules/tab.html'
+                                        });
+                                    $('.menu .item')
+                                        .tab();
+                                    $('.activating.element')
+                                        .popup();
+                                    $('.button')
+                                        .popup({
+                                            inline: true
+                                        });
+                                    $('.special.cards .image').dimmer({
+                                        on: 'hover'
+                                    });
+
+                                    filterSelection("all")
+
+                                    function filterSelection(c) {
+                                        var x, i;
+                                        x = document.getElementsByClassName("column");
+                                        if (c == "all") c = "";
+                                        for (i = 0; i < x.length; i++) {
+                                            w3RemoveClass(x[i], "show");
+                                            if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+                                        }
+                                    }
+
+                                    function w3AddClass(element, name) {
+                                        var i, arr1, arr2;
+                                        arr1 = element.className.split(" ");
+                                        arr2 = name.split(" ");
+                                        for (i = 0; i < arr2.length; i++) {
+                                            if (arr1.indexOf(arr2[i]) == -1) {
+                                                element.className += " " + arr2[i];
+                                            }
+                                        }
+                                    }
+
+                                    function w3RemoveClass(element, name) {
+                                        var i, arr1, arr2;
+                                        arr1 = element.className.split(" ");
+                                        arr2 = name.split(" ");
+                                        for (i = 0; i < arr2.length; i++) {
+                                            while (arr1.indexOf(arr2[i]) > -1) {
+                                                arr1.splice(arr1.indexOf(arr2[i]), 1);
+                                            }
+                                        }
+                                        element.className = arr1.join(" ");
+                                    }
+
+
+                                    // Add active class to the current button (highlight it)
+                                    var btnContainer = document.getElementById("myBtnContainer");
+                                    var btns = btnContainer.getElementsByClassName("btn");
+                                    for (var i = 0; i < btns.length; i++) {
+                                        btns[i].addEventListener("click", function() {
+                                            var current = document.getElementsByClassName("active");
+                                            current[0].className = current[0].className.replace(" active", "");
+                                            this.className += " active";
+                                        });
+                                    }
+                                    // Get the elements with class="column"
+                                    var elements = document.getElementsByClassName("columne");
+                                    // Declare a loop variable
+                                    var i;
+                                    // Full-width images
+                                    function one() {
+                                        for (i = 0; i < elements.length; i++) {
+                                            elements[i].style.msFlex = "100%"; // IE10
+                                            elements[i].style.flex = "100%";
+                                        }
+                                    }
+
+                                    // Two images side by side
+                                    function two() {
+                                        for (i = 0; i < elements.length; i++) {
+                                            elements[i].style.msFlex = "50%"; // IE10
+                                            elements[i].style.flex = "50%";
+                                        }
+                                    }
+
+                                    // Four images side by side
+                                    function four() {
+                                        for (i = 0; i < elements.length; i++) {
+                                            elements[i].style.msFlex = "25%"; // IE10
+                                            elements[i].style.flex = "25%";
+                                        }
+                                    }
+
+                                    // Add active class to the current button (highlight it)
+                                    var header = document.getElementById("myHeader");
+                                    var btns = header.getElementsByClassName("btne");
+                                    for (var i = 0; i < btns.length; i++) {
+                                        btns[i].addEventListener("click", function() {
+                                            var current = document.getElementsByClassName("activee");
+                                            current[0].className = current[0].className.replace(" activee", "");
+                                            this.className += " activee";
+                                        });
+                                    }
+                                </script>
+
+</body>
+
+</html>
