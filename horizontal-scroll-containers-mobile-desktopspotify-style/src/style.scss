@@ -1,0 +1,178 @@
+$gutter: 10px;
+$bg: white;
+$dark: #212121;
+$darkest: #121212;
+$green: #1cff65;
+$maxwidth: 990px;
+$colsBigDesktop: 4;
+$colsSmallDesktop: 3;
+
+* {
+  box-sizing: border-box;
+}
+
+::-webkit-scrollbar { /* Webkit */
+  width: 0;
+  height: 0;
+}
+
+.hs {
+  display: flex;
+  overflow-x: scroll;
+  justify-content: space-between;
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none;  /* IE 10+ */
+  -webkit-overflow-scrolling: touch;
+  margin: 0 -20px;
+  &__header {
+    display: flex;
+    align-items: center;
+    width: 100%;
+  }
+  &__headline {
+    flex: 1;
+  }
+  &__arrows {
+    align-self: center;
+    .arrow {
+      &:before {
+        content: '';
+        display: inline-block;
+        vertical-align: middle;
+        content: "";
+        background: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNSIgaGVpZ2h0PSI5IiB2aWV3Qm94PSIwIDAgMTUgOSI+Cgk8cGF0aCBmaWxsPSIjMzMzMzMzIiBkPSJNNy44NjcgOC41NzRsLTcuMjItNy4yMi43MDctLjcwOEw3Ljg2NyA3LjE2IDE0LjA1Ljk4bC43MDYuNzA3Ii8+Cjwvc3ZnPgo=");
+        background-size: contain;
+        filter: brightness(5);
+        width: 18px;
+        height: 12px;
+        cursor: pointer;
+      }
+      &.disabled:before {
+        filter: brightness(2);
+      }
+      &.arrow-prev:before {
+        transform: rotate(90deg);
+        margin-right: $gutter;
+      }
+      &.arrow-next:before {
+        transform: rotate(-90deg);
+      }
+    }
+  }
+  &__item {
+    flex-grow: 1;
+    flex-shrink: 0;
+    flex-basis: calc(100% / #{$colsBigDesktop} - (#{$gutter} * 2) - (20px / #{$colsBigDesktop}));
+    // how it works: total width devided by columns minus left and right margin per box minus negativ margin of outer container.
+    // oh and IE11 does not support the shorthand "flex" with calc, so you have to use flex-basis etc. separately;
+    margin: $gutter;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    user-select: none;
+    @media only screen and (max-width: 990px) {
+      flex-basis: calc(100% / #{$colsSmallDesktop} - (#{$gutter} * 2) - (20px / #{$colsSmallDesktop}));
+    }
+    &:last-child:after {
+      content: "";
+      display: block;
+      position: absolute;
+      width: $gutter;
+      height: 1px;
+      right: calc(#{$gutter} * 2 * -1);
+    }
+    &:first-child {
+      margin-left: calc(#{$gutter} * 2);
+    }
+    &__description {
+      z-index: 1;
+      align-self: flex-start;
+      margin: 10px 0;
+    }
+    &__subtitle {
+      color: #aaa;
+      display: block;
+    }
+    &__image__wrapper{
+      position: relative;
+      width: 100%;
+      height: 0;
+      padding-bottom: 100%;
+    }
+    &__image {
+      pointer-events: none;
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+  &__wrapper {
+    @media only screen and (min-width: 990px) {
+      overflow: hidden; 
+    }
+    @media (hover: none) and (pointer: coarse) {
+      .hs__arrows {
+        display: none;
+      }
+      .hs__item {
+        flex: 1 0 calc(23% - #{$gutter} * 2);
+      }
+      @media only screen and (max-width: 990px) {
+        .hs__item {
+          flex: 1 0 calc(45% - #{$gutter} * 2);
+        }
+      }
+    }
+  }
+}
+
+/* Base Styling */
+
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  font-family: 'Muli', sans-serif;
+  color: white;
+  background: $bg;
+  line-height: 1.5;
+  letter-spacing: .15px;
+}
+
+.container {
+  max-width: $maxwidth;  
+  padding: calc(#{$gutter} * 2);
+  margin: 0 auto;
+  background: $darkest;
+  mix-blend-mode: invert;
+  position: relative;
+  &:after {
+    content: '';
+    width: 100vw;
+    height: 100%;
+    background: $dark;
+    position: absolute;
+    left: 50%;
+    top: 0;
+    transform: translateX(-50%);
+    z-index: -1;
+  }
+  @media only screen and (min-width: 990px) {
+    padding: calc(#{$gutter} * 4) calc(#{$gutter} * 8);
+  }
+}
+
+.description {
+  max-width: $maxwidth;
+  color: $dark;
+  margin: 0 auto;
+  padding: calc(#{$gutter} * 4);
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+}

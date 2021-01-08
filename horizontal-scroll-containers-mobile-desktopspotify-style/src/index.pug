@@ -1,0 +1,55 @@
+- var i = 1;
+- var n = 1;
+.container
+  while i < 4
+    .hs__wrapper
+      .hs__header
+        h2.hs__headline Headline 
+          = i++
+        .hs__arrows
+          a.arrow.disabled.arrow-prev
+          a.arrow.arrow-next
+      ul.hs
+        while n < 21
+          li.hs__item 
+            .hs__item__image__wrapper
+              //img.hs__item__image(src="https://source.unsplash.com/random/300×300/?album&sig"+[n]+[i], alt="")
+              img.hs__item__image(src="https://picsum.photos/id/"+1+[n]+[i]+"/300/300", alt="")
+            .hs__item__description
+              span.hs__item__title
+                | Amazing title 
+                = n++
+              span.hs__item__subtitle
+                | some subtitle
+    -n = 0
+
+.description
+  h3 Description
+  p 
+    strong Work in progress – 
+    | Horizontal scroll containers are hyped right now. Whether you browse the Appstore, search for articles on Medium or set some filters in Instagram. Many apps use this kind of pattern. But most of them are very touch and mobile oriented. So I wondered how to make it nice on touch AND desktop.
+
+  p Depending on your desktop layout, you probably don't want the cards to run over the edge of the screen. Let's take a look at the "Home" section of Spotify. On the desktop, they show 4 to 6 cards in a slider with arrows at the top. And with touch/mobile they use the horizontal overflow scrolling.
+
+  p So let's recreate exactly this behaviour for responsive web use.
+
+  p Things already achieved:
+  ol
+    li 4 column grid on desktop. Tease the 4th on touch.
+    li Hide arrows on touch
+    li Disable corresponding arrow when end or start has been reached
+    li (As suggested) - Toggle arrow state on drag and scroll as well
+    li Always keep left and right spacings
+    li No ugly scrollbars on any browser
+    li Horizontal scrolling, dragging or arrow-click
+    li Multiple instances
+    li CSS Grid and CSS Vars are nice, but let's make this work on IE11 as well
+    
+  p Todo / open (feel free to left suggestions in the comments)
+    ol 
+      li If you click an arrow after box has been dragged / scrolled, it is not snapping to the grid anymore.
+      li Get rid of jQuery
+  p 
+    strong BONUS – 
+    | I made another alternative version here: 
+    a(href="https://codepen.io/kilianso/pen/WqdVLx?editors=1010" target="_blank") https://codepen.io/kilianso/pen/WqdVLx
