@@ -12,13 +12,11 @@
     <link rel="canonical" href="https://getbootstrap.com/docs/5.0/examples/cover/">
 
     <!-- Bootstrap CSS JS & W3-->
-    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+    <link rel="stylesheet" href="HiHello_Monster.min.css">
     <link href="css/grid.css" rel="stylesheet">
-    <link href="./dragvesti.css" rel="stylesheet">
 
 
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
@@ -40,6 +38,7 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=MuseoModerno:wght@900&display=swap" rel="stylesheet">
+
 
     <!-- UI Kit -->
     <link rel="stylesheet" type="text/css" href="Semantic-UI-CSS-master/semantic.min.css">
@@ -258,58 +257,6 @@
             align-items: center;
         }
         
-        * dragvesti {
-            margin-top: 0%;
-            line-height: 20px;
-            font-size: 20pt;
-            text-align: center;
-            font-family: ModernaSans-Bold;
-            background: linear-gradient( to right, #ff1616, #ff7716, #ffdc16, #36c945, #10a5ce, #0f0096, #a51eff, #ff1616);
-            background-clip: text;
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            background-size: 600px;
-            background-position: center 0%;
-            animation: background-slide 25s infinite linear;
-        }
-        
-        @font-face {
-            font-family: ModernaSans-Bold;
-            src: url(/font/ModernaSans-Bold.ttf);
-        }
-        
-        @keyframes background-slide {
-            100% {
-                background-position: -8160px;
-            }
-        }
-        
-        * dragvestilight {
-            margin-top: 0%;
-            line-height: 20px;
-            font-size: 20pt;
-            text-align: center;
-            font-family: ModernaSans-Light;
-            background: linear-gradient( to right, #ff1616, #ff7716, #ffdc16, #36c945, #10a5ce, #0f0096, #a51eff, #ff1616);
-            background-clip: text;
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            background-size: 600px;
-            background-position: center 0%;
-            animation: background-slide 25s infinite linear;
-        }
-        
-        @font-face {
-            font-family: ModernaSans-Light;
-            src: url(/font/ModernaSans-Light.ttf);
-        }
-        
-        @keyframes background-slide {
-            100% {
-                background-position: -8160px;
-            }
-        }
-        
         * dragvestimedium {
             margin-top: 0%;
             line-height: 20px;
@@ -389,19 +336,19 @@
                 <dragvesti class="float-md-start mb-0 " onclick="filterSelection('all')">Dragvesti </dragvesti>
                 <nav class="nav nav-masthead justify-content-center float-md-end ">
                     <a class="nav-link " aria-current="page " onclick="filterSelection( 'online') ">
-                        <p style="font-size:90%; ">Online</p>
+                        <pdrag style="font-size:90%; ">Online</pdrag>
                     </a>
                     <a class="nav-link " onclick="filterSelection( 'allstars') ">
-                        <p style="font-size:90%; ">All Stars</p>
+                        <pdrag style="font-size:90%; ">All Stars</pdrag>
                     </a>
                     <a class="nav-link " onclick="filterSelection( 'envivo') ">
-                        <p style="font-size:90%; ">En Vivo</p>
+                        <pdrag style="font-size:90%; ">En Vivo</pdrag>
                     </a>
                     <a class="nav-link " onclick="filterSelection( 'cuu') ">
-                        <p style="font-size:90%; ">Chihuahua</p>
+                        <pdrag style="font-size:90%; ">Chihuahua</pdrag>
                     </a>
                     <a class="nav-link " onclick="filterSelection( 'cdmx') ">
-                        <p style="font-size:90%; ">CDMX</p>
+                        <pdrag style="font-size:90%; ">CDMX</pdrag>
                     </a>
                 </nav>
 
@@ -409,8 +356,17 @@
         </header>
 
         <main>
+
+
             <!-- <i class="material-icons ">touch_app</i> -->
-            <img src="img/dragvesti.jpg " class="mx-auto d-block " onclick="filterSelection( 'all') " style="width:40% "><br>
+            <img src="/img/dragvesti_pink.png" class="mx-auto d-block " onclick="filterSelection( 'all') " style="width:40% "><br>
+
+            <div class="d-grid gap-2">
+                <button type="button" class="btn btn-outline-danger">Primera Temporada</button>
+                <button type="button" class="btn btn-outline-pink">Segunda Temporada</button>
+                <button type="button" class="btn btn-outline-purple">Tercera Temporada</button>
+            </div>
+
 
             <div class="ui four doubling cards " wfd-id="19 ">
                 <div class="card image " wfd-id="28 ">
@@ -889,4 +845,5 @@
 
 </body>
 
+</html>
 </html>
