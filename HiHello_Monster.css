@@ -269,20 +269,6 @@
         @use "@material/button";
         @use "@material/density";
         $height: button.$height+density.$interval * $density-scale /// @example 36px + 4px * (-3) => 24px
-        .bd-placeholder-img {
-            font-size: 1.125rem;
-            text-anchor: middle;
-            -webkit-user-select: none;
-            -moz-user-select: none;
-            user-select: none;
-        }
-        
-        @media (min-width: 768px) {
-            .bd-placeholder-img-lg {
-                font-size: 3.5rem;
-            }
-        }
-        
         * {
             box-sizing: border-box;
         }
