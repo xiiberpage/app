@@ -1,0 +1,537 @@
+<!-- Diseño de @luisangelmaciel -->
+<!DOCTYPE html>
+<html lang="es-MX" class="h-100">
+
+<head>
+    <title>Dragvesti La Carrera Drag Online</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Webapp Dragvesti">
+    <meta name="author" content="Luis Angel Maciel and Bootstrap contributors">
+    <meta name="generator" content="Dragvesti 0.79.0">
+
+    <link rel="icon" href="https://pbs.twimg.com/media/Ejjk19AWAAAvraG?format=png&name=240x240" sizes="192x192">
+    <link href='https://fonts.googleapis.com/css?family=Allan' rel='stylesheet'>
+
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.0/examples/grid/">
+    <link rel="canonical" href="https://icons.getbootstrap.com/icons/camera/">
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link href="css/grid.css" rel="stylesheet">
+    <link rel="stylesheet" href="./dragvesti.css">
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+    <!-- UI Kit -->
+    <link rel="stylesheet" type="text/css" href="Semantic-UI-CSS-master/semantic.min.css">
+    <link rel="stylesheet" type="text/css" href="Semantic-UI-master/dist/components/reset.css">
+    <link rel="stylesheet" type="text/css" href="Semantic-UI-master/dist/components/site.css">
+    <link rel="stylesheet" type="text/css" href="Semantic-UI-master/dist/components/container.css">
+    <link rel="stylesheet" type="text/css" href="Semantic-UI-master/dist/components/grid.css">
+    <link rel="stylesheet" type="text/css" href="Semantic-UI-master/dist/components/header.css">
+    <link rel="stylesheet" type="text/css" href="Semantic-UI-master/dist/components/image.css">
+    <link rel="stylesheet" type="text/css" href="Semantic-UI-master/dist/components/menu.css">
+    <link rel="stylesheet" type="text/css" href="Semantic-UI-master/dist/components/divider.css">
+    <link rel="stylesheet" type="text/css" href="Semantic-UI-master/dist/components/list.css">
+    <link rel="stylesheet" type="text/css" href="Semantic-UI-master/dist/components/segment.css">
+    <link rel="stylesheet" type="text/css" href="Semantic-UI-master/dist/components/dropdown.css">
+    <link rel="stylesheet" type="text/css" href="Semantic-UI-master/dist/components/icon.css">
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+    <script src="Semantic-UI-CSS-master/semantic.min.js"></script>
+
+
+
+
+
+    <style type="text/css">
+        .footerdrag {
+            position: fixed;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            color: rgb(80, 73, 73);
+            text-align: center;
+            font-size: 8pt;
+        }
+        
+        .bd-placeholder-img {
+            font-size: 1.125rem;
+            text-anchor: middle;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            user-select: none;
+        }
+        
+        @media (min-width: 768px) {
+            .bd-placeholder-img-lg {
+                font-size: 3.5rem;
+            }
+        }
+        
+        * {
+            box-sizing: border-box;
+        }
+        
+        .rowe {
+            display: -ms-flexbox;
+            /* IE 10 */
+            display: flex;
+            -ms-flex-wrap: wrap;
+            /* IE 10 */
+            flex-wrap: wrap;
+            padding: 0 4px;
+        }
+        /* Create two equal columns that sits next to each other */
+        
+        .columne {
+            -ms-flex: 50%;
+            /* IE 10 */
+            flex: 50%;
+            padding: 0 4px;
+        }
+        
+        .columne img {
+            margin-top: 8px;
+            vertical-align: middle;
+        }
+        /* Style the buttons */
+        
+        .btne {
+            border: none;
+            outline: none;
+            padding: 10px 16px;
+            background-color: #f1f1f1;
+            cursor: pointer;
+            font-size: 18px;
+        }
+        
+        .btne:hover {
+            background-color: #ddd;
+        }
+        
+        .btne.activee {
+            background-color: #666;
+            color: white;
+        }
+        /* Make the image fully responsive */
+        
+        .carousel-inner img {
+            width: 100%;
+            height: 100%;
+        }
+        /* Borders */
+        
+        span {
+            display: inline-block;
+            width: 70px;
+            height: 70px;
+            margin: 6px;
+            background-color: #555;
+        }
+        /* Avatar */
+        
+        .avatar {
+            vertical-align: middle;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+        }
+        
+        body {
+            background-color: #FFFFFF;
+        }
+        
+        .ui.menu .item img.logo {
+            margin-right: 1.5em;
+        }
+        
+        .main.container {
+            margin-top: 7em;
+        }
+        
+        .wireframe {
+            margin-top: 2em;
+        }
+        
+        .ui.footer.segment {
+            margin: 5em 0em 0em;
+            padding: 5em 0em;
+        }
+        
+        .checked {
+            color: orange;
+        }
+        
+        * {
+            box-sizing: border-box;
+        }
+        /* Add padding BETWEEN each column */
+        /* Create three equal columns that floats next to each other */
+        
+        .column {
+            float: left;
+            width: 33.33%;
+            display: none;
+            /* Hide all elements by default */
+        }
+        /* Clear floats after rows */
+        
+        .row:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+        /* Content */
+        
+        .content {
+            background-color: white;
+            padding: 10px;
+        }
+        /* The "show" class is added to the filtered elements */
+        
+        .show {
+            display: block;
+        }
+        /* Style the buttons */
+    </style>
+
+</head>
+
+<body>
+    <!-- Inicio Menu Nav-->
+    <nav class="navbar fixed-top navbar-expand-md  navbar-dark w3-black ">
+        <a class="navbar-brand" href="#">
+            <b style="text-shadow:1px 1px 0 #444">Dragvesti</b></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+            <ul class="navbar-nav ">
+
+                <!-- La Carrera Drag Online -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle w3-hover-text-red " href="#LCDO" id="navbardrop" data-toggle="dropdown">
+                        La Carrera Drag Online </a>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="#LCD01" onclick=" document.location='LCDO1.html' ">1ra temporada. <i>Edición Internacional</i></a>
+                        <a class="dropdown-item" href="#LCD02" onclick=" document.location='LCDO2.html' ">2da temporada. <i>Edición México</i></a>
+                        <a class="dropdown-item" href="#LCD02" onclick=" document.location='LCDO3.html' ">3ra temporada. <i>Edición Internacional</i></a>
+                    </div>
+                </li>
+
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle w3-hover-text-pink" href="#LCDAS" id="navbardrop" data-toggle="dropdown">
+        All Stars
+      </a>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="#LCDAS1" onclick=" document.location='LCDOAS1.html' ">1ra temporada</a>
+                        <a class="dropdown-item" href="#LCDAS2" onclick=" document.location='LCDOAS2.html' ">2da temporada</a>
+                    </div>
+                </li>
+
+
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle w3-hover-text-purple" href="#LCDCUU" id="navbardrop" data-toggle="dropdown">
+        En vivo. <i>Chihuahua</i>
+      </a>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="#LCDCUU1" onclick=" document.location='LCDCUU1.html' ">1ra temporada</a>
+                        <a class="dropdown-item" href="#LCDCUU2" onclick=" document.location='LCDCUU2.html' ">2da temporada</a>
+                        <a class="dropdown-item" href="#LCDCUU3" onclick=" document.location='LCDCUU2.html' ">3ra temporada</a>
+                        <a class="dropdown-item" href="#LCDCUUAS" onclick=" document.location='LCDCUU3.html' ">All Stars</a>
+                    </div>
+                </li>
+
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle w3-hover-text-indigo" href="#LCDCDMX" id="navbardrop" data-toggle="dropdown">
+        En vivo. <i>CDMX</i>
+      </a>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="#LCDCDMX" onclick=" document.location='LCDCDMX.html' ">1ra dición</a>
+
+                    </div>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link w3-hover-text-blue" href="#dragqueen" onclick=" document.location='dragqueen.html' ">Participantes</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link w3-hover-text-teal" href="#jurado" onclick=" document.location='jurado.html' "> Jurado</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link w3-hover-text-amber" onclick=" document.location='contacto.html' ">  Contacto
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link w3-hover-text-deep-orange" onclick=" document.location='mapadesitio.html' ">  Mapa de sitio
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <!-- Fin Menu Nav-->
+    <br><br><br><br>
+    <!-- Main inicio -->
+    <div class="container">
+        <main>
+            <div id="myBtnContainer">
+                <button type="button" class="btn btn-dark btn-sm active" onclick="filterSelection('all')"> Mostrar todas</button>
+
+                <button class="btn btn-danger btn-sm" onclick="filterSelection('online')"> Online</button>
+                <button class="btn w3-pink btn-sm" onclick="filterSelection('allstars')"> All Stars</button>
+                <button class="btn w3-purple btn-sm" onclick="filterSelection('envivo')"> En Vivo</button>
+                <button class="btn w3-indigo btn-sm" onclick="filterSelection('cuu')"> Chihuahua</button>
+                <button class="btn w3-orange btn-sm" onclick="filterSelection('cdmx')"> CDMX</button>
+            </div>
+
+
+            <!-- Portfolio Gallery Grid -->
+            <div class="row">
+                <div class="column online">
+                    <div class="content">
+                        <img src="https://www.w3schools.com/w3images/mountains.jpg" alt="Dragvesti 1" style="width:100%">
+                        <h4>Primera Temporada</h4>
+                        <p>Edición Internacional</p>
+                    </div>
+                </div>
+                <div class="column online">
+                    <div class="content">
+                        <img src="https://www.w3schools.com/w3images/lights.jpg" alt="Dragvesti 2" style="width:100%">
+                        <h4>Segunda Temporada</h4>
+                        <p>Edición México</p>
+                    </div>
+                </div>
+                <div class="column online">
+                    <div class="content">
+                        <img src="https://www.w3schools.com/w3images/nature.jpg" alt="Dragvesti 3" style="width:100%">
+                        <h4>Tercera Temporada</h4>
+                        <p>Edición Internacional</p>
+                    </div>
+                </div>
+
+                <div class="column allstars online">
+                    <div class="content">
+                        <img src="https://www.w3schools.com/w3images/cars1.jpg" alt="Dragvesti All Stars 1" style="width:100%">
+                        <h4>All Stars</h4>
+                        <p>Primera Temporada</p>
+                    </div>
+                </div>
+                <div class="column allstars online">
+                    <div class="content">
+                        <img src="https://www.w3schools.com/w3images/cars2.jpg" alt="Dragvesti All Stars 2" style="width:100%">
+                        <h4>All Stars</h4>
+                        <p>Segunda Temporada Temporada</p>
+                    </div>
+                </div>
+                <div class="column envivo cuu">
+                    <div class="content">
+                        <img src="https://www.w3schools.com/w3images/cars3.jpg" alt="Car" style="width:100%">
+                        <h4>Dragvesti En Vivo: Chihuahua</h4>
+                        <p>Temporada 1</p>
+                    </div>
+                </div>
+
+                <div class="column envivo cuu">
+                    <div class="content">
+                        <img src="https://www.w3schools.com/w3images/people1.jpg" alt="Car" style="width:100%">
+                        <h4>Dragvesti En Vivo: Chihuahua</h4>
+                        <p>Temporada 2</p>
+                    </div>
+                </div>
+                <div class="column envivo cuu ">
+                    <div class="content">
+                        <img src="https://www.w3schools.com/w3images/people2.jpg" alt="Car" style="width:100%">
+                        <h4>Dragvesti En Vivo: Chihuahua</h4>
+                        <p>Temporada 3</p>
+                    </div>
+                </div>
+                <div class="column envivo cuu allstars">
+                    <div class="content">
+                        <img src="https://www.w3schools.com/w3images/people3.jpg" alt="Car" style="width:100%">
+                        <h4>Dragvesti En Vivo: Chihuahua</h4>
+                        <p>All Stars 1</p>
+                    </div>
+                </div>
+                <div class="column envivo cdmx ">
+                    <div class="content">
+                        <img src="https://www.w3schools.com/w3images/people2.jpg" alt="Car" style="width:100%">
+                        <h4>Long live the Queens</h4>
+                        <p>Coronación</p>
+                    </div>
+                </div>
+                <div class="column envivo cdmx ">
+                    <div class="content">
+                        <img src="https://www.w3schools.com/w3images/people2.jpg" alt="Car" style="width:100%">
+                        <h4>Cucu Confessions</h4>
+                        <p>Coronación</p>
+                    </div>
+                </div>
+                <div class="column envivo cdmx ">
+                    <div class="content">
+                        <img src="https://www.w3schools.com/w3images/people2.jpg" alt="Car" style="width:100%">
+                        <h4>Dragvesti En Vivo: CDMX</h4>
+                        <p>Temporada 1</p>
+                    </div>
+                </div>
+                <!-- END GRID -->
+            </div>
+            <!-- container mt 3 -->
+
+    </div>
+    <!-- div class="col-md-6 shadow rounded mx-auto "-->
+    </div>
+
+    <!-- no se toca div class="col-md-3 " -->
+    <div class="col-md-3 ">
+
+    </div>
+    </div>
+    <!-- div class="row mb-3 " -->
+    </div>
+    <!-- div class="container " -->
+    </div>
+    <!-- div class="row py-5 px-4 " -->
+    </div>
+    </main>
+
+    <script src=" ./dragvesti.js "></script>
+    <script>
+        $('.ui.accordion ')
+            .accordion();
+
+        $('.ui.rating')
+            .rating({
+                initialRating: 3,
+                maxRating: 5
+            });
+        $('.ui.menu .item')
+            .tab({
+                history: true,
+                historyType: 'state',
+                path: '/modules/tab.html'
+            });
+        $('.menu .item')
+            .tab();
+        $('.activating.element')
+            .popup();
+        $('.button')
+            .popup({
+                inline: true
+            });
+        $('.special.cards .image').dimmer({
+            on: 'hover'
+        });
+
+        filterSelection("all ")
+
+        function filterSelection(c) {
+            var x, i;
+            x = document.getElementsByClassName("column ");
+            if (c == "all ") c = " ";
+            for (i = 0; i < x.length; i++) {
+                w3RemoveClass(x[i], "show ");
+                if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show ");
+            }
+        }
+
+        function w3AddClass(element, name) {
+            var i, arr1, arr2;
+            arr1 = element.className.split(" ");
+            arr2 = name.split(" ");
+            for (i = 0; i < arr2.length; i++) {
+                if (arr1.indexOf(arr2[i]) == -1) {
+                    element.className += " " + arr2[i];
+                }
+            }
+        }
+
+        function w3RemoveClass(element, name) {
+            var i, arr1, arr2;
+            arr1 = element.className.split(" ");
+            arr2 = name.split(" ");
+            for (i = 0; i < arr2.length; i++) {
+                while (arr1.indexOf(arr2[i]) > -1) {
+                    arr1.splice(arr1.indexOf(arr2[i]), 1);
+                }
+            }
+            element.className = arr1.join(" ");
+        }
+
+
+        // Add active class to the current button (highlight it)
+        var btnContainer = document.getElementById("myBtnContainer ");
+        var btns = btnContainer.getElementsByClassName("btn ");
+        for (var i = 0; i < btns.length; i++) {
+            btns[i].addEventListener("click ", function() {
+                var current = document.getElementsByClassName("active ");
+                current[0].className = current[0].className.replace(" active ", " ");
+                this.className += " active ";
+            });
+        }
+        // Get the elements with class="column "
+        var elements = document.getElementsByClassName("columne ");
+        // Declare a loop variable
+        var i;
+        // Full-width images
+        function one() {
+            for (i = 0; i < elements.length; i++) {
+                elements[i].style.msFlex = "100% "; // IE10
+                elements[i].style.flex = "100% ";
+            }
+        }
+
+        // Two images side by side
+        function two() {
+            for (i = 0; i < elements.length; i++) {
+                elements[i].style.msFlex = "50% "; // IE10
+                elements[i].style.flex = "50% ";
+            }
+        }
+
+        // Four images side by side
+        function four() {
+            for (i = 0; i < elements.length; i++) {
+                elements[i].style.msFlex = "25% "; // IE10
+                elements[i].style.flex = "25% ";
+            }
+        }
+
+        // Add active class to the current button (highlight it)
+        var header = document.getElementById("myHeader ");
+        var btns = header.getElementsByClassName("btne ");
+        for (var i = 0; i < btns.length; i++) {
+            btns[i].addEventListener("click ", function() {
+                var current = document.getElementsByClassName("activee ");
+                current[0].className = current[0].className.replace(" activee ", " ");
+                this.className += " activee ";
+            });
+        }
+        var i = 0;
+        var txt = 'Martech & Desing: HiHello.Monster ';
+        var speed = 50;
+
+        function typeWriter() {
+            if (i < txt.length) {
+                document.getElementById("hihellodesing ").innerHTML += txt.charAt(i);
+                i++;
+                setTimeout(typeWriter, speed);
+            }
+        }
+    </script>
+
+</body>
+
+</html>
