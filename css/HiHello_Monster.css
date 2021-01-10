@@ -1,199 +1,203 @@
-        * arcoirismasmenos {
-            background: linear-gradient( to right, #ff8080, #ff6666, #ff4d4d, #ff3333, #ff1a1a, #ff0000, #e60000, #cc0000, #b30000, #990000, #800000, #660000, #4d0000, #330000, #1a0000, #000000, #ffe6f0, #ffcce0, #ffb3d1, #ff99c2, #ff80b3, #ff66a3, #ff4d94, #ff3385, #ff1a75, #ff0066, #e6005c, #cc0052, #b30047, #99003d, #800033, #660029, #f2d9f2, #ecc6ec, #e6b3e6, #df9fdf, #d98cd9, #d279d2, #cc66cc, #c653c6, #bf40bf, #ac39ac, #993399, #862d86, #732673, #602060, #ffe0b3, #ffd699, #ffcc80, #ffc266, #ffb84d, #ffad33, #ffa31a, #ff9900, #e68a00, #cc7a00, #b36b00, #995c00, #804d00, #663d00, #ffffb3, #ffff99, #ffff80, #ffff66, #ffff4d, #ffff33, #ffff1a, #ffff00, #e6e600, #cccc00, #b3b300, #999900, #808000, #ccf2ff, #b3ecff, #99e6ff, #80dfff, #66d9ff, #4dd2ff, #33ccff, #1ac6ff, #00bfff, #00ace6, #0099cc, #0086b3, #007399, #006080, #b3ffec, #99ffe6, #80ffdf, #66ffd9, #4dffd2, #33ffcc, #1affc6, #00ffbf, #00e6ac, #00cc99, #00b386, #009973, #008060, #00664d, #004d39, #003326);
-        }
-        
-        * arcomasmenosmenosmas {
-            background: linear-gradient( to right, #ff8080, #ff6666, #ff4d4d, #ff3333, #ff1a1a, #ff0000, #e60000, #cc0000, #b30000, #990000, #800000, #660000, #4d0000, #330000, #1a0000, #000000, #330014, #4d001f, #660029, #800033, #99003d, #b30047, #cc0052, #e6005c, #ff0066, #ff1a75, #ff3385, #ff4d94, #ff66a3, #ff80b3, #ff99c2, #ffb3d1, #ecc6ec, #e6b3e6, #df9fdf, #d98cd9, #d279d2, #cc66cc, #c653c6, #bf40bf, #ac39ac, #993399, #862d86, #732673, #602060, #4d194d, #391339, #331f00, #4d2e00, #663d00, #804d00, #995c00, #b36b00, #cc7a00, #e68a00, #ff9900, #ffa31a, #ffad33, #ffb84d, #ffc266, #ffcc80, #ffff4d, #ffff33, #ffff1a, #ffff00, #e6e600, #cccc00, #b3b300, #999900, #808000, #666600, #4d4d00, #002633, #00394d, #004d66, #006080, #007399, #0086b3, #0099cc, #00ace6, #00bfff, #1ac6ff, #33ccff, #4dd2ff, #66d9ff, #80dfff, #99e6ff, #b3ecff, #ccfff2, #b3ffec, #99ffe6, #80ffdf, #66ffd9, #4dffd2, #33ffcc, #1affc6, #00ffbf, #00e6ac, #00cc99, #00b386, #009973, #008060, #00664d, #004d39, #003326, #001a13);
-        }
-        
-        * pdrag {
-            font-family: ModernaSans-Light;
-        }
-        
-        * dragvesti {
-            margin-top: 0%;
-            line-height: 20px;
-            font-size: 20pt;
-            text-align: center;
-            font-family: ModernaSans-Bold;
-            background: linear-gradient( to right, #ff8080, #ff6666, #ff4d4d, #ff3333, #ff1a1a, #ff0000, #e60000, #cc0000, #b30000, #990000, #800000, #660000, #4d0000, #330000, #1a0000, #000000, #330014, #4d001f, #660029, #800033, #99003d, #b30047, #cc0052, #e6005c, #ff0066, #ff1a75, #ff3385, #ff4d94, #ff66a3, #ff80b3, #ff99c2, #ffb3d1, #ecc6ec, #e6b3e6, #df9fdf, #d98cd9, #d279d2, #cc66cc, #c653c6, #bf40bf, #ac39ac, #993399, #862d86, #732673, #602060, #4d194d, #391339, #331f00, #4d2e00, #663d00, #804d00, #995c00, #b36b00, #cc7a00, #e68a00, #ff9900, #ffa31a, #ffad33, #ffb84d, #ffc266, #ffcc80, #ffff4d, #ffff33, #ffff1a, #ffff00, #e6e600, #cccc00, #b3b300, #999900, #808000, #666600, #4d4d00, #002633, #00394d, #004d66, #006080, #007399, #0086b3, #0099cc, #00ace6, #00bfff, #1ac6ff, #33ccff, #4dd2ff, #66d9ff, #80dfff, #99e6ff, #b3ecff, #ccfff2, #b3ffec, #99ffe6, #80ffdf, #66ffd9, #4dffd2, #33ffcc, #1affc6, #00ffbf, #00e6ac, #00cc99, #00b386, #009973, #008060, #00664d, #004d39, #003326, #001a13);
-            background-clip: text;
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            background-size: 900px;
-            background-position: center 0%;
-            animation: background-slide 80s infinite linear;
-        }
-        
-        @keyframes background-slide {
-            100% {
-                background-position: -8160px;
-            }
-        }
-        
-        * dragvestilight {
-            margin-top: 0%;
-            line-height: 20px;
-            font-size: 20pt;
-            text-align: center;
-            font-family: ModernaSans-Light;
-            background: linear-gradient( to right, #ff1616, #ff7716, #ffdc16, #36c945, #10a5ce, #0f0096, #a51eff, #ff1616);
-            background-clip: text;
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            background-size: 600px;
-            background-position: center 0%;
-            animation: background-slide 25s infinite linear;
-        }
-        
-        * dragvestimedium {
-            margin-top: 0%;
-            line-height: 20px;
-            font-size: 20pt;
-            text-align: center;
-            font-family: ModernaSans-Medium;
-            background: linear-gradient( to right, #ff1616, #ff7716, #ffdc16, #36c945, #10a5ce, #0f0096, #a51eff, #ff1616);
-            background-clip: text;
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            background-size: 600px;
-            background-position: center 0%;
-            animation: background-slide 25s infinite linear;
-        }
-        
-        * DrgvstS1 {
-            margin-top: 0%;
-            line-height: 20px;
-            font-size: 20pt;
-            text-align: center;
-            font-family: ModernaSans-BlackIt;
-            background: linear-gradient( to left, #ffcccc, #ffb3b3, #ff9999, #ff8080, #ff6666, #ff4d4d, #ff3333, #ff1a1a, #ff0000, #e60000, #cc0000, #b30000, #990000, #800000, #660000, #4d0000, #330000, #1a0000, #000000);
-            background-clip: text;
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            background-size: 600px;
-            background-position: center 0%;
-            animation: background-slide 25s infinite linear;
-        }
-        
-        * DrgvstS2 {
-            margin-top: 0%;
-            line-height: 20px;
-            font-size: 20pt;
-            text-align: center;
-            font-family: ModernaSans-BlackIt;
-            background: linear-gradient( to left, #ffe6f0, #ffcce0, #ffb3d1, #ff99c2, #ff80b3, #ff66a3, #ff4d94, #ff3385, #ff1a75, #ff0066, #e6005c, #cc0052, #b30047, #99003d, #800033, #660029, #4d001f, #330014);
-            background-clip: text;
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            background-size: 600px;
-            background-position: center 0%;
-            animation: background-slide 25s infinite linear;
-        }
-        
-        * DrgvstS3 {
-            margin-top: 0%;
-            line-height: 20px;
-            font-size: 20pt;
-            text-align: center;
-            font-family: ModernaSans-BlackIt;
-            background: linear-gradient( to left, #f9ecf9, #f2d9f2, #ecc6ec, #e6b3e6, #df9fdf, #d98cd9, #d279d2, #cc66cc, #c653c6, #bf40bf, #ac39ac, #993399, #862d86, #732673, #602060, #4d194d, #391339, #260d26);
-            background-clip: text;
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            background-size: 600px;
-            background-position: center 0%;
-            animation: background-slide 25s infinite linear;
-        }
-        
-        * DrgvstS4 {
-            margin-top: 0%;
-            line-height: 20px;
-            font-size: 20pt;
-            text-align: center;
-            font-family: ModernaSans-BlackIt;
-            background: linear-gradient( to left, #ffebcc, #ffe0b3, #ffd699, #ffcc80, #ffc266, #ffb84d, #ffad33, #ffa31a, #ff9900, #e68a00, #cc7a00, #b36b00, #995c00, #804d00, #663d00, #4d2e00, #331f00);
-            background-clip: text;
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            background-size: 600px;
-            background-position: center 0%;
-            animation: background-slide 25s infinite linear;
-        }
-        
-        * DrgvstS5 {
-            margin-top: 0%;
-            line-height: 20px;
-            font-size: 20pt;
-            text-align: center;
-            font-family: ModernaSans-BlackIt;
-            background: linear-gradient( to left, #ffffe6, #ffffcc, #ffffb3, #ffff99, #ffff80, #ffff66, #ffff4d, #ffff33, #ffff1a, #ffff00, #e6e600, #cccc00, #b3b300, #999900, #808000, #666600, #4d4d00);
-            background-clip: text;
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            background-size: 600px;
-            background-position: center 0%;
-            animation: background-slide 25s infinite linear;
-        }
-        
-        * DrgvstS6 {
-            margin-top: 0%;
-            line-height: 20px;
-            font-size: 20pt;
-            text-align: center;
-            font-family: ModernaSans-BlackIt;
-            background: linear-gradient( to left, #e6f9ff, #ccf2ff, #b3ecff, #99e6ff, #80dfff, #66d9ff, #4dd2ff, #33ccff, #1ac6ff, #00bfff, #00ace6, #0099cc, #0086b3, #007399, #006080, #004d66, #00394d, #002633);
-            background-clip: text;
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            background-size: 600px;
-            background-position: center 0%;
-            animation: background-slide 25s infinite linear;
-        }
-        
-        * DrgvstS7 {
-            margin-top: 0%;
-            line-height: 20px;
-            font-size: 20pt;
-            text-align: center;
-            font-family: ModernaSans-BlackIt;
-            background: linear-gradient( to left, #e6fff9, #ccfff2, #b3ffec, #99ffe6, #80ffdf, #66ffd9, #4dffd2, #33ffcc, #1affc6, #00ffbf, #00e6ac, #00cc99, #00b386, #009973, #008060, #00664d, #004d39, #003326, #001a13);
-            background-clip: text;
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            background-size: 600px;
-            background-position: center 0%;
-            animation: background-slide 25s infinite linear;
-        }
-        
-        @font-face {
-            font-family: ModernaSans-Light;
-            src: url(/font/ModernaSans-Light.ttf);
-        }
-        
-        @font-face {
-            font-family: ModernaSans-Medium;
-            src: url(/font/ModernaSans-Medium.ttf);
-        }
-        
-        @font-face {
-            font-family: ModernaSans-BlackIt;
-            src: url(/font/ModernaSans-BlackIt.ttf);
-        }
-        
-        @font-face {
-            font-family: ModernaSans-Bold;
-            src: url(/font/ModernaSans-Bold.ttf);
-        }
-        
-        #myMove {
-            width: 400px;
-            height: 100px;
-            animation: mymove 5s infinite;
-        }
-        
-        @keyframes mymove {
-            50% {
-                font: 40px bold;
-            }
-        }
+* arcoirismasmenos {
+    background: linear-gradient( to right, #ff8080, #ff6666, #ff4d4d, #ff3333, #ff1a1a, #ff0000, #e60000, #cc0000, #b30000, #990000, #800000, #660000, #4d0000, #330000, #1a0000, #000000, #ffe6f0, #ffcce0, #ffb3d1, #ff99c2, #ff80b3, #ff66a3, #ff4d94, #ff3385, #ff1a75, #ff0066, #e6005c, #cc0052, #b30047, #99003d, #800033, #660029, #f2d9f2, #ecc6ec, #e6b3e6, #df9fdf, #d98cd9, #d279d2, #cc66cc, #c653c6, #bf40bf, #ac39ac, #993399, #862d86, #732673, #602060, #ffe0b3, #ffd699, #ffcc80, #ffc266, #ffb84d, #ffad33, #ffa31a, #ff9900, #e68a00, #cc7a00, #b36b00, #995c00, #804d00, #663d00, #ffffb3, #ffff99, #ffff80, #ffff66, #ffff4d, #ffff33, #ffff1a, #ffff00, #e6e600, #cccc00, #b3b300, #999900, #808000, #ccf2ff, #b3ecff, #99e6ff, #80dfff, #66d9ff, #4dd2ff, #33ccff, #1ac6ff, #00bfff, #00ace6, #0099cc, #0086b3, #007399, #006080, #b3ffec, #99ffe6, #80ffdf, #66ffd9, #4dffd2, #33ffcc, #1affc6, #00ffbf, #00e6ac, #00cc99, #00b386, #009973, #008060, #00664d, #004d39, #003326);
+}
+
+* arcomasmenosmenosmas {
+    background: linear-gradient( to right, #ff8080, #ff6666, #ff4d4d, #ff3333, #ff1a1a, #ff0000, #e60000, #cc0000, #b30000, #990000, #800000, #660000, #4d0000, #330000, #1a0000, #000000, #330014, #4d001f, #660029, #800033, #99003d, #b30047, #cc0052, #e6005c, #ff0066, #ff1a75, #ff3385, #ff4d94, #ff66a3, #ff80b3, #ff99c2, #ffb3d1, #ecc6ec, #e6b3e6, #df9fdf, #d98cd9, #d279d2, #cc66cc, #c653c6, #bf40bf, #ac39ac, #993399, #862d86, #732673, #602060, #4d194d, #391339, #331f00, #4d2e00, #663d00, #804d00, #995c00, #b36b00, #cc7a00, #e68a00, #ff9900, #ffa31a, #ffad33, #ffb84d, #ffc266, #ffcc80, #ffff4d, #ffff33, #ffff1a, #ffff00, #e6e600, #cccc00, #b3b300, #999900, #808000, #666600, #4d4d00, #002633, #00394d, #004d66, #006080, #007399, #0086b3, #0099cc, #00ace6, #00bfff, #1ac6ff, #33ccff, #4dd2ff, #66d9ff, #80dfff, #99e6ff, #b3ecff, #ccfff2, #b3ffec, #99ffe6, #80ffdf, #66ffd9, #4dffd2, #33ffcc, #1affc6, #00ffbf, #00e6ac, #00cc99, #00b386, #009973, #008060, #00664d, #004d39, #003326, #001a13);
+}
+
+* .dvb {
+    margin: 0;
+    text-align: center;
+    font-family: ModernaSans-Medium;
+    color: #212529;
+    background-color: #fff;
+}
+
+* dragvesti {
+    margin-top: 0%;
+    line-height: 20px;
+    font-size: 30pt;
+    text-align: center;
+    font-family: ModernaSans-Bold;
+    background: linear-gradient( to right, #ff8080, #ff6666, #ff4d4d, #ff3333, #ff1a1a, #ff0000, #e60000, #cc0000, #b30000, #990000, #800000, #660000, #4d0000, #330000, #1a0000, #000000, #330014, #4d001f, #660029, #800033, #99003d, #b30047, #cc0052, #e6005c, #ff0066, #ff1a75, #ff3385, #ff4d94, #ff66a3, #ff80b3, #ff99c2, #ffb3d1, #ecc6ec, #e6b3e6, #df9fdf, #d98cd9, #d279d2, #cc66cc, #c653c6, #bf40bf, #ac39ac, #993399, #862d86, #732673, #602060, #4d194d, #391339, #331f00, #4d2e00, #663d00, #804d00, #995c00, #b36b00, #cc7a00, #e68a00, #ff9900, #ffa31a, #ffad33, #ffb84d, #ffc266, #ffcc80, #ffff4d, #ffff33, #ffff1a, #ffff00, #e6e600, #cccc00, #b3b300, #999900, #808000, #666600, #4d4d00, #002633, #00394d, #004d66, #006080, #007399, #0086b3, #0099cc, #00ace6, #00bfff, #1ac6ff, #33ccff, #4dd2ff, #66d9ff, #80dfff, #99e6ff, #b3ecff, #ccfff2, #b3ffec, #99ffe6, #80ffdf, #66ffd9, #4dffd2, #33ffcc, #1affc6, #00ffbf, #00e6ac, #00cc99, #00b386, #009973, #008060, #00664d, #004d39, #003326, #001a13);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-size: 900px;
+    background-position: center 0%;
+    animation: background-slide 80s infinite linear;
+}
+
+@keyframes background-slide {
+    100% {
+        background-position: -8160px;
+    }
+}
+
+* dragvestilight {
+    margin-top: 0%;
+    line-height: 20px;
+    font-size: 20pt;
+    text-align: center;
+    font-family: ModernaSans-Light;
+    background: linear-gradient( to right, #ff1616, #ff7716, #ffdc16, #36c945, #10a5ce, #0f0096, #a51eff, #ff1616);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-size: 600px;
+    background-position: center 0%;
+    animation: background-slide 25s infinite linear;
+}
+
+* dragvestimedium {
+    margin-top: 0%;
+    line-height: 20px;
+    font-size: 20pt;
+    text-align: center;
+    font-family: ModernaSans-Medium;
+    background: linear-gradient( to right, #ff1616, #ff7716, #ffdc16, #36c945, #10a5ce, #0f0096, #a51eff, #ff1616);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-size: 600px;
+    background-position: center 0%;
+    animation: background-slide 25s infinite linear;
+}
+
+* DrgvstS1 {
+    margin-top: 0%;
+    line-height: 20px;
+    font-size: 20pt;
+    text-align: center;
+    font-family: ModernaSans-BlackIt;
+    background: linear-gradient( to left, #ffcccc, #ffb3b3, #ff9999, #ff8080, #ff6666, #ff4d4d, #ff3333, #ff1a1a, #ff0000, #e60000, #cc0000, #b30000, #990000, #800000, #660000, #4d0000, #330000, #1a0000, #000000);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-size: 600px;
+    background-position: center 0%;
+    animation: background-slide 25s infinite linear;
+}
+
+* DrgvstS2 {
+    margin-top: 0%;
+    line-height: 20px;
+    font-size: 20pt;
+    text-align: center;
+    font-family: ModernaSans-BlackIt;
+    background: linear-gradient( to left, #ffe6f0, #ffcce0, #ffb3d1, #ff99c2, #ff80b3, #ff66a3, #ff4d94, #ff3385, #ff1a75, #ff0066, #e6005c, #cc0052, #b30047, #99003d, #800033, #660029, #4d001f, #330014);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-size: 600px;
+    background-position: center 0%;
+    animation: background-slide 25s infinite linear;
+}
+
+* DrgvstS3 {
+    margin-top: 0%;
+    line-height: 20px;
+    font-size: 20pt;
+    text-align: center;
+    font-family: ModernaSans-BlackIt;
+    background: linear-gradient( to left, #f9ecf9, #f2d9f2, #ecc6ec, #e6b3e6, #df9fdf, #d98cd9, #d279d2, #cc66cc, #c653c6, #bf40bf, #ac39ac, #993399, #862d86, #732673, #602060, #4d194d, #391339, #260d26);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-size: 600px;
+    background-position: center 0%;
+    animation: background-slide 25s infinite linear;
+}
+
+* DrgvstS4 {
+    margin-top: 0%;
+    line-height: 20px;
+    font-size: 20pt;
+    text-align: center;
+    font-family: ModernaSans-BlackIt;
+    background: linear-gradient( to left, #ffebcc, #ffe0b3, #ffd699, #ffcc80, #ffc266, #ffb84d, #ffad33, #ffa31a, #ff9900, #e68a00, #cc7a00, #b36b00, #995c00, #804d00, #663d00, #4d2e00, #331f00);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-size: 600px;
+    background-position: center 0%;
+    animation: background-slide 25s infinite linear;
+}
+
+* DrgvstS5 {
+    margin-top: 0%;
+    line-height: 20px;
+    font-size: 20pt;
+    text-align: center;
+    font-family: ModernaSans-BlackIt;
+    background: linear-gradient( to left, #ffffe6, #ffffcc, #ffffb3, #ffff99, #ffff80, #ffff66, #ffff4d, #ffff33, #ffff1a, #ffff00, #e6e600, #cccc00, #b3b300, #999900, #808000, #666600, #4d4d00);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-size: 600px;
+    background-position: center 0%;
+    animation: background-slide 25s infinite linear;
+}
+
+* DrgvstS6 {
+    margin-top: 0%;
+    line-height: 20px;
+    font-size: 20pt;
+    text-align: center;
+    font-family: ModernaSans-BlackIt;
+    background: linear-gradient( to left, #e6f9ff, #ccf2ff, #b3ecff, #99e6ff, #80dfff, #66d9ff, #4dd2ff, #33ccff, #1ac6ff, #00bfff, #00ace6, #0099cc, #0086b3, #007399, #006080, #004d66, #00394d, #002633);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-size: 600px;
+    background-position: center 0%;
+    animation: background-slide 25s infinite linear;
+}
+
+* DrgvstS7 {
+    margin-top: 0%;
+    line-height: 20px;
+    font-size: 20pt;
+    text-align: center;
+    font-family: ModernaSans-BlackIt;
+    background: linear-gradient( to left, #e6fff9, #ccfff2, #b3ffec, #99ffe6, #80ffdf, #66ffd9, #4dffd2, #33ffcc, #1affc6, #00ffbf, #00e6ac, #00cc99, #00b386, #009973, #008060, #00664d, #004d39, #003326, #001a13);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-size: 600px;
+    background-position: center 0%;
+    animation: background-slide 25s infinite linear;
+}
+
+@font-face {
+    font-family: ModernaSans-Light;
+    src: url(/font/ModernaSans-Light.ttf);
+}
+
+@font-face {
+    font-family: ModernaSans-Medium;
+    src: url(/font/ModernaSans-Medium.ttf);
+}
+
+@font-face {
+    font-family: ModernaSans-BlackIt;
+    src: url(/font/ModernaSans-BlackIt.ttf);
+}
+
+@font-face {
+    font-family: ModernaSans-Bold;
+    src: url(/font/ModernaSans-Bold.ttf);
+}
+
+#myMove {
+    width: 400px;
+    height: 100px;
+    animation: mymove 5s infinite;
+}
+
+@keyframes mymove {
+    50% {
+        font: 40px bold;
+    }
+}
