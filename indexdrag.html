@@ -393,14 +393,27 @@
 
             <div class="col-sm-4">
                 <br>
-                <img src="img/dragvesti_pink.png " class="mx-auto d-block" onclick="filterSelection('all')" style="width:20%">
+                <!-- <img src="img/dragvesti_pink.png " class="mx-auto d-block" onclick="filterSelection('all')" style="width:20%"> -->
 
+
+                <header class="mb-auto">
+                    <div>
+
+                        <nav class="nav nav-masthead justify-content-center ">
+                            <a class="nav-link" onclick="filterSelection( 'all) ">
+                                <dragvesti> Dragvesti </dragvesti>
+                            </a>
+
+                        </nav>
+                    </div>
+                </header>
 
                 <div id="myBtnContainer ">
                     <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
                         <header class="mb-auto">
                             <div>
-                                <nav class="nav nav-masthead justify-content-center float-md-end">
+
+                                <nav class="nav nav-masthead justify-content-center ">
                                     <a class="nav-link" onclick="filterSelection( 'online') ">
                                         <p class="text-dark"> <small> Online</small></p>
                                     </a>
@@ -549,26 +562,28 @@
             </div>
         </div>
 
-        <div class="container ">
-            <img src="img/dragvesti_footer.jpg " class="mx-auto d-block " onclick="filterSelection( 'all') " style="width:15% ">
-        </div>
 
-
-        <div class="col-sm-4 ">
-            <div id="myBtnContainer ">
-                <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
-                    <header class="mb-auto">
-                        <div>
-                            <nav class="nav nav-masthead justify-content-center float-md-end">
-                                <a class="nav-link active" aria-current="page" onclick="filterSelection( 'all') " type="button" data-bs-toggle="tooltip" data-bs-placement="top" title="Mostrar todas las temporadas ">
-                                    <p class="text-black-50"><small>Mostrar todas</small></p>
-                                </a>
-                            </nav>
-                        </div>
-                    </header>
-                </div>
+        <div id="myBtnContainer ">
+            <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
+                <header class="mb-auto">
+                    <div>
+                        <nav class="nav nav-masthead justify-content-center ">
+                            <a class="nav-link active" aria-current="page" onclick="filterSelection( 'all') " type="button" data-bs-toggle="tooltip" data-bs-placement="top" title="Mostrar todas las temporadas ">
+                                <p class="text-black-50"><small>Mostrar todas</small></p>
+                            </a>
+                        </nav>
+                    </div>
+                </header>
             </div>
         </div>
+
+        <div class="container ">
+            <img src="img/dragvesti_footer.jpg " class="mx-auto d-block " onclick="filterSelection( 'all') " style="width:20% ">
+        </div>
+
+        <br><br>
+
+        <div class="col-sm-4 "> </div>
     </div>
     </div>
 
