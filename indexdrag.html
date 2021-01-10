@@ -1,0 +1,663 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Hugo 0.79.0">
+    <title>Pricing example · Bootstrap v5.0</title>
+    <link href="/css/HiHello_Monster.min.css" rel="stylesheet">
+    <link href="/css/HiHello_Monster.css" rel="stylesheet">
+
+    <!-- UI Google-->
+    <link href="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.css" rel="stylesheet">
+    <script src="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.js"></script>
+
+    <!-- Icons -->
+    <script src="https://kit.fontawesome.com/ad4c66034e.js" crossorigin="anonymous"></script>
+    <!-- Galeria en https://fontawesome.com/icons?d=gallery-->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+
+    <!-- Fonts -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Paytone+One">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js" integrity="sha384-q2kxQ16AaE6UbzuKqyBE9/u/KzioAlnx2maXQHiDX9d4/zp8Ok3f+M7DPm+Ib6IU" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-pQQkAEnwaBkjpqZ8RU1fF1AKtTcHJwFl3pblpTlHXybJjHpMYo79HY3hIi4NKxyj" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <!-- UI Kit -->
+    <link rel="stylesheet" type="text/css" href="Semantic-UI-CSS-master/semantic.min.css">
+    <link rel="stylesheet" type="text/css" href="Semantic-UI-master/dist/components/reset.css">
+    <link rel="stylesheet" type="text/css" href="Semantic-UI-master/dist/components/site.css">
+    <link rel="stylesheet" type="text/css" href="Semantic-UI-master/dist/components/container.css">
+    <link rel="stylesheet" type="text/css" href="Semantic-UI-master/dist/components/grid.css">
+    <link rel="stylesheet" type="text/css" href="Semantic-UI-master/dist/components/header.css">
+    <link rel="stylesheet" type="text/css" href="Semantic-UI-master/dist/components/image.css">
+    <link rel="stylesheet" type="text/css" href="Semantic-UI-master/dist/components/menu.css">
+    <link rel="stylesheet" type="text/css" href="Semantic-UI-master/dist/components/divider.css">
+    <link rel="stylesheet" type="text/css" href="Semantic-UI-master/dist/components/list.css">
+    <link rel="stylesheet" type="text/css" href="Semantic-UI-master/dist/components/segment.css">
+    <link rel="stylesheet" type="text/css" href="Semantic-UI-master/dist/components/dropdown.css">
+    <link rel="stylesheet" type="text/css" href="Semantic-UI-master/dist/components/icon.css">
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+    <script src="Semantic-UI-CSS-master/semantic.min.js"></script>
+
+    <style>
+            .bd-placeholder-img {
+            font-size: 1.125rem;
+            text-anchor: middle;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            user-select: none;
+        }
+        
+        @media (min-width: 768px) {
+            .bd-placeholder-img-lg {
+                font-size: 3.5rem;
+            }
+        }
+        
+        * {
+            box-sizing: border-box;
+        }
+        /* Create two equal columns that sits next to each other */
+        /* Style the buttons */
+        
+        .btne {
+            border: none;
+            outline: none;
+            padding: 10px 16px;
+            background-color: #f1f1f1;
+            cursor: pointer;
+            font-size: 18px;
+        }
+        
+        .btne:hover {
+            background-color: #ddd;
+        }
+        
+        .btne.activee {
+            background-color: #666;
+            color: white;
+        }
+        /* Make the image fully responsive */
+        
+        .carousel-inner img {
+            width: 100%;
+            height: 100%;
+        }
+        /* Borders */
+        
+        span {
+            display: inline-block;
+            width: 70px;
+            height: 70px;
+            margin: 6px;
+            background-color: #555;
+        }
+        
+        .main.container {
+            margin-top: 7em;
+        }
+        
+        .wireframe {
+            margin-top: 2em;
+        }
+        
+        .ui.footer.segment {
+            margin: 5em 0em 0em;
+            padding: 5em 0em;
+        }
+        
+        * {
+            box-sizing: border-box;
+        }
+        /* Add padding BETWEEN each column */
+        /* Create three equal columns that floats next to each other */
+        
+        .column {
+            float: left;
+            width: 50%;
+            display: none;
+            /* Hide all elements by default */
+        }
+        /* Content */
+        
+        .content {
+            background-color: white;
+            padding: 10px;
+        }
+        /* The "show" class is added to the filtered elements */
+        
+        .show {
+            display: block;
+        }
+        /* Avatar */
+        
+        .avatar {
+            vertical-align: middle;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+        }
+        
+        body {
+            background-color: #FFFFFF;
+        }
+        
+        .ui.menu .item img.logo {
+            margin-right: 1.5em;
+        }
+        
+        .maindrag.container {
+            margin-top: 7em;
+        }
+        
+        .wireframe {
+            margin-top: 2em;
+        }
+        
+        .ui.footer.segment {
+            margin: 5em 0em 0em;
+            padding: 5em 0em;
+        }
+        /* Avatar */
+        
+        .avatar {
+            vertical-align: middle;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+        }
+        
+        .ui.menu .item img.logo {
+            margin-right: 1.5em;
+        }
+        
+        .maindrag.container {
+            margin-top: 7em;
+        }
+        
+        .wireframe {
+            margin-top: 2em;
+        }
+        
+        .ui.footer.segment {
+            margin: 5em 0em 0em;
+            padding: 5em 0em;
+        }
+        
+        .bodyscroll {
+            background-color: #f1f1f1;
+            padding: 20px;
+            font-family: Arial;
+        }
+        /* Center website */
+        
+        .mainscroll {
+            max-width: 1000px;
+            margin: auto;
+        }
+        
+        .rowscroll {
+            margin: 10px -16px;
+        }
+        /* Add padding BETWEEN each columnscroll */
+        
+        .rowscroll,
+        .rowscroll.columnscroll {
+            padding: 8px;
+        }
+        /* Create three equal columnscrolls that floats next to each other */
+        
+        .columnscroll {
+            float: left;
+            width: 50%;
+            display: none;
+            /* Hide all elements by default */
+        }
+        /* Clear floats after rowscrolls */
+        
+        .rowscroll:after {
+            contentscroll: "";
+            display: table;
+            clear: both;
+        }
+        /* contentscroll */
+        
+        .contentscroll {
+            background-color: white;
+            padding: 10px;
+        }
+        /* The "show" class is added to the filtered elements */
+        
+        .showscroll {
+            display: block;
+        }
+        
+        .rowe {
+            display: -ms-flexbox;
+            /* IE 10 */
+            display: flex;
+            -ms-flex-wrap: wrap;
+            /* IE 10 */
+            flex-wrap: wrap;
+            padding: 0 4px;
+        }
+        /* Create two equal columns that sits next to each other */
+        
+        .columne {
+            -ms-flex: 50%;
+            /* IE 10 */
+            flex: 50%;
+            padding: 0 4px;
+        }
+        
+        .columne img {
+            margin-top: 8px;
+            vertical-align: middle;
+        }
+        /* ico bar */
+        
+        .icon-bar {
+            width: 100%;
+            background-color: #ffffff;
+            overflow: auto position: fixed;
+            font-size: 20pt;
+        }
+        
+        .icon-bar a {
+            float: left;
+            width: 20%;
+            text-align: center;
+            padding: 6px 0;
+            transition: all 0.3s ease;
+            color: #bfbfbf;
+            background-color: #ffffff;
+        }
+        
+        .footerx {
+            position: fixed;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            background-color: white;
+            color: white;
+            text-align: center;
+            font-size: 20pt;
+        }
+        
+        .hiavatar {
+            vertical-align: middle;
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+        }
+        
+        .hibody {
+            margin: 0;
+            font-family: Roboto, Arial, Helvetica, sans-serif;
+            background-color: #FFFFFF;
+        }
+        
+        .hiheader {
+            position: fixed;
+            top: 0;
+            z-index: 0;
+            width: 100%;
+            background-color: #f1f1f1;
+        }
+        
+        .hiheader h2 {
+            text-align: center;
+        }
+        
+        .hiprogress-container {
+            width: 100%;
+            height: 8px;
+            background: #ffe6e6;
+        }
+        
+        .hiprogress-bar {
+            height: 8px;
+            background: #cc0000;
+            width: 0%;
+        }
+        
+        .hicontent {
+            padding: 1px 0;
+            margin: 1px auto 0 auto;
+            width: 100%;
+        }
+        
+        .hisidenav {
+            height: 100%;
+            width: 45px;
+            position: fixed;
+            z-index: 0;
+            top: 0;
+            left: 0;
+            background-color: white;
+            overflow-x: hidden;
+            padding-top: 20px;
+        }
+        
+        .hisidenav a {
+            padding: 6px 8px 3px 8px;
+            text-decoration: none;
+            color: #818181;
+            display: block;
+        }
+        
+        .hisidenav a:hover {
+            color: #f1f1f1;
+        }
+        
+        .himain {
+            margin-left: 55px;
+            /* Same as the width of the sidenav*/
+            /* Increased text to enable scrolling */
+            padding: 0px 0px;
+        }
+        
+        @media screen and (max-height: 500px) {
+            .hisidenav {
+                padding-top: 5px;
+            }
+    </style>
+
+</head>
+
+<body>
+    <div class="content we-center">
+
+        <dragvesti>Dragvesti</dragvesti>
+
+
+        <img src="img/dragvesti_pink.png " onclick="filterSelection('all')" style="width:40% ">
+        <br>
+
+        <div id="myBtnContainer">
+            <button class="btn btn-outline-danger btn-sm " onclick="filterSelection('all')"> Mostrar todas</button>
+            <button class="btn btn-outline-danger btn-sm" onclick="filterSelection('online')"> Online</button>
+            <button class="btn btn-outline-danger btn-sm" onclick="filterSelection('allstars')"> All Stars</button>
+            <button class="btn btn-outline-danger btn-sm" onclick="filterSelection('envivo')"> En Vivo</button>
+            <button class="btn btn-outline-danger btn-sm" onclick="filterSelection('cuu')"> Chihuahua</button>
+            <button class="btn btn-outline-danger btn-sm" onclick="filterSelection('cdmx')"> CDMX</button>
+        </div>
+        <br>
+
+        <div class="row">
+            <div class="column all online">
+                <div class="content">
+                    <img src="https://scontent.fmex2-1.fna.fbcdn.net/v/t31.0-8/13301236_1722493108007699_6993941729156483229_o.jpg?_nc_cat=106&ccb=2&_nc_sid=19026a&_nc_ohc=yREKPTdDDgoAX-6mfHn&_nc_ht=scontent.fmex2-1.fna&oh=ae608b896cd39e746fa72ad3c0ab14d1&oe=600E5BE9" alt="Dragvesti 1"
+                        style="width:100%">
+                    <p>Dragvesti. Primera Temporada</p>
+                </div>
+            </div>
+
+            <div class="column all online">
+                <div class="content">
+                    <img src="https://scontent.fmex2-1.fna.fbcdn.net/v/t31.0-8/13920575_1751179395139070_6904607208408296666_o.jpg?_nc_cat=106&ccb=2&_nc_sid=19026a&_nc_ohc=SA2YJiaL2WcAX80VhMm&_nc_ht=scontent.fmex2-1.fna&oh=f8408ff2197c7065153ea819a1df14be&oe=600C9D7A" alt="Dragvesti 2"
+                        style="width:100%">
+                    <p>Dragvesti. Segunda Temporada</p>
+                </div>
+            </div>
+
+            <div class="column all online">
+                <div class="content">
+                    <img src="https://scontent.fmex2-1.fna.fbcdn.net/v/t31.0-8/21248264_1934801216776886_3522428347238887682_o.jpg?_nc_cat=102&ccb=2&_nc_sid=19026a&_nc_ohc=tTYZXSc6jfgAX-ysXYI&_nc_ht=scontent.fmex2-1.fna&oh=9c87932614222c132d4ff7147333dca7&oe=600ECA12" alt="Dragvesti 3"
+                        style="width:100%">
+                    <p>Dragvesti. Tercera Temporada</p>
+                </div>
+            </div>
+
+            <div class="column allstars all online">
+                <div class="content">
+                    <img src="https://scontent-qro1-1.xx.fbcdn.net/v/t31.0-8/18121339_1875099822747026_528931293533406317_o.jpg?_nc_cat=109&ccb=2&_nc_sid=19026a&_nc_ohc=ugiHyca2C5QAX9HD-zF&_nc_ht=scontent-qro1-1.xx&oh=ae811c312f2a26860c46a8a1c957af02&oe=6016EB81" alt="Dragvesti All Stars 1"
+                        style="width:100%">
+                    <p>All Stars. 1ra Temporada</p>
+                </div>
+            </div>
+            <div class="column allstars all online">
+                <div class="content">
+                    <img src="https://scontent-qro1-1.xx.fbcdn.net/v/t31.0-8/29749255_2028164037440603_1124042863229665227_o.jpg?_nc_cat=111&ccb=2&_nc_sid=e3f864&_nc_ohc=vCm1Gz9TjkYAX-xsk1X&_nc_ht=scontent-qro1-1.xx&oh=95a58499787f304fc9cae334788968ad&oe=60185237" alt="Dragvesti All Stars 2"
+                        style="width:100%">
+                    <p>All Stars. 2da Temporada</p>
+                </div>
+            </div>
+            <div class="column envivo all cuu">
+                <div class="content">
+                    <img src="https://scontent-qro1-1.xx.fbcdn.net/v/t1.0-9/22894297_1714266555292242_2022964406002703081_n.jpg?_nc_cat=109&ccb=2&_nc_sid=e3f864&_nc_ohc=TOrukv9-N54AX8gepFi&_nc_ht=scontent-qro1-1.xx&oh=dbd26b904be0f810835272eaeac82b88&oe=6017538A" alt="Car"
+                        style="width:100%">
+                    <p>En Vivo: Chihuahua. T1</p>
+
+                </div>
+            </div>
+
+            <div class="column envivo cuu all">
+                <div class="content">
+                    <img src="https://scontent-qro1-1.xx.fbcdn.net/v/t1.0-9/35757790_1956383211080574_4510590751796625408_o.jpg?_nc_cat=103&ccb=2&_nc_sid=e3f864&_nc_ohc=S21nN5LfvNMAX_ODGKg&_nc_ht=scontent-qro1-1.xx&oh=dc7d447165c02b02bb16ced69cde72fa&oe=60166312" alt="Car"
+                        style="width:100%">
+                    <p>En Vivo: Chihuahua. T2</p>
+                </div>
+            </div>
+            <div class="column envivo cuu all ">
+                <div class="content">
+                    <img src="https://pbs.twimg.com/media/Eq3aO5ZXUAI0W7B?format=jpg&name=large" alt="Car" style="width:100%">
+                    <p>En Vivo: Chihuahua. T3</p>
+                </div>
+            </div>
+            <div class="column envivo cuu all ">
+                <div class="content">
+                    <img src="https://scontent-qro1-1.xx.fbcdn.net/v/t1.0-9/s960x960/49187759_2202943993295939_7403232241897177088_o.jpg?_nc_cat=107&ccb=2&_nc_sid=e3f864&_nc_ohc=7O1gsgmd4OEAX_aBGfJ&_nc_ht=scontent-qro1-1.xx&tp=7&oh=24a3902cb73b7a676ffcee892dbd952a&oe=601FADDA"
+                        alt="Car" style="width:100%">
+                    <p>En Vivo: Chihuahua. T4</p>
+                </div>
+            </div>
+            <div class="column envivo cuu allstars all">
+                <div class="content">
+                    <img src="https://scontent-qro1-1.xx.fbcdn.net/v/t1.0-9/68509752_2607758772609678_4284151314218221568_o.jpg?_nc_cat=111&ccb=2&_nc_sid=e3f864&_nc_ohc=gABXDwVv49sAX9xdR-D&_nc_ht=scontent-qro1-1.xx&oh=c00db948128e71c91847ac7214a7b58d&oe=60166C3E" alt="Car"
+                        style="width:100%">
+                    <p>En Vivo: Chihuahua. All Stars 1</p>
+                </div>
+            </div>
+            <div class="column envivo cdmx all ">
+                <div class="content">
+                    <img src="https://scontent-qro1-1.xx.fbcdn.net/v/t1.0-9/34702222_2058397484417258_7665524073597763584_o.jpg?_nc_cat=103&ccb=2&_nc_sid=0debeb&_nc_ohc=68112HbkstoAX9KtXXc&_nc_ht=scontent-qro1-1.xx&oh=25f5acc2939e3d6cea34ff9b860b3f58&oe=60176506" alt="Car"
+                        style="width:100%">
+                    <p>#LonglivetheQueens</p>
+                </div>
+            </div>
+            <div class="column envivo cdmx all ">
+                <div class="content">
+                    <img src="https://scontent-qro1-1.xx.fbcdn.net/v/t1.0-9/13606485_1737754546481555_6349867950852311824_n.jpg?_nc_cat=109&ccb=2&_nc_sid=19026a&_nc_ohc=zcETaYKRXbMAX-ioYeN&_nc_ht=scontent-qro1-1.xx&oh=1af630ebed1b084c379a4e040b7c528e&oe=6019E44A" alt="Car"
+                        style="width:100%">
+                    <p>#CucuConfessions</p>
+                </div>
+            </div>
+            <div class="column envivo cdmx all ">
+                <div class="content">
+                    <img src="https://scontent-qro1-1.xx.fbcdn.net/v/t31.0-8/29060788_1867248776660685_5124264593358638912_o.jpg?_nc_cat=104&ccb=2&_nc_sid=e3f864&_nc_ohc=jS3styrYkawAX_iepYF&_nc_ht=scontent-qro1-1.xx&oh=f4dde3d972cf3557dccaaff00fb29aef&oe=6016EAFB" alt="Car"
+                        style="width:100%">
+                    <p> En Vivo: CDMX. Temporada 1</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footerx shadow-sm" ">
+                    <div class="icon-bar ">
+                        <a href="# " ><i class="bi bi-cup-straw "  ></i></a>
+                        <a href="capitulo.html " ><i class="bi bi-chevron-double-left "  ></i></a>
+                        <a href="fichas.html " ><i class="bi bi-journal-richtext "  ></i></a>
+                        <a href="capitulo.html " ><i class="bi bi-chevron-double-right "  </i></a>
+                        <a href="indexdrag.html " ><i class="bi bi-house-door "  ></i></a>
+                    </div>
+                </div>
+               
+
+    <script>
+        // When the user scrolls the page, execute myFunction 
+        window.onscroll = function() {
+            myFunction()
+        };
+
+        function myFunction() {
+            var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+            var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+            var scrolled = (winScroll / height) * 100;
+            document.getElementById("myBarscroll ").style.width = scrolled + "% ";
+        }
+
+        // Get the elements with class="column "
+        var elements = document.getElementsByClassName("columne ");
+
+        // Declare a loop variable
+        var i;
+
+        // Full-width images
+        function one() {
+            for (i = 0; i < elements.length; i++) {
+                elements[i].style.msFlex = "100% "; // IE10
+                elements[i].style.flex = "100% ";
+            }
+        }
+
+        // Two images side by side
+        function two() {
+            for (i = 0; i < elements.length; i++) {
+                elements[i].style.msFlex = "50% "; // IE10
+                elements[i].style.flex = "50% ";
+            }
+        }
+
+        // Four images side by side
+        function four() {
+            for (i = 0; i < elements.length; i++) {
+                elements[i].style.msFlex = "25% "; // IE10
+                elements[i].style.flex = "25% ";
+            }
+        }
+
+        // Add active class to the current button (highlight it)
+        var header = document.getElementById("myHeaderGrid ");
+        var btns = header.getElementsByClassName("btne ");
+        for (var i = 0; i < btns.length; i++) {
+            btns[i].addEventListener("click ", function() {
+                var current = document.getElementsByClassName("activee ");
+                current[0].className = current[0].className.replace(" activee ", " ");
+                this.className += " activee ";
+            });
+        }
+
+        $('.ui.accordion ')
+            .accordion();
+
+        $('.ui.rating')
+            .rating({
+                initialRating: 3,
+                maxRating: 5
+            });
+        $('.ui.menu .item')
+            .tab({
+                history: true,
+                historyType: 'state',
+                path: '/modules/tab.html'
+            });
+        $('.menu .item')
+            .tab();
+        $('.activating.element')
+            .popup();
+        $('.button')
+            .popup({
+                inline: true
+            });
+        $('.special.cards .image').dimmer({
+            on: 'hover'
+        });
+
+
+        function w3AddClass(element, name) {
+            var i, arr1, arr2;
+            arr1 = element.className.split(" ");
+            arr2 = name.split(" ");
+            for (i = 0; i < arr2.length; i++) {
+                if (arr1.indexOf(arr2[i]) == -1) {
+                    element.className += " " + arr2[i];
+                }
+            }
+        }
+
+        function w3RemoveClass(element, name) {
+            var i, arr1, arr2;
+            arr1 = element.className.split(" ");
+            arr2 = name.split(" ");
+            for (i = 0; i < arr2.length; i++) {
+                while (arr1.indexOf(arr2[i]) > -1) {
+                    arr1.splice(arr1.indexOf(arr2[i]), 1);
+                }
+            }
+            element.className = arr1.join(" ");
+        }
+
+
+
+        // Add active class to the current button (highlight it)
+        var header = document.getElementById("myHeader ");
+        var btns = header.getElementsByClassName("btne ");
+        for (var i = 0; i < btns.length; i++) {
+            btns[i].addEventListener("click ", function() {
+                var current = document.getElementsByClassName("activee ");
+                current[0].className = current[0].className.replace(" activee ", " ");
+                this.className += " activee ";
+            });
+        }
+
+        filterSelection("all ")
+
+        function filterSelection(c) {
+            var x, i;
+            x = document.getElementsByClassName("column ");
+            if (c == "all ") c = " ";
+            for (i = 0; i < x.length; i++) {
+                w3RemoveClass(x[i], "show ");
+                if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show ");
+            }
+        }
+
+        function w3AddClass(element, name) {
+            var i, arr1, arr2;
+            arr1 = element.className.split(" ");
+            arr2 = name.split(" ");
+            for (i = 0; i < arr2.length; i++) {
+                if (arr1.indexOf(arr2[i]) == -1) {
+                    element.className += " " + arr2[i];
+                }
+            }
+        }
+
+        function w3RemoveClass(element, name) {
+            var i, arr1, arr2;
+            arr1 = element.className.split(" ");
+            arr2 = name.split(" ");
+            for (i = 0; i < arr2.length; i++) {
+                while (arr1.indexOf(arr2[i]) > -1) {
+                    arr1.splice(arr1.indexOf(arr2[i]), 1);
+                }
+            }
+            element.className = arr1.join(" ");
+        }
+    </script>
+
+</body>
+
+</html>
