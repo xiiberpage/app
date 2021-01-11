@@ -1,0 +1,884 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Hugo 0.79.0">
+    <title>Pricing example · Bootstrap v5.0</title>
+    <link href="/css/HiHello_Monster.min.css" rel="stylesheet">
+    <link href="/css/HiHello_Monster.css" rel="stylesheet">
+
+    <!-- UI Google-->
+    <link href="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.css" rel="stylesheet">
+    <script src="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.js"></script>
+
+    <!-- Icons -->
+    <script src="https://kit.fontawesome.com/ad4c66034e.js" crossorigin="anonymous"></script>
+    <!-- Galeria en https://fontawesome.com/icons?d=gallery-->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+
+    <!-- Fonts -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Paytone+One">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js" integrity="sha384-q2kxQ16AaE6UbzuKqyBE9/u/KzioAlnx2maXQHiDX9d4/zp8Ok3f+M7DPm+Ib6IU" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-pQQkAEnwaBkjpqZ8RU1fF1AKtTcHJwFl3pblpTlHXybJjHpMYo79HY3hIi4NKxyj" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <!-- UI Kit -->
+    <link rel="stylesheet" type="text/css" href="Semantic-UI-CSS-master/semantic.min.css">
+    <link rel="stylesheet" type="text/css" href="Semantic-UI-master/dist/components/reset.css">
+    <link rel="stylesheet" type="text/css" href="Semantic-UI-master/dist/components/site.css">
+    <link rel="stylesheet" type="text/css" href="Semantic-UI-master/dist/components/container.css">
+    <link rel="stylesheet" type="text/css" href="Semantic-UI-master/dist/components/grid.css">
+    <link rel="stylesheet" type="text/css" href="Semantic-UI-master/dist/components/header.css">
+    <link rel="stylesheet" type="text/css" href="Semantic-UI-master/dist/components/image.css">
+    <link rel="stylesheet" type="text/css" href="Semantic-UI-master/dist/components/menu.css">
+    <link rel="stylesheet" type="text/css" href="Semantic-UI-master/dist/components/divider.css">
+    <link rel="stylesheet" type="text/css" href="Semantic-UI-master/dist/components/list.css">
+    <link rel="stylesheet" type="text/css" href="Semantic-UI-master/dist/components/segment.css">
+    <link rel="stylesheet" type="text/css" href="Semantic-UI-master/dist/components/dropdown.css">
+    <link rel="stylesheet" type="text/css" href="Semantic-UI-master/dist/components/icon.css">
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+    <script src="Semantic-UI-CSS-master/semantic.min.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="semantic/dist/semantic.min.css">
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+    <script src="css/semantic.min.js"></script>
+
+    <style>
+            /* Rules for sizing the icon. */
+        
+        .material-icons.md-18 {
+            font-size: 18px;
+        }
+        
+        .material-icons.md-24 {
+            font-size: 24px;
+        }
+        
+        .material-icons.md-36 {
+            font-size: 36px;
+        }
+        
+        .material-icons.md-48 {
+            font-size: 48px;
+        }
+        /* Rules for using icons as black on a light background. */
+        
+        .material-icons.md-dark {
+            color: rgba(0, 0, 0, 0.54);
+        }
+        
+        .material-icons.md-dark.md-inactive {
+            color: rgba(0, 0, 0, 0.26);
+        }
+        /* Rules for using icons as white on a dark background. */
+        
+        .material-icons.md-light {
+            color: rgba(255, 255, 255, 1);
+        }
+        
+        .material-icons.md-light.md-inactive {
+            color: rgba(255, 255, 255, 0.3);
+        }
+        
+        .material-icons.md-18 {
+            font-size: 18px;
+        }
+        
+        .material-icons.md-24 {
+            font-size: 24px;
+        }
+        
+        .material-icons.md-36 {
+            font-size: 36px;
+        }
+        
+        .material-icons.md-48 {
+            font-size: 48px;
+        }
+        
+        .material-icons.md-dark {
+            color: rgba(0, 0, 0, 0.54);
+        }
+        
+        .material-icons.md-dark.md-inactive {
+            color: rgba(0, 0, 0, 0.26);
+        }
+        
+        .material-icons.md-light {
+            color: rgba(255, 255, 255, 1);
+        }
+        
+        .material-icons.md-light.md-inactive {
+            color: rgba(255, 255, 255, 0.3);
+        }
+        
+        .material-icons.orange600 {
+            color: #FB8C00;
+        }
+        
+        .bd-placeholder-img {
+            font-size: 1.125rem;
+            text-anchor: middle;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            user-select: none;
+        }
+        
+        @media (min-width: 768px) {
+            .bd-placeholder-img-lg {
+                font-size: 3.5rem;
+            }
+        }
+        
+        * {
+            box-sizing: border-box;
+        }
+        /* Create two equal columns that sits next to each other */
+        /* Style the buttons */
+        
+        .btne {
+            border: none;
+            outline: none;
+            padding: 10px 16px;
+            background-color: #f1f1f1;
+            cursor: pointer;
+            font-size: 18px;
+        }
+        
+        .btne:hover {
+            background-color: #ddd;
+        }
+        
+        .btne.activee {
+            background-color: #666;
+            color: white;
+        }
+        /* Make the image fully responsive */
+        
+        .carousel-inner img {
+            width: 100%;
+            height: 100%;
+        }
+        /* Borders */
+        
+        span {
+            display: inline-block;
+            width: 70px;
+            height: 70px;
+            margin: 6px;
+            background-color: #555;
+        }
+        
+        .main.container {
+            margin-top: 7em;
+        }
+        
+        .wireframe {
+            margin-top: 2em;
+        }
+        
+        .ui.footer.segment {
+            margin: 5em 0em 0em;
+            padding: 5em 0em;
+        }
+        
+        * {
+            box-sizing: border-box;
+        }
+        /* Add padding BETWEEN each column */
+        /* Create three equal columns that floats next to each other */
+        
+        .column {
+            float: left;
+            width: 50%;
+            display: none;
+            /* Hide all elements by default */
+        }
+        /* Content */
+        
+        .content {
+            background-color: white;
+            padding: 10px;
+        }
+        /* The "show" class is added to the filtered elements */
+        
+        .show {
+            display: block;
+        }
+        /* Avatar */
+        
+        .avatar {
+            vertical-align: middle;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+        }
+        
+        body {
+            background-color: #FFFFFF;
+        }
+        
+        .ui.menu .item img.logo {
+            margin-right: 1.5em;
+        }
+        
+        .maindrag.container {
+            margin-top: 7em;
+        }
+        
+        .wireframe {
+            margin-top: 2em;
+        }
+        
+        .ui.footer.segment {
+            margin: 5em 0em 0em;
+            padding: 5em 0em;
+        }
+        /* Avatar */
+        
+        .avatar {
+            vertical-align: middle;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+        }
+        
+        .ui.menu .item img.logo {
+            margin-right: 1.5em;
+        }
+        
+        .maindrag.container {
+            margin-top: 7em;
+        }
+        
+        .wireframe {
+            margin-top: 2em;
+        }
+        
+        .ui.footer.segment {
+            margin: 5em 0em 0em;
+            padding: 5em 0em;
+        }
+        
+        .bodyscroll {
+            background-color: #f1f1f1;
+            padding: 20px;
+            font-family: Arial;
+        }
+        /* Center website */
+        
+        .mainscroll {
+            max-width: 1000px;
+            margin: auto;
+        }
+        
+        .rowscroll {
+            margin: 10px -16px;
+        }
+        /* Add padding BETWEEN each columnscroll */
+        
+        .rowscroll,
+        .rowscroll.columnscroll {
+            padding: 8px;
+        }
+        /* Create three equal columnscrolls that floats next to each other */
+        
+        .columnscroll {
+            float: left;
+            width: 50%;
+            display: none;
+            /* Hide all elements by default */
+        }
+        /* Clear floats after rowscrolls */
+        
+        .rowscroll:after {
+            contentscroll: "";
+            display: table;
+            clear: both;
+        }
+        /* contentscroll */
+        
+        .contentscroll {
+            background-color: white;
+            padding: 10px;
+        }
+        /* The "show" class is added to the filtered elements */
+        
+        .showscroll {
+            display: block;
+        }
+        
+        .rowe {
+            display: -ms-flexbox;
+            /* IE 10 */
+            display: flex;
+            -ms-flex-wrap: wrap;
+            /* IE 10 */
+            flex-wrap: wrap;
+            padding: 0 4px;
+        }
+        /* Create two equal columns that sits next to each other */
+        
+        .columne {
+            -ms-flex: 50%;
+            /* IE 10 */
+            flex: 50%;
+            padding: 0 4px;
+        }
+        
+        .columne img {
+            margin-top: 8px;
+            vertical-align: middle;
+        }
+        /* ico bar */
+        
+        .icon-bar {
+            width: 100%;
+            background-color: #ffffff;
+            overflow: auto position: fixed;
+            font-size: 20pt;
+        }
+        
+        .icon-bar a {
+            float: left;
+            width: 20%;
+            text-align: center;
+            padding: 6px 0;
+            transition: all 0.3s ease;
+            color: #bfbfbf;
+            background-color: #ffffff;
+        }
+        
+        .footerx {
+            position: fixed;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            background-color: white;
+            color: white;
+            text-align: center;
+            font-size: 20pt;
+        }
+        
+        .hiavatar {
+            vertical-align: middle;
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+        }
+        
+        .hibody {
+            margin: 0;
+            font-family: Roboto, Arial, Helvetica, sans-serif;
+            background-color: #FFFFFF;
+        }
+        
+        .hiheader {
+            position: fixed;
+            top: 0;
+            z-index: 0;
+            width: 100%;
+            background-color: #f1f1f1;
+        }
+        
+        .hiheader h2 {
+            text-align: center;
+        }
+        
+        .hiprogress-container {
+            width: 100%;
+            height: 8px;
+            background: #ffe6e6;
+        }
+        
+        .hiprogress-bar {
+            height: 8px;
+            background: #cc0000;
+            width: 0%;
+        }
+        
+        .hicontent {
+            padding: 1px 0;
+            margin: 1px auto 0 auto;
+            width: 100%;
+        }
+        
+        .hisidenav {
+            height: 100%;
+            width: 45px;
+            position: fixed;
+            z-index: 0;
+            top: 0;
+            left: 0;
+            background-color: white;
+            overflow-x: hidden;
+            padding-top: 20px;
+        }
+        
+        .hisidenav a {
+            padding: 6px 8px 3px 8px;
+            text-decoration: none;
+            color: #818181;
+            display: block;
+        }
+        
+        .hisidenav a:hover {
+            color: #f1f1f1;
+        }
+        
+        .himain {
+            margin-left: 55px;
+            /* Same as the width of the sidenav*/
+            /* Increased text to enable scrolling */
+            padding: 0px 0px;
+        }
+        
+        @media screen and (max-height: 500px) {
+            .hisidenav {
+                padding-top: 5px;
+            }
+    </style>
+
+</head>
+
+<body>
+
+
+    <div class="hibody">
+
+        <div class=" hisidenav ">
+            <a href="#about "><img src="img/avatar1.png " alt="Avatar " class="hiavatar "></a>
+            <a href="#about "><img src="img/avatar2.png " alt="Avatar " class="hiavatar "></a>
+            <a href="#about "><img src="img/avatar3.jpg " alt="Avatar " class="hiavatar "></a>
+            <a href="#about "><img src="img/avatar4.png " alt="Avatar " class="hiavatar "></a>
+            <a href="#about "><img src="img/avatar1.png " alt="Avatar " class="hiavatar "></a>
+            <a href="#about "><img src="img/avatar2.png " alt="Avatar " class="hiavatar "></a>
+            <a href="#about "><img src="img/avatar3.jpg " alt="Avatar " class="hiavatar "></a>
+            <a href="#about "><img src="img/avatar4.png " alt="Avatar " class="hiavatar "></a>
+            <a href="#about "><img src="img/avatar1.png " alt="Avatar " class="hiavatar "></a>
+            <a href="#about "><img src="img/avatar2.png " alt="Avatar " class="hiavatar "></a>
+            <a href="#about "><img src="img/avatar3.jpg " alt="Avatar " class="hiavatar "></a>
+            <a href="#about "><img src="img/avatar4.png " alt="Avatar " class="hiavatar "></a>
+        </div>
+
+        <div class="hiheader">
+            <div class="hiprogress-container ">
+                <div class="hiprogress-bar " id="myBarscroll "></div>
+            </div>
+        </div>
+
+        <div class="himain center ">
+            <div class="hicontent "><br>
+                <dragvesti>Dragvesti</dragvesti>
+                <br>
+                <DrgvstS1>Primera temporada</DrgvstS1>
+                <br>
+                <dragvestimedium>dragvestimedium</dragvestimedium>
+                <dragvestilight>Dragvestilight</dragvestilight>
+                <br>
+                <DrgvstS1>DrgvstS1 </DrgvstS1>
+                <br>
+                <DrgvstS2>DrgvstS2 </DrgvstS2>
+                <br>
+                <DrgvstS3>DrgvstS3 </DrgvstS3>
+                <br>
+                <DrgvstS4>DrgvstS4 </DrgvstS4>
+                <br>
+                <DrgvstS5>DrgvstS5 </DrgvstS5>
+                <br>
+                <DrgvstS6>DrgvstS6 </DrgvstS6>
+                <br>
+                <DrgvstS7>DrgvstS7 </DrgvstS7>
+
+                <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec
+                    et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
+                <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec
+                    et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
+
+
+                <br>
+
+
+                <h4 class="ui horizontal divider header ">
+                    <i class="tag icon "></i> Description
+                </h4>
+
+                <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec
+                    et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
+                <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec
+                    et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
+                <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec
+                    et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
+
+
+
+                <h5 class="ui horizontal divider ">Jurado </h5>
+                <div class=" container w3-center ">
+                    <div class="ui horizontal list " wfd-id="53 ">
+                        <div class="item " wfd-id="60 "><img class="ui mini circular image " src="https://semantic-ui.com/images/avatar2/small/molly.png ">
+                            <div class="content " wfd-id="61 ">
+                                <div class="ui sub header " wfd-id="62 ">Molly</div>Coordinator </div>
+                        </div>
+                    </div>
+                    <div class="ui horizontal list " wfd-id="53 ">
+                        <div class="item " wfd-id="60 "><img class="ui mini circular image " src="https://semantic-ui.com/images/avatar2/small/molly.png ">
+                            <div class="content " wfd-id="61 ">
+                                <div class="ui sub header " wfd-id="62 ">Molly</div>Coordinator </div>
+                        </div>
+                    </div>
+                    <div class="ui horizontal list " wfd-id="53 ">
+                        <div class="item " wfd-id="60 "><img class="ui mini circular image " src="https://semantic-ui.com/images/avatar2/small/molly.png ">
+                            <div class="content " wfd-id="61 ">
+                                <div class="ui sub header " wfd-id="62 ">Molly</div>Coordinator </div>
+                        </div>
+                    </div>
+                </div>
+                <br>
+
+
+                <h5 class="ui horizontal divider header ">Sesión de fotos</h5>
+                <br>
+
+
+                <div class="ui small basic icon buttons" id="myHeaderGrid " wfd-id="22">
+                    <button class="ui button" wfd-id="202" onclick="one() "><i class="fas fa-image"></i></button>
+                    <button class="ui button" wfd-id="201" onclick="two() "><i class="fas fa-th-large"></i></button>
+                    <button class="ui button" wfd-id="200" onclick=" four() "><i class="fas fa-th"></i></button>
+                </div>
+
+                <!-- Photo Grid -->
+                <div class="rowe ">
+                    <div class="columne ">
+                        <img src="https://www.w3schools.com/w3images/wedding.jpg " style="width:100% ">
+                        <img src="https://www.w3schools.com/w3images/rocks.jpg " style="width:100% ">
+                        <img src="https://www.w3schools.com/w3images/falls2.jpg " style="width:100% ">
+                    </div>
+                    <div class="columne ">
+                        <img src="https://www.w3schools.com/w3images/underwater.jpg " style="width:100% ">
+                        <img src="https://www.w3schools.com/w3images/ocean.jpg " style="width:100% ">
+                    </div>
+                    <div class="columne ">
+                        <img src="https://www.w3schools.com/w3images/wedding.jpg " style="width:100% ">
+                        <img src="https://www.w3schools.com/w3images/rocks.jpg " style="width:100% ">
+                        <img src="https://www.w3schools.com/w3images/falls2.jpg " style="width:100% ">
+                    </div>
+                    <div class="columne ">
+                        <img src="https://www.w3schools.com/w3images/underwater.jpg " style="width:100% ">
+                        <img src="https://www.w3schools.com/w3images/ocean.jpg " style="width:100% ">
+                        <img src="https://www.w3schools.com/w3images/wedding.jpg " style="width:100% ">
+                        <img src="https://www.w3schools.com/w3images/mountainskies.jpg " style="width:100% ">
+                    </div>
+                </div>
+                <br>
+
+                <!-- Video -->
+                <h4 class="ui horizontal divider header ">
+                    <i class="tag icon "></i> Lipsync
+                </h4>
+                <div style="text-align:center ">
+                    <!--  <button onclick="playPause() ">Play/Pause</button>
+                    <button onclick="makeBig() ">Big</button>
+                    <button onclick="makeSmall() ">Small</button>
+                    <button onclick="makeNormal() ">Normal</button> -->
+                    <br>
+
+
+
+                    <div class="ui icon buttons " wfd-id="45 ">
+                        <button class="ui button " onclick="playPause() " wfd-id="231 ">
+    <i class="play icon "></i>
+  </button>
+                        <button class="ui button " onclick="playPause() " wfd-id="230 ">
+    <i class="pause icon "></i>
+  </button>
+                        <button class="ui button " onclick="makeNormal() " wfd-id=" 229 ">
+    <i class="fas fa-expand-alt "></i>
+  </button>
+                        <button class="ui button " onclick="makeBig() " wfd-id="229 ">
+    <i class="fas fa-compress-alt "></i>
+  </button>
+                    </div>
+                    <br> <br>
+                    <video id="video1 " width="300 "><source src="https://www.w3schools.com/html/mov_bbb.mp4 " type="video/mp4 ">Your browser does not support HTML video.  </video>
+
+                    <br>
+
+
+                    <div class="content w3-center ">
+                        <iframe width="300 " src="https://www.youtube.com/embed/0xkNlZ9vdH8 " frameborder="0 " allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture " allowfullscreen></iframe>
+                    </div>
+                    <br><br>
+                    <h3 class="ui horizontal divider header ">
+                        <div class="ui large heart rating " data-rating="2 " data-max-rating="3 "></div>
+                    </h3>
+                    <script>
+                        var myVideo = document.getElementById("video1 ");
+
+                        function playPause() {
+                            if (myVideo.paused)
+                                myVideo.play();
+                            else
+                                myVideo.pause();
+                        }
+
+                        function makeBig() {
+                            myVideo.width = 300;
+                        }
+
+                        function makeSmall() {
+                            myVideo.width = 320;
+                        }
+
+                        function makeNormal() {
+                            myVideo.width = 350;
+                        }
+                    </script>
+                </div>
+                <br>
+
+
+
+
+                <h5 class="ui horizontal divider header ">Ganadora</h5>
+                <div class=" container w3-center ">
+                    <div class="ui horizontal list " wfd-id="53 ">
+                        <div class="item " wfd-id="60 "><img class="ui mini circular image " src="https://semantic-ui.com/images/avatar2/small/molly.png ">
+                            <div class="content " wfd-id="61 ">
+                                <div class="ui sub header " wfd-id="62 ">Molly</div>Coordinator </div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+
+                <h5 class="ui horizontal divider header ">Eliminada</h5>
+                <div class=" container w3-center ">
+                    <div class="ui horizontal list " wfd-id="53 ">
+                        <div class="item " wfd-id="60 "><img class="ui mini circular image " src="https://semantic-ui.com/images/avatar2/small/molly.png ">
+                            <div class="content " wfd-id="61 ">
+                                <div class="ui sub header " wfd-id="62 ">Molly</div>Coordinator </div>
+                        </div>
+                    </div>
+                </div>
+                <br>
+
+
+
+
+                <div class="extra content " wfd-id="184 ">
+
+                    <div class="ui heart rating " data-rating="1 " data-max-rating="3 "></div>
+                    Like
+
+
+                    <div class="ui star rating "></div>
+                    Favorite
+
+                </div>
+
+
+
+                <h3 class="ui horizontal divider header ">
+                    <div class="ui large heart rating " data-rating="2 " data-max-rating="3 "></div>
+                </h3>
+                <p class="text-center ">Emoción, alegría, felicidad, nervios, miedo, inseguridad, azúcar, flores y muchos colores. </p>
+                <p class="text-center ">No hay palabras para explicar esta experiencia tanto nueva como difícil y hasta cierto punto pesada.</p>
+                <p class="text-center ">Primer reto de muchos porvenir tanto dentro como fuera de la competencia. Sólo puedo decir que esto es la primera hoja de este periódico tan extenso en lleno de arte amor trabajo sudor pelucas y mucho maquillaje. siendo
+                </p>
+                <p class="text-center ">Empezar siendo clasificado para terminar siendo la noticia estelar.</p>
+                <p class="text-center ">Gracias por todo su apoyo Los aprecio infinitamente. </p>
+                <p class="text-center "> <i>Iris XC Queen</i></p>
+                <p class="text-center " style="color:#660000; "><small> <b>#TeamIris #TeamPaperWitch #TeamBigQueen #TeamSeNecesitaronMilPeriodicosParaLaFalda</b></small>
+                </p>
+                <h3 class="ui horizontal divider header "> Comentarios de los jueces
+                    <div class="ui large heart rating " data-rating="2 " data-max-rating="3 "></div>
+                </h3>
+
+
+                <div class="footerx ">
+                    <div class="icon-bar ">
+                        <a href="# "><i class="bi bi-cup-straw " ></i></a>
+                        <a href="# "><i class="bi bi-chevron-double-left " ></i></a>
+                        <a href="fichas.html "><i class="bi bi-journal-richtext "  ></i></a>
+                        <a href="# "><i class="bi bi-chevron-double-right " ></i></a>
+                        <a href="indexdrag.html "><i class="bi bi-house-door "  ></i></a>
+                        </i>
+                        </a>
+                    </div>
+                </div>
+
+
+
+            </div>
+        </div>
+    </div>
+    <script>
+        // When the user scrolls the page, execute myFunction 
+        window.onscroll = function() {
+            myFunction()
+        };
+
+        function myFunction() {
+            var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+            var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+            var scrolled = (winScroll / height) * 100;
+            document.getElementById("myBarscroll ").style.width = scrolled + "% ";
+        }
+
+        // Get the elements with class="column "
+        var elements = document.getElementsByClassName("columne ");
+
+        // Declare a loop variable
+        var i;
+
+        // Full-width images
+        function one() {
+            for (i = 0; i < elements.length; i++) {
+                elements[i].style.msFlex = "100% "; // IE10
+                elements[i].style.flex = "100% ";
+            }
+        }
+
+        // Two images side by side
+        function two() {
+            for (i = 0; i < elements.length; i++) {
+                elements[i].style.msFlex = "50% "; // IE10
+                elements[i].style.flex = "50% ";
+            }
+        }
+
+        // Four images side by side
+        function four() {
+            for (i = 0; i < elements.length; i++) {
+                elements[i].style.msFlex = "25% "; // IE10
+                elements[i].style.flex = "25% ";
+            }
+        }
+
+        // Add active class to the current button (highlight it)
+        var header = document.getElementById("myHeaderGrid ");
+        var btns = header.getElementsByClassName("btne ");
+        for (var i = 0; i < btns.length; i++) {
+            btns[i].addEventListener("click ", function() {
+                var current = document.getElementsByClassName("activee ");
+                current[0].className = current[0].className.replace(" activee ", " ");
+                this.className += " activee ";
+            });
+        }
+
+        $('.ui.accordion ')
+            .accordion();
+
+        $('.ui.rating')
+            .rating({
+                initialRating: 3,
+                maxRating: 5
+            });
+        $('.ui.menu .item')
+            .tab({
+                history: true,
+                historyType: 'state',
+                path: '/modules/tab.html'
+            });
+        $('.menu .item')
+            .tab();
+        $('.activating.element')
+            .popup();
+        $('.button')
+            .popup({
+                inline: true
+            });
+        $('.special.cards .image').dimmer({
+            on: 'hover'
+        });
+
+
+        function w3AddClass(element, name) {
+            var i, arr1, arr2;
+            arr1 = element.className.split(" ");
+            arr2 = name.split(" ");
+            for (i = 0; i < arr2.length; i++) {
+                if (arr1.indexOf(arr2[i]) == -1) {
+                    element.className += " " + arr2[i];
+                }
+            }
+        }
+
+        function w3RemoveClass(element, name) {
+            var i, arr1, arr2;
+            arr1 = element.className.split(" ");
+            arr2 = name.split(" ");
+            for (i = 0; i < arr2.length; i++) {
+                while (arr1.indexOf(arr2[i]) > -1) {
+                    arr1.splice(arr1.indexOf(arr2[i]), 1);
+                }
+            }
+            element.className = arr1.join(" ");
+        }
+
+
+
+        // Add active class to the current button (highlight it)
+        var header = document.getElementById("myHeader ");
+        var btns = header.getElementsByClassName("btne ");
+        for (var i = 0; i < btns.length; i++) {
+            btns[i].addEventListener("click ", function() {
+                var current = document.getElementsByClassName("activee ");
+                current[0].className = current[0].className.replace(" activee ", " ");
+                this.className += " activee ";
+            });
+        }
+
+        filterSelection("all ")
+
+        function filterSelection(c) {
+            var x, i;
+            x = document.getElementsByClassName("column ");
+            if (c == "all ") c = " ";
+            for (i = 0; i < x.length; i++) {
+                w3RemoveClass(x[i], "show ");
+                if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show ");
+            }
+        }
+
+        function w3AddClass(element, name) {
+            var i, arr1, arr2;
+            arr1 = element.className.split(" ");
+            arr2 = name.split(" ");
+            for (i = 0; i < arr2.length; i++) {
+                if (arr1.indexOf(arr2[i]) == -1) {
+                    element.className += " " + arr2[i];
+                }
+            }
+        }
+
+        function w3RemoveClass(element, name) {
+            var i, arr1, arr2;
+            arr1 = element.className.split(" ");
+            arr2 = name.split(" ");
+            for (i = 0; i < arr2.length; i++) {
+                while (arr1.indexOf(arr2[i]) > -1) {
+                    arr1.splice(arr1.indexOf(arr2[i]), 1);
+                }
+            }
+            element.className = arr1.join(" ");
+        }
+    </script>
+
+</body>
+
+</html>
