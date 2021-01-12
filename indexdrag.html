@@ -14,7 +14,6 @@
     <link href="/css/HiHello_Monster.css" rel="stylesheet">
     <link rel="icon" href="img/dragvesti_black.png" sizes="192x192">
 
-
     <!-- UI Google-->
     <link href="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.css" rel="stylesheet">
     <script src="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.js"></script>
@@ -38,25 +37,117 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
+
     <!-- UI Kit -->
-    <link rel="stylesheet" type="text/css" href="Semantic-UI-CSS-master/semantic.min.css">
-    <link rel="stylesheet" type="text/css" href="Semantic-UI-master/dist/components/reset.css">
-    <link rel="stylesheet" type="text/css" href="Semantic-UI-master/dist/components/site.css">
-    <link rel="stylesheet" type="text/css" href="Semantic-UI-master/dist/components/container.css">
-    <link rel="stylesheet" type="text/css" href="Semantic-UI-master/dist/components/grid.css">
-    <link rel="stylesheet" type="text/css" href="Semantic-UI-master/dist/components/header.css">
-    <link rel="stylesheet" type="text/css" href="Semantic-UI-master/dist/components/image.css">
-    <link rel="stylesheet" type="text/css" href="Semantic-UI-master/dist/components/menu.css">
-    <link rel="stylesheet" type="text/css" href="Semantic-UI-master/dist/components/divider.css">
-    <link rel="stylesheet" type="text/css" href="Semantic-UI-master/dist/components/list.css">
-    <link rel="stylesheet" type="text/css" href="Semantic-UI-master/dist/components/segment.css">
-    <link rel="stylesheet" type="text/css" href="Semantic-UI-master/dist/components/dropdown.css">
-    <link rel="stylesheet" type="text/css" href="Semantic-UI-master/dist/components/icon.css">
+    <link href="/css/HiHello_Monster_SUI.css" rel="stylesheet">
     <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
     <script src="Semantic-UI-CSS-master/semantic.min.js"></script>
 
     <style>
-            .bd-placeholder-img {
+            @font-face {
+            font-family: 'Material Icons';
+            font-style: normal;
+            font-weight: 400;
+            src: url(https://example.com/MaterialIcons-Regular.eot);
+            /* For IE6-8 */
+            src: local('Material Icons'), local('MaterialIcons-Regular'), url(https://example.com/MaterialIcons-Regular.woff2) format('woff2'), url(https://example.com/MaterialIcons-Regular.woff) format('woff'), url(https://example.com/MaterialIcons-Regular.ttf) format('truetype');
+        }
+        
+        .material-icons {
+            font-family: 'Material Icons';
+            font-weight: normal;
+            font-style: normal;
+            font-size: 24px;
+            /* Preferred icon size */
+            display: inline-block;
+            line-height: 1;
+            text-transform: none;
+            letter-spacing: normal;
+            word-wrap: normal;
+            white-space: nowrap;
+            direction: ltr;
+            /* Support for all WebKit browsers. */
+            -webkit-font-smoothing: antialiased;
+            /* Support for Safari and Chrome. */
+            text-rendering: optimizeLegibility;
+            /* Support for Firefox. */
+            -moz-osx-font-smoothing: grayscale;
+            /* Support for IE. */
+            font-feature-settings: 'liga';
+        }
+        /* Rules for sizing the icon. */
+        
+        .material-icons.md-18 {
+            font-size: 18px;
+        }
+        
+        .material-icons.md-24 {
+            font-size: 24px;
+        }
+        
+        .material-icons.md-36 {
+            font-size: 36px;
+        }
+        
+        .material-icons.md-48 {
+            font-size: 48px;
+        }
+        /* Rules for using icons as black on a light background. */
+        
+        .material-icons.md-dark {
+            color: rgba(0, 0, 0, 0.54);
+        }
+        
+        .material-icons.md-dark.md-inactive {
+            color: rgba(0, 0, 0, 0.26);
+        }
+        /* Rules for using icons as white on a dark background. */
+        
+        .material-icons.md-light {
+            color: rgba(255, 255, 255, 1);
+        }
+        
+        .material-icons.md-light.md-inactive {
+            color: rgba(255, 255, 255, 0.3);
+        }
+        
+        .material-icons.md-18 {
+            font-size: 18px;
+        }
+        
+        .material-icons.md-24 {
+            font-size: 24px;
+        }
+        
+        .material-icons.md-36 {
+            font-size: 36px;
+        }
+        
+        .material-icons.md-48 {
+            font-size: 48px;
+        }
+        
+        .material-icons.md-dark {
+            color: rgba(0, 0, 0, 0.54);
+        }
+        
+        .material-icons.md-dark.md-inactive {
+            color: rgba(0, 0, 0, 0.26);
+        }
+        
+        .material-icons.md-light {
+            color: rgba(255, 255, 255, 1);
+        }
+        
+        .material-icons.md-light.md-inactive {
+            color: rgba(255, 255, 255, 0.3);
+        }
+        
+        .material-icons.orange600 {
+            color: #FB8C00;
+        }
+        
+        .bd-placeholder-img {
             font-size: 1.125rem;
             text-anchor: middle;
             -webkit-user-select: none;
@@ -401,7 +492,7 @@
 
                         <nav class="nav nav-masthead justify-content-center ">
                             <a class="nav-link" onclick="filterSelection( 'all) ">
-                                <dragvesti> Dragvesti </dragvesti>
+                                <dragvesti onclick="filterSelection( 'all') "> Dragvesti </dragvesti>
                             </a>
 
                         </nav>
@@ -484,7 +575,8 @@
 
                     <div class="column allstars all online ">
                         <div class="content ">
-                            <a href="LCDOAS2.html">
+                            <a href="#">
+                                <!--     <a href="LCDOAS2.html">-->
                                 <img src="https://scontent-qro1-1.xx.fbcdn.net/v/t31.0-8/29749255_2028164037440603_1124042863229665227_o.jpg?_nc_cat=111&ccb=2&_nc_sid=e3f864&_nc_ohc=vCm1Gz9TjkYAX-xsk1X&_nc_ht=scontent-qro1-1.xx&oh=95a58499787f304fc9cae334788968ad&oe=60185237
                     " alt="Dragvesti. All Stars. 2da Temporada " style="width:100% " data-bs-toggle="tooltip" data-bs-placement="top" title="Dragvesti. All Stars. 2da Temporada "> </a>
                         </div>
@@ -492,7 +584,8 @@
 
                     <div class="column envivo all cuu ">
                         <div class="content ">
-                            <a href="CUU1.html">
+                            <a href="#">
+                                <!--  <a href="CUU1.html">-->
                                 <img src="https://scontent-qro1-1.xx.fbcdn.net/v/t1.0-9/22894297_1714266555292242_2022964406002703081_n.jpg?_nc_cat=109&ccb=2&_nc_sid=e3f864&_nc_ohc=TOrukv9-N54AX8gepFi&_nc_ht=scontent-qro1-1.xx&oh=dbd26b904be0f810835272eaeac82b88&oe=6017538A
                     " alt="Dragvesti En Vivo: Chihuahua. T1" style="width:100% " data-bs-toggle="tooltip" data-bs-placement="top" title="Dragvesti En Vivo: Chihuahua. T1">
                             </a>
@@ -503,7 +596,8 @@
 
                     <div class="column envivo cuu all ">
                         <div class="content ">
-                            <a href="CUU2.html">
+                            <a href="#">
+                                <!--      <a href="CUU2.html">-->
                                 <img src="https://scontent-qro1-1.xx.fbcdn.net/v/t1.0-9/35757790_1956383211080574_4510590751796625408_o.jpg?_nc_cat=103&ccb=2&_nc_sid=e3f864&_nc_ohc=S21nN5LfvNMAX_ODGKg&_nc_ht=scontent-qro1-1.xx&oh=dc7d447165c02b02bb16ced69cde72fa&oe=60166312
                     " alt="Dragvesti En Vivo: Chihuahua. T2 " style="width:100% " data-bs-toggle="tooltip" data-bs-placement="top" title="Dragvesti En Vivo: Chihuahua. T2 ">
                             </a>
@@ -512,14 +606,16 @@
 
                     <div class="column envivo cuu all ">
                         <div class="content ">
-                            <a href="CUU3.html">
+                            <a href="#">
+                                <!-- <a href="CUU3.html"> -->
                                 <img src="https://pbs.twimg.com/media/Eq3aO5ZXUAI0W7B?format=jpg&name=large " alt="Dragvesti En Vivo: Chihuahua. T3 " style="width:100% " data-bs-toggle="tooltip" data-bs-placement="top" title="Dragvesti En Vivo: Chihuahua. T3">                                </a>
                         </div>
                     </div>
 
                     <div class="column envivo cuu all ">
                         <div class="content ">
-                            <a href="CUU4.html">
+                            <a href="#">
+                                <!--   <a href="CUU4.html"> -->
                                 <img src="https://scontent-qro1-1.xx.fbcdn.net/v/t1.0-9/s960x960/49187759_2202943993295939_7403232241897177088_o.jpg?_nc_cat=107&ccb=2&_nc_sid=e3f864&_nc_ohc=7O1gsgmd4OEAX_aBGfJ&_nc_ht=scontent-qro1-1.xx&tp=7&oh=24a3902cb73b7a676ffcee892dbd952a&oe=601FADDA "
                                     alt="Dragvesti En Vivo: Chihuahua. T4 " style="width:100% " data-bs-toggle="tooltip" data-bs-placement="top" title="Dragvesti En Vivo: Chihuahua. T4">
                             </a>
@@ -528,7 +624,8 @@
 
                     <div class="column envivo cuu allstars all ">
                         <div class="content ">
-                            <a href="CUUAS1.html">
+                            <a href="#">
+                                <!-- <a href="CUUAS1.html"> -->
                                 <img src="https://scontent-qro1-1.xx.fbcdn.net/v/t1.0-9/68509752_2607758772609678_4284151314218221568_o.jpg?_nc_cat=111&ccb=2&_nc_sid=e3f864&_nc_ohc=gABXDwVv49sAX9xdR-D&_nc_ht=scontent-qro1-1.xx&oh=c00db948128e71c91847ac7214a7b58d&oe=60166C3E
                     " alt="Dragvesti All Stars En Vivo: Chihuahua" style="width:100% " data-bs-toggle="tooltip" data-bs-placement="top" title="Dragvesti All Stars En Vivo: Chihuahua ">
                             </a>
@@ -536,7 +633,8 @@
                     </div>
                     <div class="column envivo cdmx all ">
                         <div class="content ">
-                            <a href="longlivethequeens.html">
+                            <a href="#">
+                                <!--    <a href="longlivethequeens.html"> -->
                                 <img src="https://scontent-qro1-1.xx.fbcdn.net/v/t1.0-9/34702222_2058397484417258_7665524073597763584_o.jpg?_nc_cat=103&ccb=2&_nc_sid=0debeb&_nc_ohc=68112HbkstoAX9KtXXc&_nc_ht=scontent-qro1-1.xx&oh=25f5acc2939e3d6cea34ff9b860b3f58&oe=60176506
                     " alt="#LonglivetheQueens " style="width:100% " data-bs-toggle="tooltip" data-bs-placement="top" title="#LonglivetheQueens">
                             </a>
@@ -544,7 +642,8 @@
                     </div>
                     <div class="column envivo cdmx all ">
                         <div class="content ">
-                            <a href="cucuconfessions.html">
+                            <a href="#">
+                                <!-- <a href="cucuconfessions.html"> -->
                                 <img src="https://scontent-qro1-1.xx.fbcdn.net/v/t1.0-9/13606485_1737754546481555_6349867950852311824_n.jpg?_nc_cat=109&ccb=2&_nc_sid=19026a&_nc_ohc=zcETaYKRXbMAX-ioYeN&_nc_ht=scontent-qro1-1.xx&oh=1af630ebed1b084c379a4e040b7c528e&oe=6019E44A
                     " alt="#CucuConfessions " style="width:100% " data-bs-toggle="tooltip" data-bs-placement="top" title="#CucuConfessions ">
                             </a>
@@ -552,7 +651,8 @@
                     </div>
                     <div class="column envivo cdmx all">
                         <div class="content">
-                            <a href="cdx1.html">
+                            <a href="#">
+                                <!-- <a href="cdx1.html"> -->
                                 <img src="https://scontent-qro1-1.xx.fbcdn.net/v/t31.0-8/29060788_1867248776660685_5124264593358638912_o.jpg?_nc_cat=104&ccb=2&_nc_sid=e3f864&_nc_ohc=jS3styrYkawAX_iepYF&_nc_ht=scontent-qro1-1.xx&oh=f4dde3d972cf3557dccaaff00fb29aef&oe=6016EAFB
                     " alt="En Vivo: CDMX. Temporada 1" style="width:100% " data-bs-toggle="tooltip" data-bs-placement="top" title="En Vivo: CDMX. Temporada 1 ">
                             </a>
@@ -593,13 +693,13 @@
 
         <div class="footerx ">
             <div class="icon-bar ">
-                <a href="# "></a>
+                <a href="about.html"><i class="bi bi-exclamation-circle " ></i></a>
                 <a href="# "><i class="bi bi-cup-straw " ></i></a>
                 <a href="indexdrag.html "><i class="bi bi-house-door "  ></i></a>
                 <a href="fichas.html "><i class="bi bi-journal-richtext "  ></i></a>
-                <a href="# "></a>
-                </i>
-                </a>
+                <a href="contacto.html "><i class="bi bi-person-lines-fill"></i></a>
+
+
             </div>
         </div>
 

@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>1ra Temporada - Dragvesti Online</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Oswald:700" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+    <link href="/css/HiHello_Monster.css" rel="stylesheet">
+
+    <link rel="icon" href="img/dragvesti_black.png" sizes="192x192">
+
+    <!-- UI Google-->
+    <link href="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.css" rel="stylesheet">
+    <script src="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.js"></script>
+
+    <!-- Icons -->
+    <script src="https://kit.fontawesome.com/ad4c66034e.js" crossorigin="anonymous"></script>
+    <!-- Galeria en https://fontawesome.com/icons?d=gallery-->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css'>
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css'>
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome-animation/0.2.1/font-awesome-animation.min.css'>
+
+    <style>
+        html,
+        body {
+            width: 100%;
+            height: 100%;
+        }
+        
+        .container {
+            padding: 75px 0;
+            margin: 0 auto;
+            width: 1140px;
+        }
+        
+        h1 {
+            position: relative;
+            margin-bottom: 45px;
+            font-family: "Oswald", sans-serif;
+            font-size: 44px;
+            text-transform: uppercase;
+            color: #424242;
+        }
+        
+        .gallery-wrap {
+            display: flex;
+            flex-direction: row;
+            width: 100%;
+            height: 70vh;
+        }
+        
+        .item {
+            flex: 1;
+            height: 100%;
+            background-position: center;
+            background-size: cover;
+            background-repeat: none;
+            transition: flex 0.8s ease;
+        }
+        
+        .item:hover {
+            flex: 7;
+        }
+        
+        .item-1 {
+            background-image: url("https://scontent-qro1-1.xx.fbcdn.net/v/t31.0-8/12473707_1674255092831501_2435726059158703035_o.jpg?_nc_cat=108&ccb=2&_nc_sid=cdbe9c&_nc_ohc=z3ujcM9xnMoAX9ijKDf&_nc_ht=scontent-qro1-1.xx&oh=a7dc2e10084fdd9c4853162569539e83&oe=60211C87");
+        }
+        
+        .item-2 {
+            background-image: url("https://scontent-qro1-1.xx.fbcdn.net/v/t31.0-8/12473707_1674255092831501_2435726059158703035_o.jpg?_nc_cat=108&ccb=2&_nc_sid=cdbe9c&_nc_ohc=z3ujcM9xnMoAX9ijKDf&_nc_ht=scontent-qro1-1.xx&oh=a7dc2e10084fdd9c4853162569539e83&oe=60211C87");
+        }
+        
+        .item-3 {
+            background-image: url("https://scontent-qro1-1.xx.fbcdn.net/v/t31.0-8/12697171_1676404892616521_260716370486409073_o.jpg?_nc_cat=107&ccb=2&_nc_sid=cdbe9c&_nc_ohc=ZFqhOJ1GDf0AX9fOfE_&_nc_ht=scontent-qro1-1.xx&oh=aaf57f370966e811f2408dcb4c905f9a&oe=6023A9E9");
+        }
+        
+        .item-4 {
+            background-image: url("https://scontent-qro1-1.xx.fbcdn.net/v/t31.0-8/12747353_1678709485719395_1760035376463220549_o.jpg?_nc_cat=104&ccb=2&_nc_sid=cdbe9c&_nc_ohc=71qYUyDLn4wAX_JxDQJ&_nc_ht=scontent-qro1-1.xx&oh=1e48c46becb9b8becea8f382f227ca2b&oe=60246677");
+        }
+        
+        .item-5 {
+            background-image: url("https://scontent-qro1-1.xx.fbcdn.net/v/t31.0-8/12716207_1680527765537567_1505128814979688402_o.jpg?_nc_cat=104&ccb=2&_nc_sid=cdbe9c&_nc_ohc=PYeL6nsWJoQAX9VFDeb&_nc_ht=scontent-qro1-1.xx&oh=465b4795d8042f487537573eae5e63d5&oe=6021812E");
+        }
+        
+        .item-6 {
+            background-image: url("https://scontent-qro1-1.xx.fbcdn.net/v/t31.0-8/12792233_1683131051943905_8125338896122728637_o.png?_nc_cat=110&ccb=2&_nc_sid=cdbe9c&_nc_ohc=mhjQlHuVpwEAX8PVjdG&_nc_ht=scontent-qro1-1.xx&oh=a236efda2644e4bd298e2b1a6cdf7caf&oe=60222DBD");
+        }
+        
+        .item-7 {
+            background-image: url("https://scontent-qro1-1.xx.fbcdn.net/v/t31.0-8/12828930_1685755295014814_6571020033389887907_o.png?_nc_cat=105&ccb=2&_nc_sid=cdbe9c&_nc_ohc=sXWswSo320AAX_PqAMH&_nc_ht=scontent-qro1-1.xx&oh=8880dbc35e8eed1070d8d4783531c032&oe=6022884E");
+        }
+        
+        .item-8 {
+            background-image: url("https://scontent-qro1-1.xx.fbcdn.net/v/t31.0-8/11167960_1688430651413945_4012286378912721396_o.png?_nc_cat=111&ccb=2&_nc_sid=cdbe9c&_nc_ohc=-jfOc8lO4VYAX93oYpG&_nc_ht=scontent-qro1-1.xx&oh=8dcb604305c1aec7dd636cc71c80aa7e&oe=6024A530");
+        }
+        
+        .item-9 {
+            background-image: url("https://scontent-qro1-1.xx.fbcdn.net/v/t31.0-8/12440743_1696230623967281_562889262177520955_o.png?_nc_cat=105&ccb=2&_nc_sid=cdbe9c&_nc_ohc=kRvs3GCwxjkAX_rUmxH&_nc_ht=scontent-qro1-1.xx&oh=6d5865042621a23e9f45af3c7973b04a&oe=6023E0A9");
+        }
+        
+        .item-10 {
+            background-image: url("https://scontent-qro1-1.xx.fbcdn.net/v/t31.0-8/13913639_1747471145509895_3741898227677433305_o.jpg?_nc_cat=104&ccb=2&_nc_sid=cdbe9c&_nc_ohc=G1WYhXL7C34AX954R0A&_nc_ht=scontent-qro1-1.xx&oh=0bd6249f992997f592db10c6ed1a25b5&oe=60233564");
+        }
+        
+        .social {
+            position: absolute;
+            right: 45px;
+            bottom: 0;
+        }
+        
+        .social img {
+            display: block;
+            width: 45px;
+        }
+        /* ico bar */
+        
+        .icon-bar {
+            width: 100%;
+            background-color: #ffffff;
+            overflow: auto position: fixed;
+            font-size: 20pt;
+        }
+        
+        .icon-bar a {
+            float: left;
+            width: 20%;
+            text-align: center;
+            padding: 6px 0;
+            transition: all 0.3s ease;
+            color: #bfbfbf;
+            background-color: #ffffff;
+        }
+        
+        .footerx {
+            position: fixed;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            background-color: white;
+            color: white;
+            text-align: center;
+            font-size: 20pt;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- partial:index.partial.html -->
+    <div class="container">
+
+        <DrgvstS1 onclick=" document.location='indexdrag.html' ">Primera Temporada </DrgvstS1>
+
+        <br><br>
+
+
+
+        <div class="gallery-wrap">
+
+            <div class="item item-1" onclick=" document.location='t1e1a.html' "></div>
+            <div class="item item-2"></div>
+            <div class="item item-3"></div>
+            <div class="item item-4"></div>
+            <div class="item item-5"></div>
+            <div class="item item-6"></div>
+            <div class="item item-7"></div>
+            <div class="item item-8"></div>
+            <div class="item item-9"></div>
+            <div class="item item-10"></div>
+        </div>
+    </div>
+
+    <div class="footerx ">
+        <div class="icon-bar ">
+            <a href="about.html"><i class="bi bi-exclamation-circle " ></i></a>
+            <a href="# "><i class="bi bi-cup-straw " ></i></a>
+            <a href="indexdrag.html "><i class="bi bi-house-door "  ></i></a>
+            <a href="fichas.html "><i class="bi bi-journal-richtext "  ></i></a>
+            <a href="fichas.html "><i class="bi bi-arrow-90deg-left"></i></a>
+        </div>
+    </div>
+    <!-- partial -->
+
+</body>
+
+</html>

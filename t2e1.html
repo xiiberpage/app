@@ -7,7 +7,7 @@
     <meta name="description" content="">
     <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
     <meta name="generator" content="Hugo 0.79.0">
-    <title>T1E1a Papel Periodico</title>
+    <title>Pricing example · Bootstrap v5.0</title>
     <link href="/css/HiHello_Monster.min.css" rel="stylesheet">
     <link href="/css/HiHello_Monster.css" rel="stylesheet">
 
@@ -20,8 +20,6 @@
     <!-- Galeria en https://fontawesome.com/icons?d=gallery-->
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
-
-
 
     <!-- Fonts -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
@@ -58,38 +56,7 @@
     <script src="css/semantic.min.js"></script>
 
     <style>
-            @font-face {
-            font-family: 'Material Icons';
-            font-style: normal;
-            font-weight: 400;
-            src: url(https://example.com/MaterialIcons-Regular.eot);
-            /* For IE6-8 */
-            src: local('Material Icons'), local('MaterialIcons-Regular'), url(https://example.com/MaterialIcons-Regular.woff2) format('woff2'), url(https://example.com/MaterialIcons-Regular.woff) format('woff'), url(https://example.com/MaterialIcons-Regular.ttf) format('truetype');
-        }
-        
-        .material-icons {
-            font-family: 'Material Icons';
-            font-weight: normal;
-            font-style: normal;
-            font-size: 24px;
-            /* Preferred icon size */
-            display: inline-block;
-            line-height: 1;
-            text-transform: none;
-            letter-spacing: normal;
-            word-wrap: normal;
-            white-space: nowrap;
-            direction: ltr;
-            /* Support for all WebKit browsers. */
-            -webkit-font-smoothing: antialiased;
-            /* Support for Safari and Chrome. */
-            text-rendering: optimizeLegibility;
-            /* Support for Firefox. */
-            -moz-osx-font-smoothing: grayscale;
-            /* Support for IE. */
-            font-feature-settings: 'liga';
-        }
-        /* Rules for sizing the icon. */
+            /* Rules for sizing the icon. */
         
         .material-icons.md-18 {
             font-size: 18px;
@@ -584,13 +551,11 @@
                 <h5 class="ui horizontal divider header ">Sesión de fotos</h5>
                 <br>
 
-                <div style="text-align:center ">
-                    <div class="ui small basic icon buttons" id="myHeaderGrid " wfd-id="22">
-                        <button class="ui button" wfd-id="202"><i class="material-icons">filter</i></button>
-                        <button class="ui button" wfd-id="202" onclick="one() "><i class="material-icons">filter_1</i></button>
-                        <button class="ui button" wfd-id="201" onclick="two() "><i class="material-icons">filter_2</i></i></button>
-                        <button class="ui button" wfd-id="200" onclick=" four() "><i class="material-icons">filter_4</i></button>
-                    </div>
+
+                <div class="ui small basic icon buttons" id="myHeaderGrid " wfd-id="22">
+                    <button class="ui button" wfd-id="202" onclick="one() "><i class="fas fa-image"></i></button>
+                    <button class="ui button" wfd-id="201" onclick="two() "><i class="fas fa-th-large"></i></button>
+                    <button class="ui button" wfd-id="200" onclick=" four() "><i class="fas fa-th"></i></button>
                 </div>
 
                 <!-- Photo Grid -->
@@ -626,7 +591,11 @@
                     <!--  <button onclick="playPause() ">Play/Pause</button>
                     <button onclick="makeBig() ">Big</button>
                     <button onclick="makeSmall() ">Small</button>
-                    <button onclick="makeNormal() ">Normal</button> 
+                    <button onclick="makeNormal() ">Normal</button> -->
+                    <br>
+
+
+
                     <div class="ui icon buttons " wfd-id="45 ">
                         <button class="ui button " onclick="playPause() " wfd-id="231 ">
     <i class="play icon "></i>
@@ -639,138 +608,119 @@
   </button>
                         <button class="ui button " onclick="makeBig() " wfd-id="229 ">
     <i class="fas fa-compress-alt "></i>
-  </button>-->
+  </button>
+                    </div>
+                    <br> <br>
+                    <video id="video1 " width="300 "><source src="https://www.w3schools.com/html/mov_bbb.mp4 " type="video/mp4 ">Your browser does not support HTML video.  </video>
+
                     <br>
 
-                    <div class="ui small basic icon buttons" wfd-id="22">
-                        <button class="ui button" wfd-id="202" onclick="playPause() ">  <i class="play icon "></i></button>
-                        <button class="ui button" wfd-id="202" onclick="playPause() "> <i class="pause icon "></i></button>
-                        <button class="ui button" wfd-id="201" onclick="makeNormal() "> <i class="fas fa-expand-alt "></i></button>
-                        <button class="ui button" wfd-id="200" onclick="makeBig() "> <i class="fas fa-compress-alt "></i></button>
+
+                    <div class="content w3-center ">
+                        <iframe width="300 " src="https://www.youtube.com/embed/0xkNlZ9vdH8 " frameborder="0 " allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture " allowfullscreen></iframe>
                     </div>
+                    <br><br>
 
+                    <script>
+                        var myVideo = document.getElementById("video1 ");
 
+                        function playPause() {
+                            if (myVideo.paused)
+                                myVideo.play();
+                            else
+                                myVideo.pause();
+                        }
 
+                        function makeBig() {
+                            myVideo.width = 300;
+                        }
+
+                        function makeSmall() {
+                            myVideo.width = 320;
+                        }
+
+                        function makeNormal() {
+                            myVideo.width = 350;
+                        }
+                    </script>
                 </div>
-                <br> <br>
-                <video id="video1 " width="300 "><source src="https://www.w3schools.com/html/mov_bbb.mp4 " type="video/mp4 ">Your browser does not support HTML video.  </video>
-
                 <br>
 
 
-                <div class="content w3-center ">
-                    <iframe width="300 " src="https://www.youtube.com/embed/0xkNlZ9vdH8 " frameborder="0 " allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture " allowfullscreen></iframe>
-                </div>
-                <br><br>
-
-                <script>
-                    var myVideo = document.getElementById("video1 ");
-
-                    function playPause() {
-                        if (myVideo.paused)
-                            myVideo.play();
-                        else
-                            myVideo.pause();
-                    }
-
-                    function makeBig() {
-                        myVideo.width = 300;
-                    }
-
-                    function makeSmall() {
-                        myVideo.width = 320;
-                    }
-
-                    function makeNormal() {
-                        myVideo.width = 350;
-                    }
-                </script>
-            </div>
-            <br>
 
 
-
-
-            <h5 class="ui horizontal divider header ">Ganadora</h5>
-            <div class=" container w3-center ">
-                <div class="ui horizontal list " wfd-id="53 ">
-                    <div class="item " wfd-id="60 "><img class="ui mini circular image " src="https://semantic-ui.com/images/avatar2/small/molly.png ">
-                        <div class="content " wfd-id="61 ">
-                            <div class="ui sub header " wfd-id="62 ">Molly</div>Coordinator </div>
+                <h5 class="ui horizontal divider header ">Ganadora</h5>
+                <div class=" container w3-center ">
+                    <div class="ui horizontal list " wfd-id="53 ">
+                        <div class="item " wfd-id="60 "><img class="ui mini circular image " src="https://semantic-ui.com/images/avatar2/small/molly.png ">
+                            <div class="content " wfd-id="61 ">
+                                <div class="ui sub header " wfd-id="62 ">Molly</div>Coordinator </div>
+                        </div>
                     </div>
                 </div>
-            </div>
 
 
 
 
 
-            <h5 class="ui horizontal divider header ">Eliminada</h5>
-            <div class=" container w3-center ">
-                <div class="ui horizontal list " wfd-id="53 ">
-                    <div class="item " wfd-id="60 "><img class="ui mini circular image " src="https://semantic-ui.com/images/avatar2/small/molly.png ">
-                        <div class="content " wfd-id="61 ">
-                            <div class="ui sub header " wfd-id="62 ">Molly</div>Coordinator </div>
+                <h5 class="ui horizontal divider header ">Eliminada</h5>
+                <div class=" container w3-center ">
+                    <div class="ui horizontal list " wfd-id="53 ">
+                        <div class="item " wfd-id="60 "><img class="ui mini circular image " src="https://semantic-ui.com/images/avatar2/small/molly.png ">
+                            <div class="content " wfd-id="61 ">
+                                <div class="ui sub header " wfd-id="62 ">Molly</div>Coordinator </div>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <br>
+                <br>
 
 
 
 
-            <div class="extra content " wfd-id="184 ">
+                <div class="extra content " wfd-id="184 ">
 
-                <div class="ui heart rating " data-rating="1 " data-max-rating="3 "></div>
-                Like
-
-
-                <div class="ui star rating "></div>
-                Favorite
-
-            </div>
+                    <div class="ui heart rating " data-rating="1 " data-max-rating="3 "></div>
+                    Like
 
 
-
-            <h3 class="ui horizontal divider header ">
-                <div class="ui large heart rating " data-rating="2 " data-max-rating="3 "></div>
-            </h3>
-            <p class="text-center ">Emoción, alegría, felicidad, nervios, miedo, inseguridad, azúcar, flores y muchos colores. </p>
-            <p class="text-center ">No hay palabras para explicar esta experiencia tanto nueva como difícil y hasta cierto punto pesada.</p>
-            <p class="text-center ">Primer reto de muchos porvenir tanto dentro como fuera de la competencia. Sólo puedo decir que esto es la primera hoja de este periódico tan extenso en lleno de arte amor trabajo sudor pelucas y mucho maquillaje. siendo
-            </p>
-            <p class="text-center ">Empezar siendo clasificado para terminar siendo la noticia estelar.</p>
-            <p class="text-center ">Gracias por todo su apoyo Los aprecio infinitamente. </p>
-            <p class="text-center "> <i>Iris XC Queen</i></p>
-            <p class="text-center " style="color:#660000; "><small> <b>#TeamIris #TeamPaperWitch #TeamBigQueen #TeamSeNecesitaronMilPeriodicosParaLaFalda</b></small>
-            </p>
-            <h3 class="ui horizontal divider header "> Comentarios de los jueces
-                <div class="ui large heart rating " data-rating="2 " data-max-rating="3 "></div>
-            </h3>
-
-
-
-
-            <div class="footerx ">
-                <div class="icon-bar ">
-
-
-
-
-                    <a href="t1.html"><i class="bi bi-list-stars"></i></a>
-                    <a href="LCDO1.html"><i class="bi bi-chevron-double-left " ></i></a>
-                    <a href="indexdrag.html "><i class="bi bi-house-door "  ></i></a>
-                    <a href="t1e1b.html "><i class="bi bi-chevron-double-right " ></i></a>
-                    <a href="fichas.html "><i class="bi bi-journal-richtext "  ></i></a>
-
+                    <div class="ui star rating "></div>
+                    Favorite
 
                 </div>
+
+
+
+                <h3 class="ui horizontal divider header ">
+                    <div class="ui large heart rating " data-rating="2 " data-max-rating="3 "></div>
+                </h3>
+                <p class="text-center ">Emoción, alegría, felicidad, nervios, miedo, inseguridad, azúcar, flores y muchos colores. </p>
+                <p class="text-center ">No hay palabras para explicar esta experiencia tanto nueva como difícil y hasta cierto punto pesada.</p>
+                <p class="text-center ">Primer reto de muchos porvenir tanto dentro como fuera de la competencia. Sólo puedo decir que esto es la primera hoja de este periódico tan extenso en lleno de arte amor trabajo sudor pelucas y mucho maquillaje. siendo
+                </p>
+                <p class="text-center ">Empezar siendo clasificado para terminar siendo la noticia estelar.</p>
+                <p class="text-center ">Gracias por todo su apoyo Los aprecio infinitamente. </p>
+                <p class="text-center "> <i>Iris XC Queen</i></p>
+                <p class="text-center " style="color:#660000; "><small> <b>#TeamIris #TeamPaperWitch #TeamBigQueen #TeamSeNecesitaronMilPeriodicosParaLaFalda</b></small>
+                </p>
+                <h3 class="ui horizontal divider header "> Comentarios de los jueces
+                    <div class="ui large heart rating " data-rating="2 " data-max-rating="3 "></div>
+                </h3>
+
+
+                <div class="footerx ">
+                    <div class="icon-bar ">
+                        <a href="LCDO1.html"><i class="bi bi-chevron-double-left " ></i></a>
+                        <a href="# "><i class="bi bi-cup-straw " ></i></a>
+                        <a href="fichas.html "><i class="bi bi-journal-richtext "  ></i></a>
+                        <a href="t1e1b.html "><i class="bi bi-chevron-double-right " ></i></a>
+                        <a href="indexdrag.html "><i class="bi bi-house-door "  ></i></a>
+                    </div>
+                </div>
+
+
+
             </div>
-
-
-
         </div>
-    </div>
     </div>
     <script>
         // When the user scrolls the page, execute myFunction 
