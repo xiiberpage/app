@@ -1,0 +1,668 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>CodePen - Showtime Parallax Effect</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat+Alternates&display=swap" rel="stylesheet">
+
+    <link rel="icon" href="img/dragvesti_black.png" sizes="192x192">
+
+
+
+    <!-- Icons -->
+    <script src="https://kit.fontawesome.com/ad4c66034e.js" crossorigin="anonymous"></script>
+    <!-- Galeria en https://fontawesome.com/icons?d=gallery-->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+
+    <style>
+        .icon-bar {
+            width: 100%;
+            background-color: #ffffff;
+            overflow: auto position: fixed;
+            font-size: 20pt;
+        }
+        
+        .icon-bar a {
+            float: left;
+            width: 20%;
+            text-align: center;
+            padding: 6px 0;
+            transition: all 0.3s ease;
+            color: #bfbfbf;
+            background-color: #ffffff;
+        }
+        
+        .footerx {
+            position: fixed;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            background-color: white;
+            color: white;
+            text-align: center;
+            font-size: 20pt;
+        }
+        
+        @import url("https://fonts.googleapis.com/css?family=Roboto:400,900");
+        body,
+        html {
+            border: 0;
+            font-family: "Roboto", Arial, sans-serif;
+            line-height: 1.5;
+            margin: 0;
+            padding: 0;
+            background-color: #000;
+            color: #fff;
+        }
+        
+        a {
+            color: #fff;
+            text-decoration: none;
+        }
+        
+        .promotion-carousel .promotions {
+            width: 100%;
+            height: 100%;
+        }
+        
+        .promotion-carousel .promotion {
+            width: 100%;
+            height: 100vh;
+            min-height: 600px;
+            position: relative;
+            background-size: cover;
+            background-position: top right;
+            background-repeat: no-repeat;
+            overflow: hidden;
+        }
+        
+        .promotion-carousel .promotion .shade {
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            background-image: linear-gradient(to right, rgba(0, 0, 0, 0.5) 0, rgba(0, 0, 0, 0) 50%);
+        }
+        
+        .promo-text {
+            color: #fff;
+            position: relative;
+        }
+        
+        .promo-text .copy {
+            display: block;
+        }
+        
+        .promo-detail {
+            position: absolute;
+            left: 0;
+            top: 50%;
+            z-index: 100;
+            width: 85%;
+            margin-left: 30px;
+            padding: 10% 10% 10% 0;
+            transform: translate(0, -50%);
+        }
+        
+        @media (min-width: 1280px) {
+            .promo-detail {
+                margin-left: 90px;
+            }
+        }
+        
+        @media (min-width: 1440px) {
+            .promo-detail {
+                width: 550px;
+            }
+        }
+        
+        .promo-detail .headline {
+            font-weight: 900;
+            font-size: 22px;
+            line-height: 1.15;
+            margin-bottom: 5px;
+            text-transform: uppercase;
+        }
+        
+        .promo-detail .body {
+            font-size: 14px;
+            line-height: 1.3;
+            margin-bottom: 5px;
+            text-transform: none;
+        }
+        
+        .promo-detail .buttons {
+            padding: 15px 0;
+        }
+        
+        .promo-detail .button {
+            box-sizing: content-box;
+            height: auto;
+            line-height: 1;
+            padding: 15px 20px;
+            width: auto;
+            display: inline-block;
+        }
+        
+        .promo-detail .button:first-child {
+            background: #b10000;
+        }
+        
+        .promo-detail .button:first-child:hover {
+            border-color: #c00;
+            background-color: #c00;
+        }
+        
+        .promo-detail .dash {
+            background: #b10000;
+            display: block;
+            height: 3px;
+            margin-bottom: 10px;
+            width: 30px;
+        }
+        
+        .promo-detail .promo-flag {
+            background: 0 0;
+            font-size: 14px;
+            line-height: 14px;
+            margin-bottom: 8px;
+            position: relative;
+            text-transform: uppercase;
+            display: inline-block;
+        }
+        
+        @media (min-width: 668px) {
+            .promo-detail {
+                width: 450px;
+            }
+            .promo-detail .headline {
+                font-size: 36px;
+                line-height: 1.1;
+            }
+            .promo-detail .body {
+                font-size: 14px;
+                margin-bottom: 0;
+                text-transform: none;
+            }
+        }
+        
+        @media (min-width: 840px) {
+            .promo-detail .headline {
+                font-size: 42px;
+            }
+            .promo-detail .body {
+                font-size: 18px;
+            }
+        }
+        
+        @media (min-width: 1024px) {
+            .promo-detail .dash {
+                display: block;
+                height: 3px;
+                margin-bottom: 15px;
+                width: 30px;
+            }
+            .promo-detail .headline {
+                font-weight: 600;
+                font-size: 56px;
+                line-height: 0.85;
+                margin-bottom: 15px;
+                margin-left: -2px;
+            }
+            .promo-detail .headline.medium {
+                font-size: 50px;
+            }
+            .promo-detail .headline.long {
+                font-size: 40px;
+            }
+            .promo-detail .body {
+                font-size: 18px;
+                line-height: 1.4;
+            }
+            .promo-detail .button {
+                padding: 12px;
+            }
+        }
+        
+        @media (min-width: 1440px) {
+            .promo-detail .dash {
+                height: 4px;
+                width: 40px;
+            }
+            .promo-detail .headline {
+                font-size: 66px;
+            }
+            .promo-detail .headline.medium {
+                font-size: 56px;
+                line-height: 1;
+            }
+            .promo-detail .headline.long {
+                font-size: 46px;
+                line-height: 1;
+            }
+            .promo-detail .promo-flag {
+                font-size: 18px;
+                line-height: 18px;
+            }
+            .promo-detail .body {
+                font-size: 24px;
+                margin-bottom: 15px;
+            }
+        }
+        
+        .navigation {
+            position: fixed;
+            top: 50%;
+            transform: translateY(-50%);
+            right: 50px;
+        }
+        
+        .navigation ul {
+            list-style: none;
+            padding: 0;
+        }
+        
+        .navigation li {
+            position: relative;
+            width: 8px;
+            height: 8px;
+            margin: 15px 0;
+        }
+        
+        .navigation li a {
+            background-color: #fff;
+            border-radius: 100%;
+            height: 100%;
+            width: 100%;
+            display: block;
+            transition: 0.2s ease;
+        }
+        
+        .navigation li a.active {
+            background-color: #b10000;
+        }
+    </style>
+
+</head>
+
+<body>
+    <!-- partial:index.partial.html -->
+    <div class="promotion-carousel">
+        <div class="promotions">
+            <div>
+                <div class="promotion" id="section10" style="background-image: url(https://picsum.photos/1440/900?image=596)">
+                    <div class="shade"></div>
+                    <div class="promo-detail cycle-overlay">
+                        <div class="promo-text">
+                            <span class="dash"></span>
+                            <a href="#" class="copy">
+                                <div class="headline">Dragvesti</div>
+                                <p class="body long">Online y En Vivo: Chihuahua y CDMX</p>
+                            </a>
+                            <div class="buttons">
+                                <a class="button " href="#">Dragvesti T1</a>
+                                <a class="button " href="t1e1a">Dragvesti T2</a>
+                                <a class="button " href="#">Dragvesti T3</a>
+                                <a class="button " href="#">Dragvesti All Stars T1</a>
+                                <a class="button " href="#">Dragvesti All Stars T2</a>
+                                <a class="button " href="#">En Vivo: Chihuahua T1</a>
+                                <a class="button " href="#">En Vivo: Chihuahua T2</a>
+                                <a class="button " href="#">En Vivo: Chihuahua T3</a>
+                                <a class="button " href="#">En Vivo: Chihuahua T4</a>
+                                <a class="button " href="#">En Vivo: Chihuahua All Stars</a><br>
+                                <a class="button " href="#">En Vivo: CDMX</a><br>
+                                <a class="button " href="#">#LongLiveTheQueens</a>
+                                <a class="button " href="#">#CucuConfessions</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="promotion" id="section1" style="background-image: url(https://picsum.photos/1440/900?image=319)">
+                    <div class="shade"></div>
+                    <div class="promo-detail cycle-overlay">
+                        <div class="promo-text">
+                            <span class="dash"></span>
+                            <span class="promo-flag">Edición Internacional</span>
+                            <a href="#" class="copy">
+                                <div class="headline">Dragvesti</div>
+                                <p class="body long">Primera Temporada</p>
+                            </a>
+                            <div class="buttons">
+                                <a class="button sho-play-link" href="#"></span>Ver primer episodio</a>
+                                <a class="button info-button" href="#">Wiki</a>
+                                <a class="button see-all" href="#">Mostrar episodios</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="promotion" id="section2" style="background-image: url(https://picsum.photos/1440/900?image=325)">
+                    <div class="shade"></div>
+                    <div class="promo-detail cycle-overlay">
+                        <div class="promo-text">
+                            <span class="dash"></span>
+                            <span class="promo-flag">Edición México</span>
+                            <a href="#" class="copy">
+                                <div class="headline">Dragvesti</div>
+                                <p class="body long">Segunda Temporada</p>
+                            </a>
+                            <div class="buttons">
+                                <a class="button sho-play-link" href="#"></span>Ver primer episodio</a>
+                                <a class="button info-button" href="#">Wiki</a>
+                                <a class="button see-all" href="#">Mostrar episodios</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="promotion" id="section3" style="background-image: url(https://picsum.photos/1440/900?image=22)">
+                    <div class="shade"></div>
+                    <div class="promo-detail cycle-overlay">
+                        <div class="promo-text">
+                            <span class="dash"></span>
+                            <a href="#" class="copy">
+                                <div class="headline">Baby Driver</div>
+                                <p class="body long">A young getaway driver (Ansel Elgort) meets the girl of his dreams (Lily James), and tries to ditch his criminal life.</p>
+                            </a>
+                            <div class="buttons">
+                                <a class="button sho-play-link" href="#"></span>Play Now</a>
+                                <a class="button info-button" href="#"></span>More Info</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="promotion" id="section4" style="background-image: url(https://picsum.photos/1440/900?image=841)">
+                    <div class="shade"></div>
+                    <div class="promo-detail cycle-overlay">
+                        <div class="promo-text">
+                            <span class="dash"></span>
+                            <a href="#" class="copy">
+                                <div class="headline medium">Our Cartoon President</div>
+                                <p class="body long">Season Finale - Militarization: Our Cartoon President militarizes the government. </p>
+                            </a>
+                            <div class="buttons">
+                                <a class="button sho-play-link" href="#"></span>Play Now</a>
+                                <a class="button info-button" href="#">More Info</a>
+                                <a class="button see-all" href="#">All Episodes</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="promotion" id="section5" style="background-image: url(https://picsum.photos/1440/900?image=832)">
+                    <div class="shade"></div>
+                    <div class="promo-detail cycle-overlay">
+                        <div class="promo-text">
+                            <span class="dash"></span>
+                            <a href="#" class="copy">
+                                <div class="headline medium">Captain Fantastic</div>
+                                <p class="body long">A father (Viggo Mortensen) raising his six kids is forced to leave his paradise, challenging his idea of what it means to be a parent.</p>
+                            </a>
+                            <div class="buttons">
+                                <a class="button sho-play-link" href="#"></span>Play Now</a>
+                                <a class="button info-button" href="#">More Info</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="promotion" id="section6" style="background-image: url(https://picsum.photos/1440/900?image=804)">
+                    <div class="shade"></div>
+                    <div class="promo-detail cycle-overlay">
+                        <div class="promo-text">
+                            <span class="dash"></span>
+                            <a href="#" class="copy">
+                                <div class="headline">Home Again</div>
+                                <p class="body long">Newly single Alice (Reese Witherspoon) meets three aspiring filmmakers in need of a place to stay.</p>
+                            </a>
+                            <div class="buttons">
+                                <a class="button sho-play-link" href="#"></span>Play Now</a>
+                                <a class="button info-button" href="#">More Info</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="promotion" id="section7" style="background-image: url(https://picsum.photos/1440/900?image=786)">
+                    <div class="shade"></div>
+                    <div class="promo-detail cycle-overlay">
+                        <div class="promo-text">
+                            <span class="dash"></span>
+                            <a href="#" class="copy">
+                                <div class="headline">The Affair</div>
+                                <p class="body long">Noah, Alison, Helen and Cole are on separate journeys, but question what they’re holding on to as their lives keep crashing back into one another.</p>
+                            </a>
+                            <div class="buttons">
+                                <a class="button info-button" href="#">More Info</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="promotion" id="section8" style="background-image: url(https://picsum.photos/1440/900?image=660)">
+                    <div class="shade"></div>
+                    <div class="promo-detail cycle-overlay">
+                        <div class="promo-text">
+                            <span class="dash"></span>
+                            <a href="#" class="copy">
+                                <div class="headline medium">The Girl On The Train</div>
+                                <p class="body long">A woman (Emily Blunt), devastated by her divorce, becomes entangled in a mystery after witnessing a shocking event.</p>
+                            </a>
+                            <div class="buttons">
+                                <a class="button sho-play-link" href="#"></span>Play Now</a>
+                                <a class="button info-button" href="#">More Info</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="promotion" id="section9" style="background-image: url(https://picsum.photos/1440/900?image=619)">
+                    <div class="shade"></div>
+                    <div class="promo-detail cycle-overlay">
+                        <div class="promo-text">
+                            <span class="dash"></span>
+                            <a href="#" class="copy">
+                                <div class="headline">Rosewater</div>
+                                <p class="body long">A journalist gets arrested in Iran and is held and tortured for 118 days.</p>
+                            </a>
+                            <div class="buttons">
+                                <a class="button sho-play-link" href="#"></span>Play Now</a>
+                                <a class="button info-button" href="#">More Info</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="promotion" id="section10" style="background-image: url(https://picsum.photos/1440/900?image=596)">
+                    <div class="shade"></div>
+                    <div class="promo-detail cycle-overlay">
+                        <div class="promo-text">
+                            <span class="dash"></span>
+                            <a href="#" class="copy">
+                                <div class="headline">Dragvesti</div>
+                                <p class="body long">Online y En Vivo: Chihuahua y CDMX</p>
+                            </a>
+                            <div class="buttons">
+                                <a class="button " href="#">Dragvesti T1</a>
+                                <a class="button " href="t1e1a">Dragvesti T2</a>
+                                <a class="button " href="#">Dragvesti T3</a>
+                                <a class="button " href="#">Dragvesti All Stars T1</a>
+                                <a class="button " href="#">Dragvesti All Stars T2</a>
+                                <a class="button " href="#">En Vivo: Chihuahua T1</a>
+                                <a class="button " href="#">En Vivo: Chihuahua T2</a>
+                                <a class="button " href="#">En Vivo: Chihuahua T3</a>
+                                <a class="button " href="#">En Vivo: Chihuahua T4</a>
+                                <a class="button " href="#">En Vivo: Chihuahua All Stars</a><br>
+                                <a class="button " href="#">En Vivo: CDMX</a><br>
+                                <a class="button " href="#">#LongLiveTheQueens</a>
+                                <a class="button " href="#">#CucuConfessions</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="navigation">
+        <ul>
+
+            <li>
+                <a href="#section1" data-number="1"></a>
+            </li>
+
+            <li>
+                <a href="#section2" data-number="2"></a>
+            </li>
+
+            <li>
+                <a href="#section3" data-number="3"></a>
+            </li>
+
+            <li>
+                <a href="#section4" data-number="4"></a>
+            </li>
+
+            <li>
+                <a href="#section5" data-number="5"></a>
+            </li>
+
+            <li>
+                <a href="#section6" data-number="6"></a>
+            </li>
+
+            <li>
+                <a href="#section7" data-number="7"></a>
+            </li>
+
+            <li>
+                <a href="#section8" data-number="8"></a>
+            </li>
+
+            <li>
+                <a href="#section9" data-number="9"></a>
+            </li>
+
+            <li>
+                <a href="#section10" data-number="10"></a>
+            </li>
+
+        </ul>
+    </div>
+    <div class="footerx ">
+        <div class="icon-bar ">
+            <a href="contacto.html "><i class="bi bi-person-lines-fill"></i></a>
+            <a href="# "><i class="bi bi-cup-straw " ></i></a>
+            <a href="indexdrag.html "><i class="bi bi-house-door "  ></i></a>
+            <a href="fichas.html "><i class="bi bi-journal-richtext "  ></i></a>
+            <a href="indexdrag.html "><i class="bi bi-arrow-90deg-left"></i></a>
+        </div>
+    </div>
+
+
+    <!-- partial -->
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
+    <script>
+        const ele = '.promotion-carousel';
+        const $window = $(window);
+        const viewportHeight = $window.height();
+
+        let ui = {
+            promo: ele + ' .promotion',
+            promoText: ele + ' .promo-text',
+            navigationItems: '.navigation a'
+        };
+
+
+        function isOnScreen(el) {
+            const viewport = {
+                top: $window.scrollTop()
+            };
+
+
+            viewport.bottom = viewport.top + viewportHeight;
+
+            const bounds = el.offset();
+            bounds.bottom = el.offset().top + el.outerHeight();
+
+            return !(viewport.bottom < bounds.top || viewport.top > bounds.bottom);
+        }
+
+        class ScrollEvents {
+
+            run() {
+                const $promo = $('.promotion');
+                const $promoText = $('.promo-text');
+
+                function smoothScroll(target) {
+                    $('body, html').animate({
+                        'scrollTop': target.offset().top
+                    }, 600);
+                }
+
+                $(ui.navigationItems).on('click', e => {
+                    e.preventDefault();
+                    smoothScroll($(e.currentTarget.hash));
+                });
+
+                $window.on('scroll', () => {
+
+                    $(ui.promo).toArray().forEach(el => {
+                        const $el = $(el);
+                        if (isOnScreen($el)) {
+                            this.scrolly($el);
+                        }
+                    });
+                    this.updateNavigation();
+                    this.fadeAtTop($(ui.promoText));
+                });
+
+                this.updateNavigation();
+            }
+
+            scrolly(el) {
+                const topOffset = el.offset().top;
+                const height = el.height();
+                let scrollTop = $window.scrollTop();
+                const maxPixels = height / 4;
+                const percentageScrolled = (scrollTop - topOffset) / height;
+                let backgroundOffset = maxPixels * percentageScrolled;
+
+                backgroundOffset = Math.round(Math.min(maxPixels, Math.max(0, backgroundOffset)));
+
+                el.css(`background-position`, `right 0px top ${backgroundOffset}px`);
+            }
+
+            fadeAtTop(el) {
+                const startPos = 0.25;
+
+                el.toArray().forEach(el => {
+                    const $el = $(el);
+                    let position = $el.offset().top - $window.scrollTop() + viewportHeight / 6;
+                    let opacity = position < viewportHeight * startPos ? position / (viewportHeight * startPos) * 1 : 1;
+
+                    $el.css('opacity', opacity);
+                });
+            }
+
+            updateNavigation() {
+                $(ui.promo).toArray().forEach(el => {
+                    let $el = $(el);
+                    let activeSection = $(`.navigation a[href="#${$el.attr('id')}"]`).data('number') - 1;
+
+                    if ($el.offset().top - $window.height() / 2 < $window.scrollTop() && $el.offset().top + $el.height() - $window.height() / 2 > $window.scrollTop()) {
+                        $(ui.navigationItems).eq(activeSection).addClass('active');
+                    } else {
+                        $(ui.navigationItems).eq(activeSection).removeClass('active');
+                    }
+                });
+            }
+        };
+
+        const scrollEvents = new ScrollEvents();
+
+        scrollEvents.run();
+    </script>
+
+</body>
+
+</html>
