@@ -5,6 +5,26 @@
     <meta charset="UTF-8">
     <title>DD</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+    <link rel="icon" href="img/dragvesti_black.png" sizes="192x192">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+
+    <!-- Icons -->
+    <script src="https://kit.fontawesome.com/ad4c66034e.js" crossorigin="anonymous"></script>
+    <!-- Galeria en https://fontawesome.com/icons?d=gallery-->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+</head>
+
+<body>
+
 
     <style>
         @import url("https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700");
@@ -45,35 +65,54 @@
             font-size: 6vw;
         }
         
-        #welcome p {
+        #welcome h2 {
             color: #FFF;
             font-weight: normal;
             font-family: "Open Sans", sans-serif;
             font-size: 4vw;
             width: 100%;
             max-width: 37vw;
-            padding: 2.5vw;
-            line-height: 1.5;
+            padding: 2vw;
+            line-height: 1;
             padding-bottom: 0px;
+        }
+        
+        #welcome p {
+            color: #FFF;
+            font-weight: normal;
+            font-family: "Open Sans", sans-serif;
+            font-size: 2vw;
+            width: 100%;
+            padding: 2vw;
+            line-height: 1;
+            padding-bottom: 0px;
+            background-color: transparent;
+            text-decoration: none;
         }
     </style>
 
 
-</head>
+    </head>
 
-<body>
-    <!-- partial:index.partial.html -->
-    <div id="welcome">
-        <p>desarrollado por</p>
-        <h1>hihello.monster</h1>
+    <body>
+        <!-- partial:index.partial.html -->
+        <div id="welcome">
+            <p>desarrollado por</p>
+            <h1>hihello.monster</h1>
 
-    </div>
-    <!-- partial -->
-    <script src='https://cdnjs.cloudflare.com/ajax/libs/three.js/104/three.min.js'></script>
-    <script>
-        console.clear();
+            <br><br><br><br><br>
 
-        let Noise3D = `
+
+            <a href=".t2.html" class="text-decoration-none">
+                <p><i class="bi bi-arrow-left-circle"></i> <small>regresar a</small> Dragvesti </p>
+            </a>
+        </div>
+        <!-- partial -->
+        <script src='https://cdnjs.cloudflare.com/ajax/libs/three.js/104/three.min.js'></script>
+        <script>
+            console.clear();
+
+            let Noise3D = `
       //
       // Description : Array and textureless GLSL 2D/3D/4D simplex 
       //               noise functions.
@@ -179,8 +218,8 @@
         }
       `;
 
-        const shaders = {
-            fragment: `
+            const shaders = {
+                fragment: `
       
         uniform vec2 resolution;
         uniform float time;
@@ -223,76 +262,76 @@
         }
       
       `,
-            vertex: `
+                vertex: `
       
         void main() {
       
           gl_Position = projectionMatrix * modelViewMatrix * vec4(position, 1.0);
         }
       `
-        };
+            };
 
 
-        const container = document.body;
+            const container = document.body;
 
-        let width = container.offsetWidth,
-            height = container.offsetHeight,
-            currentTime = 0,
-            timeAddition = Math.random() * 1000;
+            let width = container.offsetWidth,
+                height = container.offsetHeight,
+                currentTime = 0,
+                timeAddition = Math.random() * 1000;
 
-        const scene = new THREE.Scene(),
-            camera = new THREE.OrthographicCamera(width / -2, width / 2, height / 2, height / -2, 0, 100);
-        renderer = new THREE.WebGLRenderer({
-                alpha: true
-            }),
-            startTime = new Date().getTime();
+            const scene = new THREE.Scene(),
+                camera = new THREE.OrthographicCamera(width / -2, width / 2, height / 2, height / -2, 0, 100);
+            renderer = new THREE.WebGLRenderer({
+                    alpha: true
+                }),
+                startTime = new Date().getTime();
 
-        renderer.setSize(container.offsetWidth, container.offsetHeight);
-        container.appendChild(renderer.domElement);
+            renderer.setSize(container.offsetWidth, container.offsetHeight);
+            container.appendChild(renderer.domElement);
 
 
-        let uniforms = {
-            time: {
-                value: 1 + timeAddition
-            },
-            resolution: {
-                value: new THREE.Vector2(container.offsetWidth, container.offsetHeight)
+            let uniforms = {
+                time: {
+                    value: 1 + timeAddition
+                },
+                resolution: {
+                    value: new THREE.Vector2(container.offsetWidth, container.offsetHeight)
+                }
+            };
+
+
+            let shaderMaterial = new THREE.ShaderMaterial({
+                uniforms: uniforms,
+                vertexShader: shaders.vertex,
+                fragmentShader: shaders.fragment,
+                //blending:       THREE.AdditiveBlending,
+                depthTest: false,
+                transparent: true,
+                vertexColors: true
+            });
+
+
+            let geometry = new THREE.PlaneGeometry(width, height, 32);
+            let plane = new THREE.Mesh(geometry, shaderMaterial);
+            scene.add(plane);
+            plane.position.z = 0.5;
+
+
+            camera.position.y = 0;
+            camera.position.x = 0;
+            camera.position.z = 100;
+
+            function render() {
+                var now = new Date().getTime();
+                currentTime = (now - startTime) / 1000;
+                uniforms.time.value = currentTime + timeAddition;
+
+                requestAnimationFrame(render);
+                renderer.render(scene, camera);
             }
-        };
+            render();
+        </script>
 
-
-        let shaderMaterial = new THREE.ShaderMaterial({
-            uniforms: uniforms,
-            vertexShader: shaders.vertex,
-            fragmentShader: shaders.fragment,
-            //blending:       THREE.AdditiveBlending,
-            depthTest: false,
-            transparent: true,
-            vertexColors: true
-        });
-
-
-        let geometry = new THREE.PlaneGeometry(width, height, 32);
-        let plane = new THREE.Mesh(geometry, shaderMaterial);
-        scene.add(plane);
-        plane.position.z = 0.5;
-
-
-        camera.position.y = 0;
-        camera.position.x = 0;
-        camera.position.z = 100;
-
-        function render() {
-            var now = new Date().getTime();
-            currentTime = (now - startTime) / 1000;
-            uniforms.time.value = currentTime + timeAddition;
-
-            requestAnimationFrame(render);
-            renderer.render(scene, camera);
-        }
-        render();
-    </script>
-
-</body>
+    </body>
 
 </html>
