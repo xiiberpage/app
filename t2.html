@@ -69,6 +69,26 @@
             font-size: 20pt;
         }
         
+        @font-face {
+            font-family: ModernaSans-Light;
+            src: url(/font/ModernaSans-Light.ttf);
+        }
+        
+        @font-face {
+            font-family: ModernaSans-Medium;
+            src: url(/font/ModernaSans-Medium.ttf);
+        }
+        
+        @font-face {
+            font-family: ModernaSans-BlackIt;
+            src: url(/font/ModernaSans-BlackIt.ttf);
+        }
+        
+        @font-face {
+            font-family: ModernaSans-Bold;
+            src: url(/font/ModernaSans-Bold.ttf);
+        }
+        
         @import url("https://fonts.googleapis.com/css?family=Roboto:400,900");
         body,
         html {
@@ -114,6 +134,7 @@
         .promo-text {
             color: #fff;
             position: relative;
+            font-family: "ModernaSans-Light", "Roboto", Arial, sans-serif;
         }
         
         .promo-text .copy {
@@ -146,13 +167,14 @@
         .promo-detail .headline {
             font-weight: 900;
             font-size: 22px;
+            font-family: "ModernaSans-Medium", "Roboto", Arial, sans-serif;
             line-height: 1.15;
             margin-bottom: 5px;
-            text-transform: uppercase;
         }
         
         .promo-detail .body {
             font-size: 14px;
+            font-family: "Roboto", Arial, sans-serif;
             line-height: 1.3;
             margin-bottom: 5px;
             text-transform: none;
@@ -194,7 +216,6 @@
             line-height: 14px;
             margin-bottom: 8px;
             position: relative;
-            text-transform: uppercase;
             display: inline-block;
         }
         
