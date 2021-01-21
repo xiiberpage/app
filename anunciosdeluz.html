@@ -54,10 +54,18 @@
         
         .whats {
             font-family: neon;
-            color: #00b33c;
-            font-size: 9vw;
-            line-height: 9vw;
-            text-shadow: 0 0 3vw #006622;
+            color: #00e600;
+            font-size: 5vw;
+            line-height: 5vw;
+            text-shadow: 0 0 3vw #009900;
+        }
+        
+        .verde {
+            font-family: neon;
+            color: #00e600;
+            font-size: 7vw;
+            line-height: 7vw;
+            text-shadow: 0 0 3vw #009900;
         }
         
         .neon {
@@ -94,6 +102,42 @@
             50% {
                 text-shadow: 0 0 .5vw #082180, 0 0 1.5vw #082180, 0 0 5vw #082180, 0 0 5vw #082180, 0 0 .2vw #082180, .5vw .5vw .1vw #0A3940;
                 color: #146C80;
+            }
+        }
+        
+        .verde {
+            animation: verde 2s ease infinite;
+            -moz-animation: verde 1s ease infinite;
+            -webkit-animation: verde 1s ease infinite;
+        }
+        
+        @keyframes verde {
+            0%,
+            100% {
+                text-shadow: 0 0 1vw #FA1C16, 0 0 3vw #FA1C16, 0 0 10vw #FA1C16, 0 0 10vw #FA1C16, 0 0 .4vw #FED128, .5vw .5vw .1vw #806914;
+                color: #FED128;
+            }
+            50% {
+                text-shadow: 0 0 .5vw #800E0B, 0 0 1.5vw #800E0B, 0 0 5vw #800E0B, 0 0 5vw #800E0B, 0 0 .2vw #800E0B, .5vw .5vw .1vw #40340A;
+                color: #806914;
+            }
+        }
+        
+        .whats {
+            animation: whats 3s ease infinite;
+            -moz-animation: whats 3s ease infinite;
+            -webkit-animation: whats 3s ease infinite;
+        }
+        
+        @keyframes whats {
+            0%,
+            100% {
+                text-shadow: 0 0 1vw #33cc33, 0 0 3vw #33cc33, 0 0 10vw #33cc33, 0 0 10vw #33cc33, 0 0 .4vw #1aff1a, .5vw .5vw .1vw #00b300;
+                color: #00ff00;
+            }
+            50% {
+                text-shadow: 0 0 .5vw #1f7a1f, 0 0 1.5vw #1f7a1f, 0 0 5vw #1f7a1f, 0 0 5vw #1f7a1f, 0 0 .2vw #003300, .5vw .5vw .1vw #40340A;
+                color: #004d00;
             }
         }
         /* Anuncios */
@@ -176,13 +220,14 @@
         <a href="#" id="btn-blanco"><b> FABRICACIÓN, REPARACIÓN Y MANTENIMIENTO </b></a>
         <br><br>
         <div class="neon">Anuncios </div>
-        <div class="flux">Luminosos </div>
+        <div class="flux">Luminosos</div>
         <br>
         <a href="#" id="btn-lumi">• Letras 3D • Neon • Cajas de Luz •</a>
-
+        <br><br><br><br>
+        <div class="whats"><i class="fab fa-whatsapp "></i></div>
     </div>
 
-    <a href="#" id="btn-twtr" target="#" class="whats"><i class="fab fa-whatsapp "></i></a>
+
 
     <!-- partial -->
 </body>
