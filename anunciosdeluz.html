@@ -12,6 +12,8 @@
 
     <link rel="icon" href="img/dragvesti_black.png" sizes="192x192">
 
+    <script src="https://kit.fontawesome.com/ad4c66034e.js" crossorigin="anonymous"></script>
+
     <style>
         html,
         body {
@@ -48,6 +50,14 @@
             font-size: 9vw;
             line-height: 9vw;
             text-shadow: 0 0 3vw #2356FF;
+        }
+        
+        .whats {
+            font-family: neon;
+            color: #00b33c;
+            font-size: 9vw;
+            line-height: 9vw;
+            text-shadow: 0 0 3vw #006622;
         }
         
         .neon {
@@ -90,15 +100,13 @@
         
         #btn-twtr {
             clear: both;
-            color: #fff;
-            border: 2px solid;
+            color: #33ff77;
             border-radius: 3px;
             text-align: center;
             text-decoration: none;
             display: block;
             font-family: sans-serif;
-            font-size: 14px;
-            width: 25em;
+            font-size: 35px;
             padding: 5px 10px;
             font-weight: 600;
             position: absolute;
@@ -106,13 +114,10 @@
             left: 0;
             right: 0;
             margin: 0 auto;
-            background: rgba(0, 0, 0, 0.2);
-            box-shadow: 0 0 0px 3px rgba(0, 0, 0, 0.2);
-            opacity: 0.4
         }
         
         #btn-twtr:hover {
-            color: #fff;
+            color: #009933;
             opacity: 1
         }
         /* Anuncios */
@@ -120,13 +125,12 @@
         #btn-lumi {
             clear: both;
             color: #fff;
-            border-radius: 3px;
             text-align: center;
             text-decoration: none;
             display: block;
-            font-family: sans-serif;
-            font-size: 18px;
-            font-weight: 600;
+            font-family: Roboto;
+            font-size: 14px;
+            font-weight: 400;
             position: absolute;
             left: 0;
             right: 0;
@@ -146,13 +150,17 @@
 <body>
     <!-- partial:index.partial.html -->
     <div class="container">
-        <a href="#" id="btn-lumi">Fabricación, reparación y mantenimiento</a>
+        <a href="#" id="btn-lumi"><b> FABRICACIÓN, REPARACIÓN Y MANTENIMIENTO </b></a>
         <br><br>
         <div class="neon">Anuncions </div>
         <div class="flux">Luminosos </div>
+        <br>
+        <a href="#" id="btn-lumi">• Letras 3D • Neon • Cajas de Luz •</a>
+
     </div>
 
-    <a href="#" id="btn-twtr" target="#">Letras 3D - Neon - Cajas de Luz</a>
+    <a href="#" id="btn-twtr" target="#" class="whats"><i class="fab fa-whatsapp "></i></a>
+
     <!-- partial -->
 </body>
 
