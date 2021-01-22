@@ -1,0 +1,1033 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Dragvesti, La carrera Drag Queen Online y En Vivo: CDMX y Chihuahua #DragQueen">
+    <meta name="author" content="@LuisAngelMaciel, Hiello.Monster, Dragvesti & Iris XC Queen">
+    <meta name="generator" content="HiHello.Monster Dragvesti">
+
+    <title>Dragvesti, La Carrera Drag Queen</title>
+    <link rel="icon" href="img/dragvesti_black.png" sizes="192x192">
+
+    <link href="/css/HiHello_Monster.min.css" rel="stylesheet">
+    <link href="/css/HiHello_Monster.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat+Alternates&display=swap" rel="stylesheet">
+
+    <!-- Icons -->
+    <script src="https://kit.fontawesome.com/ad4c66034e.js" crossorigin="anonymous"></script>
+    <!-- Galeria en https://fontawesome.com/icons?d=gallery-->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+
+    <!-- UI Google-->
+    <link href="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.css" rel="stylesheet">
+    <script src="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js" integrity="sha384-q2kxQ16AaE6UbzuKqyBE9/u/KzioAlnx2maXQHiDX9d4/zp8Ok3f+M7DPm+Ib6IU" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-pQQkAEnwaBkjpqZ8RU1fF1AKtTcHJwFl3pblpTlHXybJjHpMYo79HY3hIi4NKxyj" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <!-- UI Kit -->
+    <link href="/css/HiHello_Monster_SUI.css" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+    <script src="Semantic-UI-CSS-master/semantic.min.js"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css'>
+
+
+
+    <style>
+        .logo {
+            position: fixed;
+            top: 30px;
+            right: 30px;
+            display: block;
+            z-index: 100;
+            transition: all 250ms linear;
+        }
+        
+        .logo img {
+            height: 35px;
+            width: auto;
+            display: block;
+        }
+        
+        .overlay {
+            height: 100%;
+            width: 0;
+            position: fixed;
+            z-index: 1;
+            top: 0;
+            left: 0;
+            background-color: rgb(0, 0, 0);
+            background-color: rgba(0, 0, 0, 0.9);
+            overflow-x: hidden;
+            transition: 0.5s;
+        }
+        
+        .overlay-content {
+            position: relative;
+            top: 25%;
+            width: 100%;
+            text-align: center;
+            margin-top: 30px;
+        }
+        
+        .overlay a {
+            padding: 8px;
+            text-decoration: none;
+            font-size: 36px;
+            color: #818181;
+            display: block;
+            transition: 0.3s;
+        }
+        
+        .overlay a:hover,
+        .overlay a:focus {
+            color: #f1f1f1;
+        }
+        
+        .overlay .closebtn {
+            position: absolute;
+            top: 20px;
+            right: 45px;
+            font-size: 60px;
+        }
+        
+        @media screen and (max-height: 450px) {
+            .overlay a {
+                font-size: 20px
+            }
+            .overlay .closebtn {
+                font-size: 40px;
+                top: 15px;
+                right: 35px;
+            }
+        }
+        
+        @media (max-width: 767px) {
+            .modal-fullscreen-xs-down {
+                padding: 0 !important;
+            }
+            .modal-fullscreen-xs-down .modal-dialog {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            .modal-fullscreen-xs-down .modal-content {
+                height: auto;
+                min-height: 100%;
+                border: 0 none;
+                border-radius: 0;
+                box-shadow: none;
+            }
+        }
+        
+        @media (max-width: 991px) {
+            .modal-fullscreen-sm-down {
+                padding: 0 !important;
+            }
+            .modal-fullscreen-sm-down .modal-dialog {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            .modal-fullscreen-sm-down .modal-content {
+                height: auto;
+                min-height: 100%;
+                border: 0 none;
+                border-radius: 0;
+                box-shadow: none;
+            }
+        }
+        
+        @media (max-width: 1199px) {
+            .modal-fullscreen-md-down {
+                padding: 0 !important;
+            }
+            .modal-fullscreen-md-down .modal-dialog {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            .modal-fullscreen-md-down .modal-content {
+                height: auto;
+                min-height: 100%;
+                border: 0 none;
+                border-radius: 0;
+                box-shadow: none;
+            }
+        }
+        
+        .modal-fullscreen {
+            padding: 0 !important;
+        }
+        
+        .modal-fullscreen .modal-dialog {
+            width: 100%;
+            height: 100%;
+            margin: 0;
+            padding: 0;
+        }
+        
+        .modal-fullscreen .modal-content {
+            height: auto;
+            min-height: 100%;
+            border: 0 none;
+            border-radius: 0;
+            box-shadow: none;
+        }
+        
+        .btn-open-modal {
+            margin-bottom: 0.5em;
+        }
+        
+        .icon-bar {
+            width: 100%;
+            background-color: #ffffff;
+            overflow: auto position: fixed;
+            font-size: 20pt;
+        }
+        
+        .icon-bar a {
+            float: left;
+            width: 20%;
+            text-align: center;
+            padding: 6px 0;
+            transition: all 0.3s ease;
+            color: #bfbfbf;
+            background-color: #ffffff;
+        }
+        
+        .footerx {
+            position: fixed;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            background-color: white;
+            color: white;
+            text-align: center;
+            font-size: 20pt;
+        }
+        
+        @font-face {
+            font-family: ModernaSans-Light;
+            src: url(/font/ModernaSans-Light.ttf);
+        }
+        
+        @font-face {
+            font-family: ModernaSans-Medium;
+            src: url(/font/ModernaSans-Medium.ttf);
+        }
+        
+        @font-face {
+            font-family: ModernaSans-BlackIt;
+            src: url(/font/ModernaSans-BlackIt.ttf);
+        }
+        
+        @font-face {
+            font-family: ModernaSans-Bold;
+            src: url(/font/ModernaSans-Bold.ttf);
+        }
+        
+        @import url("https://fonts.googleapis.com/css?family=Roboto:400,900");
+        body,
+        html {
+            border: 0;
+            font-family: "Roboto", Arial, sans-serif;
+            line-height: 1.5;
+            margin: 0;
+            padding: 0;
+            background-color: #000;
+            color: #fff;
+        }
+        
+        a {
+            color: #fff;
+            text-decoration: none;
+        }
+        
+        .promotion-carousel .promotions {
+            width: 100%;
+            height: 100%;
+        }
+        
+        .promotion-carousel .promotion {
+            width: 100%;
+            height: 100vh;
+            min-height: 600px;
+            position: relative;
+            background-size: cover;
+            background-position: top right;
+            background-repeat: no-repeat;
+            overflow: hidden;
+        }
+        
+        .promotion-carousel .promotion .shade {
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            background-image: linear-gradient(to right, rgba(0, 0, 0, 0.5) 0, rgba(0, 0, 0, 0) 50%);
+        }
+        
+        .promo-text {
+            color: #fff;
+            position: relative;
+            font-family: "ModernaSans-Light", "Roboto", Arial, sans-serif;
+        }
+        
+        .promo-text .copy {
+            display: block;
+        }
+        
+        .promo-detail {
+            position: absolute;
+            left: 0;
+            top: 50%;
+            z-index: 100;
+            width: 85%;
+            margin-left: 30px;
+            padding: 10% 10% 10% 0;
+            transform: translate(0, -50%);
+        }
+        
+        @media (min-width: 1280px) {
+            .promo-detail {
+                margin-left: 90px;
+            }
+        }
+        
+        @media (min-width: 1440px) {
+            .promo-detail {
+                width: 550px;
+            }
+        }
+        
+        .promo-detail .headline {
+            font-weight: 900;
+            font-size: 22px;
+            font-family: "ModernaSans-Medium", "Roboto", Arial, sans-serif;
+            line-height: 1.15;
+            margin-bottom: 5px;
+        }
+        
+        .promo-detail .body {
+            font-size: 14px;
+            font-family: "Roboto", Arial, sans-serif;
+            line-height: 1.3;
+            margin-bottom: 5px;
+            text-transform: none;
+        }
+        
+        .promo-detail .buttons {
+            padding: 15px 0;
+        }
+        
+        .promo-detail .button {
+            box-sizing: content-box;
+            height: auto;
+            line-height: 1;
+            padding: 15px 20px;
+            width: auto;
+            display: inline-block;
+        }
+        
+        .promo-detail .button:first-child {
+            background: #b10000;
+        }
+        
+        .promo-detail .button:first-child:hover {
+            border-color: #c00;
+            background-color: #c00;
+        }
+        
+        .promo-detail .dash {
+            background: #b10000;
+            display: block;
+            height: 3px;
+            margin-bottom: 10px;
+            width: 30px;
+        }
+        
+        .promo-detail .promo-flag {
+            background: 0 0;
+            font-size: 14px;
+            line-height: 14px;
+            margin-bottom: 8px;
+            position: relative;
+            display: inline-block;
+        }
+        
+        @media (min-width: 668px) {
+            .promo-detail {
+                width: 450px;
+            }
+            .promo-detail .headline {
+                font-size: 36px;
+                line-height: 1.1;
+            }
+            .promo-detail .body {
+                font-size: 14px;
+                margin-bottom: 0;
+                text-transform: none;
+            }
+        }
+        
+        @media (min-width: 840px) {
+            .promo-detail .headline {
+                font-size: 42px;
+            }
+            .promo-detail .body {
+                font-size: 18px;
+            }
+        }
+        
+        @media (min-width: 1024px) {
+            .promo-detail .dash {
+                display: block;
+                height: 3px;
+                margin-bottom: 15px;
+                width: 30px;
+            }
+            .promo-detail .headline {
+                font-weight: 600;
+                font-size: 56px;
+                line-height: 0.85;
+                margin-bottom: 15px;
+                margin-left: -2px;
+            }
+            .promo-detail .headline.medium {
+                font-size: 50px;
+            }
+            .promo-detail .headline.long {
+                font-size: 40px;
+            }
+            .promo-detail .body {
+                font-size: 18px;
+                line-height: 1.4;
+            }
+            .promo-detail .button {
+                padding: 12px;
+            }
+        }
+        
+        @media (min-width: 1440px) {
+            .promo-detail .dash {
+                height: 4px;
+                width: 40px;
+            }
+            .promo-detail .headline {
+                font-size: 66px;
+            }
+            .promo-detail .headline.medium {
+                font-size: 56px;
+                line-height: 1;
+            }
+            .promo-detail .headline.long {
+                font-size: 46px;
+                line-height: 1;
+            }
+            .promo-detail .promo-flag {
+                font-size: 18px;
+                line-height: 18px;
+            }
+            .promo-detail .body {
+                font-size: 24px;
+                margin-bottom: 15px;
+            }
+        }
+        
+        .navigation {
+            position: fixed;
+            top: 50%;
+            transform: translateY(-50%);
+            right: 50px;
+        }
+        
+        .navigation ul {
+            list-style: none;
+            padding: 0;
+        }
+        
+        .navigation li {
+            position: relative;
+            width: 8px;
+            height: 8px;
+            margin: 15px 0;
+        }
+        
+        .navigation li a {
+            background-color: #fff;
+            border-radius: 100%;
+            height: 100%;
+            width: 100%;
+            display: block;
+            transition: 0.2s ease;
+        }
+        
+        .navigation li a.active {
+            background-color: #b10000;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <a href="index_dragvesti.html" class="logo" target="_blank">
+        <img src="/img/dragvesti_black.png" alt="Dragvesti">
+    </a>
+
+    <!-- partial:index.partial.html -->
+    <div class="promotion-carousel">
+        <div class="promotions">
+            <div>
+                <div class="promotion" id="section1" style="background-image: url(https://www.xiiber.page/img/dragvesti_drag_queen_mexico.jpg)">
+                    <div class="shade"></div>
+                    <div class="promo-detail cycle-overlay">
+                        <div class="promo-text">
+                            <span class="dash"></span>
+                            <div class="headline">Dragvesti</div>
+                            <p class="body long">Online y En Vivo: Chihuahua y CDMX</p>
+                            <div class="buttons">
+                                <a class="button " href="LCDO1.html">Dragvesti</a>
+                                <a class="button " href="LCDOAS1.html">Dragvesti All Stars </a>
+                                <a class="button " href="CUU1.html">En Vivo: Chihuahua </a>
+                                <a class="button " href="CDMX1.html">En Vivo: CDMX</a><br>
+                                <a class="button " href="longlivethequeens.html">#LongLiveTheQueens</a>
+                                <a class="button " href="cucuconfessions.html">#CucuConfessions</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="promotion" id="section2" style="background-image: url(https://www.xiiber.page/LCDO1/ganadora_dragvesti_irisxcqueen.jpg)">
+                <div class="shade"></div>
+                <div class="promo-detail cycle-overlay">
+                    <div class="promo-text">
+                        <span class="dash"></span>
+                        <span class="promo-flag">Dragvesti</span>
+                        <div class="headline">Primera Temporada</div>
+                        <p class="body long">Edición Internacional</p><br>
+                        <p class="body long"> <small>Jurado: Latrice Royale, Bárbara Durango, Yume Hime, Luz Violeta, Paris Bang Bang.<br> Participantes: Iris XC Queen, Yuni K Feem, Sophia Nari, Dalila Velvet, Niiha Villant.</small></p>
+                        <div class="buttons">
+                            <a class="button sho-play-link" href="T1E1a.html"></span>Ver primer episodio</a><br>
+                            <a class="button see-all" href="T1.html">Mostrar episodios</a><br>
+                            <a class="button info-button" href="LCDO1.html">Wiki</a><br>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="promotion" id="section3" style="background-image: url(https://www.xiiber.page/LCDO2/ganadora_dragvesti_leenox_gyarada.jpg)">
+                <div class="shade"></div>
+                <div class="promo-detail cycle-overlay">
+                    <div class="promo-text">
+                        <span class="dash"></span>
+                        <span class="promo-flag">Dragvesti</span>
+                        <div class="headline">Segunda Temporada</div>
+                        <p class="body long">Edición México</p><br>
+                        <p class="body long"><small>Jurado: Cynthia Lee Fontaine, Iris XC Queen, Amanda Miguel.<br> Participantes: Lennox Gyarada, Becky D´Vich, Agatha Toro, Camila Serdán.</small></p>
+                        <div class="buttons">
+                            <a class="button sho-play-link" href="T2E1.html"></span>Ver primer episodio</a><br>
+                            <a class="button see-all" href="LCDO2.html">Mostrar episodios</a><br>
+                            <a class="button info-button" href="T2.html">Wiki</a><br>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="promotion" id="section4" style="background-image: url(https://www.xiiber.page/LCDO3/ganadora_mikonik_q_love_dragvesti_tercera_temporada.jpg)">
+                <div class="shade"></div>
+                <div class="promo-detail cycle-overlay">
+                    <div class="promo-text">
+                        <span class="dash"></span>
+                        <span class="promo-flag">Dragvesti</span>
+                        <div class="headline">Tercera Temporada</div>
+                        <p class="body long">Edición Internacional</p><br>
+                        <p class="body long"><small>Jurado: Lennox Gyarada, Gvajardo, Memo Reyri, Elizabeth San Martin.<br> Participantes: Mikonika Q Love, Peony Von Villant, Macarena, Sky O´Farrel.</small> </p>
+                        <div class="buttons">
+                            <a class="button sho-play-link" href="T3E1.html"></span>Ver primer episodio</a><br>
+                            <a class="button see-all" href="T3.html ">Mostrar episodios</a><br>
+                            <a class="button info-button" href="LCDO3.html">Wiki</a><br>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="promotion " id="section5 " style="background-image: url(https://www.xiiber.page/LCDOAS1/ganadora_dragvesti_allstars1_beckydvich.jpg)">
+                <div class="shade "></div>
+                <div class="promo-detail cycle-overlay ">
+                    <div class="promo-text ">
+                        <span class="dash "></span>
+                        <span class="promo-flag ">Dragvesti </span>
+                        <div class="headline ">All Stars</div>
+                        <p class="body long ">Primera Temporada</p><br>
+                        <p class="body long "><small> Jurado: Nicole Peige Brooks, Alexis Mateo, Roberto Cabral, Sofia Camará.<br> Participantes: Becky D´Vich, Yuni K Feem, Agatha Toro, Dalila Velvet.</small></p>
+                        <div class="buttons ">
+                            <a class="button sho-play-link " href="AS-T1E1.html "></span>Ver primer episodio</a><br>
+                            <a class="button see-all " href="AS1.html ">Mostrar episodios</a><br>
+                            <a class="button info-button " href="LCDOAS1.html">Wiki</a><br>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="promotion " id="section6 " style="background-image: url(https://www.xiiber.page/LCDOAS2/ganadora_niiha_villant_dragvesti_allstars.jpg)">
+                <div class="shade "></div>
+                <div class="promo-detail cycle-overlay ">
+                    <div class="promo-text ">
+                        <span class="dash "></span>
+                        <span class="promo-flag ">Dragvesti </span>
+                        <div class="headline ">All Stars</div>
+                        <p class="body long ">Segunda Temporada</p><br>
+                        <p class="body long "> <small>Jurado: Annee Mayong, Mónica Woods, Yuni K Feem.<br> Participantes: Niiha Villant, Camila Serdán, Macarena.</small></p>
+                        <div class="buttons ">
+                            <a class="button sho-play-link " href="AS-T2E1.html "></span>Ver primer episodio</a><br>
+                            <a class="button see-all " href="AS2.html ">Mostrar episodios</a><br>
+                            <a class="button info-button " href="LCDOAS2.html ">Wiki</a><br>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="promotion " id="section7 " style="background-image: url(https://www.xiiber.page/CUU1/ganadora_dragvesti_chihuahua_monica_woods.jpg)">
+                <div class="shade "></div>
+                <div class="promo-detail cycle-overlay ">
+                    <div class="promo-text ">
+                        <span class="dash "></span>
+                        <span class="promo-flag ">Dragvesti </span>
+                        <div class="headline ">En Vivo: Chihuahua</div>
+                        <p class="body long ">Primera Temporada</p><br>
+                        <p class="body long "><small>Host: Iris XC Queen. <br> Participantes: Mónica Woods, Huma Banana, Jossandy Queen.</small></p>
+                        <div class="buttons ">
+                            <a class="button sho-play-link " href="CUU-T1E1.html "></span>Ver primer episodio</a><br>
+                            <a class="button see-all " href="VCUU1.htm">Mostrar episodios</a><br>
+                            <a class="button info-button " href="CUU1.html">Wiki</a><br>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="promotion " id="section8 " style="background-image: url(https://www.xiiber.page/CUU2/ganadora_zafyro_fanteasy_dragvesti_chihuahua_cuu2.jpg)">
+                <div class="shade "></div>
+                <div class="promo-detail cycle-overlay ">
+                    <div class="promo-text ">
+                        <span class="dash "></span>
+                        <span class="promo-flag ">Dragvesti </span>
+                        <div class="headline ">En Vivo: Chihuahua</div>
+                        <p class="body long ">Segunda Temporada</p><br>
+                        <p class="body long "><small>Host: Iris XC Queen. <br> Participantes: Zafiro Fanteasy, Susy Love, Destiny.</small> </p>
+                        <div class="buttons ">
+                            <a class="button sho-play-link " href="# "></span>Ver primer episodio</a><br>
+                            <a class="button see-all " href="wiki_CUU1.htm">Mostrar episodios</a><br>
+                            <a class="button info-button " href="wiki_CUU2.htm">Wiki</a><br>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="promotion " id="section9 " style="background-image: url(https://www.xiiber.page/CUU3/magnolia_mint_ganadora_dragvesti_3ra_temporada_chihuahua_cuu3.jpg)">
+                <div class="promo-detail cycle-overlay ">
+                    <div class="promo-text ">
+                        <span class="dash "></span>
+                        <span class="promo-flag ">Dragvesti </span>
+                        <div class="headline ">En Vivo: Chihuahua</div>
+                        <p class="body long ">Tercera Temporada</p><br>
+                        <p class="body long ">
+                            <small>Host: Iris XC Queen. <br> Participantes: Magnolia Mint, Aurora Vo-Real, Buga Campobello, Drag Kiova.</small></p>
+                        <div class="buttons ">
+                            <a class="button sho-play-link " href="# "></span>Ver primer episodio</a><br>
+                            <a class="button see-all " href="# ">Mostrar episodios</a><br>
+                            <a class="button info-button " href="wiki_CUU3.htm">Wiki</a><br>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- <div class="promotion " id="section10 " style="background-image: url(https://www.xiiber.page/CUU4/cuarta_temporada_dragvesti_chihuahua.jpg)">
+                <div class="shade "></div>
+                <div class="promo-detail cycle-overlay ">
+                    <div class="promo-text ">
+                        <span class="dash "></span>
+                        <span class="promo-flag ">Dragvesti </span>
+                        <div class="headline ">En Vivo: Chihuahua</div>
+                        <p class="body long ">Cuarta Temporada</p><br>
+                        <p class="body long ">
+                            <small>Host: Iris XC Queen.</small> </p>
+                        <div class="buttons ">
+                            <a class="button sho-play-link " href="# "></span>Enviar Casting.</a><br>
+                        </div>
+                    </div>
+                </div>
+            </div> -->
+            <div class="promotion " id="section11 " style="background-image: url(https://www.xiiber.page/CUUAS1/ganadora_dragvesti_allstars_aurora_voreal_chihuahua_cuuas.jpg) ">
+                <div class="shade "></div>
+                <div class="promo-detail cycle-overlay ">
+                    <div class="promo-text ">
+                        <span class="dash "></span>
+                        <span class="promo-flag ">En Vivo: Chihuahua</span>
+                        <div class="headline ">All Stars</div>
+                        <p class="body long ">Primera Temporada</p><br>
+                        <p class="body long ">
+                            <small>Host: Iris XC Queen. <br> Participantes: Aurora Vo-Real, Noisa Queen, Valerie Rivera.</small>
+                        </p>
+                        <div class="buttons ">
+                            <a class="button sho-play-link " href="# "></span>Ver primer episodio</a><br>
+                            <a class="button see-all " href="# ">Mostrar episodios</a><br>
+                            <a class="button info-button " href="wiki_CUUAS1.htm ">Wiki</a><br>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="promotion " id="section12 " style="background-image: url(https://www.xiiber.page/img/dragvesti_chihuahua_guerra_de_lipsync.jpg)">
+                <div class="shade "></div>
+                <div class="promo-detail cycle-overlay ">
+                    <div class="promo-text ">
+                        <span class="dash "></span>
+                        <span class="promo-flag ">En Vivo: Chihuahua</span>
+                        <div class="headline ">Guerra de...</div>
+                        <p class="body long ">
+                            <small>Host Iris XC Queen</small></p>
+                        <div class="buttons ">
+                            <a class="button sho-play-link " href="guerradelipsync.html "></span>...lipsync.</a><br>
+                            <a class="button sho-play-link " href="guerradeshows.html "></span>...de shows.</a><br>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="promotion " id="section13 " style="background-image: url(https://www.xiiber.page/CDMX1/ganadora_dragvesti_leemong.jpg) ">
+                <div class="shade "></div>
+                <div class="promo-detail cycle-overlay ">
+                    <div class="promo-text ">
+                        <span class="dash "></span>
+                        <span class="promo-flag ">En Vivo</span>
+                        <div class="headline ">CDMX</div>
+                        <p class="body long ">Primera Temporada</p><br>
+                        <p class="body long ">
+                            <small>Jurado: Iris XC Queen, Leenox Gyarada, MikoniK Q Love, Becky D´Vich, Niiha Villant.<br> Participantes: Lee Mong, Catavina Mhor, Hiparquia Deluxe.</small></p>
+                        <div class="buttons ">
+                            <a class="button sho-play-link " href="CDMX1.html"></span>Ver shows</a><br>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="promotion " id="section14 " style="background-image: url(https://www.xiiber.page/LongLiveTheQueens/hibrido_dragvesti_cdmx1.jpg) ">
+                <div class="shade "></div>
+                <div class="promo-detail cycle-overlay ">
+                    <div class="promo-text ">
+                        <span class="dash "></span>
+                        <span class="promo-flag ">Evento de coronación</span>
+                        <div class="headline ">#LongLiveTheQueens</div>
+                        <p class="body long ">CDMX</p><br>
+                        <p class="body long ">Sede: Hibrido, CDMX. </p>
+                        <div class="buttons ">
+                            <a class="button sho-play-link " href="LongLiveTheQueens.html "></span>Ver reseña</a><br>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="promotion " id="section15 " style="background-image: url(https://www.xiiber.page/Cucuconfessions/cynthia_lee_fontaine_iris_xc_queen_mexico.jpg) ">
+                <div class="shade "></div>
+                <div class="promo-detail cycle-overlay ">
+                    <div class="promo-text ">
+                        <span class="promo-flag ">Evento de coronación</span>
+                        <div class="headline ">#CucuConfessions</div>
+                        <p class="body long ">Cynthia Lee Fontaine en CDMX</p><br>
+                        <p class="body long ">Host: Roberto Cabral. Sede. Teatro Hipodromo Condesa. <br> Shows: Paris Bang Bang, Iris XC Queen, Niiha Villant.</p>
+                        <div class="buttons ">
+                            <a class="button sho-play-link " href="CucuConfessions.html "></span>Ver reseña</a><br>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <div class="navigation ">
+        <ul>
+
+            <li>
+                <a href="#section1 " data-number="1 "></a>
+            </li>
+
+            <li>
+                <a href="#section2 " data-number="2 "></a>
+            </li>
+
+            <li>
+                <a href="#section3 " data-number="3 "></a>
+            </li>
+
+            <li>
+                <a href="#section4 " data-number="4 "></a>
+            </li>
+
+            <li>
+                <a href="#section5 " data-number="5 "></a>
+            </li>
+
+            <li>
+                <a href="#section6 " data-number="6 "></a>
+            </li>
+
+            <li>
+                <a href="#section7 " data-number="7 "></a>
+            </li>
+
+            <li>
+                <a href="#section8 " data-number="8 "></a>
+            </li>
+
+            <li>
+                <a href="#section9 " data-number="9 "></a>
+            </li>
+
+            <!-- <li>
+                <a href="#section10 " data-number="10 "></a>
+            </li> -->
+
+            <li>
+                <a href="#section11 " data-number="6 "></a>
+            </li>
+
+            <li>
+                <a href="#section12 " data-number="7 "></a>
+            </li>
+
+            <li>
+                <a href="#section13 " data-number="8 "></a>
+            </li>
+
+            <li>
+                <a href="#section14 " data-number="9 "></a>
+            </li>
+
+            <li>
+                <a href="#section15 " data-number="9 "></a>
+            </li>
+
+
+        </ul>
+    </div>
+
+
+
+
+
+    <!-- Modal Fullscreen -->
+    <div class="modal fade modal-fullscreen" id="modal-fullscreen" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                    <p style="color:black">Dragvesti</p>
+
+
+                    <h2 style="color:black">An Unordered HTML List</h2>
+
+                    <ul style="color:black">
+                        <li>Coffee</li>
+                        <li>Tea</li>
+                        <li>Milk</li>
+                    </ul>
+
+
+                    <ul class="mdc-list ">
+                        <li class="mdc-list-item " tabindex="0 ">
+                            <span class="mdc-list-item__ripple "></span>
+                            <span class="mdc-list-item__text "><a class="text-decoration-none " onclick=" document.location='LCDO1.html' "> <p style="color:black "; ><a class="ui red circular label ">DVO1</a> Online: <b>Temporada 1. </b>Edición
+                                    Internacional</p>
+                            </a>
+                            </span>
+                        </li>
+                        <li class="mdc-list-item " tabindex="0 ">
+                            <span class="mdc-list-item__ripple "></span>
+                            <span class="mdc-list-item__text "><a href="LCDO2.html " class="text-decoration-none "> <p style="color:black "; ><a class="ui pink label ">DVO2</a> Onlnie: <b>Temporada 2. </b>Edición México</p></a></span>
+                        </li>
+                        <li class="mdc-list-item " tabindex="0 ">
+                            <span class="mdc-list-item__ripple "></span>
+                            <span class="mdc-list-item__text "><a href="LCDO3.html " class="text-decoration-none "> <p style="color:black "; ><a class="ui purple circular label ">DVO3</a> Online: <b>Temporada 3. </b>Edición Internacional</p></a></span>
+                        </li>
+                        <li class="mdc-list-item " tabindex="0 ">
+                            <span class="mdc-list-item__ripple "></span>
+                            <span class="mdc-list-item__text "><a href="LCDOAS1.html " class="text-decoration-none "> <p style="color:black "; ><a class="ui orange circular label ">DVO.AS1</a> Online: <b>All Stars 1 </b></p></a></span>
+                        </li>
+                        <li class="mdc-list-item " tabindex="0 ">
+                            <span class="mdc-list-item__ripple "></span>
+                            <span class="mdc-list-item__text "><a href="LCDOAS2.html " class="text-decoration-none "> <p style="color:black "; ><a class="ui yellow circular label ">DVO.AS2</a> Online:<b> All Stars 2 </b></p></a></span>
+                        </li>
+                        <hr class="mdc-list-divider ">
+                        <li class="mdc-list-item ">
+                            <span class="mdc-list-item__ripple "></span>
+                            <span class="mdc-list-item__text "><a href="CUU1.html " class="text-decoration-none "> <p style="color:black "; ><a class="ui red circular label ">CUU1</a> En Vivo:<b> Chihuahua 1 </b></p></a></span>
+                        </li>
+                        <li class="mdc-list-item ">
+                            <span class="mdc-list-item__ripple "></span>
+                            <span class="mdc-list-item__text "><a href="CUU2.html " class="text-decoration-none "> <p style="color:black "; ><a class="ui pink circular label ">CUU2</a> En Vivo:<b> Chihuahua 2  </b></p></a></span>
+                        </li>
+                        <li class="mdc-list-item ">
+                            <span class="mdc-list-item__ripple "></span>
+                            <span class="mdc-list-item__text "><a href="CUU3.html " class="text-decoration-none "> <p style="color:black "; ><a class="ui blue circular label ">CUU3</a> En Vivo:<b> Chihuahua 3 </b></p></a></span>
+                        </li>
+
+                        <li class="mdc-list-item ">
+                            <span class="mdc-list-item__ripple "></span>
+                            <span class="mdc-list-item__text "><a href="CUUAS1.html " class="text-decoration-none "> <p style="color:black "; ><a class="ui green circular label ">CUUAS1</a> En Vivo:<b> Chihuahua All Stars. </b>1</p></a></span>
+                        </li>
+                        <hr class="mdc-list-divider ">
+                        <li class="mdc-list-item ">
+                            <span class="mdc-list-item__ripple "></span>
+                            <span class="mdc-list-item__text "><a href="CDMX1.html " class="text-decoration-none "> <p style="color:black "; ><a class="ui red circular label ">CDMX1</a> En Vivo:<b> CDMX </b></p></a></span>
+                        </li>
+                        <hr class="mdc-list-divider ">
+                        <li class="mdc-list-item ">
+                            <span class="mdc-list-item__ripple "></span>
+                            <span class="mdc-list-item__text "><a href="longlivethequeens.html " class="text-decoration-none "> <p style="color:black "; ><a class="ui red empty circular label "></a> En Vivo:<b> CDMX </b></p></a></span>
+                        </li>
+                        <li class="mdc-list-item ">
+                            <span class="mdc-list-item__ripple "></span>
+                            <span class="mdc-list-item__text "><a  class="text-decoration-none "> <p style="color:black "; ><a href="cucuconfessions.html " class="ui pink empty circular label "></a> En Vivo:<b> CDMX </b></p></a></span>
+                        </li>
+                        <hr class="mdc-list-divider ">
+                        <li class="mdc-list-item ">
+                            <span class="mdc-list-item__ripple "></span>
+                            <span class="mdc-list-item__text "><a href="hihellomonster.html " class="text-decoration-none "> <p style="color:black "; ><a class="ui black empty circular label "></a> Contacto</p></a></span>
+                        </li>
+                    </ul>
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+    </div>
+    </div>
+
+
+
+
+    <!-- partial -->
+    <script>
+        function openNav() {
+            document.getElementById("myNav").style.width = "100%";
+        }
+
+        function closeNav() {
+            document.getElementById("myNav").style.width = "0%";
+        }
+        const ele = '.promotion-carousel';
+        const $window = $(window);
+        const viewportHeight = $window.height();
+
+        let ui = {
+            promo: ele + ' .promotion',
+            promoText: ele + ' .promo-text',
+            navigationItems: '.navigation a'
+        };
+
+
+        function isOnScreen(el) {
+            const viewport = {
+                top: $window.scrollTop()
+            };
+
+
+            viewport.bottom = viewport.top + viewportHeight;
+
+            const bounds = el.offset();
+            bounds.bottom = el.offset().top + el.outerHeight();
+
+            return !(viewport.bottom < bounds.top || viewport.top > bounds.bottom);
+        }
+
+        class ScrollEvents {
+
+            run() {
+                const $promo = $('.promotion');
+                const $promoText = $('.promo-text');
+
+                function smoothScroll(target) {
+                    $('body, html').animate({
+                        'scrollTop': target.offset().top
+                    }, 600);
+                }
+
+                $(ui.navigationItems).on('click', e => {
+                    e.preventDefault();
+                    smoothScroll($(e.currentTarget.hash));
+                });
+
+                $window.on('scroll', () => {
+
+                    $(ui.promo).toArray().forEach(el => {
+                        const $el = $(el);
+                        if (isOnScreen($el)) {
+                            this.scrolly($el);
+                        }
+                    });
+                    this.updateNavigation();
+                    this.fadeAtTop($(ui.promoText));
+                });
+
+                this.updateNavigation();
+            }
+
+            scrolly(el) {
+                const topOffset = el.offset().top;
+                const height = el.height();
+                let scrollTop = $window.scrollTop();
+                const maxPixels = height / 4;
+                const percentageScrolled = (scrollTop - topOffset) / height;
+                let backgroundOffset = maxPixels * percentageScrolled;
+
+                backgroundOffset = Math.round(Math.min(maxPixels, Math.max(0, backgroundOffset)));
+
+                el.css(`background-position`, `right 0px top ${backgroundOffset}px`);
+            }
+
+            fadeAtTop(el) {
+                const startPos = 0.25;
+
+                el.toArray().forEach(el => {
+                    const $el = $(el);
+                    let position = $el.offset().top - $window.scrollTop() + viewportHeight / 6;
+                    let opacity = position < viewportHeight * startPos ? position / (viewportHeight * startPos) * 1 : 1;
+
+                    $el.css('opacity', opacity);
+                });
+            }
+
+            updateNavigation() {
+                $(ui.promo).toArray().forEach(el => {
+                    let $el = $(el);
+                    let activeSection = $(`.navigation a[href="#${$el.attr( 'id')} "]`).data('number') - 1;
+
+                    if ($el.offset().top - $window.height() / 2 < $window.scrollTop() && $el.offset().top + $el.height() - $window.height() / 2 > $window.scrollTop()) {
+                        $(ui.navigationItems).eq(activeSection).addClass('active');
+                    } else {
+                        $(ui.navigationItems).eq(activeSection).removeClass('active');
+                    }
+                });
+            }
+        };
+
+        const scrollEvents = new ScrollEvents();
+
+        scrollEvents.run();
+    </script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js'></script>
+
+</body>
+
+</html>
