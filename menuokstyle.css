@@ -1,0 +1,85 @@
+html,
+body {
+    box-sizing: border-box;
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.content {
+    background: white;
+    height: 100vh;
+}
+
+nav {
+    align-items: center;
+    background: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0 20px;
+    position: sticky;
+}
+
+nav h2 a {
+    color: black;
+    text-decoration: none;
+}
+
+nav h2 a:hover {
+    opacity: 0.8;
+}
+
+ul {
+    display: flex;
+    margin-left: 0;
+    padding-left: 0;
+}
+
+ul li {
+    list-style: none;
+    padding-left: 20px;
+}
+
+ul li a {
+    color: black;
+    text-decoration: none;
+}
+
+ul li a:hover {
+    opacity: 0.8;
+}
+
+ul li .show {
+    display: none;
+}
+
+@media screen and (max-width: 600px) {
+    nav {
+        bottom: 0;
+        position: fixed;
+        width: 100vw;
+        left: 0;
+        padding: 0 0px;
+    }
+    h2 {
+        display: none;
+    }
+    ul {
+        width: 100vw;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    ul li {
+        padding-right: 0;
+        padding-left: 0;
+        text-align: center;
+    }
+    ul li .show {
+        display: block;
+    }
+    ul li i {
+        padding: 2px;
+    }
+}
