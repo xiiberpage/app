@@ -1,0 +1,241 @@
+@charset "UTF-8";
+@import url("//fonts.googleapis.com/css?family=Comfortaa");
+body {
+    --grid-size: 20vmin;
+    --grid-gap: 2vmin;
+    display: grid;
+    place-items: center;
+    min-height: 100vh;
+    font-family: Comfortaa, sans-serif;
+}
+
+body .overlay {
+    z-index: 20;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: none;
+    place-items: center;
+    background: rgba(255, 255, 255, 0.4);
+}
+
+body .overlay .message {
+    font-size: 8vmin;
+}
+
+body .board input:checked~input:checked~input:checked~input:checked~input:checked~input:checked~input:checked~input:checked~input:checked~.overlay,
+body .board input.player-1.c-3:checked~input.player-1.c-3:checked~input.player-1.c-3:checked~.overlay,
+body .board input.player-1.r-3:checked~input.player-1.r-3:checked~input.player-1.r-3:checked~.overlay,
+body .board input.player-1.d-3:checked~input.player-1.d-3:checked~input.player-1.d-3:checked~.overlay,
+body .board input.player-1.c-2:checked~input.player-1.c-2:checked~input.player-1.c-2:checked~.overlay,
+body .board input.player-1.r-2:checked~input.player-1.r-2:checked~input.player-1.r-2:checked~.overlay,
+body .board input.player-1.d-2:checked~input.player-1.d-2:checked~input.player-1.d-2:checked~.overlay,
+body .board input.player-1.c-1:checked~input.player-1.c-1:checked~input.player-1.c-1:checked~.overlay,
+body .board input.player-1.r-1:checked~input.player-1.r-1:checked~input.player-1.r-1:checked~.overlay,
+body .board input.player-1.d-1:checked~input.player-1.d-1:checked~input.player-1.d-1:checked~.overlay,
+body .board input.player-2.c-3:checked~input.player-2.c-3:checked~input.player-2.c-3:checked~.overlay,
+body .board input.player-2.r-3:checked~input.player-2.r-3:checked~input.player-2.r-3:checked~.overlay,
+body .board input.player-2.d-3:checked~input.player-2.d-3:checked~input.player-2.d-3:checked~.overlay,
+body .board input.player-2.c-2:checked~input.player-2.c-2:checked~input.player-2.c-2:checked~.overlay,
+body .board input.player-2.r-2:checked~input.player-2.r-2:checked~input.player-2.r-2:checked~.overlay,
+body .board input.player-2.d-2:checked~input.player-2.d-2:checked~input.player-2.d-2:checked~.overlay,
+body .board input.player-2.c-1:checked~input.player-2.c-1:checked~input.player-2.c-1:checked~.overlay,
+body .board input.player-2.r-1:checked~input.player-2.r-1:checked~input.player-2.r-1:checked~.overlay,
+body .board input.player-2.d-1:checked~input.player-2.d-1:checked~input.player-2.d-1:checked~.overlay {
+    display: grid;
+    -webkit-animation: fade-in 0.5s;
+    animation: fade-in 0.5s;
+}
+
+@-webkit-keyframes fade-in {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fade-in {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+body .board input:checked~input:checked~input:checked~input:checked~input:checked~input:checked~input:checked~input:checked~input:checked~.overlay .message:before {
+    content: "Gato encerrado";
+}
+
+body .board input.player-1.c-3:checked~input.player-1.c-3:checked~input.player-1.c-3:checked~.overlay .message:before,
+body .board input.player-1.r-3:checked~input.player-1.r-3:checked~input.player-1.r-3:checked~.overlay .message:before,
+body .board input.player-1.d-3:checked~input.player-1.d-3:checked~input.player-1.d-3:checked~.overlay .message:before,
+body .board input.player-1.c-2:checked~input.player-1.c-2:checked~input.player-1.c-2:checked~.overlay .message:before,
+body .board input.player-1.r-2:checked~input.player-1.r-2:checked~input.player-1.r-2:checked~.overlay .message:before,
+body .board input.player-1.d-2:checked~input.player-1.d-2:checked~input.player-1.d-2:checked~.overlay .message:before,
+body .board input.player-1.c-1:checked~input.player-1.c-1:checked~input.player-1.c-1:checked~.overlay .message:before,
+body .board input.player-1.r-1:checked~input.player-1.r-1:checked~input.player-1.r-1:checked~.overlay .message:before,
+body .board input.player-1.d-1:checked~input.player-1.d-1:checked~input.player-1.d-1:checked~.overlay .message:before {
+    content: "Jugador azul, gana!" !important;
+}
+
+body .board input.player-2.c-3:checked~input.player-2.c-3:checked~input.player-2.c-3:checked~.overlay .message:before,
+body .board input.player-2.r-3:checked~input.player-2.r-3:checked~input.player-2.r-3:checked~.overlay .message:before,
+body .board input.player-2.d-3:checked~input.player-2.d-3:checked~input.player-2.d-3:checked~.overlay .message:before,
+body .board input.player-2.c-2:checked~input.player-2.c-2:checked~input.player-2.c-2:checked~.overlay .message:before,
+body .board input.player-2.r-2:checked~input.player-2.r-2:checked~input.player-2.r-2:checked~.overlay .message:before,
+body .board input.player-2.d-2:checked~input.player-2.d-2:checked~input.player-2.d-2:checked~.overlay .message:before,
+body .board input.player-2.c-1:checked~input.player-2.c-1:checked~input.player-2.c-1:checked~.overlay .message:before,
+body .board input.player-2.r-1:checked~input.player-2.r-1:checked~input.player-2.r-1:checked~.overlay .message:before,
+body .board input.player-2.d-1:checked~input.player-2.d-1:checked~input.player-2.d-1:checked~.overlay .message:before {
+    content: "Jugador rojo, gana!" !important;
+}
+
+body .board {
+    display: grid;
+    grid-template-columns: repeat(3, var(--grid-size));
+    grid-template-rows: repeat(3, var(--grid-size));
+    grid-template-areas: "_1 _2 _3" "_4 _5 _6" "_7 _8 _9";
+    grid-gap: var(--grid-gap);
+    place-items: center;
+}
+
+body .board input {
+    position: relative;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    width: 100%;
+    height: 100%;
+    border-radius: 10%;
+    border: 0.25vmin solid white;
+    background: #CCD1D9;
+    color: white;
+    outline: none;
+    transition: 0.25s -0.1s;
+}
+
+body .board input:not(.turn-1) {
+    display: none;
+}
+
+body .board input:before {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: "Font Awesome 5 Pro";
+    font-weight: 900;
+    opacity: 0;
+}
+
+body .board input:checked {
+    z-index: 10;
+}
+
+body .board input:not(:checked):hover {
+    cursor: pointer;
+}
+
+body .board input:not(:checked):hover:before,
+body .board input:checked:before {
+    opacity: 1;
+}
+
+body .board input.player-1:hover {
+    background: #4A89DC;
+}
+
+body .board input.player-1:checked {
+    background: #5D9CEC;
+}
+
+body .board input.player-1:before {
+    content: "";
+    font-size: calc(var(--grid-size)/1.5);
+}
+
+body .board input.player-2:hover {
+    background: #DA4453;
+}
+
+body .board input.player-2:checked {
+    background: #ED5565;
+}
+
+body .board input.player-2:before {
+    content: "";
+    font-size: calc(var(--grid-size)/2);
+}
+
+body .board input:nth-child(9n+1) {
+    grid-area: _1;
+}
+
+body .board input:nth-child(9n+2) {
+    grid-area: _2;
+}
+
+body .board input:nth-child(9n+3) {
+    grid-area: _3;
+}
+
+body .board input:nth-child(9n+4) {
+    grid-area: _4;
+}
+
+body .board input:nth-child(9n+5) {
+    grid-area: _5;
+}
+
+body .board input:nth-child(9n+6) {
+    grid-area: _6;
+}
+
+body .board input:nth-child(9n+7) {
+    grid-area: _7;
+}
+
+body .board input:nth-child(9n+8) {
+    grid-area: _8;
+}
+
+body .board input:nth-child(9n+9) {
+    grid-area: _9;
+}
+
+body .board input.turn-1:checked~.turn-2 {
+    display: block;
+}
+
+body .board input.turn-2:checked~.turn-3 {
+    display: block;
+}
+
+body .board input.turn-3:checked~.turn-4 {
+    display: block;
+}
+
+body .board input.turn-4:checked~.turn-5 {
+    display: block;
+}
+
+body .board input.turn-5:checked~.turn-6 {
+    display: block;
+}
+
+body .board input.turn-6:checked~.turn-7 {
+    display: block;
+}
+
+body .board input.turn-7:checked~.turn-8 {
+    display: block;
+}
+
+body .board input.turn-8:checked~.turn-9 {
+    display: block;
+}
