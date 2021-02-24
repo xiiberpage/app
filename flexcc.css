@@ -1,0 +1,98 @@
+@media screen and (max-width: 799px) {
+  .page-content > .row > .columns {
+    min-width: 100%;
+    flex: 1 1 auto;
+  }
+}
+.page-content .row:not(.expanded) .row {
+  max-width: calc(100vw - .9375rem);
+}
+
+@media screen and (min-width: 800px) {
+  .page-content > .row {
+    border: 1px solid blue;
+  }
+
+  .card-grid .columns {
+    display: flex;
+    border: 1px solid green;
+  }
+  .card-grid .columns > a {
+    display: flex;
+    align-items: stretch;
+    border: 1px solid aqua;
+  }
+}
+.advyellow .header,
+.advyellow .description,
+.advyellow .button,
+.advyellow [class*=icon_] {
+  color: #6a2045;
+}
+
+.advgreen .header,
+.advgreen .description,
+.advgreen .button,
+.advgreen [class*=icon_] {
+  color: #521936;
+}
+
+.advyellow .button {
+  border-color: #6a2045;
+}
+
+.card-grid-adv .bgcolor.advyellow {
+  background-color: #ffc62f;
+}
+
+.card-grid-adv .bgcolor.advblue {
+  background-color: #51748b;
+}
+
+.card-grid-adv .bgcolor.advpurple {
+  background-color: #6a2045;
+}
+
+.card-grid-adv .bgcolor.advorange {
+  background-color: #c45027;
+}
+
+.card-grid-adv .bgcolor.advgreen {
+  background-color: #72a84d;
+}
+
+.overlay {
+  overflow: hidden;
+  position: absolute;
+  width: calc(100% - 0.9375rem);
+  height: calc(100% - 0.9375rem);
+  z-index: 1;
+  background-repeat: no-repeat;
+  transition: 0.4s linear;
+}
+
+.card-grid-adv.card-grid-image .bgcolor {
+  opacity: 1;
+}
+
+.card-grid-adv .image {
+  background-repeat: no-repeat;
+  background-size: auto;
+  opacity: 0.7;
+  z-index: 2;
+}
+
+@media screen and (max-width: 500px) {
+  .card-grid-adv .description {
+    display: none;
+  }
+
+  .card-grid-adv .header {
+    margin-bottom: 0;
+  }
+}
+@media screen and (min-width: 1000px) {
+  .card-grid-adv .block {
+    min-height: 200px;
+  }
+}
