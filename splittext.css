@@ -1,0 +1,42 @@
+@font-face {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://fonts.gstatic.com/s/poppins/v15/pxiEyp8kv8JHgFVrJJfedw.ttf) format('truetype');
+}
+.ts-line {
+  overflow: hidden;
+  padding: 0 0 0.2em 0;
+  margin: 0 0 -0.1em;
+}
+/* ////////////////////////////////////////////////////////////////////////// */
+html {
+  height: 100%;
+  display: flex;
+  background: #352F44;
+  color: #a5ebc5;
+  font-family: 'Poppins', sans-serif;
+}
+body {
+  margin: auto;
+}
+blockquote {
+  cursor: pointer;
+  display: block;
+  font-size: 3.5em;
+  max-width: 10em;
+  margin: auto;
+  line-height: 1;
+}
+blockquote small {
+  margin-top: 0.2em;
+  text-align: right;
+  display: block;
+  font-size: 0.6em;
+}
+.note {
+  text-align: center;
+  color: #FFF;
+  font-size: 0.8em;
+  opacity: 0;
+}
