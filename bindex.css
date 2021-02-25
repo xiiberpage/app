@@ -1,0 +1,78 @@
+body, html{
+      background-color:#dee5ed;
+      margin: 0px;
+      height: 100vh;
+      overflow-x: hidden;
+      overflow-y: auto;
+}      
+body * {outline: 0 none; !important; outline-style: none;-webkit-tap-highlight-color: rgba(0,0,0,0);}
+
+.wrapper {
+        height: 100vh;
+}      
+
+      .flex-container {        
+        width: 450px;
+        height: auto;
+        min-height:880px;
+        margin-top: 0px;        
+        margin-right: auto;
+        margin-left: auto;   
+        position:relative;         
+      }
+
+      .flex-bg{
+        width:100%;  
+        position:absolute;
+        bottom:0;
+        left:0;
+        box-shadow: 0px 10px 30px #c8d1db;
+      }
+
+      .flex-child {                        
+        outline:none;
+        cursor:pointer;
+        position:absolute;
+        bottom:-4px;
+        left:0;         
+        width:100%;
+      }
+      .flex-child p{                         
+        position:absolute; 
+        bottom:0;
+        left:0;
+        width:100%;
+        height:100%;        
+        z-index:10;  
+        padding:0;
+        margin:0;
+      }
+      #heart-like, #heart-unlike{
+          outline: none;
+          width:100%;
+          height:100%;
+          display:block;
+          overflow: hidden;
+          transform: translate3d(0,0,0);
+          margin: auto;          
+          outline:none;
+      }
+      #heart-unlike{display:none;}   
+      .liked #heart-like{display:none;}
+      .liked #heart-unlike{display:block;}
+
+@media (max-width: 750px) {
+  .wrapper{overflow:hidden;background-color:#fff;}
+  .flex-container {        
+        width: auto;
+        height: 100vh;      
+        min-height:200px;
+        margin-top: 0px;                                        
+        overflow:hidden;
+      }
+  .flex-bg {  bottom:4px; box-shadow:none;}
+        .flex-child {    
+        align-self:flex-end;
+          overflow:hidden;
+      }
+}
