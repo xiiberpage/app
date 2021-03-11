@@ -47,23 +47,6 @@
         opacity: 1;
         right: 0;
     }
-    /* Logo  */
-    
-    .logo {
-        position: fixed;
-        top: 30px;
-        right: 30px;
-        display: block;
-        z-index: 100;
-        transition: all 250ms linear;
-    }
-    
-    .logo img {
-        height: 26px;
-        width: auto;
-        display: block;
-    }
-    /* Progress  */
     
     #progress {
         height: 8px;

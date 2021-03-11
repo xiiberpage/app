@@ -11,9 +11,9 @@ body {
 
 body {
     -webkit-font-smoothing: antialiased;
-    font-family: "Montserrat", sans-serif;
+    font-family: "Roboto", "Montserrat", sans-serif;
     text-rendering: optimizeLegibility;
-    background: #fcfcfc;
+    background: #ffffff;
 }
 
 .mock-up-link {
@@ -27,7 +27,7 @@ body {
 }
 
 .main-container-wrapper {
-    background-color: #F8FAFA;
+    background-color: #ffffff;
     min-width: 320px;
     min-height: 568px;
     max-width: 414px;
@@ -91,7 +91,7 @@ header {
 }
 
 .calendar-container {
-    background-color: #fff;
+    background-color: rgb(255, 255, 255);
     padding: 16px;
     margin-bottom: 24px;
 }
@@ -107,7 +107,7 @@ header {
     cursor: pointer;
     font-size: 16px;
     outline: none;
-    color: #E9E8E8;
+    color: #fffdfd;
 }
 
 .calendar-container__btn:hover,
@@ -142,7 +142,7 @@ header {
 }
 
 .calendar-table__item:hover {
-    background: #f8fafa;
+    background: #ffffff;
     -moz-box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.1);
     -webkit-box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.1);
     box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.1);
@@ -155,7 +155,7 @@ header {
 }
 
 .calendar-table__header {
-    border-bottom: 2px solid #F2F6F8;
+    border-bottom: 2px solid #ffffff;
     margin-bottom: 4px;
 }
 
@@ -247,7 +247,7 @@ header {
 }
 
 .calendar-table__inactive .calendar-table__item {
-    color: #e3dedc;
+    color: #f8f8f8;
     cursor: default;
 }
 
@@ -339,24 +339,6 @@ header {
     font-size: 12px;
     color: #9FAAB7;
     display: inline-block;
-}
-
-
-/* Logo  */
-
-.logo {
-    position: fixed;
-    top: 30px;
-    right: 30px;
-    display: block;
-    z-index: 100;
-    transition: all 250ms linear;
-}
-
-.logo img {
-    height: 26px;
-    width: auto;
-    display: block;
 }
 
 
