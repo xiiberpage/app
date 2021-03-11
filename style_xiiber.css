@@ -1,0 +1,475 @@
+    p,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        font-family: "Roboto", "Montserrat", "Lato", Arial, Helvetica, sans-serif
+    }
+    /* Boton principal */
+    
+    .button {
+        border-radius: 12px;
+        background-color: #FFFFFF;
+        border: none;
+        color: #000000;
+        text-align: center;
+        font-size: 14px;
+        padding: 12px;
+        width: 200px;
+        transition: all 0.5s;
+        cursor: pointer;
+        margin: 10px;
+    }
+    
+    .button span {
+        cursor: pointer;
+        display: inline-block;
+        position: relative;
+        transition: 0.5s;
+    }
+    
+    .button span:after {
+        content: '\00bb';
+        position: absolute;
+        opacity: 0;
+        top: 0;
+        right: -20px;
+        transition: 0.5s;
+    }
+    
+    .button:hover span {
+        padding-right: 25px;
+    }
+    
+    .button:hover span:after {
+        opacity: 1;
+        right: 0;
+    }
+    /* Logo  */
+    
+    .logo {
+        position: fixed;
+        top: 30px;
+        right: 30px;
+        display: block;
+        z-index: 100;
+        transition: all 250ms linear;
+    }
+    
+    .logo img {
+        height: 26px;
+        width: auto;
+        display: block;
+    }
+    /* Progress  */
+    
+    #progress {
+        height: 8px;
+        background-color: rgba(10, 82, 190, 0.75);
+        position: fixed;
+        top: 0;
+        left: 0;
+    }
+    /* Footerx  */
+    
+    .icon-bar {
+        width: 100%;
+        background-color: #ffffff;
+        overflow: auto position: fixed;
+        font-size: 20pt;
+    }
+    
+    .icon-bar a {
+        float: left;
+        width: 20%;
+        text-align: center;
+        padding: 6px 0;
+        transition: all 0.3s ease;
+        color: #bfbfbf;
+        background-color: #ffffff;
+    }
+    
+    .footerx {
+        position: fixed;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        background-color: white;
+        color: white;
+        text-align: center;
+        font-size: 20pt;
+    }
+    /* Modal Full  */
+    
+    @media (max-width: 767px) {
+        .modal-fullscreen-xs-down {
+            padding: 0 !important;
+        }
+        .modal-fullscreen-xs-down .modal-dialog {
+            width: 100%;
+            height: 100%;
+            margin: 0;
+            padding: 0;
+        }
+        .modal-fullscreen-xs-down .modal-content {
+            height: auto;
+            min-height: 100%;
+            border: 0 none;
+            border-radius: 0;
+            box-shadow: none;
+        }
+    }
+    
+    @media (max-width: 991px) {
+        .modal-fullscreen-sm-down {
+            padding: 0 !important;
+        }
+        .modal-fullscreen-sm-down .modal-dialog {
+            width: 100%;
+            height: 100%;
+            margin: 0;
+            padding: 0;
+        }
+        .modal-fullscreen-sm-down .modal-content {
+            height: auto;
+            min-height: 100%;
+            border: 0 none;
+            border-radius: 0;
+            box-shadow: none;
+        }
+    }
+    
+    @media (max-width: 1199px) {
+        .modal-fullscreen-md-down {
+            padding: 0 !important;
+        }
+        .modal-fullscreen-md-down .modal-dialog {
+            width: 100%;
+            height: 100%;
+            margin: 0;
+            padding: 0;
+        }
+        .modal-fullscreen-md-down .modal-content {
+            height: auto;
+            min-height: 100%;
+            border: 0 none;
+            border-radius: 0;
+            box-shadow: none;
+        }
+    }
+    
+    .modal-fullscreen {
+        padding: 0 !important;
+    }
+    
+    .modal-fullscreen .modal-dialog {
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        padding: 0;
+    }
+    
+    .modal-fullscreen .modal-content {
+        height: auto;
+        min-height: 100%;
+        border: 0 none;
+        border-radius: 0;
+        box-shadow: none;
+    }
+    
+    .btn-open-modal {
+        margin-bottom: 0.5em;
+    }
+    /* H1 Pride  */
+    
+    h1pride {
+        margin-top: 0%;
+        line-height: 100px;
+        font-size: 100px;
+        font-family: 'Paytone One', sans-serif;
+        text-align: center;
+        background: linear-gradient( to right, #ff1616, #ff7716, #ffdc16, #36c945, #10a5ce, #0f0096, #a51eff, #ff1616);
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-size: 400px;
+        background-position: center 0%;
+        animation: background-slide 25s infinite linear;
+    }
+    
+    @keyframes background-slide {
+        100% {
+            background-position: -8160px;
+        }
+    }
+    /* Pride  */
+    
+    .w3-bar-block .w3-bar-item {
+        padding: 16px;
+        font-weight: bold;
+    }
+    
+    .w3-theme-gradient {
+        color: #000 !important;
+        background: -webkit-linear-gradient(top, #64B5F6 25%, #42A5F5 75%)
+    }
+    
+    .w3-theme-gradient {
+        color: #000 !important;
+        background: -moz-linear-gradient(top, #64B5F6 25%, #42A5F5 75%)
+    }
+    
+    .w3-theme-gradient {
+        color: #000 !important;
+        background: -o-linear-gradient(top, #64B5F6 25%, #42A5F5 75%)
+    }
+    
+    .w3-theme-gradient {
+        color: #000 !important;
+        background: -ms-linear-gradient(top, #64B5F6 25%, #42A5F5 75%)
+    }
+    
+    .w3-theme-gradient {
+        color: #000 !important;
+        background: linear-gradient(top, #64B5F6 25%, #42A5F5 75%)
+    }
+    
+    .w3-safety-red {
+        color: #fff;
+        background-color: #bd1e24
+    }
+    
+    .w3-safety-orange {
+        color: #fff;
+        background-color: #e97600
+    }
+    
+    .w3-safety-yellow {
+        color: #fff;
+        background-color: #f6c700
+    }
+    
+    .w3-safety-green {
+        color: #fff;
+        background-color: #007256
+    }
+    
+    .w3-safety-blue {
+        color: #fff;
+        background-color: #0067a7
+    }
+    
+    .w3-safety-purple {
+        color: #fff;
+        background-color: #964f8e
+    }
+    
+    .w3-bar-block .w3-bar-item {
+        padding: 16px;
+        font-weight: bold;
+    }
+    /* Emoji  */
+    
+    .emoji {
+        font-size: calc(100px + 4vw);
+        min-width: 1.4em;
+        margin: 0.3em 0.4em;
+        text-align: center;
+    }
+    
+    .emoji::after {
+        animation-timing-function: linear;
+        animation-iteration-count: infinite;
+    }
+    
+    .clock::after {
+        content: '🕛';
+        animation-name: clock;
+        animation-duration: 5s;
+    }
+    
+    .mailbox::after {
+        content: '📪';
+        animation-name: mailbox;
+        animation-duration: 2.5s;
+    }
+    
+    .camera::after {
+        content: '📷';
+        --emoji: '📸';
+        animation-name: twoFrames;
+        animation-duration: 1.2s;
+    }
+    
+    .hourglass::after {
+        content: '⏳';
+        --emoji: '⌛️';
+        animation-name: twoFrames;
+        animation-duration: 1.2s;
+    }
+    
+    .earth::after {
+        content: '🌎';
+        --emoji-1: '🌍';
+        --emoji-2: '🌏';
+        animation-name: threeFrames;
+        animation-duration: 1.5s;
+    }
+    
+    .moon::after {
+        content: '🌕';
+        animation-name: moon;
+        animation-duration: 1s;
+    }
+    
+    .bomb::after {
+        content: '💣';
+        --emoji: '💥';
+        animation-name: twoFrames;
+        animation-duration: 2s;
+    }
+    
+    .monkey::after {
+        content: '🙈';
+        --emoji-1: '🙉';
+        --emoji-2: '🙊';
+        animation-name: threeFrames;
+        animation-duration: 2s;
+    }
+    
+    .hearts::after {
+        content: '💗';
+        animation-name: hearts;
+        animation-duration: 3s;
+    }
+    
+    .wave::after {
+        content: '✋';
+        --emoji: '👋';
+        animation-name: twoFrames;
+        animation-duration: 1s;
+    }
+    
+    .inbox::after {
+        content: '📥';
+        --emoji: '📤';
+        animation-name: twoFrames;
+        animation-duration: 1s;
+    }
+    
+    .vomit::after {
+        content: '🤢';
+        --emoji: '🤮';
+        animation-name: twoFrames;
+        animation-duration: 1s;
+    }
+    
+    @keyframes twoFrames {
+        50% {
+            content: var(--emoji);
+        }
+    }
+    
+    @keyframes threeFrames {
+        33.333% {
+            content: var(--emoji-1);
+        }
+        66.666% {
+            content: var(--emoji-2);
+        }
+    }
+    
+    @keyframes mailbox {
+        25% {
+            content: '📫';
+        }
+        50% {
+            content: '📬';
+        }
+        75% {
+            content: '📭';
+        }
+    }
+    
+    @keyframes hearts {
+        16.666% {
+            content: '🧡';
+        }
+        33.333% {
+            content: '💛';
+        }
+        50% {
+            content: '💚';
+        }
+        66.666% {
+            content: '💙';
+        }
+        83.333% {
+            content: '💜';
+        }
+    }
+    
+    @keyframes moon {
+        12.5% {
+            content: '🌖';
+        }
+        25% {
+            content: '🌗';
+        }
+        37.5% {
+            content: '🌘 ';
+        }
+        50% {
+            content: '🌑';
+        }
+        62.5% {
+            content: '🌒';
+        }
+        75% {
+            content: '🌓';
+        }
+        87.5% {
+            content: '🌔';
+        }
+    }
+    
+    @keyframes clock {
+        8.333% {
+            content: '🕐';
+        }
+        16.666% {
+            content: '🕑';
+        }
+        25% {
+            content: '🕒';
+        }
+        33.333% {
+            content: '🕓';
+        }
+        41.666% {
+            content: '🕔';
+        }
+        50% {
+            content: '🕕';
+        }
+        58.333% {
+            content: '🕖';
+        }
+        66.666% {
+            content: '🕗';
+        }
+        75% {
+            content: '🕘';
+        }
+        83.333% {
+            content: '🕙';
+        }
+        91.666% {
+            content: '🕚';
+        }
+    }
+    /* Head  */
+    /* Modal Full  */
+    /* Modal Full  */
