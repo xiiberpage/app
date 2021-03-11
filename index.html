@@ -77,7 +77,7 @@
 
 
     <!-- Logo -->
-    <a data-toggle="modal" data-target="" class="logo">
+    <a href="index.html" class="logo">
         <img src="https://pbs.twimg.com/media/EoaxehFWEAIKLgE?format=jpg&name=4096x4096" alt="Xiiber Travel con destino a Tepozspa">
     </a>
 
@@ -172,7 +172,7 @@
         </div>
     </div>
 
-
+    <!-- -->
 
     <!-- Modal-Fullscreen -->
     <div class="modal fade modal-fullscreen" id="modal-fullscreen" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
@@ -271,38 +271,37 @@
     <!-- Modal Fullscreen -->
     <div class="modal fade modal-fullscreen" id="modal-notificaciones" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
         <div class="modal-dialog">
+
             <div class="modal-content">
-                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                <iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQa7l5pPVa0hcQDT70BDPrFmd3-Flf6mXzp2WPjgQwaVQRmbQrexB1v7n6mzmprGxyJoRGLoCmm_YTs/pubhtml?gid=0&amp;single=true&amp;widget=true&amp;headers=false"></iframe>
+                <div class="modal-body">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                    <iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQa7l5pPVa0hcQDT70BDPrFmd3-Flf6mXzp2WPjgQwaVQRmbQrexB1v7n6mzmprGxyJoRGLoCmm_YTs/pubhtml?gid=0&amp;single=true&amp;widget=true&amp;headers=false" " name="iframe_a " height="600px " width="100%
+                        " title="Iframe Example " allowfullscreen=" " frameborder="0 " style="border:0; "></iframe>
+                </div>
             </div>
         </div>
     </div>
 
+    <!-- Modal Secciones -->
+    <div class="modal fade modal-fullscreen " id="modal-secciones " tabindex="-1 " role="dialog " aria-labelledby="myModalLabel " aria-hidden="true ">
+        <div class="modal-dialog ">
+
+            <div class="modal-content ">
+                <div class="modal-body ">
+                    <button type="button " class="close " data-dismiss="modal " aria-hidden="true ">&times;</button>
+
+                    <iframe src="secciones.html " name="iframe_a " height="600px " width="100% " title="Iframe Example " allowfullscreen=" " frameborder="0 " style="border:0; "></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
     <script src='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js'></script>
+    <script src="./script_xiiber.js "></script>
 
-    <!-- Scroll -->
-    <script>
-        $(document).ready(function() {
-            $(window).on('load scroll resize', function() {
-
-                var docHeight = $(document).height();
-                var windowPos = $(window).scrollTop();
-                var windowHeight = $(window).height();
-                var windowWidth = $(window).width();
-                var completion = windowPos / (docHeight - windowHeight);
-
-                if (docHeight <= windowHeight) {
-                    $('#progress').width(windowWidth);
-                } else {
-                    $('#progress').width(completion * windowWidth);
-                }
-
-            });
-        });
-    </script>
 
 </html>
 
-</html>
+<!-- <iframe src="secciones.html " width="1980 " height="1020 " frameborder="0 " style="border:0; " allowfullscreen=" "></iframe> 
+ <iframe src="secciones.html " name="iframe_a " height="300px " width="100% " title="Iframe Example "></iframe>-->
