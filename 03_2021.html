@@ -7,7 +7,15 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Marzo 2021 - Viajes, fiestas y Experiencias</title>
     <link rel="stylesheet" href="./experiencias2020style.css">
-    <link rel="stylesheet" href="./experiencias2020style.css">
+    <link rel="stylesheet" href="./style_xiiber.css">
+    <link rel="stylesheet" href="./footerx.css">
+    <link rel="stylesheet" href="./ModalFullSecciones.css">
+    <link rel="stylesheet" href="./progress.css">
+
+    <!-- Modal -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css'>
+
 
 
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,600,700" rel="stylesheet">
@@ -25,10 +33,10 @@
 
 <body>
 
-    <!-- Logo -->
-    <a href="index.html" class="logo">
-        <img src="https://pbs.twimg.com/media/EoaxehFWEAIKLgE?format=jpg&name=4096x4096" alt="Xiiber Travel con destino a Tepozspa">
-    </a>
+    <!-- Progress -->
+    <div id="progress"></div>
+
+
 
     <div class="main-container-wrapper">
 
@@ -291,13 +299,15 @@
         <div class="icon-bar ">
             <!--     <a href="#"><i class="bi bi-three-dots"  data-toggle="modal" data-target="#modal-fullscreen"></i></a>
              <a data-toggle="modal" data-target="#modal-fullscreen"><i class=" fas fa-ticket-alt "></i><p class="w3-small ">Experiencias</p></a> -->
-            <a data-toggle="modal" data-target="#modal-fullscreen"><i class="bi bi-grid-3x3-gap-fill"></i><p class="w3-small ">Secciones</p></a>
-            <a data-toggle="modal" data-target="#modal-notificaciones"><i class="bi bi-bell-fill"></i><p class="w3-small ">Alertas</p></a>
-            <a href="#"><i class=" fas fa-suitcase-rolling "></i><p class="w3-small ">Viajes</p></a>
-            <a href="#"><i class=" fas fa-ticket-alt"></i><p class="w3-small ">Experiencias</p></a>
-            <a href="03_2021.html"><i class="bi bi-calendar3" ></i><p class="w3-small ">Calendario</p></a>
+            <a onclick="document.location='index.html'"><i class="fas fa-home"></i><p class="w3-small ">Inicio</p></a>
+            <a onclick="document.location='notificaciones.html'"><i class="bi bi-bell-fill"></i><p class="w3-small ">Notificaciones</p></a>
+            <a onclick="document.location='viajes.html'"><i class=" fas fa-suitcase-rolling "></i><p class="w3-small ">Viajes</p></a>
+            <a onclick="document.location='experiencias.html'"><i class=" fas fa-ticket-alt"></i><p class="w3-small ">Experiencias</p></a>
+            <a data-toggle="modal" data-target="#modal-fullscreen"><i class="bi bi-calendar-plus"></i><p class="w3-small ">Calendario</p></a>
         </div>
     </div>
+
+
 
     <!-- Modal-Fullscreen -->
     <div class="modal fade modal-fullscreen" id="modal-fullscreen" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
@@ -305,11 +315,19 @@
             <div class="modal-content">
                 <div class="modal-body">
                     <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                    <iframe src="calendario.html " " name="iframe_a " height="600px " width="100% " title="Iframe Example " allowfullscreen=" " frameborder="0 " style="border:0; "></iframe>
+                    <iframe src="mesxmes.html " " name="iframe_a " height="600px " width="100% " title="Iframe Example " allowfullscreen=" " frameborder="0 " style="border:0; "></iframe>
+                </div>
             </div>
         </div>
     </div>
-</div>
+
+
+
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js'></script>
+
+    <script src="./progress.js "></script>
+
     <br>
     <br>
     <br>
