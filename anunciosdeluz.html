@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Anuncios Luminosos: Letras 3D, Neon, Cajas de Luz. Fabricación, reparación y mantenimiento. CDMX</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Fabricación, reparación y mantenimiento de anuncios Luminosos: Letras 3D, Neon, Cajas de Luz en la Ciudad de México">
+    <meta name="author" content="@LuisAngelMaciel, Hiello.Monster, Anuncios Luminosos">
+    <meta name="generator" content="HiHello.Monster y Anuncios Luminosos">
+
+    <link rel="icon" href="img/dragvesti_black.png" sizes="192x192">
+
+    <script src="https://kit.fontawesome.com/ad4c66034e.js" crossorigin="anonymous"></script>
+
+    <style>
+        html,
+        body {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            height: 100%;
+            display: table;
+            background-color: black;
+        }
+        
+        @font-face {
+            font-family: neon;
+            src: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/707108/neon.ttf);
+        }
+        
+        @font-face {
+            font-family: Roboto;
+            src: url(https://www.xiiber.page/font/Roboto-Bold.ttf);
+        }
+        
+        .container {
+            display: table-cell;
+            text-align: center;
+            vertical-align: middle;
+        }
+        
+        .neon {
+            font-family: neon;
+            color: #FB4264;
+            font-size: 9vw;
+            line-height: 9vw;
+            text-shadow: 0 0 3vw #F40A35;
+        }
+        
+        .flux {
+            font-family: neon;
+            color: #426DFB;
+            font-size: 9vw;
+            line-height: 9vw;
+            text-shadow: 0 0 3vw #2356FF;
+        }
+        
+        .whats {
+            font-family: Roboto;
+            color: #00e600;
+            font-size: 40pt;
+            line-height: 40pt;
+            text-shadow: 0 0 3vw #009900;
+        }
+        
+        .verde {
+            font-family: neon;
+            color: #00e600;
+            font-size: 7vw;
+            line-height: 7vw;
+            text-shadow: 0 0 3vw #009900;
+        }
+        
+        .neon {
+            animation: neon 1s ease infinite;
+            -moz-animation: neon 1s ease infinite;
+            -webkit-animation: neon 1s ease infinite;
+        }
+        
+        @keyframes neon {
+            0%,
+            100% {
+                text-shadow: 0 0 1vw #FA1C16, 0 0 3vw #FA1C16, 0 0 10vw #FA1C16, 0 0 10vw #FA1C16, 0 0 .4vw #FED128, .5vw .5vw .1vw #806914;
+                color: #FED128;
+            }
+            50% {
+                text-shadow: 0 0 .5vw #800E0B, 0 0 1.5vw #800E0B, 0 0 5vw #800E0B, 0 0 5vw #800E0B, 0 0 .2vw #800E0B, .5vw .5vw .1vw #40340A;
+                color: #806914;
+            }
+        }
+        
+        .flux {
+            animation: flux 2s linear infinite;
+            -moz-animation: flux 2s linear infinite;
+            -webkit-animation: flux 2s linear infinite;
+            -o-animation: flux 2s linear infinite;
+        }
+        
+        @keyframes flux {
+            0%,
+            100% {
+                text-shadow: 0 0 1vw #1041FF, 0 0 3vw #1041FF, 0 0 10vw #1041FF, 0 0 10vw #1041FF, 0 0 .4vw #8BFDFE, .5vw .5vw .1vw #147280;
+                color: #28D7FE;
+            }
+            50% {
+                text-shadow: 0 0 .5vw #082180, 0 0 1.5vw #082180, 0 0 5vw #082180, 0 0 5vw #082180, 0 0 .2vw #082180, .5vw .5vw .1vw #0A3940;
+                color: #146C80;
+            }
+        }
+        
+        .verde {
+            animation: verde 2s ease infinite;
+            -moz-animation: verde 1s ease infinite;
+            -webkit-animation: verde 1s ease infinite;
+        }
+        
+        @keyframes verde {
+            0%,
+            100% {
+                text-shadow: 0 0 1vw #FA1C16, 0 0 3vw #FA1C16, 0 0 10vw #FA1C16, 0 0 10vw #FA1C16, 0 0 .4vw #FED128, .5vw .5vw .1vw #806914;
+                color: #FED128;
+            }
+            50% {
+                text-shadow: 0 0 .5vw #800E0B, 0 0 1.5vw #800E0B, 0 0 5vw #800E0B, 0 0 5vw #800E0B, 0 0 .2vw #800E0B, .5vw .5vw .1vw #40340A;
+                color: #806914;
+            }
+        }
+        
+        .whats {
+            animation: whats 3s ease infinite;
+            -moz-animation: whats 3s ease infinite;
+            -webkit-animation: whats 3s ease infinite;
+        }
+        
+        @keyframes whats {
+            0%,
+            100% {
+                text-shadow: 0 0 1vw #33cc33, 0 0 3vw #33cc33, 0 0 10vw #33cc33, 0 0 10vw #33cc33, 0 0 .4vw #1aff1a, .5vw .5vw .1vw #00b300;
+                color: #00ff00;
+            }
+            50% {
+                text-shadow: 0 0 .5vw #1f7a1f, 0 0 1.5vw #1f7a1f, 0 0 5vw #1f7a1f, 0 0 5vw #1f7a1f, 0 0 .2vw #003300, .5vw .5vw .1vw #40340A;
+                color: #004d00;
+            }
+        }
+        /* Anuncios */
+        
+        #btn-twtr {
+            clear: both;
+            color: #33ff77;
+            border-radius: 3px;
+            text-align: center;
+            text-decoration: none;
+            display: block;
+            font-family: sans-serif;
+            font-size: 35px;
+            padding: 5px 10px;
+            font-weight: 600;
+            position: absolute;
+            bottom: 20px;
+            left: 0;
+            right: 0;
+            margin: 0 auto;
+        }
+        
+        #btn-twtr:hover {
+            color: #009933;
+            opacity: 1
+        }
+        /* Anuncios */
+        
+        #btn-lumi {
+            clear: both;
+            color: #fff;
+            text-align: center;
+            text-decoration: none;
+            display: block;
+            font-family: Roboto;
+            font-size: 14px;
+            font-weight: 400;
+            position: absolute;
+            left: 0;
+            right: 0;
+            margin: 0 auto;
+            background: rgba(0, 0, 0, 0.2);
+            box-shadow: 0 0 0px 3px rgba(0, 0, 0, 0.2);
+            opacity: 0.4
+        }
+        
+        #btn-lumi:hover {
+            color: #fff;
+            opacity: 1
+        }
+        
+        #btn-blanco {
+            clear: both;
+            color: #fff;
+            text-align: center;
+            text-decoration: none;
+            display: block;
+            font-family: Roboto;
+            font-size: 12px;
+            font-weight: 200;
+            position: absolute;
+            left: 0;
+            right: 0;
+            margin: 0 auto;
+            background: rgba(0, 0, 0, 0.2);
+            box-shadow: 0 0 0px 3px rgba(0, 0, 0, 0.2);
+            opacity: 0.4
+        }
+        
+        #btn-blanco:hover {
+            color: #fff;
+            opacity: 1
+        }
+    </style>
+</head>
+
+<body>
+    <!-- partial:index.partial.html -->
+    <div class="container">
+        <a href="#" id="btn-blanco"><b> FABRICACIÓN, REPARACIÓN Y MANTENIMIENTO </b></a>
+        <br><br>
+        <div class="neon">Anuncios </div>
+        <div class="flux">Luminosos</div>
+        <br>
+        <a href="#" id="btn-lumi">• Letras 3D • Neon • Cajas de Luz •</a>
+        <br><br><br><br>
+        <a href="https://api.whatsapp.com/send?phone=5215539793727&text=Hola_mi_nombre_es(SU NOMBRE)_el_motivo_de_mi_mensaje_es_para_solicitar_una_cotización_(INDICAR_REQUERIMIENTOS)" target="_blank">
+            <div class="whats"><i class="fab fa-whatsapp "></i></div>
+        </a>
+    </div>
+
+
+
+    <!-- partial -->
+</body>
+
+</html>
