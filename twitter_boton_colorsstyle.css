@@ -1,0 +1,47 @@
+html, body {
+  margin: 0px;
+  background: #fcfcfc;
+}
+
+svg {
+  transform: translate3d(-50%, -50%, 0);
+  position: absolute;
+  height: 10vh;
+  width: 10vh;
+  left: 50%;
+  top: 50%;
+}
+
+svg:hover {
+  animation: obnoxious 700ms infinite linear;
+}
+
+path {
+  fill: inherit;
+}
+
+@keyframes obnoxious {
+  0% {
+    fill: #00FFD4;
+  }
+  
+  20% {
+    fill: #00F8FE;
+  }
+  
+  40% {
+    fill: #EDFF00;
+  }
+  
+  60% {
+    fill: #FF072A;
+  }
+  
+  80% {
+    fill: #FF00EE;
+  }
+  
+  100% {
+    fill: #7F08FB;
+  }
+}
