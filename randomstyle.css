@@ -1,0 +1,66 @@
+body {
+    background: url('http://broadwayblack.com/wp-content/uploads/2015/07/dark-stage.gif') center center no-repeat;
+    background-size: cover;
+}
+
+.band-gen {
+  text-transform: uppercase;
+  margin: auto;
+  background: rgba(255,255,255,0.5);
+  border-radius: 3px;
+  transition: all 300ms ease-in-out;
+}
+
+.band-gen:hover {
+  background: #FF9900;
+  border-radius: 50px;
+  transition: all 300ms ease-in-out;
+}
+
+.band-gen a {
+    padding: 20px;
+    display: block;
+    height: 100%;
+}
+
+a, a:active, a:visited {
+  margin: 0;
+  text-decoration: none;
+  color: #ffffff;
+  text-shadow: 2px 2px 3px rgba(0,0,0,0.6);
+  transition: all 300ms ease-in-out;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+.results {
+    margin: auto;
+    text-align: center;
+}
+
+.row {
+    margin-top: 45vh;
+}
+
+.results span {
+    position: absolute;
+    top: -100px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    font-size: 50px;
+    color: #ffffff;
+    text-shadow: 2px 2px 4px #000000;
+}
+
+.hide {
+    display: none;
+    transition: all 300ms ease-in-out;
+}
+
+.show {
+    display: block;
+    transition: all 300ms ease-in-out;
+}

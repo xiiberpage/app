@@ -1,0 +1,289 @@
+<!DOCTYPE html>									
+<html lang="es-MX">									
+	<head>								
+	<title> Xiiber, Viajes en grupo para hombres gay en la Ciuidad de México </title>								
+	<meta charset="UTF-8">								
+					
+
+
+
+		<style>							
+				* {
+	border: 0;
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+:root {
+	--bg: #e3e4e8;
+	--bgT: #e3e4e800;
+	--fg: #17181c;
+	--fgT: #17181c00;
+	--inputBg: #fff;
+	--handleBg: #255ff4;
+	--handleDownBg: #0b46da;
+	--handleTrackBg: #5583f6;
+	font-size: calc(16px + (32 - 16)*(100vw - 320px)/(2560 - 320));
+	 /* to be controlled by JS */
+	--floors: 2;
+	--maxFloors: 1;
+}
+body, input {
+	color: var(--fg);
+	font: 1em/1.5 "Hind", sans-serif;
+}
+body {
+	background-color: var(--bg);
+	display: flex;
+	height: 100vh;
+}
+form, input, .range__input {
+	width: 100%;
+}
+form {
+	margin: auto;
+	padding: 0 0.75em;
+	max-width: 17em;
+}
+label {
+	font-weight: bold;
+}
+
+/* Building parts */
+.bldg {
+	margin: 0 auto 3em auto;
+	overflow: hidden;
+	position: relative;
+	width: 12em;
+	height: 12em;
+}
+.bldg__roof, .bldg__main, .bldg__main:before {
+	position: absolute;
+}
+.bldg__roof, .bldg__main {
+	left: 50%;
+	transform: translateX(-50%) scale(calc(1 / var(--floors)));
+	transition: transform 0.3s cubic-bezier(0,0,0.25,1.25);
+}
+.bldg__roof, .bldg__main:before {
+	width: 11em;
+}
+.bldg__roof {
+	background: currentColor;
+	border-radius: 0.5em;
+	top: 0;
+	transform-origin: 50% 0;
+	height: 1.5em;
+	z-index: 2;
+}
+.bldg__main, .bldg__main:before {
+	bottom: 0;
+}
+.bldg__main {
+	background:
+		linear-gradient(0deg,var(--fg) 0.5em,var(--fgT) 0.5em) 0 0 / 100% 100%,
+		linear-gradient(90deg,var(--fg) 5%,var(--fgT) 5% 95%,var(--fg) 95%) 0 0 / 100% 100%,
+		linear-gradient(var(--bg) 25%,var(--bgT) 25% 75%,var(--bg) 75%) 0 100% / 4em 12em,
+		linear-gradient(90deg,var(--bg) 50%,var(--fg) 50%) 0 100% / 4em 12em;
+	border-radius: 0 0 1em 1em;
+	transform-origin: 50% 100%;
+	width: 10em;
+	height: calc(12em * var(--maxFloors));
+}
+.bldg__main:before {
+	background:
+		radial-gradient(3em 3em at 1.5em 50%,var(--fg) 48%, var(--fgT) 50%),
+		radial-gradient(2em 2em at 3em 2em,var(--fg) 48%, var(--fgT) 50%),
+		radial-gradient(1em 1em at 4em 2.5em,var(--fg) 48%, var(--fgT) 50%),
+		radial-gradient(1em 1em at 7em 2.5em,var(--fg) 48%, var(--fgT) 50%),
+		radial-gradient(2em 2em at 8em 2em,var(--fg) 48%, var(--fgT) 50%),
+		radial-gradient(3em 3em at 9.5em 50%,var(--fg) 48%, var(--fgT) 50%);
+	content: "";
+	display: block;
+	left: -0.5em;
+	height: 3em;
+	z-index: 1;
+}
+
+/* Range slider */
+.range:not(:last-child) {
+	margin-bottom: 1.5em;
+}
+.range input[type=range],
+.range input[type=range]::-webkit-slider-thumb {
+	-webkit-appearance: none; 
+	appearance: none;
+}
+.range input[type=range], .range__input-fill {
+	border-radius: 0.25em;
+	height: 0.5em;
+}
+.range input[type=range] {
+	background-color: var(--inputBg);
+	display: block;
+	margin: 0.5em 0;
+	padding: 0;
+}
+.range input[type=range]:focus {
+	outline: transparent;
+}
+.range input[type=range]::-webkit-slider-thumb {
+	background-color: var(--handleBg);
+	border: 0;
+	border-radius: 50%;
+	cursor: pointer;
+	position: relative;
+	transition: background 0.1s linear;
+	width: 1.5em;
+	height: 1.5em;
+	z-index: 1;
+}
+.range input[type=range]::-moz-range-thumb {
+	background-color: var(--handleBg);
+	border: 0;
+	border-radius: 50%;
+	cursor: pointer;
+	position: relative;
+	transform: translateZ(1px);
+	transition: background-color 0.1s linear;
+	width: 1.5em;
+	height: 1.5em;
+	z-index: 1;
+}
+.range input[type=range]::-moz-focus-outer {
+	border: 0;
+}
+.range__input, .range__input-fill {
+	display: block;
+}
+.range__input {
+	margin-right: 0.375em;
+	position: relative;
+}
+.range__input:active input[type=range]::-webkit-slider-thumb,
+.range input[type=range]:focus::-webkit-slider-thumb,
+.range input[type=range]::-webkit-slider-thumb:hover {
+	background-color: var(--handleDownBg);
+}
+.range__input:active input[type=range]::-moz-range-thumb,
+.range input[type=range]:focus::-moz-range-thumb,
+.range input[type=range]::-moz-range-thumb:hover {
+	background-color: var(--handleDownBg);
+}
+.range__input-fill, .range__counter {
+	left: 0;
+	pointer-events: none;
+	position: absolute;
+}
+.range__input-fill {
+	background-color: var(--handleTrackBg);
+	top: calc(50% - 0.25em);
+}
+.range__counter {
+	color: #fff;
+	display: block;
+	font-size: 0.75em;
+	top: -0.375rem;
+	text-align: center;
+	width: 1.5rem;
+	height: 1.5rem;
+	z-index: 2;
+}
+
+/* Dark mode */
+@media (prefers-color-scheme: dark) {
+	:root {
+		--bg: #2e3138;
+		--bgT: #2e313800;
+		--fg: #e3e4e8;
+		--fgT: #e3e4e800;
+		--inputBg: #17181c;
+	}
+}					
+		</style>							
+	</head>								
+	<body>								
+		<form>
+	<div class="bldg">
+		<div class="bldg__roof"></div>
+		<div class="bldg__main"></div>
+	</div>
+	<label for="floors">Qué tan grande te gusta</label>
+	<input id="floors" name="floors" type="range" min="10" max="22" value="2">
+</form>							
+		<script> 	
+		window.addEventListener("DOMContentLoaded",() => {
+	let floors = new FloorRange("#floors");
+});
+
+class FloorRange {
+	constructor(id) {
+		this.el = document.querySelector(id);
+		this.fill = null;
+		this.counter = null;
+		this.elWithCSSVar = document.querySelector(":root");
+
+		if (this.el) {
+			this.buildSlider();
+			this.el.addEventListener("input",this.changeValue.bind(this));
+		}
+	}
+	buildSlider() {
+		// create a div to contain the <input>
+		let rangeWrap = document.createElement("div");
+		rangeWrap.className = "range";
+		this.el.parentElement.insertBefore(rangeWrap,this.el);
+
+		// create another div to contain the <input> and fill
+		let rangeInput = document.createElement("span");
+		rangeInput.className = "range__input";
+		rangeWrap.appendChild(rangeInput);
+
+		// range fill, place the <input> and fill inside container <span>
+		let rangeFill = document.createElement("span");
+		rangeFill.className = "range__input-fill";
+		rangeInput.appendChild(this.el);
+		rangeInput.appendChild(rangeFill);
+		this.fill = rangeFill;
+
+		// create the counter
+		let counter = document.createElement("span");
+		counter.className = "range__counter";
+		counter.textContent = "0";
+		rangeInput.appendChild(counter);
+		this.counter = counter;
+
+		// initiate
+		let maxFloorOvershoot = 3;
+		this.elWithCSSVar.style.setProperty("--maxFloors",+this.el.max + maxFloorOvershoot);
+		this.changeValue();
+	}
+	changeValue() {
+		// keep the value within range
+		if (+this.el.value > this.el.max)
+			this.el.value = this.el.max;
+
+		else if (+this.el.value < this.el.min)
+			this.el.value = this.el.min;
+
+		// update CSS variable
+		this.elWithCSSVar.style.setProperty("--floors",+this.el.value);
+
+		// counter and fill width
+		let pct = (this.el.value - this.el.min) / (this.el.max - this.el.min),
+			fillWidth = pct * 100;
+
+		if (this.counter) {
+			let adjLeftEm = 1.5 * pct;
+			this.counter.textContent = this.el.value;
+			this.counter.style.left = `calc(${fillWidth}% - ${adjLeftEm}rem)`;
+		}
+		if (this.fill) {
+			let thumbEm = 1 - pct;
+			this.fill.style.width = `calc(${fillWidth}% + ${thumbEm}em)`;
+		}
+	}
+}
+		</script>							
+	</body>								
+</html>									

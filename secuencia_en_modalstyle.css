@@ -1,0 +1,189 @@
+html{
+  height: 100%; width: 100%;
+  display: block;
+}
+body{
+  display: block;
+  width: 100%; height: 100%;
+}
+body > a{
+  width: 33.3%; height: 33.3%;
+  line-height: 250%;
+  font-size: 100px;
+  display: block;
+  float: left;
+  margin: 0px; padding: 0 auto;
+  text-align: center; text-decoration: none;
+  background-color: #fff;
+  color: rgba(255,255,266, 0.5);
+  font-family: 'Raleway', sans-serif;
+  font-weight: 100;
+  min-height: 0;
+}
+a:nth-child(1){
+  background-color: #1abc9c;
+}
+a:nth-child(2){
+  background-color: #2ecc71;
+}
+a:nth-child(3){
+  background-color: #3498db;
+}
+a:nth-child(4){
+  background-color: #e74c3c;
+}
+a:nth-child(5){
+  background-color: #9b59b6;
+}
+a:nth-child(6){
+  background-color: #34495e;
+}
+a:nth-child(7){
+  background-color: #f39c12;
+}
+a:nth-child(8){
+  background-color: #f1c40f;
+}
+a:nth-child(9){
+  background-color: #95a5a6; clear: right;
+}
+
+.window{
+  width:80%; height: 80%;
+  display: block;
+  position: absolute;
+  background-color: rgba( 255, 255, 255, 0.9);
+  margin: 0 auto; padding: 0 auto;
+  top:10%; left: 10%; display: none;
+  box-shadow: 0px 0px 90px rgba(0, 0, 0, 0.7);
+  display: none;
+  border-radius:6px;
+  border-bottom: 3px solid #c0392b;
+}
+.bar{
+  width: 100%; height: 50px;
+  display: block;
+  margin: 0 auto; padding: 0 auto;
+  box-sizing: border-box;
+  background-color: #333;
+  clear: both;
+  border-radius: 4px 4px 0 0;
+  float: left;
+}
+.window .bar h1#title{
+  color: #eee;
+  width: 30%; height: 100%;
+  margin: 0; padding-top: 0; float:left;
+}
+.previous, .next{cursor:default;}
+
+.bar .previous, .bar .next{
+  width: 30px; height: 30px;
+  float: left;
+  margin-left: 10px;
+  margin-top: 10px;
+  line-height: 30px; text-align: center;
+  background-color: #c0392b;
+  color: #FFF;
+  font-family: arial;
+  font weight: 900;
+  border-radius: 2px;
+  transition: background-color 0.8s ease,
+              color            0.8s ease;
+  cursor: default;
+}
+.previous:hover, .next:hover{cursor: pointer;}
+.disabled{background-color: #CCC !important; color: #333 !important;}
+.close{
+  width: 30px; height: 30px;
+  float: right;
+  margin-right: 10px;
+  margin-top: 10px;
+  line-height: 30px; text-align: center;
+  background-color: #c0392b;
+  color: #EEE;
+  font-family: arial;
+  font weight: 300;
+  border-radius: 15px;
+  transition: background-color 0.3s ease,
+              color            0.3s ease;
+}
+.close:hover{
+  cursor: pointer;
+  color:#FFF;
+  background-color: #e74c3c;
+}
+
+#main-content{
+  display: block;
+  float: none;
+  clear: both;
+  height: 90%;
+}
+
+.heading{
+  color: #222;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 800;
+  margin-top: 20px;
+}
+
+#logo{
+  margin:0 auto; text-align: center;
+}
+#main-content > div{height:100%;}
+#main-content a{background-color: inherit; color: #1abc9c; text-decoration: none;}
+#main-content > div img{  float:left;
+  padding-right: 30px}
+#main-content > div p{font-weight: 100;}
+div{overflow:hidden;}
+.kuler, .css-tricks, .smashing-magazine, .tutsplus, .validator, .inspiration, .freebies, .codepen, .linkedin{
+  display: none;
+  padding: 0 30px;
+  font-size: 18px;
+  font-weight: 100;
+}
+
+.welcome{
+  width:80%; height: 80%;
+  display: block;
+  position: absolute;
+  top:10%; left: 10%;
+  background-color: rgba( 255, 255, 255, 0.9);
+  margin: 0 auto; padding: 0 auto;
+  box-shadow: 0px 0px 90px rgba(0, 0, 0, 0.7);
+}
+.welcome h1{
+  font-family: Raleway;
+  font-size: 100px; text-align: center;
+}
+.welcome p {
+  width: 50%; margin: 0 auto;
+  line-height: 25px;
+  letter-spacing: .5px;
+  word-spacing:3px;
+}
+.welcome p:first-line{
+  line-height: 60px;
+  font-size: 24px;
+}
+.clear{
+  width:100%; height: 100%;
+  position: absolute;
+  top:0; right:0; bottom: 0; left: 0; display: block;
+  background-color: rgba(0,0,0, 0.7);
+}
+
+
+	@media screen and (max-width: 600px) { 
+  .tile{
+    width:100%; height: 100%;
+    line-height: 500%;
+  }
+  img{display: none}
+  .welcome, .window{position:fixed;}
+  .clear{position: fixed; overflow:hidden;}
+  .welcome h1{font-size: 60px}
+  .welcome p {width: 90%;}
+  .heading{text-align: center;}
+	}
