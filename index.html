@@ -267,9 +267,9 @@
 
                         <button class="buttonm w3-border w3-round-large " style="vertical-align:middle " onclick="document.getElementById('ticketModallocker').style.display='block'"><span><b>Locker</b> </span>
                             </button>
-                        <button class="buttonm w3-border w3-round-large " style="vertical-align:middle "><span><b>Vestidor</b> </span></button><br>
+                        <button class="buttonm w3-border w3-round-large " style="vertical-align:middle " onclick="document.getElementById('ticketModalvestidor').style.display='block'"><span><b>Vestidor</b> </span></button><br>
 
-                        <!-- Ticket Modal locker --><br>
+                        <!-- Ticket Modal locker y pregunta --><br>
                         <div id="ticketModallocker" class="w3-modal">
                             <div class="w3-modal-content w3-animate-top w3-card-4">
                                 <header class="w3-container w3-safety-blue w3-center w3-padding-20">
@@ -281,8 +281,8 @@
                                     <p>¿Quieres incluir tú desayuno por $40.00?</p>
                                     <p><small>Se entrega al abordar el bus y consta de un cuernito de mole con pollo o ensalada, jugo y galleta</small></p>
 
-                                    <button type="button" class="w3-button w3-padding-large w3-white w3-border w3-round-large" onclick="document.getElementById('ticketModallockersidesayuno').style.display='block'"><b>Si</b></button>
-                                    <button type="button" class="w3-button w3-padding-large w3-white w3-border w3-round-large" onclick="onagotado()"><b>No</b></button>
+                                    <button type="button" class="w3-button w3-padding-large w3-white w3-border w3-round-large" onclick="document.getElementById('locker17abril2021').style.display='block'"><b>Si</b></button>
+                                    <button type="button" class="w3-button w3-padding-large w3-white w3-border w3-round-large" onclick="document.getElementById('vestidor17abril2021').style.display='block'"><b>No</b></button>
 
                                     <br>
 
@@ -293,11 +293,11 @@
 
                             </div>
                         </div>
-                        <!-- Ticket Modal locker desayuno -->
-                        <div id="ticketModallockersidesayuno" class="w3-modal">
+                        <!-- Ticket Modal locker 17 abril 2021 -->
+                        <div id="ticketmodalvestidor" class="w3-modal">
                             <div class="w3-modal-content w3-animate-top w3-card-4">
                                 <header class="w3-container w3-safety-blue w3-center w3-padding-20">
-                                    <span onclick="document.getElementById('ticketModallockersidesayuno').style.display='none'" class="w3-button w3-safety-blue w3-xlarge w3-display-topright">×</span>
+                                    <span onclick="document.getElementById('locker17abril2021').style.display='none'" class="w3-button w3-safety-blue w3-xlarge w3-display-topright">×</span>
                                     <h2 class="w3-wide"><i class="fas fa-suitcase-rolling w3-margin-right"></i>Reservación</h2>
                                 </header>
 
@@ -318,8 +318,65 @@
                                         <br>
                                     </form>
 
+                                </div>
 
+                            </div>
+                        </div>
 
+                        <!-- Ticket Modal locker 17 abril 2021 -->
+                        <div id="vestidor17abril2021" class="w3-modal">
+                            <div class="w3-modal-content w3-animate-top w3-card-4">
+                                <header class="w3-container w3-safety-blue w3-center w3-padding-20">
+                                    <span onclick="document.getElementById('vestidor17abril2021').style.display='none'" class="w3-button w3-safety-blue w3-xlarge w3-display-topright">×</span>
+                                    <h2 class="w3-wide"><i class="fas fa-suitcase-rolling w3-margin-right"></i>Reservación</h2>
+                                </header>
+
+                                <div class="w3-container w3-center "><br>
+                                    <h4><label> Sábado 27de febrero, acceso con locker y desayuno</label></h4>
+                                    <p> Unos datos más <small>(nombre, email y fecha de cumpleaños)</small> y terminamos tú reservación </p>
+
+                                    <form id="formulario" class="formulario">
+
+                                        <div class="w3-container box-input"><br>
+                                            <input class="w3-input w3-border" type="text" id="nombre" placeholder="Nombre y apelllido" required>
+                                            <input class="w3-input w3-border" type="email" id="email" placeholder="Email" required>
+                                            <input class="w3-input w3-border" type="date" id="apellidos" placeholder="Fecha de cumpleaños" require>
+                                        </div><br>
+                                        <button id="submit" type="submit" type="button" class="w3-button w3-padding-large w3-white w3-border w3-round-large" onclick="onagotado()"><b><i class="fab fa-whatsapp"></i> Reservar</b></button>
+                                        <p><small>Al dar click en "Reservar" serás redireccionado a whatsapp</small></p>
+                                        <br>
+                                        <br>
+                                    </form>
+
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <!-- Ticket Modal locker sin desayuno -->
+                        <div id="locker17abril2021" class="w3-modal">
+                            <div class="w3-modal-content w3-animate-top w3-card-4">
+                                <header class="w3-container w3-safety-blue w3-center w3-padding-20">
+                                    <span onclick="document.getElementById('ticketModallockernodesayuno').style.display='none'" class="w3-button w3-safety-blue w3-xlarge w3-display-topright">×</span>
+                                    <h2 class="w3-wide"><i class="fas fa-suitcase-rolling w3-margin-right"></i>Reservación</h2>
+                                </header>
+
+                                <div class="w3-container w3-center "><br>
+                                    <h4><label> Sábado 27de febrero, acceso con locker y desayuno</label></h4>
+                                    <p> Unos datos más <small>(nombre, email y fecha de cumpleaños)</small> y terminamos tú reservación </p>
+
+                                    <form id="formulario" class="formulario">
+
+                                        <div class="w3-container box-input"><br>
+                                            <input class="w3-input w3-border" type="text" id="nombre" placeholder="Nombre y apelllido" required>
+                                            <input class="w3-input w3-border" type="email" id="email" placeholder="Email" required>
+                                            <input class="w3-input w3-border" type="date" id="apellidos" placeholder="Fecha de cumpleaños" require>
+                                        </div><br>
+                                        <button id="submit" type="submit" type="button" class="w3-button w3-padding-large w3-white w3-border w3-round-large" onclick="onagotado()"><b><i class="fab fa-whatsapp"></i> Reservar</b></button>
+                                        <p><small>Al dar click en "Reservar" serás redireccionado a whatsapp</small></p>
+                                        <br>
+                                        <br>
+                                    </form>
 
                                 </div>
 
@@ -537,7 +594,7 @@
 
                     <div class=" event-listing ">
                         <div class="event-teacher ">
-                            <img src="http://dummyimage.com/80x80/ccc/fff ">
+                            <img src="https://pbs.twimg.com/media/Ew3URv5XAAMcNv1?format=png&name=120x120 ">
                         </div>
                         <div class="event-details ">
                             <div class="event-title ">Tepozspa</div>
@@ -557,7 +614,7 @@
 
                     <div class="event-listing ">
                         <div class="event-teacher ">
-                            <img src="http://dummyimage.com/80x80/ccc/fff ">
+                            <img src="https://pbs.twimg.com/media/Ew3URvVWEAU7bqf?format=png&name=120x120">
                         </div>
                         <div class="event-details ">
                             <div class="event-title ">Tepozspa</div>
@@ -577,7 +634,7 @@
 
                     <div class="event-listing ">
                         <div class="event-teacher ">
-                            <img src="http://dummyimage.com/80x80/ccc/fff ">
+                            <img src="https://pbs.twimg.com/media/Ew3V4VOWYAECpFN?format=png&name=120x120">
                         </div>
                         <div class="event-details ">
                             <div class="event-title ">Tepozspa</div>
@@ -597,7 +654,7 @@
 
                     <div class="event-listing ">
                         <div class="event-teacher ">
-                            <img src="http://dummyimage.com/80x80/ccc/fff ">
+                            <img src="https://pbs.twimg.com/media/Ew3V4UpXMAALVME?format=png&name=120x120">
                         </div>
                         <div class="event-details ">
                             <div class="event-title ">Tepozspa</div>
@@ -620,7 +677,7 @@
                             <img src="http://dummyimage.com/80x80/ccc/fff ">
                         </div>
                         <div class="event-details ">
-                            <div class="event-title ">Lorem Ipsum Dolor Sit Amet</div>
+                            <div class="event-title ">Acapulco</div>
                             <div class="event-host-name ">with Debbie Rosas</div>
                             <div class="event-location ">in Portland, Oregon, USA</div>
                             <div class="event-date-register ">
@@ -629,7 +686,7 @@
                                     <div class="event-month ">Mar</div>
                                 </div>
                                 <div class="event-register ">
-                                    <a href=" ">Register</a>
+                                    <a href=" ">Reserva</a>
                                 </div>
                             </div>
                         </div>
@@ -723,47 +780,8 @@
                     </div>
                 </div>
             </div>
-            <!-- Twitter follow -->
-            <div class="w3-container w3-center">
-                <a href="https://twitter.com/xiibertravel" class="twitter-follow-button data-show-count" data-show-count="false" data-size="large" data-dnt="false"> @XiiberTravel</a>
-                <script>
-                    ! function(d, s, id) {
-                        var js, fjs = d.getElementsByTagName(s)[0];
-                        if (!d.getElementById(id)) {
-                            js = d.createElement(s);
-                            js.id = id;
-                            js.src = "https://platform.twitter.com/widgets.js";
-                            fjs.parentNode.insertBefore(js, fjs);
-                        }
-                    }(document, "script", "twitter-wjs");
-                </script>
-            </div>
-            <!-- Carrusel --><br>
-            <div class="slidercarrusel">
-                <div class="slide-trackcarrusel">
-                    <div class="slidecarrusel"><img src="https://pbs.twimg.com/media/EmLLv2VWoAM-_CU?format=png&name=4096x4096" height="100" width="250" alt="Sugar daddy and sugar baby" /></div>
-                    <div class="slidecarrusel"><img src="https://pbs.twimg.com/media/EmLLv2mWkAcrCQO?format=jpg&name=4096x4096" height="100" width="250" alt="Recomendación CGT-color" /></div>
-                    <div class="slidecarrusel"><img src="https://pbs.twimg.com/media/EmLHZQmXYAIpA2e?format=png&name=4096x4096" height="100" width="250" alt="Viaje en tangas" /></div>
-                    <div class="slidecarrusel"><img src="https://pbs.twimg.com/media/EmLHZPhWoAIoQq3?format=jpg&name=4096x4096" height="100" width="250" alt="Viajemos todxs por México - color" /></div>
-                    <div class="slidecarrusel"><img src="https://pbs.twimg.com/media/EmLHZQ6X0AM03FD?format=png&name=4096x4096" height="100" width="250" alt="Viaje para solteros" /></div>
-                    <div class="slidecarrusel"><img src="https://pbs.twimg.com/media/EmLLv2AXUAEpCBG?format=jpg&name=4096x4096" height="100" width="250" alt="Logo CGT-color" /></div>
-                    <div class="slidecarrusel"><img src="https://pbs.twimg.com/media/EmLLv1jX0AIAx_I?format=png&name=4096x4096" height="100" width="250" alt="Veracruz" /></div>
-
-
-                    <div class="slidecarrusel"><img src="https://pbs.twimg.com/media/EmLLv2VWoAM-_CU?format=png&name=4096x4096" height="100" width="250" alt="Sugar daddy and sugar baby" /></div>
-                    <div class="slidecarrusel"><img src="https://pbs.twimg.com/media/EmLLv2mWkAcrCQO?format=jpg&name=4096x4096" height="100" width="250" alt="Recomendación CGT-color" /></div>
-                    <div class="slidecarrusel"><img src="https://pbs.twimg.com/media/EmLHZQmXYAIpA2e?format=png&name=4096x4096" height="100" width="250" alt="Viaje en tangas" /></div>
-                    <div class="slidecarrusel"><img src="https://pbs.twimg.com/media/EmLHZPhWoAIoQq3?format=jpg&name=4096x4096" height="100" width="250" alt="Viajemos todxs por México - color" /></div>
-                    <div class="slidecarrusel"><img src="https://pbs.twimg.com/media/EmLHZQ6X0AM03FD?format=png&name=4096x4096" height="100" width="250" alt="Viaje para solteros" /></div>
-                    <div class="slidecarrusel"><img src="https://pbs.twimg.com/media/EmLLv2AXUAEpCBG?format=jpg&name=4096x4096" height="100" width="250" alt="Logo CGT-color" /></div>
-                    <div class="slidecarrusel"><img src="https://pbs.twimg.com/media/EmLHZP8WMAUkhsQ?format=png&name=4096x4096" height="100" width="250" alt="Viaje Para solteros app" /></div>
-                    <div class="slidecarrusel"><img src="https://pbs.twimg.com/media/EmLLv1jX0AIAx_I?format=png&name=4096x4096" height="100" width="250" alt="Veracruz" /></div>
-
-                </div>
-            </div>
 
             <!-- Pride -->
-
             <div class="w3-main w3-container w3-center ">
                 <h1pride>PRIDE</h1pride>
 
@@ -790,23 +808,61 @@
                     </tr>
                 </table>
             </div>
+            <!-- Carrusel --><br>
+            <div class="slidercarrusel">
+                <div class="slide-trackcarrusel">
+                    <div class="slidecarrusel"><img src="https://pbs.twimg.com/media/EmLLv2VWoAM-_CU?format=png&name=4096x4096" height="100" width="250" alt="Sugar daddy and sugar baby" /></div>
+                    <div class="slidecarrusel"><img src="https://pbs.twimg.com/media/EmLLv2mWkAcrCQO?format=jpg&name=4096x4096" height="100" width="250" alt="Recomendación CGT-color" /></div>
+                    <div class="slidecarrusel"><img src="https://pbs.twimg.com/media/EmLHZQmXYAIpA2e?format=png&name=4096x4096" height="100" width="250" alt="Viaje en tangas" /></div>
+                    <div class="slidecarrusel"><img src="https://pbs.twimg.com/media/EmLHZPhWoAIoQq3?format=jpg&name=4096x4096" height="100" width="250" alt="Viajemos todxs por México - color" /></div>
+                    <div class="slidecarrusel"><img src="https://pbs.twimg.com/media/EmLHZQ6X0AM03FD?format=png&name=4096x4096" height="100" width="250" alt="Viaje para solteros" /></div>
+                    <div class="slidecarrusel"><img src="https://pbs.twimg.com/media/EmLLv2AXUAEpCBG?format=jpg&name=4096x4096" height="100" width="250" alt="Logo CGT-color" /></div>
+                    <div class="slidecarrusel"><img src="https://pbs.twimg.com/media/EmLLv1jX0AIAx_I?format=png&name=4096x4096" height="100" width="250" alt="Veracruz" /></div>
 
-            <!--    Ultimo acceso --><br><br>
+
+                    <div class="slidecarrusel"><img src="https://pbs.twimg.com/media/EmLLv2VWoAM-_CU?format=png&name=4096x4096" height="100" width="250" alt="Sugar daddy and sugar baby" /></div>
+                    <div class="slidecarrusel"><img src="https://pbs.twimg.com/media/EmLLv2mWkAcrCQO?format=jpg&name=4096x4096" height="100" width="250" alt="Recomendación CGT-color" /></div>
+                    <div class="slidecarrusel"><img src="https://pbs.twimg.com/media/EmLHZQmXYAIpA2e?format=png&name=4096x4096" height="100" width="250" alt="Viaje en tangas" /></div>
+                    <div class="slidecarrusel"><img src="https://pbs.twimg.com/media/EmLHZPhWoAIoQq3?format=jpg&name=4096x4096" height="100" width="250" alt="Viajemos todxs por México - color" /></div>
+                    <div class="slidecarrusel"><img src="https://pbs.twimg.com/media/EmLHZQ6X0AM03FD?format=png&name=4096x4096" height="100" width="250" alt="Viaje para solteros" /></div>
+                    <div class="slidecarrusel"><img src="https://pbs.twimg.com/media/EmLLv2AXUAEpCBG?format=jpg&name=4096x4096" height="100" width="250" alt="Logo CGT-color" /></div>
+                    <div class="slidecarrusel"><img src="https://pbs.twimg.com/media/EmLHZP8WMAUkhsQ?format=png&name=4096x4096" height="100" width="250" alt="Viaje Para solteros app" /></div>
+                    <div class="slidecarrusel"><img src="https://pbs.twimg.com/media/EmLLv1jX0AIAx_I?format=png&name=4096x4096" height="100" width="250" alt="Veracruz" /></div>
+
+                </div>
+            </div>
+            <!-- Twitter follow --><br>
+            <div class="w3-container w3-center">
+                <a href="https://twitter.com/xiibertravel" class="twitter-follow-button data-show-count" data-show-count="false" data-size="large" data-dnt="false"> @XiiberTravel</a>
+                <script>
+                    ! function(d, s, id) {
+                        var js, fjs = d.getElementsByTagName(s)[0];
+                        if (!d.getElementById(id)) {
+                            js = d.createElement(s);
+                            js.id = id;
+                            js.src = "https://platform.twitter.com/widgets.js";
+                            fjs.parentNode.insertBefore(js, fjs);
+                        }
+                    }(document, "script", "twitter-wjs");
+                </script>
+            </div>
+
+
+            <!--    Ultimo acceso -->
             <div class="w3-main w3-center ">
-                <p><b>Último acceso</b></p>
-                <p id="ultimoacceso "></p>
+
+                <div>
+                    <p><b>Último acceso</b></p>
+                    <p id="ultimoacceso "></p>
+
+                </div>
             </div>
             <script>
                 var d = new Date();
                 document.getElementById("ultimoacceso ").innerHTML = d;
             </script>
 
-            <!-- Lins footers --><br>
-            <div class="w3-center">
-                <a class="item ">Sobre Xiiber Travel </a>
-                <a class="item ">Politicas de privacidad   </a>
-                <a class="item ">   Contactanos   </a>
-            </div>
+
         </div>
     </div>
 
@@ -900,5 +956,6 @@
     <script src="./agotado.js "></script>
     <script src="./reservawhtp.js "></script>
     
+ </html>    
  </html>    
  </html>
