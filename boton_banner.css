@@ -38,3 +38,83 @@
      opacity: 1;
      right: 0;
  }
+ /* Boton banner */
+ 
+ .buttonm {
+     border-radius: 12px;
+     background-color: #FFFFFF;
+     border: none;
+     color: #000000;
+     text-align: center;
+     font-size: 14px;
+     padding: 12px;
+     width: 100px;
+     transition: all 0.5s;
+     cursor: pointer;
+     margin: 2px;
+ }
+ 
+ .buttonm span {
+     cursor: pointer;
+     display: inline-block;
+     position: relative;
+     transition: 0.5s;
+ }
+ 
+ .buttonm span:after {
+     content: '\00bb';
+     position: absolute;
+     opacity: 0;
+     top: 0;
+     right: -20px;
+     transition: 0.5s;
+ }
+ 
+ .buttonm:hover span {
+     padding-right: 25px;
+ }
+ 
+ .buttonm:hover span:after {
+     opacity: 1;
+     right: 0;
+ }
+ /* Boton banner */
+ 
+ .buttonxs {
+     border-radius: 12px;
+     background-color: #FFFFFF;
+     border: none;
+     color: #000000;
+     text-align: center;
+     font-size: 12px;
+     padding: 12px;
+     width: 80px;
+     transition: all 0.5s;
+     cursor: pointer;
+     margin: 0px;
+ }
+ 
+ .buttonxs span {
+     cursor: pointer;
+     display: inline-block;
+     position: relative;
+     transition: 0.5s;
+ }
+ 
+ .buttonxs span:after {
+     content: '\00bb';
+     position: absolute;
+     opacity: 0;
+     top: 0;
+     right: -20px;
+     transition: 0.5s;
+ }
+ 
+ .buttonxs:hover span {
+     padding-right: 25px;
+ }
+ 
+ .buttonxs:hover span:after {
+     opacity: 1;
+     right: 0;
+ }
