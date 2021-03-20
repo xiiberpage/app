@@ -280,7 +280,7 @@ body {
 }
 
 .content h2 {
-    font-size: 28px;
+    font-size: 18px;
     float: right;
     width: 100%;
     margin-bottom: 10px;
@@ -291,7 +291,7 @@ body {
 
 .content h2 b {
     float: right;
-    width: 55%;
+    width: 40%;
 }
 
 .content p {
@@ -326,8 +326,8 @@ body {
 }
 
 .active .all-content h1 {
-    font-size: 80px;
-    width: 50%;
+    font-size: 50px;
+    width: 25%;
 }
 
 @media (min-width: 440px) and (max-width: 750px) {
