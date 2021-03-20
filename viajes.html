@@ -8,7 +8,7 @@
 <html>
 
 <head>
-    <title>Preguntas Frecuentes</title>
+    <title>Xiiber Travel. Agencia de viajes gay </title>
 
     <!-- HiHello.monster -->
     <meta charset="UTF-8">
@@ -66,6 +66,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
     <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css'>
 
+    <!-- Pntst -->
+    <meta name="p:domain_verify" content="1ccb70a44d7509dd6e6cad4538b2b9e2" />
 
     <link rel="stylesheet" href="./style_xiiber.css">
     <link rel="stylesheet" href="./footerx.css">
@@ -78,6 +80,16 @@
     <link rel="stylesheet" href="./tabx.css">
     <link rel="stylesheet" href="./events.css">
 
+    <!-- a2 -->
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+
+
+    <link rel="stylesheet" href="Semantic-UI-CSS-master/semantic.min.css" type="text/css">
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+    <script src="Semantic-UI-CSS-master/semantic.min.js"></script>
 
 
 </head>
@@ -86,32 +98,137 @@
     <!-- Progress -->
     <div id="progress"></div>
 
+    <!-- Logo -->
+    <a onclick="document.location='index.html'" class="logo">
+        <img src="sgv/ico.svg" alt="Xiiber Travel con destino a Tepozspa">
+    </a>
+
     <!-- Spinner -->
     <div class="spinner-grow spinner-grow-sm"></div>
 
-
-
-
-
-    <!-- Logo -->
-    <a onclick="document.location='index.html'" class="logo">
-        <img src="https://pbs.twimg.com/media/EoaxehFWEAIKLgE?format=jpg&name=4096x4096" alt="Xiiber Travel con destino a Tepozspa">
-    </a>
-
-
-    <!-- Boton principal -->
-    <div class="w3-container w3-center w3-animate-right ">
-        <h2>Viajes</h2>
+    <div class="w3-container w3-animate-right  ">
+        <!-- Alerta roja --><br>
+        <div class="alert alert-danger alert-dismissible">
+            <button type="button" class="close" data-dismiss="alert">&times;</button>
+            <strong><i class="fa fa-exclamation-circle style="font-size:40px"></i> Covid-19</strong> Conoce las medidas de salud y seguridad para <b>viajar con tranquilidad y cómo protegerse </b>y proteger a los demás. <a href="covid_sexo_gay.html"><i>Ver ahora</i></a>
+        </div>
+        <!-- Alerta amarilla -->
+        <div class="alert alert-warning alert-dismissible">
+            <button type="button" class="close" data-dismiss="alert">&times;</button>
+            <strong><i class="fa fa-exclamation-circle style="font-size:40px"></i> Primera fase de reservación </strong> Para el viaje a Acapulco de julio. <a href="#"><i>Reserva tu lugar</i></a>
+        </div>
     </div>
 
-    <br>
+    <div class=" w3-container w3-row-padding">
+        <div class="w3-col m3 w3-center ">
+            <p>.</p>
+        </div>
 
+        <div class="w3-col m6 w3-animate-right ">
+            <!-- Boton principal -->
+            <div class="w3-container w3-center w3-animate-right ">
+                <h2 id=destinos></h2>
+                <h2>Destinos</h2>
+                <p>
+                    <a href="#acapulco"><button class="button w3-border w3-round-large " style="vertical-align:middle "><span><b>Acapulco</b> </span></button><br></a>
+                    <a href="#tepozspa"><button class="button w3-border w3-round-large " style="vertical-align:middle " ><span><b>Tepozspa</b> </span></button><br></a>
+                    <a href="#cdmx"><button class="button w3-border w3-round-large " style="vertical-align:middle " onclick="document.getElementById('acapulco').style.display='block'"><span><b>CDMX</b> </span></button></a><br>
+                    <a href="#puertovallarta"><button class="button w3-border w3-round-large " style="vertical-align:middle " onclick="alert( 'Pronto volveremos a viajar') "><span><b>Pto. Vallarta</b> </span></button></a><br>
+                    <a href="#zipolite"><button class="button w3-border w3-round-large " style="vertical-align:middle " onclick="alert( 'Pronto volveremos a viajar') "><span><b>Zipolite</b> </span></button><br> </p></a><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+                    <!-- <button class="button w3-border w3-round-large " style="vertical-align:middle " onclick="document.location='index.html' "><span><b>Acapulco</b></a> </span>
+                    </button><br> -->
+            </div>
+
+            <div class="w3-container w3-center w3-animate-right ">
+                <h2 id="acapulco"></h2><br>
+                <h2>Acapulco</h2>
+                <div>
+                    <a href="#acapulcojulio"> <button class="button w3-border w3-round-large " style="vertical-align:middle " onclick="alert( 'Pronto volveremos a viajar') "><span><b>1 al 5 julio</b> </span></button></a><br>
+                    <a href="#acapulcoagosto"><button class="button w3-border w3-round-large " style="vertical-align:middle " onclick="alert( 'Pronto volveremos a viajar') "><span><b>6 al 10 agosto</b> </span></button></a><br>
+                    <a href="#acapulcooctubre"><button class="button w3-border w3-round-large " style="vertical-align:middle " onclick="alert( 'Pronto volveremos a viajar') "><span><b>12 al 16 octubre</b> </span></button></a><br>
+                    <button class="button w3-border w3-round-large " style="vertical-align:middle "><span> <a href="#destinos"><b><i class=" fas fa-suitcase-rolling "></i> - Atrás</b></a> </span></button><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+                </div>
+            </div>
+
+            <div class="w3-row w3-animate-right w3-center w3-container ">
+                <h2 id="tepozspa"></h2><br>
+                <h2>Tepozspa</h2>
+                <p>Salimos el 3er sábado de cada mes </p>
+                <div class="w3-col" style="width:50%">
+                    <button class="buttonb w3-border w3-round-large " style="vertical-align:middle " onclick="alert( 'Pronto volveremos a viajar') "><span><b>17 abril</b> </span></button><br>
+                    <button class="buttonb w3-border w3-round-large " style="vertical-align:middle " onclick="alert( 'Pronto volveremos a viajar') "><span><b> 15 mayo</b> </span></button><br>
+                    <button class="buttonb w3-border w3-round-large " style="vertical-align:middle " onclick="alert( 'Pronto volveremos a viajar') "><span><b> 19 junio</b> </span></button><br>
+                    <button class="buttonb w3-border w3-round-large " style="vertical-align:middle " onclick="alert( 'Pronto volveremos a viajar') "><span><b>17 julio</b> </span></button><br>
+                    <button class="buttonb w3-border w3-round-large " style="vertical-align:middle " onclick="alert( 'Pronto volveremos a viajar') "><span><b> 21 agosto</b> </span></button><br>
+                </div>
+
+                <div class="w3-col" style="width:50%">
+                    <button class="buttonb w3-border w3-round-large " style="vertical-align:middle " onclick="alert( 'Pronto volveremos a viajar') "><span><b> 18 septiembre</b> </span></button><br>
+                    <button class="buttonb w3-border w3-round-large " style="vertical-align:middle " onclick="alert( 'Pronto volveremos a viajar') "><span><b>16 octubre</b> </span></button><br>
+                    <button class="buttonb w3-border w3-round-large " style="vertical-align:middle " onclick="alert( 'Pronto volveremos a viajar') "><span><b>20 noviembre</b> </span></button><br>
+                    <button class="buttonb w3-border w3-round-large " style="vertical-align:middle " onclick="alert( 'Pronto volveremos a viajar') "><span><b>18 diciembre</b> </span></button><br>
+                    <button class="buttonb w3-border w3-round-large " style="vertical-align:middle "><span> <a href="#destinos"><b><i class=" fas fa-suitcase-rolling "></i> - Atrás</b></a> </span></button><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+                </div>
+
+
+            </div>
+
+
+            <div class="w3-container w3-center w3-animate-right ">
+                <h2 id="cdmx"></h2><br>
+                <h2>CDMX</h2>
+                <div>
+                    <a href="#"><button class="button w3-border w3-round-large " style="vertical-align:middle " onclick="alert( 'Pronto volveremos a viajar') "><span><b>Tour gastronimico</b> </span></button></a><br>
+                    <a href="#"><button class="button w3-border w3-round-large " style="vertical-align:middle " onclick="alert( 'Pronto volveremos a viajar') "><span><b>Ruta Pokemon Go</b> </span></button></a><br>
+                    <a href="#"><button class="button w3-border w3-round-large " style="vertical-align:middle " onclick="alert( 'Pronto volveremos a viajar') "><span><b>Tour spa</b> </span></button></a><br>
+                    <button class="button w3-border w3-round-large " style="vertical-align:middle "><span> <a href="#destinos"><b><i class=" fas fa-suitcase-rolling "></i> - Atrás</b></a> </span></button><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+                </div>
+            </div>
+
+            <div class="w3-container w3-center w3-animate-right ">
+                <h2 id="puertovallarta"></h2><br>
+                <h2>Puerto Vallarta</h2>
+                <div>
+                    <a href="#"><button class="button w3-border w3-round-large " style="vertical-align:middle " onclick="alert( 'Pronto volveremos a viajar') "><span><b>Tour gastronimico</b> </span></button></a><br>
+                    <button class="button w3-border w3-round-large " style="vertical-align:middle "><span> <a href="#destinos"><b><i class=" fas fa-suitcase-rolling "></i> - Atrás</b></a> </span></button><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+                </div>
+            </div>
+
+
+
+            <!-- Ultimo acceso --><br><br><br><br><br>
+            <div class="w3-main w3-center ">
+                <div>
+                    <p><b>Último acceso</b></p>
+                    <p id="ultimoacceso "></p>
+
+                </div>
+            </div>
+            <script>
+                var d = new Date();
+                document.getElementById("ultimoacceso ").innerHTML = d;
+            </script>
+
+
+        </div>
+    </div>
+
+
+
+
+    <div class="w3-col m3 ">
+        .
+    </div>
+    </div>
+
+
+    <br><br><br>
 
     <!-- Footerx -->
     <div class="footerx ">
         <div class="icon-bar ">
             <!--     <a href="#"><i class="bi bi-three-dots"  data-toggle="modal" data-target="#modal-fullscreen"></i></a>
-             <a data-toggle="modal" data-target="#modal-fullscreen"><i class=" fas fa-ticket-alt "></i><p class="w3-small ">Experiencias</p></a> -->
+                    <a data-toggle="modal" data-target="#modal-fullscreen"><i class=" fas fa-ticket-alt "></i><p class="w3-small ">Experiencias</p></a> -->
             <a onclick="document.location='index.html'"><i class="fas fa-home"></i><p class="w3-small ">Inicio</p></a>
             <a onclick="document.location='notificaciones.html'"><i class="bi bi-bell-fill"></i><p class="w3-small ">Notificaciones</p></a>
             <a onclick="document.location='viajes.html'"><i class=" fas fa-suitcase-rolling "></i><p class="w3-small ">Viajes</p></a>
@@ -120,8 +237,8 @@
         </div>
     </div>
 
+    <!-- Button floating Modal-Fullscreen -->
     <button data-toggle="modal" data-target="#modal-fullscreen"> <a class="w3-button  w3-circle  " style="position:fixed;top:60px;right:40px; "><i class="fas fa-ellipsis-v"></i></a> </button>
-
     <!-- Modal-Fullscreen -->
     <div class="modal fade modal-fullscreen" id="modal-fullscreen" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
         <div class="modal-dialog">
@@ -135,19 +252,13 @@
     </div>
 
 
- 
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js'></script>
 
-         
-
-
-
-            <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
-            <script src='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js'></script>
-
-            <script src="./progress.js "></script>
-            <script src="./acordion.js "></script>
-            <script src="./agotado.js "></script>
-            
-
-
-</html>
+    <script src="./progress.js "></script>
+    <script src="./acordion.js "></script>
+    <script src="./agotado.js "></script>
+    <script src="./reservawhtp.js "></script>
+    <script src="./rating.js "></script>
+    
+ </html>
