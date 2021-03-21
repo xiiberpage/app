@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<title>W3.CSS</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+<body>
+
+    <div class="w3-container">
+        <h2>Slideshow Indicators</h2>
+        <p>Using images to indicate how many slides there are in the slideshow, and highlight the image the user is currently viewing.</p>
+    </div>
+
+    <div class="w3-content" style="max-width:1200px">
+        <img class="mySlides" src="https://i.pinimg.com/564x/7f/fc/da/7ffcda5812453395f6f4ae2d621dd833.jpg" style="width:100%;display:none">
+        <img class="mySlides" src="https://i.pinimg.com/564x/f9/e6/4b/f9e64b8c925b1281fc728eb028dd90d4.jpg" style="width:100%">
+        <img class="mySlides" src="https://i.pinimg.com/564x/09/99/1d/09991d011c6f6998da295f27b0bac87a.jpg" style="width:100%;display:none">
+
+
+        <div class="w3-row-padding w3-section">
+            <div class="w3-col s4">
+                <img class="demo w3-opacity w3-hover-opacity-off" src="https://i.pinimg.com/564x/7f/fc/da/7ffcda5812453395f6f4ae2d621dd833.jpg" style="width:100%;cursor:pointer" onclick="currentDiv(1)">
+            </div>
+            <div class="w3-col s4">
+                <img class="demo w3-opacity w3-hover-opacity-off" src="https://i.pinimg.com/564x/f9/e6/4b/f9e64b8c925b1281fc728eb028dd90d4.jpg" style="width:100%;cursor:pointer" onclick="currentDiv(2)">
+            </div>
+            <div class="w3-col s4">
+                <img class="demo w3-opacity w3-hover-opacity-off" src="https://i.pinimg.com/564x/5d/62/32/5d623292db0f818299b7f8e268bcea7e.jpg" style="width:100%;cursor:pointer" onclick="currentDiv(3)">
+            </div>
+
+            <div class="w3-col s4">
+                <img class="demo w3-opacity w3-hover-opacity-off" src="https://i.pinimg.com/564x/7f/fc/da/7ffcda5812453395f6f4ae2d621dd833.jpg" style="width:100%;cursor:pointer" onclick="currentDiv(4)">
+            </div>
+            <div class="w3-col s4">
+                <img class="demo w3-opacity w3-hover-opacity-off" src="https://i.pinimg.com/564x/f9/e6/4b/f9e64b8c925b1281fc728eb028dd90d4.jpg" style="width:100%;cursor:pointer" onclick="currentDiv(5)">
+            </div>
+            <div class="w3-col s4">
+                <img class="demo w3-opacity w3-hover-opacity-off" src="https://i.pinimg.com/564x/5d/62/32/5d623292db0f818299b7f8e268bcea7e.jpg" style="width:100%;cursor:pointer" onclick="currentDiv(6)">
+            </div>
+
+            <div class="w3-col s4">
+                <img class="demo w3-opacity w3-hover-opacity-off" src="https://i.pinimg.com/564x/68/86/b6/6886b668443b1f8717a2b1f7571d5844.jpg" style=" width:100%;cursor:pointer " onclick="currentDiv(7) ">
+            </div>
+            <div class="w3-col s4 ">
+                <img class="demo w3-opacity w3-hover-opacity-off " src="https://i.pinimg.com/564x/27/d2/5a/27d25a02edf188738101498e7473cc09.jpg " style="width:100%;cursor:pointer " onclick="currentDiv(8) ">
+            </div>
+            <div class="w3-col s4 ">
+                <img class="demo w3-opacity w3-hover-opacity-off " src="https://i.pinimg.com/564x/09/99/1d/09991d011c6f6998da295f27b0bac87a.jpg " style="width:100%;cursor:pointer " onclick="currentDiv() ">
+            </div>
+
+        </div>
+    </div>
+
+    <script>
+        function currentDiv(n) {
+            showDivs(slideIndex = n);
+        }
+
+        function showDivs(n) {
+            var i;
+            var x = document.getElementsByClassName("mySlides ");
+            var dots = document.getElementsByClassName("demo ");
+            if (n > x.length) {
+                slideIndex = 1
+            }
+            if (n < 1) {
+                slideIndex = x.length
+            }
+            for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none ";
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" w3-opacity-off ", " ");
+            }
+            x[slideIndex - 1].style.display = "block ";
+            dots[slideIndex - 1].className += " w3-opacity-off ";
+        }
+    </script>
+
+</body>
+
+</html>
