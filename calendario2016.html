@@ -1,79 +1,252 @@
 <!DOCTYPE html>
 <html>
-<title>W3.CSS</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<style>
+    body {
+        font-family: Arial;
+        margin: 0;
+    }
+    
+    * {
+        box-sizing: border-box;
+    }
+    
+    img {
+        vertical-align: middle;
+    }
+    /* Position the image container (needed to position the left and right arrows) */
+    
+    .container {
+        position: relative;
+    }
+    /* Hide the images by default */
+    
+    .mySlides {
+        display: none;
+    }
+    /* Add a pointer when hovering over the thumbnail images */
+    
+    .cursor {
+        cursor: pointer;
+    }
+    /* Next & previous buttons */
+    
+    .prev,
+    .next {
+        cursor: pointer;
+        position: absolute;
+        top: 40%;
+        width: auto;
+        padding: 16px;
+        margin-top: -50px;
+        color: white;
+        font-weight: bold;
+        font-size: 20px;
+        border-radius: 0 3px 3px 0;
+        user-select: none;
+        -webkit-user-select: none;
+    }
+    /* Position the "next button" to the right */
+    
+    .next {
+        right: 0;
+        border-radius: 3px 0 0 3px;
+    }
+    /* On hover, add a black background color with a little bit see-through */
+    
+    .prev:hover,
+    .next:hover {
+        background-color: rgba(0, 0, 0, 0.8);
+    }
+    /* Number text (1/3 etc) */
+    
+    .numbertext {
+        color: #f2f2f2;
+        font-size: 12px;
+        padding: 8px 12px;
+        position: absolute;
+        top: 0;
+    }
+    /* Container for image text */
+    
+    .caption-container {
+        text-align: center;
+        background-color: #222;
+        padding: 2px 16px;
+        color: white;
+    }
+    
+    .row:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+    /* Six columns side by side */
+    
+    .column {
+        float: left;
+        width: 16.66%;
+    }
+    /* Add a transparency effect for thumnbail images */
+    
+    .demo {
+        opacity: 0.6;
+    }
+    
+    .active,
+    .demo:hover {
+        opacity: 1;
+    }
+</style>
 
 <body>
 
-    <div class="w3-container">
-        <h2>Slideshow Indicators</h2>
-        <p>Using images to indicate how many slides there are in the slideshow, and highlight the image the user is currently viewing.</p>
-    </div>
+    <h2 style="text-align:center">Calendario 2016</h2>
 
-    <div class="w3-content" style="max-width:1200px">
-        <img class="mySlides" src="https://i.pinimg.com/564x/7f/fc/da/7ffcda5812453395f6f4ae2d621dd833.jpg" style="width:100%;display:none">
-        <img class="mySlides" src="https://i.pinimg.com/564x/f9/e6/4b/f9e64b8c925b1281fc728eb028dd90d4.jpg" style="width:100%">
-        <img class="mySlides" src="https://i.pinimg.com/564x/09/99/1d/09991d011c6f6998da295f27b0bac87a.jpg" style="width:100%;display:none">
+    <div class="container">
+        <div class="mySlides">
+            <div class="numbertext">1 / 6</div>
+            <img src="https://i.pinimg.com/564x/f9/e6/4b/f9e64b8c925b1281fc728eb028dd90d4.jpg" style="width:100%">
+        </div>
+
+        <div class="mySlides">
+            <div class="numbertext">2 / 6</div>
+            <img src="https://i.pinimg.com/564x/f9/e6/4b/f9e64b8c925b1281fc728eb028dd90d4.jpg" style="width:100%">
+        </div>
+
+        <div class="mySlides">
+            <div class="numbertext">3 / 6</div>
+            <img src="https://i.pinimg.com/564x/f9/e6/4b/f9e64b8c925b1281fc728eb028dd90d4.jpg" style="width:100%">
+        </div>
+
+        <div class="mySlides">
+            <div class="numbertext">4 / 6</div>
+            <img src="https://i.pinimg.com/564x/f9/e6/4b/f9e64b8c925b1281fc728eb028dd90d4.jpg" style="width:100%">
+        </div>
+
+        <div class="mySlides">
+            <div class="numbertext">5 / 6</div>
+            <img src="https://i.pinimg.com/564x/f9/e6/4b/f9e64b8c925b1281fc728eb028dd90d4.jpg" style="width:100%">
+        </div>
+
+        <div class="mySlides">
+            <div class="numbertext">6 / 6</div>
+            <img src="https://i.pinimg.com/564x/f9/e6/4b/f9e64b8c925b1281fc728eb028dd90d4.jpg" style="width:100%">
+        </div>
+
+        <div class="mySlides">
+            <div class="numbertext">1 / 6</div>
+            <img src="https://i.pinimg.com/564x/f9/e6/4b/f9e64b8c925b1281fc728eb028dd90d4.jpg" style="width:100%">
+        </div>
+
+        <div class="mySlides">
+            <div class="numbertext">2 / 6</div>
+            <img src="https://i.pinimg.com/564x/f9/e6/4b/f9e64b8c925b1281fc728eb028dd90d4.jpg" style="width:100%">
+        </div>
+
+        <div class="mySlides">
+            <div class="numbertext">3 / 6</div>
+            <img src="https://i.pinimg.com/564x/f9/e6/4b/f9e64b8c925b1281fc728eb028dd90d4.jpg" style="width:100%">
+        </div>
+
+        <div class="mySlides">
+            <div class="numbertext">4 / 6</div>
+            <img src="https://i.pinimg.com/564x/f9/e6/4b/f9e64b8c925b1281fc728eb028dd90d4.jpg" style="width:100%">
+        </div>
+
+        <div class="mySlides">
+            <div class="numbertext">5 / 6</div>
+            <img src="https://i.pinimg.com/564x/f9/e6/4b/f9e64b8c925b1281fc728eb028dd90d4.jpg" style="width:100%">
+        </div>
+
+        <div class="mySlides">
+            <div class="numbertext">6 / 6</div>
+            <img src="https://i.pinimg.com/564x/f9/e6/4b/f9e64b8c925b1281fc728eb028dd90d4.jpg" style="width:100%">
+        </div>
 
 
-        <div class="w3-row-padding w3-section">
-            <div class="w3-col s4">
-                <img class="demo w3-opacity w3-hover-opacity-off" src="https://i.pinimg.com/564x/7f/fc/da/7ffcda5812453395f6f4ae2d621dd833.jpg" style="width:100%;cursor:pointer" onclick="currentDiv(1)">
+        <a class="prev" onclick="plusSlides(-1)">❮</a>
+        <a class="next" onclick="plusSlides(1)">❯</a>
+
+        <div class="caption-container">
+            <p id="caption"></p>
+        </div>
+
+        <div class="row">
+
+            <div class="column">
+                <img class="demo cursor" src="https://i.pinimg.com/564x/f9/e6/4b/f9e64b8c925b1281fc728eb028dd90d4.jpg" style="width:100%" onclick="currentSlide(1)" alt="Enero">
             </div>
-            <div class="w3-col s4">
-                <img class="demo w3-opacity w3-hover-opacity-off" src="https://i.pinimg.com/564x/f9/e6/4b/f9e64b8c925b1281fc728eb028dd90d4.jpg" style="width:100%;cursor:pointer" onclick="currentDiv(2)">
+            <div class="column">
+                <img class="demo cursor" src="https://i.pinimg.com/564x/f9/e6/4b/f9e64b8c925b1281fc728eb028dd90d4.jpg" style="width:100%" onclick="currentSlide(2)" alt="Febrero">
             </div>
-            <div class="w3-col s4">
-                <img class="demo w3-opacity w3-hover-opacity-off" src="https://i.pinimg.com/564x/5d/62/32/5d623292db0f818299b7f8e268bcea7e.jpg" style="width:100%;cursor:pointer" onclick="currentDiv(3)">
+            <div class="column">
+                <img class="demo cursor" src="https://i.pinimg.com/564x/f9/e6/4b/f9e64b8c925b1281fc728eb028dd90d4.jpg" style="width:100%" onclick="currentSlide(3)" alt="Marzo">
+            </div>
+            <div class="column">
+                <img class="demo cursor" src="https://i.pinimg.com/564x/f9/e6/4b/f9e64b8c925b1281fc728eb028dd90d4.jpg" style="width:100%" onclick="currentSlide(4)" alt="Abril">
+            </div>
+            <div class="column">
+                <img class="demo cursor" src="https://i.pinimg.com/564x/f9/e6/4b/f9e64b8c925b1281fc728eb028dd90d4.jpg" style="width:100%" onclick="currentSlide(5)" alt="Mayo">
+            </div>
+            <div class="column">
+                <img class="demo cursor" src="https://i.pinimg.com/564x/f9/e6/4b/f9e64b8c925b1281fc728eb028dd90d4.jpg" style="width:100%" onclick="currentSlide(6)" alt="Junio">
             </div>
 
-            <div class="w3-col s4">
-                <img class="demo w3-opacity w3-hover-opacity-off" src="https://i.pinimg.com/564x/7f/fc/da/7ffcda5812453395f6f4ae2d621dd833.jpg" style="width:100%;cursor:pointer" onclick="currentDiv(4)">
+            <div class="column">
+                <img class="demo cursor" src="https://i.pinimg.com/564x/f9/e6/4b/f9e64b8c925b1281fc728eb028dd90d4.jpg" style="width:100%" onclick="currentSlide(1)" alt="Julio">
             </div>
-            <div class="w3-col s4">
-                <img class="demo w3-opacity w3-hover-opacity-off" src="https://i.pinimg.com/564x/f9/e6/4b/f9e64b8c925b1281fc728eb028dd90d4.jpg" style="width:100%;cursor:pointer" onclick="currentDiv(5)">
+            <div class="column">
+                <img class="demo cursor" src="https://i.pinimg.com/564x/f9/e6/4b/f9e64b8c925b1281fc728eb028dd90d4.jpg" style="width:100%" onclick="currentSlide(2)" alt="Agosto">
             </div>
-            <div class="w3-col s4">
-                <img class="demo w3-opacity w3-hover-opacity-off" src="https://i.pinimg.com/564x/5d/62/32/5d623292db0f818299b7f8e268bcea7e.jpg" style="width:100%;cursor:pointer" onclick="currentDiv(6)">
+            <div class="column">
+                <img class="demo cursor" src="https://i.pinimg.com/564x/f9/e6/4b/f9e64b8c925b1281fc728eb028dd90d4.jpg" style="width:100%" onclick="currentSlide(3)" alt="Septiembre">
             </div>
-
-            <div class="w3-col s4">
-                <img class="demo w3-opacity w3-hover-opacity-off" src="https://i.pinimg.com/564x/68/86/b6/6886b668443b1f8717a2b1f7571d5844.jpg" style=" width:100%;cursor:pointer " onclick="currentDiv(7) ">
+            <div class="column">
+                <img class="demo cursor" src="https://i.pinimg.com/564x/f9/e6/4b/f9e64b8c925b1281fc728eb028dd90d4.jpg" style="width:100%" onclick="currentSlide(4)" alt="Octubre">
             </div>
-            <div class="w3-col s4 ">
-                <img class="demo w3-opacity w3-hover-opacity-off " src="https://i.pinimg.com/564x/27/d2/5a/27d25a02edf188738101498e7473cc09.jpg " style="width:100%;cursor:pointer " onclick="currentDiv(8) ">
+            <div class="column">
+                <img class="demo cursor" src="https://i.pinimg.com/564x/f9/e6/4b/f9e64b8c925b1281fc728eb028dd90d4.jpg" style="width:100%" onclick="currentSlide(5)" alt="Noviembre">
             </div>
-            <div class="w3-col s4 ">
-                <img class="demo w3-opacity w3-hover-opacity-off " src="https://i.pinimg.com/564x/09/99/1d/09991d011c6f6998da295f27b0bac87a.jpg " style="width:100%;cursor:pointer " onclick="currentDiv() ">
+            <div class="column">
+                <img class="demo cursor" src="https://i.pinimg.com/564x/f9/e6/4b/f9e64b8c925b1281fc728eb028dd90d4.jpg" style="width:100%" onclick="currentSlide(6)" alt="Diciembre">
             </div>
 
         </div>
     </div>
 
     <script>
-        function currentDiv(n) {
-            showDivs(slideIndex = n);
+        var slideIndex = 1;
+        showSlides(slideIndex);
+
+        function plusSlides(n) {
+            showSlides(slideIndex += n);
         }
 
-        function showDivs(n) {
+        function currentSlide(n) {
+            showSlides(slideIndex = n);
+        }
+
+        function showSlides(n) {
             var i;
-            var x = document.getElementsByClassName("mySlides ");
-            var dots = document.getElementsByClassName("demo ");
-            if (n > x.length) {
+            var slides = document.getElementsByClassName("mySlides");
+            var dots = document.getElementsByClassName("demo");
+            var captionText = document.getElementById("caption");
+            if (n > slides.length) {
                 slideIndex = 1
             }
             if (n < 1) {
-                slideIndex = x.length
+                slideIndex = slides.length
             }
-            for (i = 0; i < x.length; i++) {
-                x[i].style.display = "none ";
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
             }
             for (i = 0; i < dots.length; i++) {
-                dots[i].className = dots[i].className.replace(" w3-opacity-off ", " ");
+                dots[i].className = dots[i].className.replace(" active", "");
             }
-            x[slideIndex - 1].style.display = "block ";
-            dots[slideIndex - 1].className += " w3-opacity-off ";
+            slides[slideIndex - 1].style.display = "block";
+            dots[slideIndex - 1].className += " active";
+            captionText.innerHTML = dots[slideIndex - 1].alt;
         }
     </script>
 
