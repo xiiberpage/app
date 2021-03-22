@@ -140,9 +140,10 @@
     <h2 style="text-align:center">Calendario 2016</h2>
 
     <div class="w3-row w3-container">
-        <h3><b>Modelo:</b> Chrystian. <br>
-            <b>Traje de baño:</b> Ferrely Underwear & Swimwear. <br>
-            <b>Fotografía:</b> Luis Angel Maciel.</h3> <br>
+        <h5><b>Modelo:</b> Chrystian. <br>
+            <b>Fotografía:</b> Luis Angel Maciel.<br>
+            <b>Traje de baño:</b> Ferrely Underwear & Swimwear. <br></h5>
+
     </div>
 
     <div class="container">
@@ -214,7 +215,7 @@
             <p id="caption"></p>
         </div>
 
-        <div class="row">
+        <div class="row w3-container">
 
             <div class="column">
                 <img class="demo cursor" src="https://i.pinimg.com/564x/f9/e6/4b/f9e64b8c925b1281fc728eb028dd90d4.jpg" style="width:100%" onclick="currentSlide(1)" alt="Enero">
@@ -255,13 +256,29 @@
             </div>
 
         </div>
+
     </div>
-    <br><br>
+    <br>
+    <!-- Pagination --><br>
+    <div class="w3-center">
+        <div class="w3-bar">
+            <a onclick="document.location='calendarios.html'" class="w3-button">&laquo;</a>
+            <a onclick="document.location='calendario2017.html'" class="w3-button">2017</a>
+            <a onclick="document.location='calendario2018.html'" class="w3-button">2018</a>
+            <a onclick="document.location='calendario2019.html'" class="w3-button">2019</a>
+            <a onclick="document.location='calendario2020.html'" class="w3-button">2020</a>
+            <a onclick="document.location='calendario2021.html'" class="w3-button">2021</a>
+            <a onclick="document.location='calendarios.html'" class="w3-button">&raquo;</a>
+        </div>
+    </div>
+
     <div class="w3-row w3-animate-right w3-center w3-container ">
-        <div class="w3-col" style="width:25%">
+        <button class="button w3-border w3-round-large " style="vertical-align:middle " onclick="document.location='calendariosincensura.html'" style="font-size: small;"><span><b>Edición </b> Sin censura </span></button><br><br>
+
+        <!--   <div class="w3-col" style="width:25%">
             <button class="buttonxxs w3-border w3-round-large " style="vertical-align:middle " onclick="alert( 'Pronto volveremos a viajar') "><span><b>2016</b> </span></button><br><br>
             <button class="buttonxxs w3-border w3-round-large " style="vertical-align:middle " onclick="alert( 'Pronto volveremos a viajar') "><span><b>2020</b> </span></button><br><br>
-            <button class="button w3-border w3-round-large " style="vertical-align:middle " onclick="alert( 'Pronto volveremos a viajar') " style="font-size: small;"><span>Sin censura </span></button><br><br>
+            <button class="button w3-border w3-round-large " style="vertical-align:middle " onclick="alert( 'Pronto volveremos a viajar') " style="font-size: small;"><span><b>Edición</b>Sin censura </span></button><br><br>
         </div>
 
         <div class="w3-col" style="width:25%">
@@ -277,32 +294,33 @@
         <div class="w3-col" style="width:25%">
             <button class="buttonxxs w3-border w3-round-large " style="vertical-align:middle " onclick="alert( 'Pronto volveremos a viajar') "><span><b>2019</b> </span></button><br><br>
 
-        </div>
+        </div> -->
+    </div>
 
-        <br><br><br><br><br><br><br><br><br><br><br><br>
+    <br><br><br>
 
-        <!-- Footerx -->
-        <div class="footerx ">
-            <div class="icon-bar ">
-                <!--     <a href="#"><i class="bi bi-three-dots"  data-toggle="modal" data-target="#modal-fullscreen"></i></a>
+    <!-- Footerx -->
+    <div class="footerx ">
+        <div class="icon-bar ">
+            <!--     <a href="#"><i class="bi bi-three-dots"  data-toggle="modal" data-target="#modal-fullscreen"></i></a>
                     <a data-toggle="modal" data-target="#modal-fullscreen"><i class=" fas fa-ticket-alt "></i><p class="w3-small ">Experiencias</p></a> -->
-                <a onclick="document.location='index.html'"><i class="fas fa-home"></i><p class="w3-small ">Inicio</p></a>
-                <a onclick="document.location='notificaciones.html'"><i class="bi bi-bell-fill"></i><p class="w3-small ">Notificaciones</p></a>
-                <a onclick="document.location='viajes.html'"><i class=" fas fa-suitcase-rolling "></i><p class="w3-small ">Viajes</p></a>
-                <a onclick="document.location='experiencias.html'"><i class=" fas fa-ticket-alt"></i><p class="w3-small ">Experiencias</p></a>
-                <a onclick="document.location='mesxmes.html'"><i class="bi bi-calendar3" ></i><p class="w3-small ">Calendario</p></a>
-            </div>
+            <a onclick="document.location='index.html'"><i class="fas fa-home"></i><p class="w3-small ">Inicio</p></a>
+            <a onclick="document.location='notificaciones.html'"><i class="bi bi-bell-fill"></i><p class="w3-small ">Notificaciones</p></a>
+            <a onclick="document.location='viajes.html'"><i class=" fas fa-suitcase-rolling "></i><p class="w3-small ">Viajes</p></a>
+            <a onclick="document.location='experiencias.html'"><i class=" fas fa-ticket-alt"></i><p class="w3-small ">Experiencias</p></a>
+            <a onclick="document.location='mesxmes.html'"><i class="bi bi-calendar3" ></i><p class="w3-small ">Calendario</p></a>
         </div>
+    </div>
 
-        <!-- Button floating Modal-Fullscreen -->
-        <button data-toggle="modal" data-target="#modal-fullscreen"> <a class="w3-button  w3-circle  " style="position:fixed;top:60px;right:40px; "><i class="fas fa-ellipsis-v"></i></a> </button>
-        <!-- Modal-Fullscreen -->
-        <div class="modal fade modal-fullscreen" id="modal-fullscreen" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="modal-body">
-                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                        <iframe src="secciones.html " " name="iframe_a " height="600px " width="100% " title="Iframe Example " allowfullscreen=" " frameborder="0 " style="border:0; "></iframe>
+    <!-- Button floating Modal-Fullscreen -->
+    <button data-toggle="modal" data-target="#modal-fullscreen"> <a class="w3-button  w3-circle  " style="position:fixed;top:60px;right:40px; "><i class="fas fa-ellipsis-v"></i></a> </button>
+    <!-- Modal-Fullscreen -->
+    <div class="modal fade modal-fullscreen" id="modal-fullscreen" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                    <iframe src="secciones.html " " name="iframe_a " height="600px " width="100% " title="Iframe Example " allowfullscreen=" " frameborder="0 " style="border:0; "></iframe>
                 </div>
             </div>
         </div>
