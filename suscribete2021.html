@@ -10,6 +10,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
     <link rel='stylesheet' href='https://taniarascia.github.io/primitive/css/main.css'>
     <link rel="stylesheet" href="./suscribete2021style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" charset="utf-8"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
 
 </head>
 
@@ -18,16 +20,88 @@
     <div class="c-subscribe-box u-align-center">
         <div class="rainbow"><span></span><span></span></div>
         <div class="c-subscribe-box__wrapper">
-            <h3 class="c-subscribe-box__title">Join my newsletter</h3>
-            <p class="c-subscribe-box__desc">You like articles of the blog? Sign up for updates via email.</p>
-            <form class="c-form c-form--accent c-subscribe-box__form">
-                <input class="u-align-center" type="email" placeholder="name@cool.internet" />
-                <input class="full-button" type="submit" value="Subscribe" />
+            <h3 class="c-subscribe-box__title">Suscribete al newsletter</h3>
+            <p class="c-subscribe-box__desc">Actualizaciones via whatsapp <i class="fa fa-whatsapp" aria-hidden="true"></i></p>
+            <form id="formulario" class="formulario">
+                <input class="u-align-center" type="text" placeholder="55 1234 5678" />
+                <button name="nombre" id="nombre" type="submit" class="botonw"><i class="fab fa-whatsapp"></i> Enviar WhatsApp</button>
+
+
+
             </form>
+
+            <form id="formulario" class="formulario">
+                <h1>Vestidor</h1>
+                <div class="box-input">
+                    <input name="nombre" id="nombre" type="text" required>
+                    <span data-placeholder="Escriba su Nombre"></span>
+                </div>
+                <div class="box-input">
+                    <input name="apellidos" id="apellidos" type="text" required>
+                    <span data-placeholder="Escriba sus Apellidos"></span>
+                </div>
+                <div class="box-input">
+                    <input name="email" id="email" type="email" required>
+                    <span data-placeholder="Escriba su Correo Electrónico"></span>
+                </div>
+                <button id="submit" type="submit" class="botonw"><i class="fab fa-whatsapp"></i> Enviar WhatsApp</button>
+            </form>
+
+
         </div>
     </div>
     <!-- partial -->
+    <script type="text/javascript">
+        $(".box-input input").on("focus", function() {
+            $(this).addClass("focus");
+        });
 
+        $(".box-input input").on("blur", function() {
+            if ($(this).val() == "") {
+                $(this).removeClass("focus");
+            }
+        });
+    </script>
+
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+
+    <script ">
+        function isMobile() {
+    if (sessionStorage.desktop)
+        return false;
+    else if (localStorage.mobile)
+        return true;
+    var mobile = ['iphone', 'ipad', 'android', 'blackberry', 'nokia', 'opera mini', 'windows mobile', 'windows phone', 'iemobile'];
+    for (var i in mobile)
+        if (navigator.userAgent.toLowerCase().indexOf(mobile[i].toLowerCase()) > 0) return true;
+    return false;
+}
+
+const formulario = document.querySelector('#formulario');
+const buttonSubmit = document.querySelector('#submit');
+const urlDesktop = 'https://web.whatsapp.com/';
+const urlMobile = 'whatsapp://';
+const telefono = '525539793727';
+
+formulario.addEventListener('submit', (event) => {
+    event.preventDefault()
+    buttonSubmit.innerHTML = '<i class="fas fa-circle-notch fa-spin "></i>'
+    buttonSubmit.disabled = true
+    setTimeout(() => {
+        let nombre = document.querySelector('#nombre').value
+        let apellidos = document.querySelector('#apellidos').value
+        let email = document.querySelector('#email').value
+        let mensaje = 'send?phone=' + telefono + '&text=*_Suscribir_*%0A**%0A' + nombre + '%0A**%0A' + apellidos + '%0A**%0A' + email + ''
+        if(isMobile()) {
+            window.open(urlMobile + mensaje, '_blank')
+        }else{
+            window.open(urlDesktop + mensaje, '_blank')
+        }
+        buttonSubmit.innerHTML = '<i class="fab fa-whatsapp "></i> Enviar WhatsApp'
+        buttonSubmit.disabled = false
+    }, 3000);
+});
+    </script>
 </body>
 
 </html>
