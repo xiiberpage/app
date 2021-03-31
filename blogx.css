@@ -259,7 +259,7 @@ section.share {
     top: 60px;
 }
 
-.next-up>*>h4>a {
+.next-up>*>h4 {
     font-family: "Open Sans", sans-serif;
     font-weight: 700;
     text-transform: uppercase;
@@ -972,7 +972,4 @@ utton:-moz-focusring,
 
 .sidenav a {
     font-size: 18px;
-}
-
-
 }
