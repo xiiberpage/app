@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-black.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css">
+    <style>
+        body {
+            font-family: Arial;
+            font-size: 17px;
+            padding: 8px;
+        }
+        
+        * {
+            box-sizing: border-box;
+        }
+        
+        .row {
+            display: -ms-flexbox;
+            /* IE10 */
+            display: flex;
+            -ms-flex-wrap: wrap;
+            /* IE10 */
+            flex-wrap: wrap;
+            margin: 0 -16px;
+        }
+        
+        .col-25 {
+            -ms-flex: 25%;
+            /* IE10 */
+            flex: 25%;
+        }
+        
+        .col-50 {
+            -ms-flex: 50%;
+            /* IE10 */
+            flex: 50%;
+        }
+        
+        .col-75 {
+            -ms-flex: 75%;
+            /* IE10 */
+            flex: 75%;
+        }
+        
+        .col-25,
+        .col-50,
+        .col-75 {
+            padding: 0 16px;
+        }
+        
+        .container {
+            background-color: #f2f2f2;
+            padding: 5px 20px 15px 20px;
+            border: 1px solid lightgrey;
+            border-radius: 3px;
+        }
+        
+        input[type=text] {
+            width: 100%;
+            margin-bottom: 20px;
+            padding: 12px;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+        }
+        
+        label {
+            margin-bottom: 10px;
+            display: block;
+        }
+        
+        .icon-container {
+            margin-bottom: 20px;
+            padding: 7px 0;
+            font-size: 24px;
+        }
+        
+        .btn {
+            background-color: #4CAF50;
+            color: white;
+            padding: 12px;
+            margin: 10px 0;
+            border: none;
+            width: 100%;
+            border-radius: 3px;
+            cursor: pointer;
+            font-size: 17px;
+        }
+        
+        .btn:hover {
+            background-color: #45a049;
+        }
+        
+        a {
+            color: #2196F3;
+        }
+        
+        hr {
+            border: 1px solid lightgrey;
+        }
+        
+        span.price {
+            float: right;
+        }
+        /* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other (also change the direction - make the "cart" column go on top) */
+        
+        @media (max-width: 800px) {
+            .row {
+                flex-direction: column-reverse;
+            }
+            .col-25 {
+                margin-bottom: 20px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Image header -->
+
+    <div class="w3-display-container ">
+        <img src="https://www.w3schools.com/w3images/jeans.jpg" alt="Jeans" style="width:100%">
+        <div class="w3-display-topleft w3-text-white" style="padding:24px 48px">
+            <h1 class="w3-jumbo w3-hide-small">Tepozspa</h1>
+
+            <h1 class="w3-hide-small">Sábado 23 de febrero</h1>
+            <p><a href="#jeans" class="w3-button w3-black w3-padding-large w3-large">Pagar</a></p>
+            <p><a href="#jeans" class="w3-button w3-black w3-padding-large w3-large">Pre-reservar</a></p>
+        </div>
+    </div>
+
+    <br>
+    <div class="row">
+        <div class="col-75">
+            <div class="container">
+                <form action="/action_page.php">
+
+                    <div class="row">
+                        <div class="col-50">
+                            <label for="fname"><i class="fa fa-user"></i> Nombre</label>
+                            <input type="text" id="fname" name="firstname" placeholder="Harry Potter">
+
+                        </div>
+
+
+                    </div>
+
+                    <input type="submit" value="Reservar" class="btn">
+
+                </form>
+            </div>
+        </div>
+        <div class="col-25">
+            <div class="container">
+                <h4>Lugares <span class="price" style="color:black"><i class="fa fa-shopping-cart"></i> <b>4</b></span></h4>
+                <p><a href="#">Acceso con locker</a> <span class="price">$450</span></p>
+                <p><a href="#">Desayuno</a> <span class="price">$50</span></p>
+                <hr>
+                <p>Total <span class="price" style="color:black"><b>$500</b></span></p>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
