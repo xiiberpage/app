@@ -158,3 +158,43 @@
      opacity: 1;
      right: 0;
  }
+ /* Boton principal */
+ 
+ .button0 {
+     border-radius: 12px;
+     background-color: #FFFFFF;
+     border: none;
+     color: #000000;
+     text-align: center;
+     font-size: 14px;
+     padding: 12px;
+     width: 200px;
+     transition: all 0.5s;
+     cursor: pointer;
+     margin: 0px;
+ }
+ 
+ .button0 span {
+     cursor: pointer;
+     display: inline-block;
+     position: relative;
+     transition: 0.5s;
+ }
+ 
+ .button0 span:after {
+     content: '\00bb';
+     position: absolute;
+     opacity: 0;
+     top: 0;
+     right: -20px;
+     transition: 0.5s;
+ }
+ 
+ .button0:hover span {
+     padding-right: 25px;
+ }
+ 
+ .button0:hover span:after {
+     opacity: 1;
+     right: 0;
+ }
