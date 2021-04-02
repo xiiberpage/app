@@ -198,3 +198,36 @@
      opacity: 1;
      right: 0;
  }
+ /* Boton principal */
+ 
+ .buttonflo {
+     background-color: #FFFFFF;
+     color: #cebebe;
+     font-size: 10px;
+     transition: all 0.5s;
+     cursor: pointer;
+     margin: 0px;
+ }
+ 
+ .buttonflo span {
+     position: relative;
+     transition: 0.5s;
+ }
+ 
+ .buttonflo span:after {
+     content: '\00bb';
+     position: absolute;
+     opacity: 0;
+     top: 0;
+     right: -20px;
+     transition: 0.5s;
+ }
+ 
+ .buttonflo:hover span {
+     padding-right: 25px;
+ }
+ 
+ .buttonflo:hover span:after {
+     opacity: 1;
+     right: 0;
+ }
