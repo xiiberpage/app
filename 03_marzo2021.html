@@ -80,7 +80,7 @@
         <main>
             <div class="calendar-container">
                 <div class="calendar-container__header">
-                    <button class="calendar-container__btn calendar-container__btn--left" title="Febrero 2021">
+                    <button class="calendar-container__btn calendar-container__btn--left" title="Febrero 2021" onclick="document.location='02_febrero2021.html' ">
             <i class="icon ion-ios-arrow-back"></i>
           </button>
                     <h2 class="calendar-container__title">Marzo 2021</h2>
@@ -123,24 +123,24 @@
                                         <span>4</span>
                                     </div>
                                 </div>
-                                <div class="calendar-table__col calendar-table__event calendar-table__event--long calendar-table__event--start">
+                                <div class="calendar-table__col">
                                     <div class="calendar-table__item">
                                         <span>5</span>
                                     </div>
                                 </div>
-                                <div class="calendar-table__col calendar-table__event calendar-table__event--long">
+                                <div class="calendar-table__col">
                                     <div class="calendar-table__item">
                                         <span>6</span>
                                     </div>
                                 </div>
-                                <div class="calendar-table__col calendar-table__event calendar-table__event--long">
+                                <div class="calendar-table__col">
                                     <div class="calendar-table__item">
                                         <span>7</span>
                                     </div>
                                 </div>
                             </div>
                             <div class="calendar-table__row">
-                                <div class="calendar-table__col calendar-table__event calendar-table__event--long calendar-table__event--end">
+                                <div class="calendar-table__col">
                                     <div class="calendar-table__item">
                                         <span>8</span>
                                     </div>
@@ -165,7 +165,7 @@
                                         <span>12</span>
                                     </div>
                                 </div>
-                                <div class="calendar-table__col calendar-table__event calendar-table__inactive">
+                                <div class="calendar-table__col">
                                     <div class="calendar-table__item">
                                         <span>13</span>
                                     </div>
@@ -239,8 +239,8 @@
                                         <span>26</span>
                                     </div>
                                 </div>
-                                <div class="calendar-table__col calendar-table__event">
-                                    <div class="calendar-table__item calendar-table__today">
+                                <div class="calendar-table__col">
+                                    <div class="calendar-table__item">
                                         <span>27</span>
                                     </div>
                                 </div>
@@ -256,13 +256,13 @@
                                         <span>29</span>
                                     </div>
                                 </div>
-                                <div class="calendar-table__col">
-                                    <div class="calendar-table__item">
+                                <div class="calendar-table__col calendar-table__today">
+                                    <div class="calendar-table__item ">
                                         <span>30</span>
                                     </div>
                                 </div>
-                                <div class="calendar-table__col">
-                                    <div class="calendar-table__item">
+                                <div class="calendar-table__col calendar-table__today">
+                                    <div class="calendar-table__item ">
                                         <span>31</span>
                                     </div>
                                 </div>
@@ -294,37 +294,26 @@
             <div class="events-container">
                 <span class="events__title" title="Febrero 2021 Viajes, fiestas y experiencias gay">Viajes, fiestas y experiencias</span>
                 <ul class="events__list">
-
-                    <li class="events__item">
-                        <div class="events__item--left">
-                            <span class="events__name" title="Viaje gay a acapulco ">Acapulco</span>
-                            <span class="events__date">Viernes 5 - Salida CDMX, 9am </span><br>
-                            <span class="events__date">Lunes 8 - Chek out Acapulco, 1pm</span>
-                        </div>
-                        <span class="events__tag">Reserva tu lugar</span>
-                    </li>
-                    <li class="events__item">
-                        <div class="events__item--left">
-                            <span class="events__name">Enviaunderware</span>
-                            <span class="events__date">Sábado 13 </span>
-                        </div>
-                        <span class="events__tag events__tag--event">Quiero asistir</span>
-                    </li>
-                    <li class="events__item">
-                        <div class="events__item--left">
-                            <span class="events__name" title="Poolparty en tangas">Tepozspa: Poolparty en tangas</span>
-                            <span class="events__date">Sábado 27</span>
-                        </div>
-                        <span class="events__tag">Locker</span>
-                        <span class="events__tag">Vestidor</span>
-                    </li>
-
                     <li class="events__item">
                         <div class="events__item--left">
                             <span class="events__name" title="Domingo de ramos">Domingo de ramos</span>
                             <span class="events__date">Domingo 28</span>
                         </div>
                         <span class="events__tag events__tag--highlighted">Ver más</span>
+                    </li>
+                    <li class="events__item">
+                        <div class="events__item--left">
+                            <span class="events__name" title="Domingo de ramos">Día de los Trabajadorxs del hogar</span>
+                            <span class="events__date">Martes 30</span>
+                        </div>
+                        <a onclick="document.location='DiaInternacionalDeLasTrabajadorasDelHogar.html'"><span class="events__tag events__tag--highlighted">Ver más</span> </a>
+                    </li>
+                    <li class="events__item">
+                        <div class="events__item--left">
+                            <span class="events__name" title="Domingo de ramos">Día de la Visibilidad Transgénero</span>
+                            <span class="events__date">Miércoles 31</span>
+                        </div>
+                        <a onclick="document.location='DiaVisibilidadTrans.html'"><span class="events__tag events__tag--highlighted">Ver más</span> </a>
                     </li>
                 </ul>
             </div>
@@ -335,10 +324,10 @@
     <div class="footerx ">
         <div class="icon-bar ">
             <!--     <a href="#"><i class="bi bi-three-dots"  data-toggle="modal" data-target="#modal-fullscreen"></i></a>
-             <a data-toggle="modal" data-target="#modal-fullscreen"><i class=" fas fa-ticket-alt "></i><p class="w3-small ">Experiencias</p></a> -->
+                        <a data-toggle="modal" data-target="#modal-fullscreen"><i class=" fas fa-ticket-alt "></i><p class="w3-small ">Experiencias</p></a> -->
             <a onclick="document.location='index.html'"><i class="fas fa-home"></i><p class="w3-small ">Inicio</p></a>
             <a onclick="document.location='notificaciones.html'"><i class="bi bi-bell-fill"></i><p class="w3-small ">Notificaciones</p></a>
-            <a onclick="document.location='#'"><i class=" bi bi-chevron-double-left "></i><p class="w3-small " title="Febrero 2021">Febrero</p></a>
+            <a onclick="document.location='02_febrero2021.html'"><i class=" bi bi-chevron-double-left "></i><p class="w3-small " title="Febrero 2021">Febrero</p></a>
             <a onclick="document.location='04_abril2021.html'"><i class=" bi bi-chevron-double-right "></i><p class="w3-small " title="Abril 2021">Abril</p></a>
             <a onclick="document.location='mesxmes.html'"><i class="bi bi-calendar3" ></i><p class="w3-small ">Calendario</p></a>
         </div>

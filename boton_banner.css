@@ -231,3 +231,43 @@
      opacity: 1;
      right: 0;
  }
+ /* Boton  largo  */
+ 
+ .buttonx {
+     border-radius: 12px;
+     background-color: #FFFFFF;
+     border: none;
+     color: #000000;
+     text-align: center;
+     font-size: 14px;
+     padding: 10px;
+     width: 250px;
+     transition: all 0.5s;
+     cursor: pointer;
+     margin: 0px;
+ }
+ 
+ .buttonx span {
+     cursor: pointer;
+     display: inline-block;
+     position: relative;
+     transition: 0.5s;
+ }
+ 
+ .buttonx span:after {
+     content: '\00bb';
+     position: absolute;
+     opacity: 0;
+     top: 0;
+     right: 0px;
+     transition: 0.5s;
+ }
+ 
+ .buttonx:hover span {
+     padding-right: 25px;
+ }
+ 
+ .buttonx:hover span:after {
+     opacity: 1;
+     right: 0;
+ }
