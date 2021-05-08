@@ -5,10 +5,10 @@
 -->
 
 <!DOCTYPE html>
-<html lang="es">
+<html>
 
 <head>
-    <title>Puerto Vallarta. Viaje gay</title>
+    <title>Preguntas Frecuentes</title>
 
     <!-- HiHello.monster -->
     <meta charset="UTF-8">
@@ -78,97 +78,35 @@
     <link rel="stylesheet" href="./tabx.css">
     <link rel="stylesheet" href="./events.css">
 
-    <style>
-        .box-input {
-            border-bottom: 2px solid #adadad;
-            position: relative;
-            margin: 30px 0;
-        }
-        
-        .box-input input {
-            font-size: 16px;
-            color: #333;
-            border: none;
-            width: 100%;
-            outline: none;
-            background: none;
-            padding: 0 5px;
-            height: 40px;
-        }
-        
-        .box-input span::before {
-            content: attr(data-placeholder);
-            position: absolute;
-            top: 50%;
-            left: 5px;
-            color: #adadad;
-            transform: translateY(-50%);
-            z-index: -1;
-            transition: .5s;
-        }
-        
-        .box-input span::after {
-            content: '';
-            position: absolute;
-            width: 0%;
-            height: 2px;
-            background: linear-gradient(120deg, #3498db, #8e44ad);
-            transition: .5s;
-        }
-    </style>
+
 
 </head>
 
 <body>
+    <!-- Progress -->
+    <div id="progress"></div>
 
-    <div class="w3-row w3-container ">
-        <div class="w3-col m3 w3-center ">
-            <p></p>
-        </div>
-        <div class="w3-col m6 w3-center ">
-            <div class="w3-main w3-container w3-center ">
-
-                <!-- The Contact Section -->
-                <div class="w3-container w3-content  " style="max-width:800px ">
-                    <h2pride>Puerto Vallarta</h2pride>
-
-                    <p class=" w3-center "><b>¿Quieres ser de los primeros en conocer la nueva fecha de viaje?</b>
-                        <br>Déjamos tus datos para conocer el próximo viaje con un precio de preventa especial</p>
-
-                    <br>
-
-                    <form id="formulario" class="formulario">
-                        <div class="box-input">
-                            <input name="nombre" id="nombre" type="text" required>
-                            <span data-placeholder="Nombre"></span>
-                        </div>
-                        <div class="box-input">
-                            <input name="email" id="email" type="email" required>
-                            <span data-placeholder="Email"></span>
-                        </div>
-                        <div class="box-input">
-                            <input name="apellidos" id="apellidos" type="text" required>
-                            <span data-placeholder="Qué actividad y/o lugar te gustaría hacer en Puerto Vallarta"></span>
-                        </div>
-
-                        <button class="buttonx w3-border w3-round-large" style="vertical-align:middle" id="submit" type="submit" onclick="alert( 'A continuación se abrira whatsapp, solo dale enviar al mensaje que tendrá los datos que acabas de llenar. Gracias') "><i class="fab fa-whatsapp"></i> <span><b>Enviar por WhatsApp</b> </span></button><br>
-                    </form>
-                    <br>
+    <!-- Spinner -->
+    <div class="spinner-grow spinner-grow-sm"></div>
 
 
 
-                    <br>
-                    <p class="w3-opacity w3-center "><i>Lo que pasa en Puerto Vallarta, se queda en Puerto Vallarta</i></p>
-                </div>
 
-            </div>
 
-        </div>
-        <div class="w3-col m3 w3-center ">
-            <p></p>
-        </div>
+    <!-- Logo -->
+    <a onclick="document.location='index.html'" class="logo">
+        <img src="https://pbs.twimg.com/media/EoaxehFWEAIKLgE?format=jpg&name=4096x4096" alt="Xiiber Travel con destino a Tepozspa">
+    </a>
+
+
+    <!-- Boton principal -->
+    <div class="w3-container w3-center w3-animate-right ">
+        <h2>Viajes</h2>
     </div>
-    <br><br><br><br><br><br><br><br>
+
+    <br>
+
+
     <!-- Footerx -->
     <div class="footerx ">
         <div class="icon-bar ">
@@ -202,19 +140,6 @@
          
 
 
-            <div class="modal fade modal-fullscreenx " id="alertas " tabindex="-1 " role="dialog " aria-labelledby="myModalLabel " aria-hidden="true ">
-                <div class="modal-dialog ">
-
-                    <div class="modal-content ">
-                        <div class="modal-body ">
-                            <button type="button " class="close " data-dismiss="modal " aria-hidden="true ">&times;</button>
-
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-
 
             <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
             <script src='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js'></script>
@@ -224,43 +149,5 @@
             <script src="./agotado.js "></script>
             
 
-                   
-            <script>
-                function isMobile() {
-                    if (sessionStorage.desktop)
-                        return false;
-                    else if (localStorage.mobile)
-                        return true;
-                    var mobile = ['iphone', 'ipad', 'android', 'blackberry', 'nokia', 'opera mini', 'windows mobile', 'windows phone', 'iemobile'];
-                    for (var i in mobile)
-                        if (navigator.userAgent.toLowerCase().indexOf(mobile[i].toLowerCase()) > 0) return true;
-                    return false;
-                }
-        
-                const formulario = document.querySelector('#formulario');
-                const buttonSubmit = document.querySelector('#submit');
-                const urlDesktop = 'https://web.whatsapp.com/';
-                const urlMobile = 'whatsapp://';
-                const telefono = '525539793727';
-        
-                formulario.addEventListener('submit', (event) => {
-                    event.preventDefault()
-                    buttonSubmit.innerHTML = '<i class="fas fa-circle-notch fa-spin "></i>'
-                    buttonSubmit.disabled = true
-                    setTimeout(() => {
-                        let nombre = document.querySelector('#nombre').value
-                        let apellidos = document.querySelector('#apellidos').value
-                        let email = document.querySelector('#email').value
-                        let mensaje = 'send?phone=' + telefono + '&text=*_Hola, llene el formulario en la webapp de Xiiber. Por favor de notificarme el próximo viaje a Puerto Vallarta._*%0A*Mi nombre es*%0A' + nombre + '%0A*Mi email*%0A' + email + '%0A*La  actividad y/o lugar que me gustaría hacer en Acapulco es*%0A' + apellidos + ''
-                        if (isMobile()) {
-                            window.open(urlMobile + mensaje, '_blank')
-                        } else {
-                            window.open(urlDesktop + mensaje, '_blank')
-                        }
-                        buttonSubmit.innerHTML = '<i class="fab fa-whatsapp "></i> Enviar WhatsApp'
-                        buttonSubmit.disabled = false
-                    }, 3000);
-                });
-</script>
 
 </html>

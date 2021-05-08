@@ -32,6 +32,27 @@ h1pride {
     }
 }
 
+h2pride {
+    margin-top: 0%;
+    line-height: 90px;
+    font-size: 50px;
+    font-family: 'Paytone One', sans-serif;
+    text-align: center;
+    background: linear-gradient( to right, #ff1616, #ff7716, #ffdc16, #36c945, #10a5ce, #0f0096, #a51eff, #ff1616);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-size: 300px;
+    background-position: center 0%;
+    animation: background-slide 25s infinite linear;
+}
+
+@keyframes background-slide {
+    100% {
+        background-position: -8160px;
+    }
+}
+
 
 /* Pride  */
 
