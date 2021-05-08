@@ -7,7 +7,7 @@
 <html>
 
 <head>
-    <title>Calendario de viajes 2021 Xiiber Travel . Agencia de viajes gay </title>
+    <title>Xiiber Travel. Agencia de viajes gay </title>
 
     <!-- HiHello.monster -->
     <meta charset="UTF-8">
@@ -73,40 +73,48 @@
     <link rel="stylesheet" href="./boton_principal.css">
     <link rel="stylesheet" href="./boton_banner.css">
 
+
+
 </head>
 
 <body>
-
-    <br>
-    <div class="w3-row w3-animate-right w3-center w3-container ">
-        <h2>2021</h2>
-        <div class="w3-col" style="width:50%">
-            <button class="buttonb w3-border w3-round-large " style="vertical-align:middle " onclick="document.location='01_enero2021.html'"><span><b>Enero</b> </span></button><br>
-            <button class="buttonb w3-border w3-round-large " style="vertical-align:middle " onclick="document.location='02_febrero2021.html'"><span><b>Febrero</b></a> </span></button><br>
-            <button class="buttonb w3-border w3-round-large " style="vertical-align:middle " onclick="document.location='03_marzo2021.html'"><span><b>Marzo</b> </span></button><br>
-            <button class="buttonb w3-border w3-round-large " style="vertical-align:middle " onclick="document.location='04_abril2021.html'"><span><b>Abril</b> </span></button><br>
-            <button class="buttonb w3-border w3-round-large " style="vertical-align:middle " onclick="document.location='05_mayo2021.html'"><span><b>Mayo</b> </span></button><br>
-            <button class="buttonb w3-border w3-round-large " style="vertical-align:middle " onclick="document.location='06_junio2021.html'"><span><b>Junio</b> </span></button><br>
-        </div>
-
-        <div class="w3-col" style="width:50%">
-            <button class="buttonb w3-border w3-round-large " style="vertical-align:middle " onclick="document.location='07_julio2021.html'"><span><b>Julio</b></a> </span></button><br>
-            <button class="buttonb w3-border w3-round-large " style="vertical-align:middle " onclick="document.location='08_agosto2021.html'"><span><b>Agosto</b> </span></button><br>
-            <button class="buttonb w3-border w3-round-large " style="vertical-align:middle " onclick="document.location='09_septiembre2021.html'"><span><b>Septiembre</b> </span></button><br>
-            <button class="buttonb w3-border w3-round-large " style="vertical-align:middle " onclick="document.location='10_octubre2021.html'"><span><b>Octubre</b> </span></button><br>
-            <button class="buttonb w3-border w3-round-large " style="vertical-align:middle " onclick="document.location='11_noviembre2021.html'"><span><b>Noviembre</b> </span></button><br>
-            <button class="buttonb w3-border w3-round-large " style="vertical-align:middle " onclick="document.location='12_diciembre2021.html'"><span><b>Diciembre</b> </span></button><br><br><br><br><br><br>
-            <button class="buttonb w3-border w3-round-large " style="vertical-align:middle " onclick="document.location='2022.html'"><span><b>2022</b> </span></button><br>
-        </div>
+    <!-- Progress -->
+    <div id="progress"></div>
 
 
+    <!-- Logo -->
+    <a onclick="document.location='index.html'" class="logo">
+        <img src="https://pbs.twimg.com/media/EoaxehFWEAIKLgE?format=jpg&name=4096x4096" alt="Xiiber Travel con destino a Tepozspa">
+    </a>
+
+    <br> <br>
+    <div class="w3-main w3-center ">
+        <p><b>Sin notificaciones... por el momento</b></p>
     </div>
 
-    <!-- Footerx --><br><br><br><br>
+    <!-- Emoji -->
+    <div class="w3-container  w3-center">
+        <span class="emoji mailbox" role="img" aria-label="mailbox"></span><br><br><br>
+    </div>
+
+
+
+    <div class="w3-main w3-center ">
+        <p><b>Último acceso</b></p>
+        <p id="ultimoacceso "></p>
+    </div>
+
+    <script>
+        var d = new Date();
+        document.getElementById("ultimoacceso ").innerHTML = d;
+    </script>
+
+
+    <!-- Footerx -->
     <div class="footerx ">
         <div class="icon-bar ">
             <!--     <a href="#"><i class="bi bi-three-dots"  data-toggle="modal" data-target="#modal-fullscreen"></i></a>
-                 <a data-toggle="modal" data-target="#modal-fullscreen"><i class=" fas fa-ticket-alt "></i><p class="w3-small ">Experiencias</p></a> -->
+             <a data-toggle="modal" data-target="#modal-fullscreen"><i class=" fas fa-ticket-alt "></i><p class="w3-small ">Experiencias</p></a> -->
             <a onclick="document.location='index.html'"><i class="fas fa-home"></i><p class="w3-small ">Inicio</p></a>
             <a onclick="document.location='notificaciones.html'"><i class="bi bi-bell-fill"></i><p class="w3-small ">Notificaciones</p></a>
             <a onclick="document.location='viajes.html'"><i class=" fas fa-suitcase-rolling "></i><p class="w3-small ">Viajes</p></a>
@@ -115,7 +123,32 @@
         </div>
     </div>
 
+    <button data-toggle="modal" data-target="#modal-fullscreen"> <a class="w3-button  w3-circle  " style="position:fixed;top:60px;right:40px; "><i class="fas fa-ellipsis-v"></i></a> </button>
 
+    <!-- Modal-Fullscreen -->
+    <div class="modal fade modal-fullscreen" id="modal-fullscreen" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                    <iframe src="secciones.html " " name="iframe_a " height="600px " width="100% " title="Iframe Example " allowfullscreen=" " frameborder="0 " style="border:0; "></iframe>
+                </div>
+            </div>
+        </div>
     </div>
 
+
+    <br><br>
+
+
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js'></script>
+
+    <script src="./progress.js "></script>
+
+
+
 </html>
+
+<!-- <iframe src="secciones.html " width="1980 " height="1020 " frameborder="0 " style="border:0; " allowfullscreen=" "></iframe> 
+ <iframe src="secciones.html " name="iframe_a " height="300px " width="100% " title="Iframe Example "></iframe>-->
