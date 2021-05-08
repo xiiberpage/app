@@ -1,1 +1,0 @@
-/* Hoverable Stretchy Bird */
